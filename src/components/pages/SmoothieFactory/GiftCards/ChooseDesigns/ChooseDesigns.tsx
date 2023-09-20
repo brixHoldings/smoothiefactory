@@ -25,6 +25,33 @@ import Lottie from 'lottie-react';
 
 import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 
+const slides = [
+  { src: '/images/card (3).png' },
+  { src: '/images/card (1).png' },
+  { src: '/images/card.png' },
+  { src: '/images/card (3).png' },
+  { src: '/images/card (1).png' },
+  { src: '/images/card.png' },
+  { src: '/images/card (3).png' },
+  { src: '/images/card (1).png' },
+  { src: '/images/card.png' },
+  { src: '/images/card (3).png' },
+  { src: '/images/card (1).png' },
+  { src: '/images/card.png' },
+  { src: '/images/card (3).png' },
+  { src: '/images/card (1).png' },
+  { src: '/images/card.png' },
+  { src: '/images/card (3).png' },
+  { src: '/images/card (1).png' },
+  { src: '/images/card.png' },
+  { src: '/images/card (3).png' },
+  { src: '/images/card (1).png' },
+  { src: '/images/card.png' },
+  { src: '/images/card (3).png' },
+  { src: '/images/card (1).png' },
+  { src: '/images/card.png' },
+];
+
 const ChooseDesigns: FC = () => (
   <>
     <MaxWidthWrapper>
@@ -36,15 +63,11 @@ const ChooseDesigns: FC = () => (
       </Wrapper>
     </MaxWidthWrapper>
     <Cards>
-      <Card>
-        <Image alt="gift card" src="/images/salad.jpg" style={{ objectFit: 'cover' }} fill />
-      </Card>
-      <Card>
-        <Image alt="gift card" src="/images/salad.jpg" style={{ objectFit: 'cover' }} fill />
-      </Card>
-      <Card>
-        <Image alt="gift card" src="/images/salad.jpg" style={{ objectFit: 'cover' }} fill />
-      </Card>
+      {slides.map((slide, index) => (
+        <Card key={index}>
+          <Image alt="gift card" src={slide.src} style={{ objectFit: 'cover' }} fill />
+        </Card>
+      ))}
     </Cards>
     <GiftCardArea>
       <LottieWrapper>

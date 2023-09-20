@@ -36,6 +36,10 @@ export const FloatingGreenShapeImage = styled(FloatingImage)`
   right: initial;
 `;
 
+export const FloatingIconImage = styled(FloatingImage)`
+  margin-bottom: clamp(8px, 2.64vw, 40px);
+`;
+
 export const Text = styled.p`
   font-size: clamp(14px, 1.05vw, 16px);
   line-height: clamp(21px, 1.85vw, 28px);
@@ -114,10 +118,7 @@ export const Card = styled.div`
   flex-direction: column;
   flex: 1;
   align-items: center;
-  gap: 16px;
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    gap: 8px;
-  }
+  max-width: 360px;
 `;
 
 export const InfoCardTitle = styled.h3`
@@ -125,6 +126,7 @@ export const InfoCardTitle = styled.h3`
   line-height: clamp(24px, 2.38vw, 36px);
   color: #474747;
   text-align: center;
+  margin-bottom: clamp(8px, 1.58vw, 24px);
 `;
 
 export const InfoCardText = styled.p`
@@ -143,4 +145,18 @@ export const FlexWrapper = styled.div`
     flex-direction: column;
     gap: 180px;
   }
+`;
+
+export const CtaButton = styled.button`
+  font-size: clamp(15px, 1.05vw, 16px);
+  line-height: clamp(22px, 1.58vw, 24px);
+  text-align: center;
+  background-color: #23aa5d;
+  padding: 12px clamp(12px, 1.58vw, 24px) 8px clamp(12px, 1.58vw, 24px);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 32px;
 `;

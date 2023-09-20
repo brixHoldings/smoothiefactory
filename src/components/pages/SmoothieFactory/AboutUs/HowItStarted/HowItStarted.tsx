@@ -22,6 +22,8 @@ import {
   FlexWrapper,
   FloatingGreenShapeImage,
   FloatingCucumber,
+  FloatingIconImage,
+  CtaButton,
 } from './HowItStarted.style';
 
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
@@ -112,44 +114,53 @@ const HowItStarted: FC = () => {
         <Image alt="store bg" src="/images/store.jpg" style={{ objectFit: 'cover' }} fill />
       </StoreBg>
       <MaxWidthWrapper>
-        <Title color="#23AA5D" mb="clamp(32px, 3.70vw, 56px)" style={{ textAlign: 'center' }}>
+        <Title color="#23AA5D" mb="clamp(32px, 6.81vw, 103px)" style={{ textAlign: 'center' }}>
           We are here for you
         </Title>
         <CardsWrapper>
           <Card>
-            <FloatingImage
+            <FloatingIconImage
               alt="card image"
               height="clamp(90px, 7.93vw, 120px)"
               src="/images/stars.svg"
               width="clamp(90px, 7.93vw, 120px)"
             />
-            <InfoCardTitle>Modern environment</InfoCardTitle>
+            <InfoCardTitle>
+              Modern <br />
+              environment
+            </InfoCardTitle>
             <InfoCardText>
               Experience our vibrant, modern space design while you enjoy your fresh and healthy Smoothie Factory +
               Kitchen favorites!
             </InfoCardText>
           </Card>
           <Card>
-            <FloatingImage
+            <FloatingIconImage
               alt="card image"
               height="clamp(90px, 7.93vw, 120px)"
               src="/images/avocado-icon.svg"
               width="clamp(90px, 7.93vw, 120px)"
             />
-            <InfoCardTitle>Only the highest quality for you</InfoCardTitle>
+            <InfoCardTitle>
+              Only the highest <br /> quality for you
+            </InfoCardTitle>
             <InfoCardText>
               Our food and beverages are always made with the freshest ingredients, ensuring you get the best quality
               and taste every time!
             </InfoCardText>
+            <CtaButton>go to franchising</CtaButton>
           </Card>
           <Card>
-            <FloatingImage
+            <FloatingIconImage
               alt="card image"
               height="clamp(90px, 7.93vw, 120px)"
               src="/images/orange-icon.svg"
               width="clamp(90px, 7.93vw, 120px)"
             />
-            <InfoCardTitle>The team that always smiles!</InfoCardTitle>
+            <InfoCardTitle>
+              The team that <br />
+              always smiles!
+            </InfoCardTitle>
             <InfoCardText>
               Our friendly team is here to serve you with a smile and make your Smoothie Factory + Kitchen experience a
               memorable one!

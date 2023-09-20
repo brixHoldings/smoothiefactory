@@ -1,8 +1,12 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import theme from '@styles/theme';
 
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
+
+const translateinfinite = keyframes`
+	100% { transform:translateX(-3000px)  }
+`;
 
 export const Title = styled.h1`
   color: #ed6c32;
@@ -18,15 +22,24 @@ export const Wrapper = styled.div`
 `;
 
 export const Cards = styled.div`
-  display: flex;
-  width: clamp(1494px, 131.74vw, 1992px);
+  width: 100%;
   gap: clamp(24px, 2.11vw, 32px);
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 33.333333%;
+  animation: ${translateinfinite} 50s linear infinite;
+  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
+    grid-auto-columns: 50%;
+  }
+  @media only screen and (max-width: ${theme.breakpoints.mobile}px) {
+    grid-auto-columns: 100%;
+  }
   margin-bottom: clamp(76px, 15.6vw, 236px);
 `;
 
 export const Card = styled.div`
-  flex: 0.33333;
   height: clamp(200px, 24.2vw, 366px);
+
   position: relative;
   border-radius: clamp(6px, 1.45vw, 22px);
   overflow: hidden;
