@@ -1,4 +1,5 @@
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
+import theme from '@styles/theme';
 import styled from 'styled-components';
 
 export const HeaderArea = styled.section`
@@ -53,7 +54,13 @@ export const HeaderButton = styled.button`
 
 export const FloatingGlassImage = styled(FloatingImage)`
   position: absolute;
-  bottom: clamp(-51px, -7.73vw, -117px);
+  bottom: -32%;
+  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
+    bottom: -17%;
+  }
+  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
+    bottom: -4%;
+  }
 `;
 
 export const LottieWrapper = styled.div`

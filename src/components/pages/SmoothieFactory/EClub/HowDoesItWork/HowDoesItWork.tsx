@@ -20,22 +20,22 @@ const HowDoesItWork: FC = () => (
   <RelativeWrapper>
     <MaxWidthWrapper>
       <FloatingImage
-        alt="green beans"
+        alt="wood shape"
         bottom="30%"
-        height="clamp(337px ,29.76vw, 450px)"
+        height="clamp(433px ,42.98vw, 650px)"
         hideUnder={650}
-        left="-35%"
-        src="/images/green-beans-rotated.png"
-        width="clamp(498px,43.91vw, 664px)"
+        left="-66%"
+        src="/images/Mask group (1).png"
+        width="clamp(420px,41.73vw, 631px)"
       />
       <FloatingImage
-        alt="wood shape"
-        height="clamp(848px ,70.17vw, 1061px)"
+        alt="green shape"
+        height="clamp(817px, 83.20vw, 1258px)"
         hideUnder={650}
         right="76%"
-        src="/images/WoodShapes.png"
+        src="/images/WoodShapes-2.png"
         top="-11%"
-        width="clamp(808px,66.79vw, 1010px)"
+        width="clamp(816px,82.01vw, 1240px)"
       />
       <Wrapper>
         <FloatingImage

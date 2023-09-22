@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import theme from '@styles/theme';
+import { MaxWidthWrapper } from '@styles/common';
 
 export const WhatsNewWrapper = styled.section`
   display: flex;
   align-items: center;
+  position: relative;
   margin-bottom: clamp(72px, 15.01vw, 227px);
   gap: clamp(58px, 9.78vw, 148px);
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
@@ -54,4 +56,8 @@ export const CtaButton = styled.button`
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
+`;
+
+export const StyledMaxWidthWrapper = styled(MaxWidthWrapper)`
+  position: relative;
 `;

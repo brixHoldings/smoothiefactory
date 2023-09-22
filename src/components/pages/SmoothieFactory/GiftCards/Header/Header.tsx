@@ -12,12 +12,7 @@ import type { FC } from 'react';
 
 const Header: FC = () => (
   <Wrapper>
-    <Image
-      alt="bg"
-      src="/images/gift-cards-bg.png"
-      style={{ objectFit: 'cover', objectPosition: 'center bottom' }}
-      fill
-    />
+    <Image alt="bg" src="/images/GiftBack.png" style={{ objectFit: 'cover', objectPosition: 'center bottom' }} fill />
     <RelativeMaxWidthWrapper>
       <Glass>
         <Title>Gift an EXPERIENCE!</Title>

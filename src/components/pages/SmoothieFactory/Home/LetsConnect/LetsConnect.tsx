@@ -51,7 +51,7 @@ const LetsConnect: FC = () => (
         top="-65%"
         width="clamp(159px, 18.78vw, 284px)"
       />
-      <Image alt="bg" src="/images/bg-wrapper.jpg" style={{ objectFit: 'cover' }} fill />
+      <Image alt="bg" src="/images/bg-wrapper-2.jpg" style={{ objectFit: 'cover' }} fill />
       <Glass>
         <MaxWidthWrapper>
           <Row>

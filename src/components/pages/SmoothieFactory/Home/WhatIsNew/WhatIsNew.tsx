@@ -8,15 +8,23 @@ import {
   WhatsNewText,
   RelativeWrapper,
   CtaButton,
+  StyledMaxWidthWrapper,
 } from './WhatIsNew.style';
 
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
-import { MaxWidthWrapper } from '@styles/common';
 
 import type { FC } from 'react';
 
 const WhatIsNew: FC = () => (
-  <MaxWidthWrapper>
+  <StyledMaxWidthWrapper>
+    <FloatingImage
+      alt="arugula"
+      top="-47%"
+      right="0%"
+      height="clamp(285px,33.53vw, 507px)"
+      src="/images/pexels-mali-maeder-244393-transformed (2) 1.png"
+      width="clamp(164px,19.24vw, 291px)"
+    />
     <WhatsNewWrapper>
       <RelativeWrapper>
         <FloatingImage
@@ -27,11 +35,11 @@ const WhatIsNew: FC = () => (
         />
         <FloatingImage
           alt="kiwi"
-          bottom="-13%"
-          height="clamp(163px,16.26vw, 246px)"
-          left="-3%"
-          src="/images/kiwi.png"
-          width="clamp(195px,19.44vw, 294px)"
+          bottom="23%"
+          height="clamp(195px,26.32vw, 398px)"
+          left="-13%"
+          src="/images/cancer5443_fresh_juicy_slice_cucumber_on_a_white_background_iso_10442f18-fd39-4727-a315-877f198b4bd6.png"
+          width="clamp(195px,26.32vw, 398px)"
         />
       </RelativeWrapper>
       <TextContainer>
@@ -44,7 +52,7 @@ const WhatIsNew: FC = () => (
         <CtaButton>SEE OUR OFFERS</CtaButton>
       </TextContainer>
     </WhatsNewWrapper>
-  </MaxWidthWrapper>
+  </StyledMaxWidthWrapper>
 );
 
 export default WhatIsNew;

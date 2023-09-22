@@ -35,9 +35,9 @@ const Header: FC = () => (
       </CtaArea>
       <FloatingGlassImage
         alt="glass of smoothie"
-        height="clamp(180px,21.23vw, 321px)"
+        height="clamp(180px,49.60vw, 750px)"
         src="/images/header-glass.png"
-        width="clamp(249px,29.43vw, 445px)"
+        width="clamp(249px,37.03vw, 560px)"
       />
     </HeaderArea>
     <LottieWrapper>
