@@ -21,6 +21,7 @@ import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 const Header: FC = () => (
   <RelativeWrapper>
     <FloatingShapeImage
+      priority
       alt="about us bg"
       height="clamp(392px, 46.09vw, 697px)"
       left="0%"
@@ -42,6 +43,7 @@ const Header: FC = () => (
         </Content>
         <SideImage>
           <Image
+            priority
             alt="about us side image"
             src="/images/side-img-1.jpg"
             style={{

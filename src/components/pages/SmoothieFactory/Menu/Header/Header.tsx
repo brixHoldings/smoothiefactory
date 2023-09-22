@@ -12,6 +12,7 @@ const Header: FC = () => (
     <Image alt="bg" src="/images/Apples.png" style={{ objectFit: 'cover', objectPosition: 'bottom center' }} fill />
     <CtaArea>
       <FloatingImage
+        priority
         alt="header icon"
         height="clamp(90px,7.80vw, 118px)"
         src="/images/header-icon.svg"
@@ -21,6 +22,7 @@ const Header: FC = () => (
       <HeaderTitle>Carefully curated foods and drinks for your best performance</HeaderTitle>
     </CtaArea>
     <FloatingGlassImage
+      priority
       alt="glass of smoothie"
       height="clamp(423px,36.37vw, 550px)"
       src="/images/Citrus Greens Final.png"

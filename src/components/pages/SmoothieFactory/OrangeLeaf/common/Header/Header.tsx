@@ -117,7 +117,7 @@ const Header: FC = () => {
             onClose('/');
           }}
         >
-          <FloatingImage alt="smoothie factory logo" height="58px" src="/images/logo.svg" width="120px" />
+          <FloatingImage priority alt="smoothie factory logo" height="58px" src="/images/logo.svg" width="120px" />
         </ButtonLink>
         <ButtonLink
           data-is-active={pathname === '/menu'}
@@ -159,9 +159,21 @@ const Header: FC = () => {
       <MobileWrapper ref={mobileNavigationRef} animate={isTransparent ? 'transparent' : 'visible'} variants={variants}>
         <HomeLink href="/">
           {isTransparent ? (
-            <FloatingImage alt="smoothie factory logo" height="38px" src="/images/logo-mobile-white.svg" width="40px" />
+            <FloatingImage
+              priority
+              alt="smoothie factory logo"
+              height="38px"
+              src="/images/logo-mobile-white.svg"
+              width="40px"
+            />
           ) : (
-            <FloatingImage alt="smoothie factory logo" height="38px" src="/images/logo-mobile.svg" width="40px" />
+            <FloatingImage
+              priority
+              alt="smoothie factory logo"
+              height="38px"
+              src="/images/logo-mobile.svg"
+              width="40px"
+            />
           )}
         </HomeLink>
         <HamburgerButton onClick={onHamburgerClick}>

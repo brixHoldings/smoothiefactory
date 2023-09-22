@@ -12,7 +12,13 @@ import type { FC } from 'react';
 
 const Header: FC = () => (
   <Wrapper>
-    <Image alt="bg" src="/images/GiftBack.png" style={{ objectFit: 'cover', objectPosition: 'center bottom' }} fill />
+    <Image
+      alt="bg"
+      priority
+      src="/images/GiftBack.png"
+      style={{ objectFit: 'cover', objectPosition: 'center bottom' }}
+      fill
+    />
     <RelativeMaxWidthWrapper>
       <Glass>
         <Title>Gift an EXPERIENCE!</Title>
@@ -25,7 +31,8 @@ const Header: FC = () => (
       </Glass>
     </RelativeMaxWidthWrapper>
     <FloatingImage
-      alt="parsley"
+      alt="spinach"
+      priority
       bottom="100%"
       height="clamp(462px,437.89vw, 573px)"
       hideUnder={768}

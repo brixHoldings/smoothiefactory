@@ -21,10 +21,12 @@ const GetRewards: FC = () => (
       top="-2%"
       width="clamp(496px,65.67vw, 993px)"
       renderInBody
+      priority
     />
 
     <FloatingImage
       alt="badge"
+      priority
       bottom="-3%"
       height="clamp(183px, 21.62vw, 327px)"
       right="18%"
@@ -36,6 +38,7 @@ const GetRewards: FC = () => (
         alt="badge"
         height="clamp(105px, 12.43vw, 188px)"
         right="-23%"
+        priority
         src="/images/Group 19.png"
         top="-50%"
         width="clamp(105px,12.43vw, 188px)"

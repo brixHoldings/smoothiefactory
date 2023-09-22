@@ -21,7 +21,7 @@ import Link from 'next/link';
 const Header: FC = () => (
   <>
     <HeaderArea>
-      <Image alt="bg" src="/images/header-area-image2.jpg" style={{ objectFit: 'cover' }} fill />
+      <Image priority alt="bg" src="/images/header-area-image2.jpg" style={{ objectFit: 'cover' }} fill />
       <CtaArea>
         <HeaderTitle>building a better you</HeaderTitle>
         <HeaderText>
@@ -34,6 +34,7 @@ const Header: FC = () => (
         </Link>
       </CtaArea>
       <FloatingGlassImage
+        priority
         alt="glass of smoothie"
         height="clamp(180px,49.60vw, 750px)"
         src="/images/header-glass.png"
