@@ -125,10 +125,13 @@ const sliderDefaultInterval = 100000;
 
 const Gallery: FC = () => {
   const [activeSliderIndex, setActiveSliderIndex] = useState(0);
+  const [isBackward, setIsBackward] = useState<boolean>(false);
   const intervalReference = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const changeSlide = useCallback((goBackwards: boolean) => {
     setActiveSliderIndex((currentIndex) => {
+      setIsBackward(goBackwards);
+
       if (goBackwards) {
         if (currentIndex === 0) {
           return sliders.length - 1;
@@ -211,12 +214,12 @@ const Gallery: FC = () => {
               </svg>
             </Arrow>
           </ArrowsWrapper>
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="popLayout" initial={false}>
             <GalleryContent
               key={activeSliderIndex}
-              animate={{ opacity: 1 }}
+              animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 0, x: isBackward ? 300 : -300 }}
             >
               <GalleryContentWrapper>
                 <GalleryItemTitle>{sliders[activeSliderIndex].title}</GalleryItemTitle>
