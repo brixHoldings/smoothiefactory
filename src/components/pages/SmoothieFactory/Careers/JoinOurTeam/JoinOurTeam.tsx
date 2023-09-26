@@ -14,17 +14,17 @@ const JoinOurTeam: FC = () => {
 
   return (
     <Wrapper footerHeight={footerHeight}>
-      <FloatingImage
-        alt="background"
-        height="clamp(448px,44.51vw, 673px)"
-        top="29%"
-        src="/images/Frame 169 1.png"
-        style={{ zIndex: -1 }}
-        right="25%"
-        width="clamp(601px,59.65vw, 902px)"
-        hideUnder={768}
-      />
-      <MaxWidthWrapper>
+      <MaxWidthWrapper style={{ position: 'relative' }}>
+        <FloatingImage
+          alt="background"
+          height="clamp(448px,44.51vw, 673px)"
+          top="-10%"
+          src="/images/Frame 169 1.png"
+          style={{ zIndex: -1 }}
+          right="24%"
+          width="clamp(601px,59.65vw, 902px)"
+          hideUnder={768}
+        />
         <Title mb="8px" color="#474747" style={{ textAlign: 'left' }}>
           Join our team!
         </Title>

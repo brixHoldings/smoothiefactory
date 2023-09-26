@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.section<{ footerHeight: number }>`
   padding: clamp(180px, 17.85vw, 270px) 0 clamp(120px, 12.43vw, 188px) 0;
-  position: relative;
 `;
 
 export const Text = styled.p`
