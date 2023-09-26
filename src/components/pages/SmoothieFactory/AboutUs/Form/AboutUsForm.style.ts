@@ -40,7 +40,7 @@ export const FormBg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -70px;
+  margin-bottom: 153px;
 
   @media (max-width: ${theme.breakpoints.mobile}px) {
     padding-bottom: 306px;
@@ -104,15 +104,6 @@ export const Error = styled.span`
   font-size: 12px;
   line-height: 16px;
   color: #ff0000;
-`;
-
-export const Polygon = styled.div`
-  background: #fff;
-  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
-  height: clamp(228px, 19.24vw, 291px);
-  width: 100%;
-  position: relative;
-  z-index: 1;
 `;
 
 export const ImageWrapper = styled.div`

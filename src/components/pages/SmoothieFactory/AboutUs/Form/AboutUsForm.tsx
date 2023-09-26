@@ -7,17 +7,7 @@ import { useForm } from 'react-hook-form';
 
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import {
-  Form,
-  FormTitle,
-  Paper,
-  InputWrapper,
-  TextAreaInput,
-  Polygon,
-  FormBg,
-  Error,
-  ImageWrapper,
-} from './AboutUsForm.style';
+import { Form, FormTitle, Paper, InputWrapper, TextAreaInput, FormBg, Error, ImageWrapper } from './AboutUsForm.style';
 
 import { validatePhoneNumber } from '@utils/validatePhoneNumber';
 
@@ -167,7 +157,6 @@ const AboutUsForm: FC = () => {
           )}
         </Paper>
       </FormBg>
-      <Polygon />
     </>
   );
 };
