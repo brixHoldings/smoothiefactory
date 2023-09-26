@@ -1,10 +1,8 @@
-import theme from '@styles/theme';
 import styled from 'styled-components';
 
 export const Wrapper = styled.section<{ footerHeight: number }>`
   padding: clamp(180px, 17.85vw, 270px) 0 clamp(120px, 12.43vw, 188px) 0;
   position: relative;
-  /* min-height: ${({ footerHeight }): string | number => (footerHeight ? `calc(100vh - ${footerHeight}px)` : 0)}; */
 `;
 
 export const Text = styled.p`
