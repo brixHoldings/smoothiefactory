@@ -29,6 +29,7 @@ import {
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
 import theme from '@styles/theme';
 import useWindowSize from '@hooks/useWindowSize';
+import Link from 'next/link';
 const HowItStarted: FC = () => {
   const { width } = useWindowSize();
 
@@ -148,7 +149,9 @@ const HowItStarted: FC = () => {
               Our food and beverages are always made with the freshest ingredients, ensuring you get the best quality
               and taste every time!
             </InfoCardText>
-            <CtaButton>go to franchising</CtaButton>
+            <Link href="/franchising">
+              <CtaButton>go to franchising</CtaButton>
+            </Link>
           </Card>
           <Card>
             <FloatingIconImage

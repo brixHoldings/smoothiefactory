@@ -26,7 +26,9 @@ const GetBirthdayGift: FC = () => (
           year-round discounts and offers. Don&apos;t miss out on this sweet treat! Sign up now and celebrate your
           birthday the healthy way.
         </Text>
-        <CtaButton>Join now</CtaButton>
+        <a href="#form-bg">
+          <CtaButton>Join now</CtaButton>
+        </a>
       </ContentWrapper>
     </Wrapper>
   </MaxWidthWrapper>

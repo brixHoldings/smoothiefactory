@@ -10,6 +10,7 @@ import { CtaButton } from '../../Home/WhatIsNew/WhatIsNew.style';
 import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 
 import type { FC } from 'react';
+import Link from 'next/link';
 
 const GetRewards: FC = () => (
   <Wrapper>
@@ -50,7 +51,9 @@ const GetRewards: FC = () => (
         date on all the latest news and promotions from Smoothie Factory + Kitchen. Sign up today and start enjoying the
         benefits of a healthy lifestyle!
       </GlassText>
-      <CtaButton>Join now</CtaButton>
+      <a href="#form-bg">
+        <CtaButton>Join now</CtaButton>
+      </a>
     </Glass>
     <LottieWrapper>
       <Lottie animationData={oneAtATime} />

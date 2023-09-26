@@ -14,6 +14,7 @@ import {
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
 
 import type { FC } from 'react';
+import Link from 'next/link';
 
 const WhatIsNew: FC = () => (
   <StyledMaxWidthWrapper>
@@ -49,7 +50,9 @@ const WhatIsNew: FC = () => (
           Introducing Smoothie Factory + Kitchen, the newest addition to Smoothie Factory! Enjoy delicious, healthy
           smoothies and freshly made toasts, grilled folds, and salads.
         </WhatsNewText>
-        <CtaButton>SEE OUR OFFERS</CtaButton>
+        <Link href="/menu">
+          <CtaButton>SEE OUR OFFERS</CtaButton>
+        </Link>
       </TextContainer>
     </WhatsNewWrapper>
   </StyledMaxWidthWrapper>

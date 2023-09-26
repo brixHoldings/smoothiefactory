@@ -27,6 +27,7 @@ import { MaxWidthWrapper } from '@styles/common';
 import { Title } from '../common';
 
 import type { FC } from 'react';
+import Link from 'next/link';
 
 type Slider = {
   img: {
@@ -244,7 +245,9 @@ const Gallery: FC = () => {
                   </Label>
                 </GalleryItemLabels>
                 <GalleryText>{sliders[activeSliderIndex].text}</GalleryText>
-                <CtaButton>see our menu</CtaButton>
+                <Link href="/menu">
+                  <CtaButton>see our menu</CtaButton>
+                </Link>
               </GalleryContentWrapper>
 
               <FloatingItemImage
