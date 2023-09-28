@@ -77,7 +77,7 @@ const AboutUsForm: FC = () => {
 
   return (
     <>
-      <FormBg>
+      <FormBg id="form-bg">
         <ImageWrapper>
           <FloatingImage
             alt="letters"

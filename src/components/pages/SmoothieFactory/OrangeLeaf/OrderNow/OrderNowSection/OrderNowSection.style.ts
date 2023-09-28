@@ -89,6 +89,7 @@ export const StyledFloatingImage = styled(FloatingImage)`
   &::before {
     content: '';
     position: absolute;
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     inset: 0;
     z-index: 1;

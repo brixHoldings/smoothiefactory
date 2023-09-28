@@ -7,7 +7,7 @@ export const HeaderArea = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: clamp(217px, 31.61vw, 478px);
+  margin-bottom: clamp(76px, 6.61vw, 100px);
 `;
 
 export const CtaArea = styled.div`

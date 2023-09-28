@@ -69,13 +69,19 @@ export const CopyrightSection = styled.div`
 export const TermsAndConditions = styled.div`
   display: flex;
   order: 3;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  gap: 8px;
   @media (max-width: calc(${theme.breakpoints.tablet}px)) {
     order: 2;
     margin-bottom: 24px;
   }
 `;
+
+export const TermsAndConditionsInnerWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const Disclaimer = styled.div`
   gap: 14px;
   display: flex;

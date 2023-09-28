@@ -60,6 +60,7 @@ const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const LocationInfo: FC<{ location: SingleLocation }> = ({ location }) => {
   const { width } = useWindowSize();
 
+  console.log(location);
   const {
     streetAndNumber,
     city,

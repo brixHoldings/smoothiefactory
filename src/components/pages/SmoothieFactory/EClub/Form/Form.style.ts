@@ -251,7 +251,6 @@ export const Input = styled.input`
   background: transparent;
   &::placeholder {
     color: #474747;
-    opacity: 0.5;
   }
   &[data-has-error='true'] {
     border: 1px solid #ff0000;
@@ -269,8 +268,7 @@ export const Select = styled.select`
   color: #421b00;
   background: transparent;
   &::placeholder {
-    color: #421b00;
-    opacity: 0.5;
+    color: #474747;
   }
   &[data-has-error='true'] {
     border: 1px solid #ff0000;
@@ -304,6 +302,7 @@ export const Paper = styled.div`
   height: fit-content;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   @media (max-width: ${theme.breakpoints.smallScreen}px) {
     flex-direction: column;

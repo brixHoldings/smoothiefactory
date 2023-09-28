@@ -21,6 +21,7 @@ import {
   FloatingStampImage,
   FloatingGrapeImage,
   FloatingLeafImage,
+  TermsAndConditionsInnerWrapper,
 } from './Footer.styles';
 
 import Image from 'next/image';
@@ -105,9 +106,16 @@ const Footer: FC = () => {
             </Disclaimer>
           </CopyrightSection>
           <TermsAndConditions>
-            <Link href="/privacy">Privacy</Link>
-            <Separator />
-            <Link href="/terms-of-use">Terms & Conditions</Link>
+            <TermsAndConditionsInnerWrapper>
+              <Link href="/about-us#form-bg">Contact</Link>
+              <Separator />
+              <Link href="/careers">Join our team</Link>
+            </TermsAndConditionsInnerWrapper>
+            <TermsAndConditionsInnerWrapper>
+              <Link href="/privacy">Privacy</Link>
+              <Separator />
+              <Link href="/terms-of-use">Terms & Conditions</Link>
+            </TermsAndConditionsInnerWrapper>
           </TermsAndConditions>
         </Container>
       </Wrapper>

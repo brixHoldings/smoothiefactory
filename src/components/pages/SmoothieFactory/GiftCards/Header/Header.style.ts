@@ -15,6 +15,7 @@ export const Glass = styled.div`
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   position: absolute;
   padding: clamp(52px, 10.38vw, 157px) clamp(32px, 7.93vw, 120px) clamp(70px, 13.88vw, 210px) clamp(32px, 7.93vw, 120px);

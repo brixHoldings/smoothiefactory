@@ -39,7 +39,7 @@ const AthletesFavourites: FC = () => (
       />
       <MaxWidthWrapper>
         <Title> Athlete’s favorites</Title>
-        <RelativeWrapper data-reverse-layout="true">
+        <RelativeWrapper data-reverse-layout="true" mb="clamp(290px,45.37vw, 686px)">
           <GalleryContent data-reverse-layout="true">
             <GalleryContentWrapper>
               <GalleryItemTitle>Smoothies</GalleryItemTitle>
@@ -97,7 +97,7 @@ const AthletesFavourites: FC = () => (
         width="clamp(207px,24.33vw, 368px)"
       />
       <MaxWidthWrapper>
-        <RelativeWrapper>
+        <RelativeWrapper mb="clamp(170px,43.58vw, 659px)">
           <GalleryContent>
             <FloatingLeftImage
               alt="bowls"
@@ -154,7 +154,7 @@ const AthletesFavourites: FC = () => (
         width="clamp(281px,33.06vw, 500px)"
       />
       <MaxWidthWrapper>
-        <RelativeWrapper data-reverse-layout="true">
+        <RelativeWrapper data-reverse-layout="true" mb="clamp(170px,36.97vw, 559px)">
           <GalleryContent data-reverse-layout="true">
             <GalleryContentWrapper>
               <GalleryItemTitle>Fruit and Vegetable Juice:</GalleryItemTitle>
@@ -209,7 +209,7 @@ const AthletesFavourites: FC = () => (
         right="18%"
         src="/images/shutterstock_59950918 2.png"
         style={{ zIndex: -1 }}
-        top="-160%"
+        top="-122%"
         width="clamp(376px,32.34vw, 489px)"
       />
       <FloatingImage
@@ -222,7 +222,7 @@ const AthletesFavourites: FC = () => (
         width="clamp(180px,28.17vw, 426px)"
       />
       <MaxWidthWrapper>
-        <RelativeWrapper>
+        <RelativeWrapper mb="clamp(248px, 40.93vw, 619px)">
           <GalleryContent>
             <FloatingLeftImage
               alt="Toasts | Grilled Panini | Salads | Wraps | Soups"
@@ -263,7 +263,7 @@ const AthletesFavourites: FC = () => (
                         width="clamp(180px,28.17vw, 426px)"
                       />
                       <MaxWidthWrapper>
-                        <RelativeWrapper>
+                        <RelativeWrapper mb="clamp(170px, 33.26vw, 503px)">
                           <GalleryContent>
                             <FloatingLeftImage
                               alt="Toasts | Grilled Panini | Salads | Wraps | Soups"
@@ -348,7 +348,7 @@ const AthletesFavourites: FC = () => (
         width="clamp(281px,31.15vw, 471px)"
       />
       <MaxWidthWrapper>
-        <RelativeWrapper data-reverse-layout="true">
+        <RelativeWrapper data-reverse-layout="true" mb="clamp(170px, 33.26vw, 503px)">
           <GalleryContent data-reverse-layout="true">
             <GalleryContentWrapper>
               <GalleryItemTitle>Salads:</GalleryItemTitle>
@@ -407,7 +407,7 @@ const AthletesFavourites: FC = () => (
         width="clamp(376px,32.20vw, 487px)"
       />
       <MaxWidthWrapper>
-        <RelativeWrapper>
+        <RelativeWrapper mb="clamp(188px, 23.47vw, 355px)">
           <GalleryContent>
             <FloatingLeftImage
               alt="Folds"

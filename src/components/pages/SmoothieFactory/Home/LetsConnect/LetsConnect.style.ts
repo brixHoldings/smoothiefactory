@@ -20,6 +20,7 @@ export const BgWrapper = styled.section`
 export const Glass = styled.div`
   padding-top: clamp(50px, 12.96vw, 196px);
   background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   z-index: 1;
   display: flex;

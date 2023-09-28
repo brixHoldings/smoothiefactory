@@ -21,6 +21,7 @@ export const Container = styled.div`
   overflow-x: hidden;
   width: 70%;
   background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(25px);
 
   @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {

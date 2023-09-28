@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 export const InnerWrapper = styled.div`
   width: 83.3%;
-  margin-left: auto;
+  margin: auto;
   @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
     width: 100%;
     margin-left: initial;

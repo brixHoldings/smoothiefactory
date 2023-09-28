@@ -87,10 +87,10 @@ export const CtaButtonOutlined = styled(CtaButton)`
   color: #23aa5d;
 `;
 
-export const RelativeWrapper = styled.div`
+export const RelativeWrapper = styled.div<{ mb: string }>`
   position: relative;
   display: flex;
-  margin-bottom: clamp(285px, 45.03vw, 681px);
+  margin-bottom: ${({ mb }) => mb};
   align-items: center;
   justify-content: flex-end;
   &[data-reverse-layout='true'] {

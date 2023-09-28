@@ -19,6 +19,7 @@ export const Glass = styled.div`
   border-bottom-right-radius: 24px;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   padding: clamp(88px, 8.73vw, 132px) clamp(156px, 26.98vw, 408px) clamp(88px, 8.73vw, 132px)
     clamp(137px, 11.83vw, 179px);
@@ -61,6 +62,7 @@ export const LottieWrapper = styled.div`
   left: 0;
   right: 0;
   width: 101%;
+  z-index: 1;
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     bottom: 17%;
   }

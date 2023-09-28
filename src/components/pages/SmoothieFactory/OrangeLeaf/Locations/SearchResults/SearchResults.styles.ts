@@ -108,10 +108,7 @@ export const SearchInput = styled.input`
   background: #ffffff;
   font-size: 16px;
   line-height: 32px;
-  color: #421b00;
-  &::placeholder {
-    opacity: 0.8;
-  }
+  color: #474747;
   @media (max-width: calc(${theme.breakpoints.smallScreen}px)) {
     font-size: 14px;
     line-height: 22px;

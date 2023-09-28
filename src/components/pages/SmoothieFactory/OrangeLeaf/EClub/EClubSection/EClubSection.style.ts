@@ -244,10 +244,9 @@ export const Input = styled.input`
   font-size: 18px;
   line-height: 32px;
   width: 100%;
-  color: #421b00;
+  color: #474747;
   &::placeholder {
-    color: #421b00;
-    opacity: 0.5;
+    color: #474747;
   }
   &[data-has-error='true'] {
     border: 1px solid #ff0000;
@@ -262,10 +261,9 @@ export const Select = styled.select`
   font-size: 18px;
   height: 48px;
   width: 100%;
-  color: #421b00;
+  color: #474747;
   &::placeholder {
-    color: #421b00;
-    opacity: 0.5;
+    color: #474747;
   }
   &[data-has-error='true'] {
     border: 1px solid #ff0000;

@@ -84,10 +84,9 @@ export const TextAreaInput = styled.textarea`
   line-height: 32px;
   width: 100%;
   min-height: 82px;
-  color: #421b00;
+  color: #474747;
   &:placeholder {
-    color: #421b00;
-    opacity: 0.5;
+    color: #474747;
   }
   &[data-has-error='true'] {
     border: 1px solid #ff0000;

@@ -47,10 +47,10 @@ export const RelativeWrapper = styled.div`
 
 export const CtaButton = styled.button`
   font-size: clamp(15px, 1.05vw, 16px);
-  line-height: clamp(22px, 1.58vw, 24px);
+  line-height: clamp(18px, 1.25vw, 19px);
   text-align: center;
   background-color: #23aa5d;
-  padding: 12px clamp(12px, 1.58vw, 24px) 8px clamp(12px, 1.58vw, 24px);
+  padding: 8px clamp(12px, 1.58vw, 24px) 4px clamp(12px, 1.58vw, 24px);
   border: none;
   border-radius: 4px;
   color: #fff;

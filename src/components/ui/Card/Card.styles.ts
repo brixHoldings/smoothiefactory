@@ -15,6 +15,7 @@ export const ContentContainer = styled.div<ContainerProps>`
     if (isBlurred) {
       return css`
         background: rgba(255, 255, 255, 0.3);
+        -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(25px);
       `;
     }
