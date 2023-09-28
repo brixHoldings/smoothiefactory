@@ -27,7 +27,9 @@ const Header: FC = () => (
           in your life, our gift cards can be used to purchase delicious smoothies, healthy food, and more. Treat
           someone special today and help them live their best life with Smoothie Factory + Kitchen .
         </Text>
-        <CtaButton>Get a gift card</CtaButton>
+        <a href="https://smoothiefactory.myguestaccount.com/guest/egift?page=cardInfo" target="_blank">
+          <CtaButton>Get a gift card</CtaButton>
+        </a>
       </Glass>
     </RelativeMaxWidthWrapper>
     <FloatingImage

@@ -26,30 +26,27 @@ import Lottie from 'lottie-react';
 import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 
 const slides = [
-  { src: '/images/card (3).png' },
-  { src: '/images/card (1).png' },
-  { src: '/images/card.png' },
-  { src: '/images/card (3).png' },
-  { src: '/images/card (1).png' },
-  { src: '/images/card.png' },
-  { src: '/images/card (3).png' },
-  { src: '/images/card (1).png' },
-  { src: '/images/card.png' },
-  { src: '/images/card (3).png' },
-  { src: '/images/card (1).png' },
-  { src: '/images/card.png' },
-  { src: '/images/card (3).png' },
-  { src: '/images/card (1).png' },
-  { src: '/images/card.png' },
-  { src: '/images/card (3).png' },
-  { src: '/images/card (1).png' },
-  { src: '/images/card.png' },
-  { src: '/images/card (3).png' },
-  { src: '/images/card (1).png' },
-  { src: '/images/card.png' },
-  { src: '/images/card (3).png' },
-  { src: '/images/card (1).png' },
-  { src: '/images/card.png' },
+  { src: '/images/card_1.png' },
+  { src: '/images/card_2.png' },
+  { src: '/images/card_3.png' },
+  { src: '/images/card_1.png' },
+  { src: '/images/card_2.png' },
+  { src: '/images/card_3.png' },
+  { src: '/images/card_1.png' },
+  { src: '/images/card_2.png' },
+  { src: '/images/card_3.png' },
+  { src: '/images/card_1.png' },
+  { src: '/images/card_2.png' },
+  { src: '/images/card_3.png' },
+  { src: '/images/card_1.png' },
+  { src: '/images/card_2.png' },
+  { src: '/images/card_3.png' },
+  { src: '/images/card_1.png' },
+  { src: '/images/card_2.png' },
+  { src: '/images/card_3.png' },
+  { src: '/images/card_1.png' },
+  { src: '/images/card_2.png' },
+  { src: '/images/card_3.png' },
 ];
 
 const ChooseDesigns: FC = () => (
@@ -59,7 +56,9 @@ const ChooseDesigns: FC = () => (
         <Title>
           Choose from <br /> multiple designs...
         </Title>
-        <CtaButton>Get a gift card</CtaButton>
+        <a href="https://smoothiefactory.myguestaccount.com/guest/egift?page=cardInfo" target="_blank">
+          <CtaButton>Get a gift card</CtaButton>
+        </a>
       </Wrapper>
     </MaxWidthWrapper>
     <Cards>
@@ -79,7 +78,9 @@ const ChooseDesigns: FC = () => (
         <GiftCardContent>
           <GiftCardTitle>Already have a giftcard?</GiftCardTitle>
           <GiftCardText>It’s easy to check your balance and review transactions.</GiftCardText>
-          <CtaButton>Check your balance</CtaButton>
+          <a href="https://smoothiefactory.myguestaccount.com/guest/nologin/account-balance" target="_blank">
+            <CtaButton>Check your balance</CtaButton>
+          </a>
         </GiftCardContent>
         <FloatingCardImage
           alt="gift card"

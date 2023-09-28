@@ -11,7 +11,7 @@ export const metadata = {
 const Menu: FC = () => (
   <>
     <Header />
-    <OurSpecialOffers />
+    {/* <OurSpecialOffers /> */}
     <AthletesFavourites />
   </>
 );
