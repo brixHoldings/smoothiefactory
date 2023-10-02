@@ -5,7 +5,7 @@ import theme from '@styles/theme';
 
 export const StoreSvg = styled.svg`
   height: 60px;
-  width: 60px;
+  min-width: 60px;
   margin-right: 32px;
   @media (max-width: calc(${theme.breakpoints.smallScreen}px)) {
     margin-right: 24px;

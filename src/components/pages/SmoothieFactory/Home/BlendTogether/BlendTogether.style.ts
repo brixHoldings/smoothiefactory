@@ -128,6 +128,7 @@ export const Polygon = styled.div`
 
 export const LottieWrapper = styled.div`
   max-height: 60px;
+  min-width: 856px;
   transform: rotate(-2.63deg);
   position: absolute;
   top: 45px;

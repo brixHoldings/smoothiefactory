@@ -51,7 +51,7 @@ export const Content = styled.div`
 
 export const RelativeWrapper = styled.div`
   position: relative;
-  margin-bottom: clamp(349px, 28.24vw, 427px);
+  margin-bottom: clamp(253px, 25.26vw, 382px);
 `;
 
 export const SideImage = styled.div`
@@ -82,5 +82,6 @@ export const Text = styled.p`
 
 export const LottieWrapper = styled.div`
   max-height: 60px;
+  min-width: 856px;
   width: 100%;
 `;

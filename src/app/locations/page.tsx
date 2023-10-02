@@ -10,7 +10,6 @@ const Locations: FC = async () => {
     response: { locations },
   } = await getLocations(initialCoordinates.lat, initialCoordinates.lng);
 
-  console.log(21222, locations);
   return <SearchResults initialLocations={locations} />;
 };
 

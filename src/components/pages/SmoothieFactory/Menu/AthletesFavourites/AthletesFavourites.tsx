@@ -69,7 +69,9 @@ const AthletesFavourites: FC = () => (
               </GalleryText>
               <GalleryButtons>
                 <CtaButton>see our menu</CtaButton>
-                <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                  <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                </a>
               </GalleryButtons>
             </GalleryContentWrapper>
           </GalleryContent>
@@ -136,7 +138,9 @@ const AthletesFavourites: FC = () => (
               </GalleryText>
               <GalleryButtons>
                 <CtaButton>see our menu</CtaButton>
-                <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                  <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                </a>
               </GalleryButtons>
             </GalleryContentWrapper>
           </GalleryContent>
@@ -184,7 +188,9 @@ const AthletesFavourites: FC = () => (
               </GalleryText>
               <GalleryButtons>
                 <CtaButton>see our menu</CtaButton>
-                <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                  <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                </a>
               </GalleryButtons>
             </GalleryContentWrapper>
           </GalleryContent>
@@ -303,7 +309,9 @@ const AthletesFavourites: FC = () => (
                               </GalleryText>
                               <GalleryButtons>
                                 <CtaButton>see our menu</CtaButton>
-                                <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                                  <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                                </a>
                               </GalleryButtons>
                             </GalleryContentWrapper>
                           </GalleryContent>
@@ -330,7 +338,9 @@ const AthletesFavourites: FC = () => (
               </GalleryText>
               <GalleryButtons>
                 <CtaButton>see our menu</CtaButton>
-                <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                  <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                </a>
               </GalleryButtons>
             </GalleryContentWrapper>
           </GalleryContent>
@@ -379,7 +389,9 @@ const AthletesFavourites: FC = () => (
               </GalleryText>
               <GalleryButtons>
                 <CtaButton>see our menu</CtaButton>
-                <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                  <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                </a>
               </GalleryButtons>
             </GalleryContentWrapper>
           </GalleryContent>
@@ -448,7 +460,9 @@ const AthletesFavourites: FC = () => (
               </GalleryText>
               <GalleryButtons>
                 <CtaButton>see our menu</CtaButton>
-                <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                  <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                </a>
               </GalleryButtons>
             </GalleryContentWrapper>
           </GalleryContent>

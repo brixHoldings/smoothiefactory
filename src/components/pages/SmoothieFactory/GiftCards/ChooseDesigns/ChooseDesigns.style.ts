@@ -108,6 +108,7 @@ export const FloatingCardImage = styled(FloatingImage)`
 
 export const LottieWrapper = styled.div`
   max-height: 60px;
+  min-width: 856px;
   transform: rotate(-6.18deg);
   position: absolute;
   top: -6%;

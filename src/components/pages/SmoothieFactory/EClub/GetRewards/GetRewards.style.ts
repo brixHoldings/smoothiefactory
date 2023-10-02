@@ -56,6 +56,7 @@ export const Wrapper = styled.div`
 
 export const LottieWrapper = styled.div`
   max-height: 60px;
+  min-width: 856px;
   transform: rotate(-5deg);
   position: absolute;
   bottom: 23%;

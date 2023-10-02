@@ -104,7 +104,7 @@ const HowItStarted: FC = () => {
         </WoodBgTitle>
         <FloatingImage
           alt="apple"
-          bottom="-40%"
+          bottom="-10%"
           height="clamp(129px,15.27vw, 231px )"
           right="-35%"
           src="/images/apple.png"

@@ -60,7 +60,6 @@ const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const LocationInfo: FC<{ location: SingleLocation }> = ({ location }) => {
   const { width } = useWindowSize();
 
-  console.log(location);
   const {
     streetAndNumber,
     city,
@@ -116,8 +115,92 @@ const LocationInfo: FC<{ location: SingleLocation }> = ({ location }) => {
           </Link>
           <ImageSvg fill="none" viewBox="0 0 77 79">
             <path
-              d="M3.86059 70.7339c-1.53448-3.3236-2.30653-9.6196-1.08978-9.6584.93434-.0321 4.16116 4.8047 5.37104 6.8978 1.96885 3.4113-2.17443 7.3261-4.28126 2.7606ZM53.451.00528631C90.2955.390382 80.1803 64.3955 45.0646 77.16 17.8971 87.7805-3.50576 47.1282.479028 25.8912 4.23975 5.88335 33.232-.20616 53.451.00528631Z"
+              d="M3.86059 70.7339C2.32611 67.4103 1.55406 61.1143 2.77081 61.0755C3.70515 61.0434 6.93197 65.8802 8.14185 67.9733C10.1107 71.3846 5.96742 75.2994 3.86059 70.7339ZM53.451 0.00528631C90.2955 0.390382 80.1803 64.3955 45.0646 77.16C17.8971 87.7805 -3.50576 47.1282 0.479028 25.8912C4.23975 5.88335 33.232 -0.20616 53.451 0.00528631Z"
               fill="#98C44A"
+            />
+            <path
+              d="M20.8477 36.7798V52.9959C20.8477 53.3071 21.1 53.5594 21.4112 53.5594H53.3349C53.6462 53.5594 53.8985 53.3071 53.8985 52.9959V36.7798"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path
+              d="M18.0508 30.932L22.7153 23.567C22.8187 23.4038 22.9983 23.3049 23.1914 23.3049H51.5542C51.7473 23.3049 51.927 23.4038 52.0303 23.567L56.6948 30.932"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path
+              d="M18.3901 31.2714H24.8308V33.4748C24.8308 35.2534 23.389 36.6952 21.6104 36.6952C19.8319 36.6952 18.3901 35.2534 18.3901 33.4748V31.2714Z"
+              fill="#23AA5D"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path
+              d="M25.0004 31.2714H30.9327V33.7291C30.9327 35.3672 29.6047 36.6952 27.9665 36.6952C26.3284 36.6952 25.0004 35.3672 25.0004 33.7291V31.2714Z"
+              fill="#23AA5D"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path
+              d="M37.7124 31.2714H43.6446V33.7291C43.6446 35.3672 42.3166 36.6952 40.6785 36.6952C39.0403 36.6952 37.7124 35.3672 37.7124 33.7291V31.2714Z"
+              fill="#23AA5D"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path
+              d="M31.102 31.2714H37.0342V33.7291C37.0342 35.3672 35.7062 36.6952 34.0681 36.6952C32.43 36.6952 31.102 35.3672 31.102 33.7291V31.2714Z"
+              fill="#23AA5D"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path
+              d="M43.8139 31.2714H49.7461V33.7291C49.7461 35.3672 48.4182 36.6952 46.78 36.6952C45.1419 36.6952 43.8139 35.3672 43.8139 33.7291V31.2714Z"
+              fill="#23AA5D"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path
+              d="M49.9155 31.2714H56.3562V33.4748C56.3562 35.2534 54.9144 36.6952 53.1358 36.6952C51.3573 36.6952 49.9155 35.2534 49.9155 33.4748V31.2714Z"
+              fill="#23AA5D"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path
+              d="M26.017 42.3726C26.017 41.0153 27.1174 39.915 28.4747 39.915C29.832 39.915 30.9323 41.0153 30.9323 42.3726V44.4065V48.898H26.017V42.3726Z"
+              fill="#23AA5D"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path
+              d="M51.8646 53.5595V46.4408C51.8646 42.2285 48.4498 38.8137 44.2375 38.8137V38.8137C40.0251 38.8137 36.6104 42.2285 36.6104 46.4408V53.5595"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+            />
+            <path d="M44.2373 38.8137V53.5595" stroke="white" stroke-width="1.18644" stroke-linecap="round" />
+            <path d="M46.2715 46.1865V48.4739" stroke="white" stroke-width="1.18644" stroke-linecap="round" />
+            <path d="M42.2031 46.1865V48.4739" stroke="white" stroke-width="1.18644" stroke-linecap="round" />
+            <path
+              d="M22.8818 22.7966V20L29.492 20M51.8649 22.7966V20H44.7462"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M44.7464 20.0001V20.0001C44.7464 17.4727 42.6976 15.4238 40.1702 15.4238H34.0685C31.5411 15.4238 29.4922 17.4727 29.4922 20.0001V20.0001"
+              stroke="white"
+              stroke-width="1.18644"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             />
           </ImageSvg>
           <Image alt="cover img" src="/images/location.jpg" style={{ objectFit: 'cover' }} fill />

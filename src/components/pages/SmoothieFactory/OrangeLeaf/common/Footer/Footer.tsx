@@ -108,8 +108,8 @@ const Footer: FC = () => {
           <TermsAndConditions>
             <TermsAndConditionsInnerWrapper>
               <Link href="/about-us#form-bg">Contact</Link>
-              <Separator />
-              <Link href="/careers">Join our team</Link>
+              {/* <Separator />
+              <Link href="/careers">Join our team</Link> */}
             </TermsAndConditionsInnerWrapper>
             <TermsAndConditionsInnerWrapper>
               <Link href="/privacy">Privacy</Link>

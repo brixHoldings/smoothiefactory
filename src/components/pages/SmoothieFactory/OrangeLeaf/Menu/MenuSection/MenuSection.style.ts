@@ -404,6 +404,8 @@ export const GummyBears = styled(FloatingImage)`
 export const LottieWrapper = styled.div`
   position: absolute;
   width: 100%;
+  max-height: 60px;
+  min-width: 856px;
   bottom: -132px;
   z-index: -10;
   @media only screen and (max-width: ${theme.breakpoints.mobile}px) {

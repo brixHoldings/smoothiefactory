@@ -1,6 +1,7 @@
 import NextLink from 'next/link';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import { MaxWidthWrapper } from '@styles/common';
 
 export const OuterContainer = styled(motion.nav)`
   position: fixed;
@@ -22,6 +23,9 @@ export const Container = styled.div`
   white-space: nowrap;
 `;
 
+export const StyledMaxWidthWrapper = styled(MaxWidthWrapper)`
+  padding-inline: 0;
+`;
 export const Section = styled.div`
   display: flex;
   flex-direction: row;
@@ -83,6 +87,30 @@ export const NativeLink = styled(motion.a)`
   line-height: 25px;
   font-weight: 700;
   color: #474747;
+  &[data-is-active='true'] {
+    font-weight: 900;
+  }
+`;
+
+export const NativeLinkMobile = styled(motion.a)`
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #474747;
+  &[data-is-active='true'] {
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      background: #474747;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+    }
+  }
 `;
 
 export const Separator = styled(motion.div)`

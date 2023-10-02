@@ -21,7 +21,13 @@ import Link from 'next/link';
 const Header: FC = () => (
   <>
     <HeaderArea>
-      <Image priority alt="bg" src="/images/header-area-image2.jpg" style={{ objectFit: 'cover' }} fill />
+      <Image
+        priority
+        alt="bg"
+        src="/images/header-area-image2.jpg"
+        style={{ objectFit: 'cover', objectPosition: 'bottom ' }}
+        fill
+      />
       <CtaArea>
         <HeaderTitle>building a better you</HeaderTitle>
         <HeaderText>
@@ -29,17 +35,17 @@ const Header: FC = () => (
           for those looking for a snack or light meal to provide energy and nutrition of fruits and vegetables without
           added preservatives or sugar.
         </HeaderText>
-        <Link href="/about-us">
+        <Link href="/e-club">
           <HeaderButton>Become a part of the family</HeaderButton>
         </Link>
+        <FloatingGlassImage
+          priority
+          alt="glass of smoothie"
+          width="clamp(249px,39.68vw, 600px)"
+          src="/images/Citrus_Greens_Final_1-transformed 2.png"
+          height="clamp(180px,29.62vw, 448px)"
+        />
       </CtaArea>
-      <FloatingGlassImage
-        priority
-        alt="glass of smoothie"
-        height="clamp(180px,49.60vw, 750px)"
-        src="/images/header-glass.png"
-        width="clamp(249px,37.03vw, 560px)"
-      />
     </HeaderArea>
     <LottieWrapper>
       <Lottie animationData={oneAtATime} />

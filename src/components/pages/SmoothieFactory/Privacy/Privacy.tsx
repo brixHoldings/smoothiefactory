@@ -33,7 +33,7 @@ const Privacy: FC = () => (
     <Container>
       <Image
         alt="background"
-        src="/images/SmoothiePattern.png"
+        src="/images/LegalBack 1.jpg"
         style={{ objectFit: 'cover', objectPosition: 'bottom' }}
         fill
       />

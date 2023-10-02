@@ -42,7 +42,7 @@ export const ImageSvg = styled.svg`
 
 export const ContentWrapper = styled.div`
   width: 100%;
-  padding: 55px 60px;
+  padding: clamp(60px, 5.22vw, 79px) clamp(32px, 4.56vw, 69px);
   display: flex;
   overflow-y: auto;
   flex-direction: column;
@@ -79,7 +79,7 @@ export const Button = styled.button`
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  padding: 8px 24px;
+  padding: 8px 24px 4px 24px;
   border-radius: 4px;
   background: #23aa5d;
   border: none;
@@ -97,7 +97,7 @@ export const ButtonOutlined = styled.button`
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  padding: 6px 22px;
+  padding: 6px 22px 2px 22px;
   border-radius: 4px;
   background: #ffffff;
   border: 2px solid #f69f24;

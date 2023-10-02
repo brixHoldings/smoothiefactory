@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import theme from '@styles/theme';
 
 const translateinfinite = keyframes`
-	100% { transform:translateX(-3000px)  }
+	100% { transform:translateX(-600px)  }
 `;
 
 export const BgWrapper = styled.section`
@@ -35,7 +35,6 @@ export const Column = styled.div`
 
 export const CardColumn = styled(motion.div)`
   display: flex;
-  justify-content: center;
   flex-direction: column;
 `;
 
@@ -62,8 +61,8 @@ export const Carousel = styled(motion.div)`
   grid-auto-flow: column;
   grid-auto-columns: 33.333333%;
   gap: 24px;
-  animation: ${translateinfinite} 50s linear infinite;
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
+  animation: ${translateinfinite} 10s linear infinite;
+  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
     grid-auto-columns: 50%;
   }
   @media only screen and (max-width: ${theme.breakpoints.mobile}px) {
@@ -86,7 +85,6 @@ export const Card = styled.div`
   border-radius: 4px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0px 8px 20px 5px rgba(0, 0, 0, 0.18);
 `;
 
 export const CardContent = styled.div`

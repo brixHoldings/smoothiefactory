@@ -4,14 +4,14 @@ import theme from '@styles/theme';
 
 export const ContentWrapper = styled.section<{ footerHeight: number; navigationHeight: number }>`
   display: flex;
-  position: fixed;
-  left: 0;
-  top: ${({ navigationHeight }): string => `${navigationHeight}px`};
-  height: ${({ footerHeight, navigationHeight }): string => `calc(100% - ${footerHeight + navigationHeight}px)`};
+  /* position: fixed;
+  left: 0; */
+  margin-top: ${({ navigationHeight }): string => `${navigationHeight}px`};
+  height: ${({ footerHeight, navigationHeight }): string => `calc(100vh - ${footerHeight + navigationHeight}px)`};
   width: 100%;
+  min-height: 400px;
   @media (max-width: ${theme.breakpoints.tablet}px) {
     flex-direction: column;
-    position: initial;
-    margin-top: ${({ navigationHeight }): string => `${navigationHeight}px`};
+    min-height: ${({ navigationHeight }): string => `calc(100vh - ${navigationHeight}px)`};
   }
 `;

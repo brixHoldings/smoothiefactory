@@ -23,7 +23,7 @@ const TermsOfUseSection: FC = () => (
       width="clamp(652px/1.3,43.12vw, 652px)"
     />
     <FloatingImage
-      alt="background"
+      alt="orange"
       height="clamp(287px / 1.3, 18.98vw, 287px)"
       hideUnder={650}
       left="-57%"
@@ -34,7 +34,7 @@ const TermsOfUseSection: FC = () => (
     <Container>
       <Image
         alt="background"
-        src="/images/SmoothiePattern.png"
+        src="/images/LegalBack 1.jpg"
         style={{ objectFit: 'cover', objectPosition: 'bottom' }}
         fill
       />

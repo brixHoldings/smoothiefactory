@@ -28,7 +28,54 @@ import { Title } from '../common';
 import type { FC } from 'react';
 import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = [
+  {
+    img: '/images/369549353_833149948473467_303796760336600321_n.jpg',
+    text: `Something exciting is headed your way👀
+
+    October is gonna be extra sweet!`,
+  },
+  {
+    img: '/images/367967433_1295040494482764_3248498840847116572_n.jpg',
+    text: `Nothing like variety!
+    .
+    .
+    .
+    #smoothie #smoothies #smoothiebowl #smoothierecipe #smoothierecipes #smoothietime #smoothieoftheday #smoothielover #smoothiegoals #smoothiefitness`,
+  },
+  {
+    img: '/images/367512133_1319785625294210_8591209512781027914_n.jpg',
+    text: `Start your week with a juice and make it your "Detox Day!"
+    .
+    .
+    .
+    #smoothie #smoothies #smoothiebowl #smoothierecipe #smoothierecipes #smoothietime #smoothieoftheday #smoothielover #smoothiegoals #smoothiefitness`,
+  },
+  {
+    img: '/images/363502479_971814467457485_5331856129117082468_n.jpg',
+    text: `You're one in a melon.....WATERMELON! 😂🍉
+    .
+    .
+    .
+    #smoothie #smoothies #smoothiebowl #smoothierecipe #smoothierecipes #smoothietime #smoothieoftheday #smoothielover #smoothiegoals #smoothiefitness`,
+  },
+  {
+    img: '/images/358166711_3090498604590622_8207255071518734600_n.jpg',
+    text: `Use fruits to help you build a better you!
+    .
+    .
+    .
+    #smoothie #smoothies #smoothiebowl #smoothierecipe #smoothierecipes #smoothietime #smoothieoftheday#smoothielover #smoothiegoals #smoothiefitness`,
+  },
+  {
+    img: '/images/353863818_722491956552842_8497124112272804272_n.jpg',
+    text: `You're not just a dad, you're a hero. Happy Father's Day to all the best dad's in the world! 🌎
+    .
+    .
+    .
+    #smoothie #smoothies #smoothiebowl #smoothierecipe #smoothierecipes #smoothietime #smoothieoftheday#smoothielover #smoothiegoals #smoothiefitness`,
+  },
+];
 
 const LetsConnect: FC = () => (
   <>
@@ -62,21 +109,14 @@ const LetsConnect: FC = () => (
             <CarouselWrapper>
               <Carousel>
                 {cards.map((card) => (
-                  <CardColumn key={card}>
+                  <CardColumn key={card.text}>
                     <Card>
                       <Thumbnail>
-                        <Image
-                          alt="bg"
-                          src="/images/world-health-day.jpg"
-                          style={{ objectFit: 'cover', pointerEvents: 'none' }}
-                          fill
-                        />
+                        <Image alt="bg" src={card.img} style={{ objectFit: 'cover', pointerEvents: 'none' }} fill />
                       </Thumbnail>
                       <CardContent>
                         <CardTitle>@SmoothieFactory</CardTitle>
-                        <CardText>
-                          📞 Calling all dessert lovers for a Friday celebration in honor of #NationalDessertDay 🥳
-                        </CardText>
+                        <CardText>{card.text}</CardText>
                       </CardContent>
                     </Card>
                   </CardColumn>
@@ -91,7 +131,7 @@ const LetsConnect: FC = () => (
       <FollowUs>
         <FollowUsTitle>.... follow us on:</FollowUsTitle>
         <SocialLinksWrapper>
-          <SocialLink href="https://www.facebook.com/orangeleaf" target="_blank">
+          <SocialLink href="https://www.facebook.com/smoothiefactory/" target="_blank">
             <svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
               <circle cx="16" cy="16" fill="#98c44a" r="16" />
               <path
@@ -100,7 +140,7 @@ const LetsConnect: FC = () => (
               />
             </svg>
           </SocialLink>
-          <SocialLink href="https://twitter.com/orangeleaf" target="_blank">
+          <SocialLink href="https://twitter.com/smoothiefactory?lang=en" target="_blank">
             <svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
               <circle cx="16" cy="16" fill="#98c44a" r="16" />
               <path
@@ -109,7 +149,7 @@ const LetsConnect: FC = () => (
               />
             </svg>
           </SocialLink>
-          <SocialLink href="https://www.instagram.com/orangeleaf/" target="_blank">
+          <SocialLink href="https://www.instagram.com/smoothiefactory/?hl=en" target="_blank">
             <svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
               <circle cx="16" cy="16" fill="#98c44a" r="16" />
               <path

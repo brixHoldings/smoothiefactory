@@ -43,7 +43,7 @@ type SliderWithImage = Slider & {
   bgImg: {
     bottom: string;
     height: string;
-    right: string;
+    left: string;
     src: string;
     width: string;
   };
@@ -58,11 +58,13 @@ const sliders = [
     bgImg: {
       bottom: '120%',
       height: 'clamp(171px ,115.07vw, 228px)',
-      right: '-76%',
+      left: '-67%',
       src: '/images/mint.png',
       width: 'clamp(252px ,22.22vw, 336px)',
     },
     img: {
+      right: '100%',
+      top: '-24%',
       height: 'clamp(279px ,43.51vw, 658px)',
       src: '/images/Citrus Greens Final.png',
       width: 'clamp(365px,58.20vw, 880px)',
@@ -72,6 +74,8 @@ const sliders = [
   },
   {
     img: {
+      right: '112%',
+      top: '-24%',
       height: 'clamp(282px ,33.46vw, 506px)',
       src: '/images/Group 118.png',
       width: 'clamp(359px,42.526vw, 643px)',
@@ -81,6 +85,8 @@ const sliders = [
   },
   {
     img: {
+      right: '112%',
+      top: '-14%',
       height: 'clamp(282px ,33.59vw, 508px)',
       src: '/images/Group 154.png',
       width: 'clamp(290px,35.91vw, 543px)',
@@ -92,11 +98,13 @@ const sliders = [
     bgImg: {
       bottom: '100%',
       height: 'clamp(272px,25.72vw, 363px)',
-      right: '-52%',
+      left: '-49%',
       src: '/images/image 104.png',
       width: 'clamp(272px,24vw, 363px)',
     },
     img: {
+      right: '112%',
+      top: '-12%',
       height: 'clamp(172px ,20.50vw, 310px)',
       src: '/images/toast.png',
       width: 'clamp(344px,40.93vw, 619px)',
@@ -106,19 +114,39 @@ const sliders = [
   },
   {
     bgImg: {
-      bottom: '56%',
+      bottom: '65%',
       height: 'clamp(273px,25.72vw, 389px)',
-      right: '-156%',
-      src: '/images/radish-2.png',
+      left: '-63%',
+      src: '/images/pexels-mali-maeder-244393-transformed (2) 3 (1).png',
       width: 'clamp(156px,14.81vw, 224px)',
     },
     img: {
-      height: 'clamp(381px, 33.59vw, 508px)',
-      src: '/images/salad.png',
+      right: '112%',
+      top: '-12%',
+      height: 'clamp(381px,  33.59vw, 508px)',
+      src: '/images/139 2.png',
       width: 'clamp(396px ,34.92vw, 528px)',
     },
     text: 'Discover a vibrant assortment of farm-fresh salads, a colorful medley of seasonal ingredients artfully combined to delight your senses. Our diverse range offers something for every palate. Elevate your meals with these nutrient-rich creations that bring a burst of flavor and wholesome goodness to your table.',
     title: 'Salads:',
+  },
+  {
+    bgImg: {
+      bottom: '84%',
+      height: 'clamp(196px,18.45vw, 279px)',
+      left: '-63%',
+      src: '/images/image 105.png',
+      width: 'clamp(196px,18.45vw, 279px)',
+    },
+    img: {
+      right: '0%',
+      top: '0%',
+      height: 'clamp(186px,17.52vw, 265px)',
+      src: '/images/Mask group (2).png',
+      width: 'clamp(350px ,32.93vw, 498px)',
+    },
+    text: 'Unveil the world of culinary creativity with our artisanal folds. From classic combinations to innovative fusions, our menu offers a range of options that transcend the ordinary. With each expertly crafted to perfection, discover a variety of options that cater to your taste preferences, making every meal a delightful adventure.',
+    title: 'Folds:',
   },
 ];
 
@@ -177,19 +205,19 @@ const Gallery: FC = () => {
 
   return (
     <RelativeWrapper>
-      <FloatingImage
-        alt="gallery bg"
-        height="clamp(709px,62.56vw, 946px)"
-        left="0"
-        src="/images/wood-bg.png"
-        style={{ zIndex: -1 }}
-        top="0"
-        width="clamp(884px,84.98vw, 1285px)"
-      />
       <MaxWidthWrapper>
         <InnerWrapper>
           <Title mb="clamp(131px, 9.72vw, 147px)">Our best classics</Title>
           <ArrowsWrapper>
+            <FloatingImage
+              alt="gallery bg"
+              height="clamp(504px, 44.37vw, 671px)"
+              right="25%"
+              src="/images/WoodExtended.png"
+              top="-20%"
+              style={{ zIndex: -1 }}
+              width="clamp(2079px,197.42vw, 2985px)"
+            />
             <Arrow
               onClick={(): void => {
                 onClick(true);
@@ -253,10 +281,10 @@ const Gallery: FC = () => {
               <FloatingItemImage
                 alt="item image"
                 height={sliders[activeSliderIndex].img.height}
-                right="0"
+                right={sliders[activeSliderIndex].img.right}
                 src={sliders[activeSliderIndex].img.src}
                 style={{ zIndex: -1 }}
-                top="0"
+                top={sliders[activeSliderIndex].img.top}
                 width={sliders[activeSliderIndex].img.width}
               />
               {isSliderWithImage(sliders[activeSliderIndex]) ? (
@@ -268,7 +296,7 @@ const Gallery: FC = () => {
                   height={sliders[activeSliderIndex].bgImg.height}
                   hideUnder={768}
                   // @ts-expect-error Object is possibly 'undefined'
-                  right={sliders[activeSliderIndex].bgImg.right}
+                  left={sliders[activeSliderIndex].bgImg.left}
                   // @ts-expect-error Object is possibly 'undefined'
                   src={sliders[activeSliderIndex].bgImg.src}
                   style={{ zIndex: -1 }}

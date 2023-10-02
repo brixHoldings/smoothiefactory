@@ -50,7 +50,7 @@ export const Text = styled.p`
 
 export const WoodBg = styled.div`
   width: 100%;
-  min-height: clamp(835px, 62.56vw, 946px);
+  min-height: clamp(816px, 57.6vw, 871px);
   position: relative;
   display: flex;
   gap: clamp(101px, 9.52vw, 144px);
@@ -58,10 +58,14 @@ export const WoodBg = styled.div`
   padding-inline: 32px;
   justify-content: center;
   align-items: flex-start;
+  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
+    align-items: center;
+  }
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     flex-direction: column;
     align-items: center;
     gap: 33px;
+    min-height: 835px;
     justify-content: flex-start;
   }
 `;
@@ -95,12 +99,14 @@ export const WoodBgTitle = styled.h1`
   font-size: clamp(35px, 3.96vw, 60px);
   line-height: clamp(40px, 4.49vw, 68px);
   color: #ffffff;
-  text-align: center;
   margin-top: clamp(130px, 14.02vw, 212px);
   z-index: 1;
   max-width: clamp(363px, 38.82vw, 587px);
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
+  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
     margin-top: 0;
+  }
+  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
+    text-align: center;
   }
 `;
 
@@ -108,8 +114,10 @@ export const CardsWrapper = styled.div`
   display: flex;
   gap: clamp(56px, 4.76vw, 72px);
   margin-bottom: clamp(193px, 21.16vw, 320px);
+  justify-content: center;
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 

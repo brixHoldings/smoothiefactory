@@ -28,9 +28,10 @@ export const ArrowsWrapper = styled.div`
   display: inline-flex;
   margin-left: 45%;
   gap: 15px;
+  z-index: -2;
   position: relative;
   z-index: 1;
-  margin-bottom: clamp(10px, 2.31vw, 35px);
+  margin-bottom: clamp(10px, 1.91vw, 29px);
   justify-content: flex-end;
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     margin-left: auto;
@@ -53,6 +54,7 @@ export const GalleryContent = styled(motion.div)`
   width: 100%;
   position: relative;
   display: flex;
+  z-index: 1;
   align-items: center;
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     flex-direction: column;
@@ -110,9 +112,10 @@ export const GalleryText = styled.p`
 `;
 
 export const FloatingItemImage = styled(FloatingImage)`
-  transform: translateX(100%);
-  top: initial;
+  /* transform: translateX(125%);
+  top: initial; */
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     transform: initial;
     position: static;
+  }
 `;

@@ -5,7 +5,6 @@ import { usePathname, useRouter } from 'next/navigation';
 import NextLink from 'next/link';
 import { useAnimate } from 'framer-motion';
 
-import { MaxWidthWrapper } from '@styles/common';
 import theme from '@styles/theme';
 import useWindowSize from '@hooks/useWindowSize';
 
@@ -24,6 +23,8 @@ import {
   NativeLink,
   HomeLink,
   ButtonLink,
+  NativeLinkMobile,
+  StyledMaxWidthWrapper,
 } from './Header.styles';
 
 import type { FC } from 'react';
@@ -127,7 +128,9 @@ const Header: FC = () => {
         >
           Menu
         </ButtonLink>
-        <NativeLink href="/locations">Locations</NativeLink>
+        <NativeLinkMobile href="/locations" data-is-active={pathname === '/locations'}>
+          Locations
+        </NativeLinkMobile>
         <ButtonLink
           data-is-active={pathname === '/e-club'}
           onClick={(): void => {
@@ -188,7 +191,7 @@ const Header: FC = () => {
     </>
   ) : (
     <OuterContainer ref={desktopNavigationRef} animate={isTransparent ? 'transparent' : 'visible'} variants={variants}>
-      <MaxWidthWrapper>
+      <StyledMaxWidthWrapper>
         <Container>
           <Section>
             <NextLink href="/">
@@ -209,7 +212,12 @@ const Header: FC = () => {
               )}
             </NextLink>
             <Separator animate={isTransparent ? 'transparent' : 'visible'} variants={separatorVariants} />
-            <NativeLink animate={isTransparent ? 'transparent' : 'visible'} href="/locations" variants={linkVariants}>
+            <NativeLink
+              animate={isTransparent ? 'transparent' : 'visible'}
+              href="/locations"
+              variants={linkVariants}
+              data-is-active={pathname === '/locations'}
+            >
               Locations
             </NativeLink>
           </Section>
@@ -272,7 +280,7 @@ const Header: FC = () => {
             </Button>
           </Section>
         </Container>
-      </MaxWidthWrapper>
+      </StyledMaxWidthWrapper>
     </OuterContainer>
   );
 };

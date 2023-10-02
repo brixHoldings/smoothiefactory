@@ -1,5 +1,4 @@
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
-import theme from '@styles/theme';
 import styled from 'styled-components';
 
 export const HeaderArea = styled.section`
@@ -9,12 +8,13 @@ export const HeaderArea = styled.section`
   display: flex;
   justify-content: center;
   margin-bottom: clamp(24px, 11.24vw, 170px);
+  align-items: flex-start;
 `;
 
 export const CtaArea = styled.div`
   position: relative;
   z-index: 1;
-  margin-top: clamp(80px, 10.97vw, 166px);
+  margin-top: clamp(196px, 16.4vw, 248px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,17 +54,12 @@ export const HeaderButton = styled.button`
 
 export const FloatingGlassImage = styled(FloatingImage)`
   position: absolute;
-  bottom: -32%;
-  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    bottom: -17%;
-  }
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    bottom: -4%;
-  }
+  top: calc(100% + 41px);
 `;
 
 export const LottieWrapper = styled.div`
   max-height: 60px;
+  min-width: 856px;
   width: 101%;
   position: relative;
   transform: rotate(-5deg);
