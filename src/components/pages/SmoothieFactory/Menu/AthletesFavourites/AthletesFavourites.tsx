@@ -68,7 +68,9 @@ const AthletesFavourites: FC = () => (
                 great taste.
               </GalleryText>
               <GalleryButtons>
-                <CtaButton>see our menu</CtaButton>
+                <a href="/SFK Menu Board horz_No Price.pdf" download>
+                  <CtaButton>see our menu</CtaButton>
+                </a>
                 <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
@@ -137,7 +139,9 @@ const AthletesFavourites: FC = () => (
                 known for their health benefits that increase energy and vitality.
               </GalleryText>
               <GalleryButtons>
-                <CtaButton>see our menu</CtaButton>
+                <a href="/SFK Menu Board horz_No Price.pdf" download>
+                  <CtaButton>see our menu</CtaButton>
+                </a>
                 <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
@@ -187,7 +191,9 @@ const AthletesFavourites: FC = () => (
                 body. Available in over 10 different varities.
               </GalleryText>
               <GalleryButtons>
-                <CtaButton>see our menu</CtaButton>
+                <a href="/SFK Menu Board horz_No Price.pdf" download>
+                  <CtaButton>see our menu</CtaButton>
+                </a>
                 <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
@@ -308,7 +314,9 @@ const AthletesFavourites: FC = () => (
                                 delightful creations that transform ordinary moments into extraordinary pleasures.
                               </GalleryText>
                               <GalleryButtons>
-                                <CtaButton>see our menu</CtaButton>
+                                <a href="/SFK Menu Board horz_No Price.pdf" download>
+                                  <CtaButton>see our menu</CtaButton>
+                                </a>
                                 <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
                                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                                 </a>
@@ -337,7 +345,9 @@ const AthletesFavourites: FC = () => (
                 transform ordinary moments into extraordinary pleasures.
               </GalleryText>
               <GalleryButtons>
-                <CtaButton>see our menu</CtaButton>
+                <a href="/SFK Menu Board horz_No Price.pdf" download>
+                  <CtaButton>see our menu</CtaButton>
+                </a>
                 <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
@@ -388,7 +398,9 @@ const AthletesFavourites: FC = () => (
                 with these nutrient-rich creations that bring a burst of flavor and wholesome goodness to your table.
               </GalleryText>
               <GalleryButtons>
-                <CtaButton>see our menu</CtaButton>
+                <a href="/SFK Menu Board horz_No Price.pdf" download>
+                  <CtaButton>see our menu</CtaButton>
+                </a>
                 <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
@@ -459,7 +471,9 @@ const AthletesFavourites: FC = () => (
                 meal a delightful adventure.
               </GalleryText>
               <GalleryButtons>
-                <CtaButton>see our menu</CtaButton>
+                <a href="/SFK Menu Board horz_No Price.pdf" download>
+                  <CtaButton>see our menu</CtaButton>
+                </a>
                 <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>

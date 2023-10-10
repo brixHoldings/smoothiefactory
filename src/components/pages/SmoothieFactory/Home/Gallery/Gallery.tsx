@@ -139,8 +139,8 @@ const sliders = [
       width: 'clamp(196px,18.45vw, 279px)',
     },
     img: {
-      right: '0%',
-      top: '0%',
+      right: '143%',
+      top: '-12%',
       height: 'clamp(186px,17.52vw, 265px)',
       src: '/images/Mask group (2).png',
       width: 'clamp(350px ,32.93vw, 498px)',
@@ -150,7 +150,7 @@ const sliders = [
   },
 ];
 
-const sliderDefaultInterval = 100000;
+const sliderDefaultInterval = 10000;
 
 const Gallery: FC = () => {
   const [activeSliderIndex, setActiveSliderIndex] = useState(0);
