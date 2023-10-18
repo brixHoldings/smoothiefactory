@@ -24,18 +24,15 @@ import Badges from '../Badges/Badges';
 const SearchResultItem: FC<{ location: Location }> = ({ location }) => {
   const router = useRouter();
 
-  const {
-    city,
-    province,
-    openNow,
-    zip,
-    streetAndNumber,
-    id,
-    nextOpen: { hour },
-    customFields,
-  } = location;
+  const { city, province, openNow, zip, streetAndNumber, id, customFields, openingHours } = location;
 
-  const openHoursString = openNow && hour ? `Open Until ${convertTo12HourFormat(hour)}` : 'Closed Now';
+  const date = new Date();
+  const currentDayOfTheWeek = date.getDay();
+
+  const closingHours = openingHours?.find((day) => day.dayOfWeek === currentDayOfTheWeek);
+
+  const openHoursString =
+    openNow && closingHours ? `Open Until ${convertTo12HourFormat(closingHours.to1 as string)}` : 'Closed Now';
 
   const onClick = (): void => {
     router.push(`/locations/${id}`);

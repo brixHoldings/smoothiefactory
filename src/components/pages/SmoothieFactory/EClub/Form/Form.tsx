@@ -99,7 +99,7 @@ const FormComponent: FC<{ options: string[] }> = ({ options }) => {
       </LottieWrapper>
       <Polygon />
       <FormBg id="form-bg">
-        <Image alt="background" src="/images/image68.jpg" style={{ objectFit: 'cover' }} fill />
+        <Image alt="background" src="/images/Oranges.png" style={{ objectFit: 'cover' }} fill />
         <Paper>
           <FormColumn>
             <Title2>

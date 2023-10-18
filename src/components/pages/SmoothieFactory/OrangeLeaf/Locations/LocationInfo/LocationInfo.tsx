@@ -60,22 +60,16 @@ const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const LocationInfo: FC<{ location: SingleLocation }> = ({ location }) => {
   const { width } = useWindowSize();
 
-  const {
-    streetAndNumber,
-    city,
-    country,
-    zip,
-    openNow,
-    nextOpen: { hour },
-    openingHours,
-    phone,
-    socialProfiles,
-    lat,
-    lng,
-    customFields,
-  } = location;
+  const { streetAndNumber, city, country, zip, openNow, openingHours, phone, socialProfiles, lat, lng, customFields } =
+    location;
 
-  const openHoursString = openNow && hour ? `Open Until ${convertTo12HourFormat(hour)}` : 'Closed Now';
+  const date = new Date();
+  const currentDayOfTheWeek = date.getDay();
+
+  const closingHours = openingHours.find((day) => day.dayOfWeek === currentDayOfTheWeek);
+
+  const openHoursString =
+    openNow && closingHours ? `Open Until ${convertTo12HourFormat(closingHours.to1 as string)}` : 'Closed Now';
 
   const sameWorkingHoursForEachDay = openingHours.every(
     (item) => (item.from1 === openingHours[0].from1 && item.to1) === openingHours[0].to1,
