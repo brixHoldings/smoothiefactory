@@ -14,7 +14,7 @@ const Badges: FC<{ customFields: CustomFields[] }> = ({ customFields }) => {
     const returnValue = [
       {
         color: '#23AA5D',
-        text: 'Smoothie juicer',
+        text: 'Smoothie & Juices',
       },
     ];
 
