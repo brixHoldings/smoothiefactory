@@ -69,7 +69,7 @@ const Footer: FC = () => {
         />
         <Container>
           <SocialLinks>
-            <SocialLink href="https://www.facebook.com/smoothiefactory/" target="_blank">
+            <SocialLink href="https://www.facebook.com/smoothiefactorykitchen" target="_blank">
               <svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="16" cy="16" fill="white" r="16" />
                 <path
@@ -87,7 +87,7 @@ const Footer: FC = () => {
                 />
               </svg>
             </SocialLink>
-            <SocialLink href="https://www.instagram.com/smoothiefactory/?hl=en" target="_blank">
+            <SocialLink href="https://www.instagram.com/smoothiefactorykitchen" target="_blank">
               <svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="16" cy="16" fill="#fff" r="16" />
                 <path

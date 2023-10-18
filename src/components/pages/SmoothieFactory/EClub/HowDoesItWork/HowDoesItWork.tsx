@@ -64,7 +64,7 @@ const HowDoesItWork: FC = () => (
           <Step>
             <StepContent>
               <StepTitle color="#23AA5D">03</StepTitle>
-              <StepSubtitle color="#23AA5D">Get offers!</StepSubtitle>
+              <StepSubtitle color="#23AA5D">Receive Offers!</StepSubtitle>
             </StepContent>
             <FloatingImage alt="sign up" height="150px" src="/images/Frame 110 (1).png" width="150px" />
           </Step>

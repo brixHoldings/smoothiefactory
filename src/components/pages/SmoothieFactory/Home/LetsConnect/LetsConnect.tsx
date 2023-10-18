@@ -104,7 +104,7 @@ const LetsConnect: FC = () => (
           <Row>
             <Column>
               <Title mb="8px">Let’s connect</Title>
-              <Hashtag>Use #Frozenyogurt and/or #Brainfreeze...</Hashtag>
+              <Hashtag>Use #buildabetteryou...</Hashtag>
             </Column>
             <CarouselWrapper>
               <Carousel>
@@ -131,7 +131,7 @@ const LetsConnect: FC = () => (
       <FollowUs>
         <FollowUsTitle>.... follow us on:</FollowUsTitle>
         <SocialLinksWrapper>
-          <SocialLink href="https://www.facebook.com/smoothiefactory/" target="_blank">
+          <SocialLink href="https://www.facebook.com/smoothiefactorykitchen" target="_blank">
             <svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
               <circle cx="16" cy="16" fill="#98c44a" r="16" />
               <path
@@ -149,7 +149,7 @@ const LetsConnect: FC = () => (
               />
             </svg>
           </SocialLink>
-          <SocialLink href="https://www.instagram.com/smoothiefactory/?hl=en" target="_blank">
+          <SocialLink href="https://www.instagram.com/smoothiefactorykitchen" target="_blank">
             <svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
               <circle cx="16" cy="16" fill="#98c44a" r="16" />
               <path

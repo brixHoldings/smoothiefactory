@@ -42,7 +42,7 @@ const Header: FC = () => (
           priority
           alt="glass of smoothie"
           width="clamp(249px,39.68vw, 600px)"
-          src="/images/Citrus_Greens_Final_1-transformed 2.png"
+          src="/images/Citrus Greens Final (4).png"
           height="clamp(180px,29.62vw, 448px)"
         />
       </CtaArea>

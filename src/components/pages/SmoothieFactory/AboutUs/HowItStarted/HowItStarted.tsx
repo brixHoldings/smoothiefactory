@@ -112,7 +112,7 @@ const HowItStarted: FC = () => {
         />
       </WoodBg>
       <StoreBg>
-        <Image alt="store bg" src="/images/store.jpg" style={{ objectFit: 'cover' }} fill />
+        <Image alt="store bg" src="/images/DSC00808 (1).jpg" style={{ objectFit: 'cover' }} fill />
       </StoreBg>
       <MaxWidthWrapper>
         <Title color="#23AA5D" mb="clamp(32px, 6.81vw, 103px)" style={{ textAlign: 'center' }}>

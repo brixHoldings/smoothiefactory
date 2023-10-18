@@ -15,7 +15,7 @@ const GetBirthdayGift: FC = () => (
       <FloatingImage
         alt="e-club bg"
         height="clamp(420px, 55.62vw, 841px)"
-        src="/images/ToastBack.png"
+        src="/images/SBO Smoothie rebrand 1.png"
         width="clamp(285px,37.76vw, 571px)"
       />
       <ContentWrapper>

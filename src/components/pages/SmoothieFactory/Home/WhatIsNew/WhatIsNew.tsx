@@ -45,7 +45,7 @@ const WhatIsNew: FC = () => (
           />
         </RelativeWrapper>
         <TextContainer>
-          <WhatsNewTitle>What is new?</WhatsNewTitle>
+          <WhatsNewTitle>What’s new?</WhatsNewTitle>
           <WhatsNewSubtitle>SMOOTHIE FACTORY + KITCHEN</WhatsNewSubtitle>
           <WhatsNewText>
             Introducing Smoothie Factory + Kitchen, the newest addition to Smoothie Factory! Enjoy delicious, healthy

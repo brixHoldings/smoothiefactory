@@ -38,7 +38,7 @@ const AthletesFavourites: FC = () => (
         width="clamp(261px,31.81vw, 481px)"
       />
       <MaxWidthWrapper>
-        <Title> Athlete’s favorites</Title>
+        <Title>Fan Favorites</Title>
         <RelativeWrapper data-reverse-layout="true" mb="clamp(290px,45.37vw, 686px)">
           <GalleryContent data-reverse-layout="true">
             <GalleryContentWrapper>
