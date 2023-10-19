@@ -31,7 +31,7 @@ const GetRewards: FC = () => (
       bottom="-3%"
       height="clamp(183px, 21.62vw, 327px)"
       right="18%"
-      src="/images/grapefruit.png"
+      src="/images/pexels-dominika-roseclay-2090903-transformed 2.png"
       width="clamp(192px,22.61vw, 342px)"
     />
     <Glass>

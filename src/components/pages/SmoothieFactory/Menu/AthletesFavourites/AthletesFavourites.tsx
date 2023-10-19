@@ -71,7 +71,7 @@ const AthletesFavourites: FC = () => (
                 <a href="/SFK Menu Board_site.pdf" download>
                   <CtaButton>see our menu</CtaButton>
                 </a>
-                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
               </GalleryButtons>
@@ -142,7 +142,7 @@ const AthletesFavourites: FC = () => (
                 <a href="/SFK Menu Board_site.pdf" download>
                   <CtaButton>see our menu</CtaButton>
                 </a>
-                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
               </GalleryButtons>
@@ -194,7 +194,7 @@ const AthletesFavourites: FC = () => (
                 <a href="/SFK Menu Board_site.pdf" download>
                   <CtaButton>see our menu</CtaButton>
                 </a>
-                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
               </GalleryButtons>
@@ -317,7 +317,7 @@ const AthletesFavourites: FC = () => (
                                 <a href="/SFK Menu Board_site.pdf" download>
                                   <CtaButton>see our menu</CtaButton>
                                 </a>
-                                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                                <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                                 </a>
                               </GalleryButtons>
@@ -348,7 +348,7 @@ const AthletesFavourites: FC = () => (
                 <a href="/SFK Menu Board_site.pdf" download>
                   <CtaButton>see our menu</CtaButton>
                 </a>
-                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
               </GalleryButtons>
@@ -401,7 +401,7 @@ const AthletesFavourites: FC = () => (
                 <a href="/SFK Menu Board_site.pdf" download>
                   <CtaButton>see our menu</CtaButton>
                 </a>
-                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
               </GalleryButtons>
@@ -474,7 +474,7 @@ const AthletesFavourites: FC = () => (
                 <a href="/SFK Menu Board_site.pdf" download>
                   <CtaButton>see our menu</CtaButton>
                 </a>
-                <a href="/SF+K Smoothie Nutrition Facts - 8.25.23.pdf" download>
+                <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                   <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
                 </a>
               </GalleryButtons>
