@@ -107,7 +107,7 @@ const AthletesFavourites: FC = () => (
               alt="bowls"
               height="clamp(370px,57.24vw, 865.58px)"
               right="0"
-              src="/images/Group 157.png"
+              src="/images/Group 157 (1).png"
               style={{ zIndex: -1 }}
               top="0"
               width="clamp(451px,57.13vw, 863.84px)"
@@ -188,7 +188,7 @@ const AthletesFavourites: FC = () => (
               </GalleryItemLabels>
               <GalleryText>
                 All-natural fresh-squeezed juices loaded with vitamins and minerals designed to cleanse and nourish the
-                body. Available in over 10 different varities.
+                body.
               </GalleryText>
               <GalleryButtons>
                 <a href="/SFK Menu Board_site.pdf" download>
@@ -205,7 +205,7 @@ const AthletesFavourites: FC = () => (
             data-reverse-layout="true"
             height="clamp(401px, 56.41vw, 853px)"
             right="0"
-            src="/images/Group 118 (1).png"
+            src="/images/Group 118 (2).png"
             style={{ zIndex: -1 }}
             top="0"
             width="clamp(451px, 55.75vw, 843px)"
@@ -240,7 +240,7 @@ const AthletesFavourites: FC = () => (
               alt="Toasts | Grilled Panini | Salads | Wraps | Soups"
               height="clamp(403px,47.42vw, 717px)"
               right="0"
-              src="/images/Group 158.png"
+              src="/images/Group 158 (1).png"
               style={{ zIndex: -1 }}
               top="0"
               width="clamp(451px,53.04vw, 802px)"

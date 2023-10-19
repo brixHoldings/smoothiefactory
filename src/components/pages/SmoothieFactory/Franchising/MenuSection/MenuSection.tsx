@@ -51,7 +51,7 @@ const sliderInfoArray: SliderInfo[] = [
     imagePath: '/images/SFFruits.png',
     menuTitle: 'FRUITS AND VEGETABLES JUICES',
     sliderText:
-      'All-natural fresh-squeezed juices loaded with vitamins and minerals designed to cleanse and nourish the body. Available in over 10 different varieties.',
+      'All-natural fresh-squeezed juices loaded with vitamins and minerals designed to cleanse and nourish the body.',
   },
   {
     imageAlt: 'menuImage',
