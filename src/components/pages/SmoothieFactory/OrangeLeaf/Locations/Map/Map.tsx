@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 import { GoogleMap, useLoadScript, MarkerF } from '@react-google-maps/api';
 
-import markerIcon from '../../../../../../../public/images/location-dot.png';
+import markerIcon from '../../../../../../../public/images/location-dot.svg';
 import { useStore } from 'src/context/StoreProvider';
 
 import type { Marker } from '@layouts/LocationsLayout/LocationsLayout';

@@ -13,7 +13,7 @@ export const HeaderArea = styled.section`
 export const CtaArea = styled.div`
   position: relative;
   z-index: 1;
-  margin-top: clamp(80px, 9.85vw, 149px);
+  margin-top: clamp(173px, 20.5vw, 310px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,5 +32,5 @@ export const HeaderTitle = styled.h1`
 
 export const FloatingGlassImage = styled(FloatingImage)`
   position: absolute;
-  bottom: -13%;
+  bottom: -6%;
 `;
