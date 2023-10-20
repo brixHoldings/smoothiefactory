@@ -100,10 +100,9 @@ const Footer: FC = () => {
           </SocialLinks>
           <CopyrightSection>
             <Disclaimer>
-              <Copyright>{new Date().getFullYear()} Smoothie Holdings, LLC All rights reserved.</Copyright>
+              <Copyright>© {new Date().getFullYear()} Smoothie Holdings, LLC All rights reserved.</Copyright>
               <Trademark>
-                SMOOTHIE FACTORY<Super>®</Super> name, design and related marks are trademarks of Smoothie Factory
-                <Super>®</Super>, LLC
+                SMOOTHIE FACTORY<Super>®</Super> name, design and related marks are trademarks of Smoothie Factory, LLC
               </Trademark>
             </Disclaimer>
           </CopyrightSection>
