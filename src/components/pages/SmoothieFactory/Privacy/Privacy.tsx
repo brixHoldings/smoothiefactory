@@ -76,18 +76,18 @@ const Privacy: FC = () => (
           with an inquiry, request, or suggestion, provide feedback on our products, participate in a marketing program,
           sweepstake, contest or survey, respond to an offer, or register to receive promotional materials. If you are
           interested in applying for a job at Smoothie Factory<Super>®</Super>, we may collect your resume. Holders of
-          any Factory Rewards loyalty and Smoothie Factory<Super>®</Super>® gift card may voluntarily register their
-          cards on the Sites. When you purchase, register or reload (as applicable) your Factory Rewards loyalty and
-          Smoothie Factory<Super>®</Super> gift card, we may collect the personally identifiable information listed
-          above, financial information (credit card numbers, credit card expiration dates, etc.), and user profile and
-          preferences information. After you have registered your e-mail address on the Sites and if you have signed
-          into the Sites with your email address and password, or with other shared methods of authentication such as
-          your Facebook® account, Smoothie Factory<Super>®</Super> may collect Site behavior and browser information as
-          you navigate through the Sites. This information may be used to create a profile that we keep on individual
-          Users that details their preferences, personal information and behavior. Consequently, collected information
-          may be tied to the User’s personally identifiable information and may be used to provide offers and improve
-          the content of the Sites for the User. This profile may also be used to tailor a User’s visit to our Sites,
-          and to direct pertinent marketing promotions to the User.
+          any Factory Rewards<Super>®</Super> loyalty and Smoothie Factory<Super>®</Super>® gift card may voluntarily
+          register their cards on the Sites. When you purchase, register or reload (as applicable) your Factory Rewards
+          loyalty and Smoothie Factory<Super>®</Super> gift card, we may collect the personally identifiable information
+          listed above, financial information (credit card numbers, credit card expiration dates, etc.), and user
+          profile and preferences information. After you have registered your e-mail address on the Sites and if you
+          have signed into the Sites with your email address and password, or with other shared methods of
+          authentication such as your Facebook® account, Smoothie Factory<Super>®</Super> may collect Site behavior and
+          browser information as you navigate through the Sites. This information may be used to create a profile that
+          we keep on individual Users that details their preferences, personal information and behavior. Consequently,
+          collected information may be tied to the User’s personally identifiable information and may be used to provide
+          offers and improve the content of the Sites for the User. This profile may also be used to tailor a User’s
+          visit to our Sites, and to direct pertinent marketing promotions to the User.
         </Text>
         <Text>
           We may also collect personal information from other sources. For example, we may purchase third party
@@ -175,11 +175,11 @@ const Privacy: FC = () => (
           We may sell or disclose your personally identifiable information to third parties for direct marketing
           purposes without providing you an opportunity to opt out or otherwise prohibit such use. Smoothie Factory
           <Super>®</Super> uses the personal information you provide for the purposes for which it was provided, for
-          example, to support a Factory Rewards program; to notify you that you have won a contest or sweepstakes; to
-          respond to your inquiries or complaints; or to contact you or send you information about your membership. In
-          addition, Smoothie Factory<Super>®</Super>, its subsidiaries and their franchisees may share and use
-          information collected through the Sites to administer and manage our business, including, for example, to
-          address customer complaints; for account maintenance purposes; in connection with information technology
+          example, to support a Factory Rewards<Super>®</Super> program; to notify you that you have won a contest or
+          sweepstakes; to respond to your inquiries or complaints; or to contact you or send you information about your
+          membership. In addition, Smoothie Factory<Super>®</Super>, its subsidiaries and their franchisees may share
+          and use information collected through the Sites to administer and manage our business, including, for example,
+          to address customer complaints; for account maintenance purposes; in connection with information technology
           services; to detect, prevent, or investigate security breaches or fraud; and to maintain appropriate records
           for internal administrative purposes. Personal information may also be used to create a profile that we keep
           on individual Users that details their preferences and behavior. This profile may be used to develop and
@@ -192,10 +192,11 @@ const Privacy: FC = () => (
           alerts to you via text message. You may opt out to stop receiving these text messages at any time.
         </Text>
         <Text>
-          In connection with any Factory Rewards loyalty and Smoothie Factory<Super>®</Super> gift cards, we will use
-          the information collected to create an easy-to-use and convenient way to process your transactions and provide
-          you information about your Factory Rewards loyalty and Smoothie Factory<Super>®</Super> gift card balances.
-          Financial information is not used for any other purpose than billing.
+          In connection with any Factory Rewards<Super>®</Super> loyalty and Smoothie Factory<Super>®</Super> gift
+          cards, we will use the information collected to create an easy-to-use and convenient way to process your
+          transactions and provide you information about your Factory Rewards<Super>®</Super> loyalty and Smoothie
+          Factory<Super>®</Super> gift card balances. Financial information is not used for any other purpose than
+          billing.
         </Text>
         <Text>
           We may use third party contractors to help us operate our business and the Sites or administer activities on

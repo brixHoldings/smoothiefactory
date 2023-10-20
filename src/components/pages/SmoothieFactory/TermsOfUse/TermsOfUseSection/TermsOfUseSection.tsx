@@ -384,6 +384,7 @@ const TermsOfUseSection: FC = () => (
             If you registered your gift card with us, you can contact us via the Contact Us section of the Site or via
             your account balance page (go to disable my gift card) and we can deactivate your lost, stolen or damaged
             gift card and load the balance remaining at the time of notification onto a new gift card or FACTORY REWARDS
+            <Super>®</Super>
             account.
           </ListItem>
           <ListItem>
@@ -521,12 +522,12 @@ const TermsOfUseSection: FC = () => (
           RELIABILITY, SECURITY, CURRENCY AND COMPLETENESS ARISING FROM OR RELATING TO THE SITES, THEIR CONTENT OR ANY
           LINKS, ANY SOFTWARE, TOOLS, TIPS, PRODUCTS OR SERVICES PROVIDED THROUGH THE SITES) AND ANY IMPLIED WARRANTIES
           ARISING FROM COURSE OF DEALING OR COURSE OF PERFORMANCE WITH RESPECT TO THE SITES, ANY GIFT CARD AND/OR ANY
-          FACTORY REWARDS CARD OR ACCOUNT. Smoothie Factory<Super>®</Super> DOES NOT WARRANT THAT THE GIFT CARD AND/OR
-          THE FACTORY REWARDS CARD OR ACCOUNT WILL ALWAYS BE ACCESSIBLE OR ACCEPTED. Smoothie Factory<Super>®</Super>{' '}
-          DOES NOT WARRANT THAT THE SITES OR THEIR CONTENTS WILL BE COMPLETE, ACCURATE, TIMELY, UNINTERRUPTED, SECURE OR
-          ERROR FREE, OR THAT DEFECTS WILL BE CORRECTED. ALL INFORMATION ON THE SITES IS SUBJECT TO CHANGE WITHOUT
-          NOTICE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES SO SOME OF THE ABOVE EXCLUSIONS
-          MAY NOT APPLY TO YOU.
+          FACTORY REWARDS<Super>®</Super> CARD OR ACCOUNT. Smoothie Factory<Super>®</Super> DOES NOT WARRANT THAT THE
+          GIFT CARD AND/OR THE FACTORY REWARDS<Super>®</Super> CARD OR ACCOUNT WILL ALWAYS BE ACCESSIBLE OR ACCEPTED.
+          Smoothie Factory<Super>®</Super> DOES NOT WARRANT THAT THE SITES OR THEIR CONTENTS WILL BE COMPLETE, ACCURATE,
+          TIMELY, UNINTERRUPTED, SECURE OR ERROR FREE, OR THAT DEFECTS WILL BE CORRECTED. ALL INFORMATION ON THE SITES
+          IS SUBJECT TO CHANGE WITHOUT NOTICE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES SO
+          SOME OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.
         </Text>
         <Title>LIMITATION OF LIABILITY</Title>
         <Text>
@@ -540,11 +541,11 @@ const TermsOfUseSection: FC = () => (
           CONTAINED IN OR ADVERTISED ON THE SITES; ANY LINK PROVIDED ON THE SITES; AND YOUR ACCOUNT AND PASSWORD,
           WHETHER OR NOT Smoothie Factory<Super>®</Super> HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO
           EVENT SHALL Smoothie Factory<Super>®</Super> OR ITS AFFILIATES OR SUBSIDIARIES HAVE ANY LIABILITY FOR
-          UNAUTHORIZED ACCESS TO, OR ALTERATION, THEFT OR DESTRUCTION OF A GIFT CARD AND/OR FACTORY REWARDS ACCOUNT OR
-          CARD THROUGH ACCIDENT, MISUSE OR FRAUDULENT MEANS OR DEVICES BY YOU OR ANY THIRD PARTY, OR AS A RESULT OF ANY
-          DELAY OR MISTAKE RESULTING FROM ANY CIRCUMSTANCES BEYOND OUR CONTROL. THIS EXCLUSION OF LIABILITY SHALL APPLY
-          TO THE FULLEST EXTENT PERMITTED BY LAW. THIS PROVISION SHALL SURVIVE THE TERMINATION OF YOUR RIGHT TO USE THE
-          SITES.
+          UNAUTHORIZED ACCESS TO, OR ALTERATION, THEFT OR DESTRUCTION OF A GIFT CARD AND/OR FACTORY REWARDS
+          <Super>®</Super> ACCOUNT OR CARD THROUGH ACCIDENT, MISUSE OR FRAUDULENT MEANS OR DEVICES BY YOU OR ANY THIRD
+          PARTY, OR AS A RESULT OF ANY DELAY OR MISTAKE RESULTING FROM ANY CIRCUMSTANCES BEYOND OUR CONTROL. THIS
+          EXCLUSION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW. THIS PROVISION SHALL SURVIVE THE
+          TERMINATION OF YOUR RIGHT TO USE THE SITES.
         </Text>
         <Text>
           YOU ACKNOWLEDGE THAT YOU WILL BE FULLY LIABLE FOR ALL DAMAGES RESULTING DIRECTLY OR INDIRECTLY FROM YOUR USE
@@ -558,9 +559,10 @@ const TermsOfUseSection: FC = () => (
           all claims, losses, damages, liabilities, costs and expenses, including reasonable fees and expenses of
           counsel, incurred or suffered by them and arising from or related to your (i) use of the Sites including,
           without limitation, transmission or placement of information or material by you on the Sites, (ii) use of a
-          gift card, (iii) use of a FACTORY REWARDS card, account or any earned rewards or points, or (iv) violation of
-          any of these Terms including, without limitation, the Smoothie Factory<Super>®</Super> Loyalty Program Rules
-          and the Gift Card Rules. This provision shall survive the termination of your right to use the Sites.
+          gift card, (iii) use of a FACTORY REWARDS<Super>®</Super> card, account or any earned rewards or points, or
+          (iv) violation of any of these Terms including, without limitation, the Smoothie Factory<Super>®</Super>{' '}
+          Loyalty Program Rules and the Gift Card Rules. This provision shall survive the termination of your right to
+          use the Sites.
         </Text>
         <Title>DISPUTE RESOLUTION</Title>
         <Text>
@@ -596,30 +598,31 @@ const TermsOfUseSection: FC = () => (
 
         <Title>GENERAL PROVISIONS</Title>
         <Text>
-          Except for the portion of these Terms specifically labeled as the FACTORY REWARDS Terms and Conditions, which
-          govern the FACTORY REWARDS program (i.e., Smoothie Factory<Super>®</Super> Loyalty Program Rules) or the
-          Smoothie Factory<Super>®</Super> Gift Card Terms and Conditions, which govern the Smoothie Factory
+          Except for the portion of these Terms specifically labeled as the FACTORY REWARDS<Super>®</Super> Terms and
+          Conditions, which govern the FACTORY REWARDS<Super>®</Super> program (i.e., Smoothie Factory<Super>®</Super>{' '}
+          Loyalty Program Rules) or the Smoothie Factory<Super>®</Super> Gift Card Terms and Conditions, which govern
+          the Smoothie Factory
           <Super>®</Super> Gift Card program (i.e., Gift Card Rules), these Terms constitute a binding agreement between
           you and Smoothie Factory<Super>®</Super> and supersede all prior agreements, understandings and
           representations between the parties regarding the subject matter herein. In the event of an inconsistency
           between these Terms and either the Smoothie Factory<Super>®</Super> Loyalty Program Rules or the Gift Card
           Rules relating to your use of the Sites, these Terms shall prevail. In the event of an inconsistency between
           these Terms and the Smoothie Factory<Super>®</Super> Loyalty Program Rules relating to your use of your
-          FACTORY REWARDS loyalty card or FACTORY REWARDS points, the Smoothie Factory<Super>®</Super> Loyalty Program
-          Rules shall prevail. In the event of an inconsistency between these Terms and the Gift Card Rules relating to
-          your use of your Smoothie Factory<Super>®</Super> gift card, the Gift Card Rules shall prevail. No failure by
-          Smoothie Factory<Super>®</Super> or you to exercise any rights, powers or remedies hereunder or its delay to
-          do so shall constitute a waiver of these rights, powers or remedies. The single or partial exercise of a
-          right, power or remedy shall not prevent its subsequent exercise or the exercise of any other right, power or
-          remedy. If any provision of these Terms or part thereof is or becomes illegal, invalid or unenforceable in any
-          jurisdiction, the illegality, invalidity or unenforceability of that provision will not affect the legality,
-          validity or enforceability of the remainder of the provision or the remaining provisions of these Terms, as
-          the case may be, or the legality, validity or enforceability of that provision or part thereof in any other
-          jurisdiction. These Terms are effective until terminated by you or Smoothie Factory<Super>®</Super>, which
-          Smoothie Factory<Super>®</Super> may do at any time, without notice, in its sole discretion. If you become
-          dissatisfied with the Sites, your only recourse is to immediately discontinue use of the Sites. All provisions
-          of the Terms regarding representations, warranties, indemnification, disclaimers, and limitations of liability
-          shall survive the termination of the Terms.
+          FACTORY REWARDS<Super>®</Super> loyalty card or FACTORY REWARDS<Super>®</Super> points, the Smoothie Factory
+          <Super>®</Super> Loyalty Program Rules shall prevail. In the event of an inconsistency between these Terms and
+          the Gift Card Rules relating to your use of your Smoothie Factory<Super>®</Super> gift card, the Gift Card
+          Rules shall prevail. No failure by Smoothie Factory<Super>®</Super> or you to exercise any rights, powers or
+          remedies hereunder or its delay to do so shall constitute a waiver of these rights, powers or remedies. The
+          single or partial exercise of a right, power or remedy shall not prevent its subsequent exercise or the
+          exercise of any other right, power or remedy. If any provision of these Terms or part thereof is or becomes
+          illegal, invalid or unenforceable in any jurisdiction, the illegality, invalidity or unenforceability of that
+          provision will not affect the legality, validity or enforceability of the remainder of the provision or the
+          remaining provisions of these Terms, as the case may be, or the legality, validity or enforceability of that
+          provision or part thereof in any other jurisdiction. These Terms are effective until terminated by you or
+          Smoothie Factory<Super>®</Super>, which Smoothie Factory<Super>®</Super> may do at any time, without notice,
+          in its sole discretion. If you become dissatisfied with the Sites, your only recourse is to immediately
+          discontinue use of the Sites. All provisions of the Terms regarding representations, warranties,
+          indemnification, disclaimers, and limitations of liability shall survive the termination of the Terms.
         </Text>
         <Text>
           If you have any questions or comments about these Terms, please call us at (214) 302-5979 or contact us via
@@ -659,9 +662,9 @@ const TermsOfUseSection: FC = () => (
         <Text>
           If you have any questions or concerns regarding these Terms (including, without limitation, the Smoothie
           Factory Loyalty Program Rules or the Gift Card Rules) or regarding the privacy or security of any SMOOTHIE
-          FACTORY gift card or FACTORY REWARDS card or account, please call us at (214) 302-5979 or contact us via the
-          Contact Us section of the Site, or write to us at Smoothie Holdings, LLC, 14860 Montfort Drive, Suite 150 PMB
-          34, Dallas, TX 75254.
+          FACTORY gift card or FACTORY REWARDS<Super>®</Super> card or account, please call us at (214) 302-5979 or
+          contact us via the Contact Us section of the Site, or write to us at Smoothie Holdings, LLC, 14860 Montfort
+          Drive, Suite 150 PMB 34, Dallas, TX 75254.
         </Text>
         <Text>© {new Date().getFullYear()} Smoothie Holdings, LLC. All rights reserved.</Text>
       </Paper>
