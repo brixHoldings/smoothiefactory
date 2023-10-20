@@ -5,7 +5,7 @@ import { Wrapper, Text, Button, Disclaimer } from './JoinOurTeam.style';
 import type { FC } from 'react';
 
 import { useStore } from '@context/StoreProvider';
-import { MaxWidthWrapper } from '@styles/common';
+import { MaxWidthWrapper, Super } from '@styles/common';
 import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
 import { Title } from '../../Home/common';
 
@@ -29,17 +29,17 @@ const JoinOurTeam: FC = () => {
           Join our team!
         </Title>
         <Text>
-          Join our dynamic team at Smoothie Factory + Kitchen! We're constantly growing and on the lookout for
-          passionate individuals who share our commitment to delivering delicious smoothies, juices, and food, while
-          providing exceptional customer experiences. Apply and be part of a company that values innovation, teamwork,
-          and a love for all things healthy. Your career journey starts here!
+          Join our dynamic team at Smoothie Factory + Kitchen<Super>TM</Super>! We're constantly growing and on the
+          lookout for passionate individuals who share our commitment to delivering delicious smoothies, juices, and
+          food, while providing exceptional customer experiences. Apply and be part of a company that values innovation,
+          teamwork, and a love for all things healthy. Your career journey starts here!
         </Text>
         <Button>APPLY NOW ONLINE</Button>
         <Disclaimer>
-          Join our dynamic team at Smoothie Factory + Kitchen! We're constantly growing and on the lookout for
-          passionate individuals who share our commitment to delivering delicious smoothies, juices, and food, while
-          providing exceptional customer experiences. Apply and be part of a company that values innovation, teamwork,
-          and a love for all things healthy. Your career journey starts here!
+          Join our dynamic team at Smoothie Factory + Kitchen<Super>TM</Super>! We're constantly growing and on the
+          lookout for passionate individuals who share our commitment to delivering delicious smoothies, juices, and
+          food, while providing exceptional customer experiences. Apply and be part of a company that values innovation,
+          teamwork, and a love for all things healthy. Your career journey starts here!
         </Disclaimer>
       </MaxWidthWrapper>
     </Wrapper>

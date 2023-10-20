@@ -158,11 +158,11 @@ const FormSection: FC = () => {
       <Disclaimer>
         This information is not intended as an offer to sell a franchise. We will not offer you a franchise until we
         have complied with disclosure and registration requirements in your jurisdiction. Contact Red Mango FC, LLC,
-        located at 14860 Montfort Drive, Suite 150, Dallas, TX 75254, to request a copy of their FDD. RESIDENTS OF NEW
-        YORK: This advertisement is not an offering. An offering can only be made by a prospectus filed first with the
-        Department of Law of the State of New York. Such filing does not constitute approval by the New York Department
-        of Law. RESIDENTS OF MINNESOTA: MN Franchise Registration Number: 10193. RESIDENTS OF FLORIDA: FL Advertising
-        Number: BF47541.
+        located at 14860 Montfort Drive, Suite 150 PMB 34, Dallas, TX 75254, to request a copy of their FDD. RESIDENTS
+        OF NEW YORK: This advertisement is not an offering. An offering can only be made by a prospectus filed first
+        with the Department of Law of the State of New York. Such filing does not constitute approval by the New York
+        Department of Law. RESIDENTS OF MINNESOTA: MN Franchise Registration Number: 10193. RESIDENTS OF FLORIDA: FL
+        Advertising Number: BF47541.
       </Disclaimer>
     </>
   );

@@ -15,6 +15,7 @@ import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/F
 
 import type { FC } from 'react';
 import Link from 'next/link';
+import { Super } from '@styles/common';
 
 const WhatIsNew: FC = () => (
   <RelativeWrapper>
@@ -46,10 +47,12 @@ const WhatIsNew: FC = () => (
         </RelativeWrapper>
         <TextContainer>
           <WhatsNewTitle>What’s new?</WhatsNewTitle>
-          <WhatsNewSubtitle>SMOOTHIE FACTORY + KITCHEN</WhatsNewSubtitle>
+          <WhatsNewSubtitle>
+            SMOOTHIE FACTORY + KITCHEN<Super>TM</Super>
+          </WhatsNewSubtitle>
           <WhatsNewText>
-            Introducing Smoothie Factory + Kitchen, the newest addition to Smoothie Factory! Enjoy delicious, healthy
-            smoothies and freshly made toasts, grilled folds, and salads.
+            Introducing Smoothie Factory + Kitchen<Super>TM</Super>, the newest addition to Smoothie Factory
+            <Super>®</Super>! Enjoy delicious, healthy smoothies and freshly made toasts, grilled folds, and salads.
           </WhatsNewText>
           <Link href="/menu">
             <CtaButton>SEE OUR OFFERS</CtaButton>

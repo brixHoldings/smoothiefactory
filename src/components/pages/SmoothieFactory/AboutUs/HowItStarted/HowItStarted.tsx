@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { MaxWidthWrapper } from '@styles/common';
+import { MaxWidthWrapper, Super } from '@styles/common';
 
 import type { FC } from 'react';
 import { Title } from '../../Home/common';
@@ -52,9 +52,9 @@ const HowItStarted: FC = () => {
               How it started
             </Title>
             <Text>
-              Smoothie Factory was founded by Olympic athlete James Villasana in 1996. As a high-level athlete, James
-              needed healthy food options made with only the highest quality ingredients to fuel his body. His carefully
-              crafted smoothies were created with nutrition, taste, and overall health in mind.
+              Smoothie Factory<Super>®</Super> was founded by Olympic athlete James Villasana in 1996. As a high-level
+              athlete, James needed healthy food options made with only the highest quality ingredients to fuel his
+              body. His carefully crafted smoothies were created with nutrition, taste, and overall health in mind.
             </Text>
           </ContentWrapper>
           <ContentWrapper>
@@ -100,7 +100,8 @@ const HowItStarted: FC = () => {
           <CardTitle>OUR MISSION</CardTitle>
         </PersonCard>
         <WoodBgTitle>
-          Smoothie Factory + Kitchen exists to help health conscious people maintain their active lifestyle.
+          Smoothie Factory + Kitchen<Super>TM</Super> exists to help health conscious people maintain their active
+          lifestyle.
         </WoodBgTitle>
         <FloatingImage
           alt="apple"
@@ -132,7 +133,7 @@ const HowItStarted: FC = () => {
             </InfoCardTitle>
             <InfoCardText>
               Experience our vibrant, modern space design while you enjoy your fresh and healthy Smoothie Factory +
-              Kitchen favorites!
+              Kitchen favorites<Super>TM</Super>!
             </InfoCardText>
           </Card>
           <Card>
@@ -165,8 +166,8 @@ const HowItStarted: FC = () => {
               always smiles!
             </InfoCardTitle>
             <InfoCardText>
-              Our friendly team is here to serve you with a smile and make your Smoothie Factory + Kitchen experience a
-              memorable one!
+              Our friendly team is here to serve you with a smile and make your Smoothie Factory + Kitchen
+              <Super>TM</Super> experience a memorable one!
             </InfoCardText>
           </Card>
         </CardsWrapper>

@@ -27,6 +27,7 @@ import {
 import Image from 'next/image';
 
 import type { FC } from 'react';
+import { Super } from '@styles/common';
 
 const Footer: FC = () => {
   const ref = useRef<HTMLElement>(null);
@@ -78,15 +79,6 @@ const Footer: FC = () => {
                 />
               </svg>
             </SocialLink>
-            <SocialLink href="https://twitter.com/smoothiefactory?lang=en" target="_blank">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="16" fill="white" />
-                <path
-                  d="M20.1629 9.5H22.3691L17.5504 15.0062L23.2191 22.5H18.7816L15.3035 17.9563L11.3285 22.5H9.11914L14.2723 16.6094L8.83789 9.5H13.3879L16.5285 13.6531L20.1629 9.5ZM19.3879 21.1812H20.6098L12.7223 10.75H11.4098L19.3879 21.1812Z"
-                  fill="#474747"
-                />
-              </svg>
-            </SocialLink>
             <SocialLink href="https://www.instagram.com/smoothiefactorykitchen" target="_blank">
               <svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="16" cy="16" fill="#fff" r="16" />
@@ -96,12 +88,22 @@ const Footer: FC = () => {
                 />
               </svg>
             </SocialLink>
+            <SocialLink href="https://twitter.com/smoothiefactory?lang=en" target="_blank">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="white" />
+                <path
+                  d="M20.1629 9.5H22.3691L17.5504 15.0062L23.2191 22.5H18.7816L15.3035 17.9563L11.3285 22.5H9.11914L14.2723 16.6094L8.83789 9.5H13.3879L16.5285 13.6531L20.1629 9.5ZM19.3879 21.1812H20.6098L12.7223 10.75H11.4098L19.3879 21.1812Z"
+                  fill="#474747"
+                />
+              </svg>
+            </SocialLink>
           </SocialLinks>
           <CopyrightSection>
             <Disclaimer>
-              <Copyright>© 2020 - 2023 SMOOTHIE FACTORY, LLC. All Rights Reserved</Copyright>
+              <Copyright>{new Date().getFullYear()} Smoothie Holdings, LLC All rights reserved.</Copyright>
               <Trademark>
-                SMOOTHIE FACTORY name, design and related marks are trademarks of Smoothie Factory, LLC
+                SMOOTHIE FACTORY<Super>®</Super> name, design and related marks are trademarks of Smoothie Factory
+                <Super>®</Super>, LLC
               </Trademark>
             </Disclaimer>
           </CopyrightSection>

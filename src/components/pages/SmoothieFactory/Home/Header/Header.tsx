@@ -17,6 +17,7 @@ import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 
 import type { FC } from 'react';
 import Link from 'next/link';
+import { Super } from '@styles/common';
 
 const Header: FC = () => (
   <>
@@ -29,11 +30,13 @@ const Header: FC = () => (
         fill
       />
       <CtaArea>
-        <HeaderTitle>building a better you</HeaderTitle>
+        <HeaderTitle>
+          building a better you<Super>®</Super>
+        </HeaderTitle>
         <HeaderText>
-          Smoothie Factory + Kitchen is for both athletes and those who want to pursue a more active lifestyle. Also,
-          for those looking for a snack or light meal to provide energy and nutrition of fruits and vegetables without
-          added preservatives or sugar.
+          Smoothie Factory + Kitchen<Super>TM</Super> is for both athletes and those who want to pursue a more active
+          lifestyle. Also, for those looking for a snack or light meal to provide energy and nutrition of fruits and
+          vegetables without added preservatives or sugar.
         </HeaderText>
         <Link href="/e-club">
           <HeaderButton>Become a part of the family</HeaderButton>

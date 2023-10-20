@@ -9,6 +9,7 @@ import { Wrapper, Glass, RelativeMaxWidthWrapper, Title, Text } from './Header.s
 import { CtaButton } from '../../Home/WhatIsNew/WhatIsNew.style';
 
 import type { FC } from 'react';
+import { Super } from '@styles/common';
 
 const Header: FC = () => (
   <Wrapper>
@@ -23,9 +24,10 @@ const Header: FC = () => (
       <Glass>
         <Title>Gift an EXPERIENCE!</Title>
         <Text>
-          Give the gift of health with a Smoothie Factory + Kitchen gift card. Perfect for the health-conscious person
-          in your life, our gift cards can be used to purchase delicious smoothies, healthy food, and more. Treat
-          someone special today and help them live their best life with Smoothie Factory + Kitchen .
+          Give the gift of health with a Smoothie Factory + Kitchen<Super>TM</Super> gift card. Perfect for the
+          health-conscious person in your life, our gift cards can be used to purchase delicious smoothies, healthy
+          food, and more. Treat someone special today and help them live their best life with Smoothie Factory + Kitchen
+          <Super>TM</Super>.
         </Text>
         <a href="https://smoothiefactory.myguestaccount.com/guest/egift?page=cardInfo" target="_blank">
           <CtaButton>Get a gift card</CtaButton>

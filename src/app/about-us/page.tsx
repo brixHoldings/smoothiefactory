@@ -14,7 +14,7 @@ const AboutUs: FC = () => (
     <Header />
     <HowItStarted />
     <AboutUsForm />
-    <JoinUs />
+    {/* <JoinUs /> */}
   </>
 );
 

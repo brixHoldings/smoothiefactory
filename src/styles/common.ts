@@ -13,3 +13,9 @@ export const MaxWidthWrapper = styled.div`
     padding-inline: 32px;
   }
 `;
+
+export const Super = styled.span`
+  vertical-align: super;
+  font-size: 0.5em;
+  font-weight: inherit;
+`;

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import { MaxWidthWrapper } from '@styles/common';
+import { MaxWidthWrapper, Super } from '@styles/common';
 
 import { Container, Paper, Title, Text, RelativeWrapper, PageTitle, ListItem } from './TermsOfUseSection.style';
 
@@ -67,22 +67,22 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Text>
           This website is undergoing construction and corrective action to address accessibility issues experienced by
-          some of our customers. Smoothie Factory has adopted the W3C WAI Web Content Accessibility Guidelines (WCAG) as
-          its accessibility standard for all online products and services that we design, develop and/or procure, on or
-          after the effective date of this accessibility policy. We are working to ensure, to the extent practicable,
-          the new online products and services satisfy the standard Success Criteria set forth in the WCAG 2.0. Smoothie
-          Factory is committed to making its Sites accessible to customers with disabilities and welcomes suggestions
-          for improvement. While we strive to make the Sites as accessible as possible, we ask for your patience during
-          this time of transitions.
+          some of our customers. Smoothie Factory<Super>®</Super> has adopted the W3C WAI Web Content Accessibility
+          Guidelines (WCAG) as its accessibility standard for all online products and services that we design, develop
+          and/or procure, on or after the effective date of this accessibility policy. We are working to ensure, to the
+          extent practicable, the new online products and services satisfy the standard Success Criteria set forth in
+          the WCAG 2.0. Smoothie Factory<Super>®</Super> is committed to making its Sites accessible to customers with
+          disabilities and welcomes suggestions for improvement. While we strive to make the Sites as accessible as
+          possible, we ask for your patience during this time of transitions.
         </Text>
         <Title>CHANGES TO TERMS AND CONDITIONS</Title>
         <Text>
-          Smoothie Factory may at any time, and at its sole discretion, modify these Terms or any policy or guideline of
-          the Sites, including without limitation, the Privacy Policy, with or without notice. Such modifications will
-          be effective immediately upon posting, and you waive any right you may have to receive specific notice of such
-          changes or modifications. You agree to review these Terms periodically and your continued use of the Sites
-          following such modifications will indicate your acceptance of these modified Terms. If you do not agree to any
-          modification of these Terms, you must immediately stop using the Sites.
+          Smoothie Factory<Super>®</Super> may at any time, and at its sole discretion, modify these Terms or any policy
+          or guideline of the Sites, including without limitation, the Privacy Policy, with or without notice. Such
+          modifications will be effective immediately upon posting, and you waive any right you may have to receive
+          specific notice of such changes or modifications. You agree to review these Terms periodically and your
+          continued use of the Sites following such modifications will indicate your acceptance of these modified Terms.
+          If you do not agree to any modification of these Terms, you must immediately stop using the Sites.
         </Text>
         <Title>INTELLECTUAL PROPERTY, COPYRIGHT AND TRADEMARK NOTICE</Title>
         <Text>
@@ -91,12 +91,12 @@ const TermsOfUseSection: FC = () => (
           illustrations, video, sound, games, clips, artwork, hyperlinks, displays, and other materials, (all such
           content collectively referred to as “Content”), and the design, structure, selection, coordination,
           expression, look and feel and arrangement of such Content, are protected under United States and international
-          copyright laws and are the property of Smoothie Factory or its third party licensors. All rights are reserved
-          by Smoothie Factory. The SMOOTHIE FACTORY name, design and related marks are registered trademarks of Smoothie
-          Holdings, LLC. All other names, logos, splash screens, page headers, custom graphics and button icons, or
-          other indicia of origin displayed on the Sites are either service marks, names, logos, trademarks, service
-          marks, trade dress, or are otherwise the property (collectively, “Marks”) of Smoothie Factory or its third
-          party licensors.
+          copyright laws and are the property of Smoothie Factory<Super>®</Super> or its third party licensors. All
+          rights are reserved by Smoothie Factory<Super>®</Super>. The Smoothie Factory<Super>®</Super> name, design and
+          related marks are registered trademarks of Smoothie Holdings, LLC. All other names, logos, splash screens,
+          page headers, custom graphics and button icons, or other indicia of origin displayed on the Sites are either
+          service marks, names, logos, trademarks, service marks, trade dress, or are otherwise the property
+          (collectively, “Marks”) of Smoothie Factory<Super>®</Super> or its third party licensors.
         </Text>
         <Title>INTELLECTUAL PROPERTY, COPYRIGHT AND TRADEMARK NOTICE</Title>
         <Text>
@@ -105,39 +105,40 @@ const TermsOfUseSection: FC = () => (
           illustrations, video, sound, games, clips, artwork, hyperlinks, displays, and other materials, (all such
           content collectively referred to as “Content”), and the design, structure, selection, coordination,
           expression, look and feel and arrangement of such Content, are protected under United States and international
-          copyright laws and are the property of Smoothie Factory or its third party licensors. All rights are reserved
-          by Smoothie Factory. The SMOOTHIE FACTORY name, design and related marks are registered trademarks of Smoothie
-          Holdings, LLC. All other names, logos, splash screens, page headers, custom graphics and button icons, or
-          other indicia of origin displayed on the Sites are either service marks, names, logos, trademarks, service
-          marks, trade dress, or are otherwise the property (collectively, “Marks”) of Smoothie Factory or its third
-          party licensors.
+          copyright laws and are the property of Smoothie Factory<Super>®</Super> or its third party licensors. All
+          rights are reserved by Smoothie Factory<Super>®</Super>. The Smoothie Factory<Super>®</Super> name, design and
+          related marks are registered trademarks of Smoothie Holdings, LLC. All other names, logos, splash screens,
+          page headers, custom graphics and button icons, or other indicia of origin displayed on the Sites are either
+          service marks, names, logos, trademarks, service marks, trade dress, or are otherwise the property
+          (collectively, “Marks”) of Smoothie Factory<Super>®</Super> or its third party licensors.
         </Text>
         <Text>
           Except as specifically permitted herein, copying, distributing, transmitting, displaying, modifying, selling
           or participating in the sale of, or otherwise exploiting or using any Content or any Marks in any form or by
-          any means without the express written permission of Smoothie Factory is prohibited and may violate the
-          copyright, trademark or unfair competition laws of the United States and/or other countries. All rights not
-          expressly granted are reserved.
+          any means without the express written permission of Smoothie Factory<Super>®</Super> is prohibited and may
+          violate the copyright, trademark or unfair competition laws of the United States and/or other countries. All
+          rights not expressly granted are reserved.
         </Text>
         <Text>
-          Smoothie Factory hereby grants you a personal, non-exclusive, non-assignable, non-transferable, limited, and
-          revocable license to use and display the Content and to use the Application for noncommercial and personal use
-          only; provided that you maintain all copyright and other notices contained in such Content and only use the
-          Application on a device owned or controlled by you as permitted by the rules contained in the terms contained
-          in the Apple, Inc. Terms and Conditions (“Apple Terms”) or the Google Inc. Google Play Terms of Service
-          (“Google Terms”), whichever is applicable to your device. Smoothie Factory, content providers and content
-          providers’ licensors do not transfer any title, right or interest to or in any Content to you. If any of the
-          provisions of the Apple Terms or the Google Terms conflict with our Terms, our Terms will control, solely to
-          the extent that such terms apply to the Application. You agree not to reproduce, modify, create derivative
-          works from, display, perform, distribute, sell, rent, lease, transfer, sublicense, disseminate, broadcast or
-          circulate any Content to any third party (including, without limitation, the display and distribution of
-          Content via a third party website) without express prior written consent of Smoothie Factory. Use of Content
-          is only permitted with the express written permission of Smoothie Factory and/or its licensors. You further
-          agree that you will not disassemble, decompile, reverse engineer, modify or otherwise reduce the computer file
-          in which the Content is stored to a human-readable form. In addition, you may not attempt to circumvent,
-          avoid, bypass, remove, deactivate, impair or otherwise defeat any encryption, rights signaling or copy
-          protection technology in which the Content is wrapped or otherwise associated with, and you may not edit,
-          modify, translate, or create adaptations of the Content.
+          Smoothie Factory<Super>®</Super> hereby grants you a personal, non-exclusive, non-assignable,
+          non-transferable, limited, and revocable license to use and display the Content and to use the Application for
+          noncommercial and personal use only; provided that you maintain all copyright and other notices contained in
+          such Content and only use the Application on a device owned or controlled by you as permitted by the rules
+          contained in the terms contained in the Apple, Inc. Terms and Conditions (“Apple Terms”) or the Google Inc.
+          Google Play Terms of Service (“Google Terms”), whichever is applicable to your device. Smoothie Factory
+          <Super>®</Super>, content providers and content providers’ licensors do not transfer any title, right or
+          interest to or in any Content to you. If any of the provisions of the Apple Terms or the Google Terms conflict
+          with our Terms, our Terms will control, solely to the extent that such terms apply to the Application. You
+          agree not to reproduce, modify, create derivative works from, display, perform, distribute, sell, rent, lease,
+          transfer, sublicense, disseminate, broadcast or circulate any Content to any third party (including, without
+          limitation, the display and distribution of Content via a third party website) without express prior written
+          consent of Smoothie Factory<Super>®</Super>. Use of Content is only permitted with the express written
+          permission of Smoothie Factory<Super>®</Super> and/or its licensors. You further agree that you will not
+          disassemble, decompile, reverse engineer, modify or otherwise reduce the computer file in which the Content is
+          stored to a human-readable form. In addition, you may not attempt to circumvent, avoid, bypass, remove,
+          deactivate, impair or otherwise defeat any encryption, rights signaling or copy protection technology in which
+          the Content is wrapped or otherwise associated with, and you may not edit, modify, translate, or create
+          adaptations of the Content.
         </Text>
         <Text>This Section will survive the termination of your right to use the Sites.</Text>
         <Title>DIGITAL MILLENIUM COPYRIGHT ACT (“DMCA”) NOTICE</Title>
@@ -151,7 +152,7 @@ const TermsOfUseSection: FC = () => (
           Smoothie Holdings, LLC <br />
           Customer Care
           <br />
-          14850 Montfort Drive, Suite 131
+          14860 Montfort Drive, Suite 150 PMB 34
           <br />
           Dallas, TX 75254
           <br />
@@ -177,38 +178,40 @@ const TermsOfUseSection: FC = () => (
           (collectively, “Submissions”). You represent and warrant that your Submissions are not subject to any
           confidentiality obligations and that you own and control all of the rights to the Submissions, have the lawful
           right to distribute and produce such Submissions, or otherwise have the right to grant the rights to Smoothie
-          Factory that you grant under these Terms. Smoothie Factory is free to use the Submissions for any purpose
-          whatsoever. By making a Submission, you grant Smoothie Factory and its affiliates a perpetual, irrevocable,
-          worldwide, royalty-free, non-exclusive and fully sublicensable right and license to make, use, reproduce,
-          modify, adapt, publish, translate, create derivative works of, distribute, publicly perform, publicly display,
-          develop, manufacture, advertise, and market your Submissions, and any related copyrights, moral rights or
-          other intellectual property rights therein throughout the world, in any medium or technology of any kind now
-          existing or developed in the future. If you elect to forward to us or to transmit via publicly-accessible
-          social networks any such Submission, then by doing so, you acknowledge that (1) we are not liable for any use,
-          disclosure, or return to you of your Submission, (2) no confidential relationship is established or is to be
-          implied in any way from our receipt of the Submission and any statement to the contrary with your Submission
-          shall not alter this condition, (3) you understand that you will not be entitled to any compensation from us
-          based upon your Submission or our use thereof, (4) the receipt of your Submission shall not constitute a
-          waiver by us of our rights to contest the validity of any copyright, or other intellectual property rights
-          that you may now or hereafter claim for the Submission, (5) you release Smoothie Factory and its agents and
-          employees from any claims that such use, as authorized above, violates your rights, and (6) any previously,
-          concurrently or subsequently submitted materials relating to this Submission shall be considered to have been
-          submitted in accordance with these conditions. By making a Submission, you also warrant that you own the
-          material/content submitted, that it is original, that it is not defamatory, and that Smoothie Factory’s use of
-          the Submission will not violate any third party’s rights. Smoothie Factory is under no obligation to use any
-          Submission or any part thereof.
+          Factory that you grant under these Terms. Smoothie Factory<Super>®</Super> is free to use the Submissions for
+          any purpose whatsoever. By making a Submission, you grant Smoothie Factory<Super>®</Super> and its affiliates
+          a perpetual, irrevocable, worldwide, royalty-free, non-exclusive and fully sublicensable right and license to
+          make, use, reproduce, modify, adapt, publish, translate, create derivative works of, distribute, publicly
+          perform, publicly display, develop, manufacture, advertise, and market your Submissions, and any related
+          copyrights, moral rights or other intellectual property rights therein throughout the world, in any medium or
+          technology of any kind now existing or developed in the future. If you elect to forward to us or to transmit
+          via publicly-accessible social networks any such Submission, then by doing so, you acknowledge that (1) we are
+          not liable for any use, disclosure, or return to you of your Submission, (2) no confidential relationship is
+          established or is to be implied in any way from our receipt of the Submission and any statement to the
+          contrary with your Submission shall not alter this condition, (3) you understand that you will not be entitled
+          to any compensation from us based upon your Submission or our use thereof, (4) the receipt of your Submission
+          shall not constitute a waiver by us of our rights to contest the validity of any copyright, or other
+          intellectual property rights that you may now or hereafter claim for the Submission, (5) you release Smoothie
+          Factory<Super>®</Super> and its agents and employees from any claims that such use, as authorized above,
+          violates your rights, and (6) any previously, concurrently or subsequently submitted materials relating to
+          this Submission shall be considered to have been submitted in accordance with these conditions. By making a
+          Submission, you also warrant that you own the material/content submitted, that it is original, that it is not
+          defamatory, and that Smoothie Factory<Super>®</Super>’s use of the Submission will not violate any third
+          party’s rights. Smoothie Factory<Super>®</Super> is under no obligation to use any Submission or any part
+          thereof.
         </Text>
         <Text>
-          Further, you grant Smoothie Factory and its sublicensees the right to use your name and likeness that you
-          submit in connection with such materials and content, if they choose. You represent and warrant that you own
-          or otherwise control all of the rights to any Submission and in the materials and content that you post, and
-          that you have the lawful right to distribute and produce such Submissions, or otherwise have the right to
-          grant the rights to Smoothie Factory that you grant under these Terms; that the content is accurate; that use
-          of any Submission, materials or content you supply does not and will not cause injury to any person or entity;
-          and that you will indemnify Smoothie Factory and its sublicensees for all claims resulting from any
-          Submission, materials and content you supply. Smoothie Factory has the right but not the obligation to monitor
-          and edit or remove any activity or content on the Sites. Smoothie Factory takes no responsibility and assumes
-          no liability for Submissions and/or any materials or content posted by you or any third party.
+          Further, you grant Smoothie Factory<Super>®</Super> and its sublicensees the right to use your name and
+          likeness that you submit in connection with such materials and content, if they choose. You represent and
+          warrant that you own or otherwise control all of the rights to any Submission and in the materials and content
+          that you post, and that you have the lawful right to distribute and produce such Submissions, or otherwise
+          have the right to grant the rights to Smoothie Factory<Super>®</Super> that you grant under these Terms; that
+          the content is accurate; that use of any Submission, materials or content you supply does not and will not
+          cause injury to any person or entity; and that you will indemnify Smoothie Factory<Super>®</Super> and its
+          sublicensees for all claims resulting from any Submission, materials and content you supply. Smoothie Factory
+          <Super>®</Super> has the right but not the obligation to monitor and edit or remove any activity or content on
+          the Sites. Smoothie Factory<Super>®</Super> takes no responsibility and assumes no liability for Submissions
+          and/or any materials or content posted by you or any third party.
         </Text>
         <Text>
           We ask that you do not submit confidential information or materials to us. We will not keep the Submission
@@ -222,14 +225,15 @@ const TermsOfUseSection: FC = () => (
         <Title>YOUR OBLIGATIONS</Title>
         <Text>
           In order to participate in certain areas of our Sites, you will need to register for an account. In providing
-          registration and other information to Smoothie Factory, you agree to provide true, accurate, current and
-          correct information about yourself, and to maintain and update registration information to keep it true,
-          accurate, current and complete. If Smoothie Factory has reasonable grounds to suspect that such information is
-          untrue, inaccurate, not current or incomplete, Smoothie Factory has the right to suspend or terminate your
-          account and refuse any and all current or future use of the account. You agree to maintain the security of
-          your account by not sharing your password and will promptly notify Smoothie Factory if you discover or
-          otherwise suspect any security breaches related to your account. You agree to take responsibility for all
-          activities that occur under your account and accept all risks of unauthorized access.
+          registration and other information to Smoothie Factory<Super>®</Super>, you agree to provide true, accurate,
+          current and correct information about yourself, and to maintain and update registration information to keep it
+          true, accurate, current and complete. If Smoothie Factory<Super>®</Super> has reasonable grounds to suspect
+          that such information is untrue, inaccurate, not current or incomplete, Smoothie Factory<Super>®</Super> has
+          the right to suspend or terminate your account and refuse any and all current or future use of the account.
+          You agree to maintain the security of your account by not sharing your password and will promptly notify
+          Smoothie Factory<Super>®</Super> if you discover or otherwise suspect any security breaches related to your
+          account. You agree to take responsibility for all activities that occur under your account and accept all
+          risks of unauthorized access.
         </Text>
         <Text>
           In using the Sites you agree that you will not: (a) post, disseminate or transmit unauthorized advertising,
@@ -255,9 +259,10 @@ const TermsOfUseSection: FC = () => (
           contractual or fiduciary relationships; (d) contains personally identifiable information belonging to minors;
           (e) impersonates any person or entity or otherwise misrepresents your identity or affiliation with another
           person or entity; (f) is spam, direct marketing or any unsolicited advertising, promotional materials or other
-          forms of solicitation or commercial content; or (g) violates these Terms, or in Smoothie Factory’s sole
-          discretion, is objectionable, restricts or inhibits any other person from using or enjoying the Sites, or
-          which damage the image or rights of Smoothie Factory, other users, or third parties.
+          forms of solicitation or commercial content; or (g) violates these Terms, or in Smoothie Factory
+          <Super>®</Super>’s sole discretion, is objectionable, restricts or inhibits any other person from using or
+          enjoying the Sites, or which damage the image or rights of Smoothie Factory<Super>®</Super>, other users, or
+          third parties.
         </Text>
         <Text>
           To the extent that the following activities are prohibited by applicable law, in using the Sites you will not:
@@ -270,26 +275,27 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Text>
           To the extent that any of the following activities materially interfere with the Sites or the network and
-          systems of a Smoothie Factory service provider (“Service”), you will not: (a) post, disseminate or transmit
-          any worm, viruses or other harmful, disruptive or destructive files, code or programs on the Sites; (b) use
-          Internet Relay Chat (IRC) bots, i.e., programs that utilize excessive resources by connecting to an IRC
-          network and running 24 hours per day; (c) hinder the ability of others to use IRC; (d) disrupt the normal flow
-          on the Sites or otherwise act in a manner that negatively affects other users’ ability to engage in real time
-          exchanges; (e) interfere with, disrupt, or harm in any way the servers or networks connected to the Sites or
-          Service; (f) use the Sites or Service to access the accounts of others without permission; (g) attempt to
-          penetrate security measures of the Sites, Service, or another entity, or obtain or bypass others’ passwords;
-          or (h) engage in denial of service attacks, i.e., actions designed to impair network access by flooding a site
-          or the Internet with useless traffic.
+          systems of a Smoothie Factory<Super>®</Super> service provider (“Service”), you will not: (a) post,
+          disseminate or transmit any worm, viruses or other harmful, disruptive or destructive files, code or programs
+          on the Sites; (b) use Internet Relay Chat (IRC) bots, i.e., programs that utilize excessive resources by
+          connecting to an IRC network and running 24 hours per day; (c) hinder the ability of others to use IRC; (d)
+          disrupt the normal flow on the Sites or otherwise act in a manner that negatively affects other users’ ability
+          to engage in real time exchanges; (e) interfere with, disrupt, or harm in any way the servers or networks
+          connected to the Sites or Service; (f) use the Sites or Service to access the accounts of others without
+          permission; (g) attempt to penetrate security measures of the Sites, Service, or another entity, or obtain or
+          bypass others’ passwords; or (h) engage in denial of service attacks, i.e., actions designed to impair network
+          access by flooding a site or the Internet with useless traffic.
         </Text>
         <Title>MODIFICATIONS TO THE SITES</Title>
         <Text>
           Changes may be made at any time to the information, names, text, software, images, pictures, logos,
           trademarks, products and services and any other material displayed on, offered through or contained on the
           Sites. The Sites may include inaccuracies or typographical errors that may be corrected as they are discovered
-          at Smoothie Factory’s sole discretion. Further, Smoothie Factory reserves the right, for any reason, in its
-          sole discretion, to terminate, change or suspend any aspect of the Sites including but not limited to content,
-          features or hours of availability. Smoothie Factory may impose limits on certain features of the Sites or
-          restrict your access to part or all of the Sites without notice or penalty.
+          at Smoothie Factory<Super>®</Super>’s sole discretion. Further, Smoothie Factory<Super>®</Super> reserves the
+          right, for any reason, in its sole discretion, to terminate, change or suspend any aspect of the Sites
+          including but not limited to content, features or hours of availability. Smoothie Factory<Super>®</Super> may
+          impose limits on certain features of the Sites or restrict your access to part or all of the Sites without
+          notice or penalty.
         </Text>
         <Title>PRIVACY</Title>
         <Text>
@@ -304,40 +310,42 @@ const TermsOfUseSection: FC = () => (
         <Title>MOBILE PAYMENT</Title>
         <Text>
           You may elect to participate in certain functionality of the Sites which will allow you to use the Sites to
-          purchase Smoothie Factory products (“Mobile Payment”). Mobile payment may be accepted at participating
-          Smoothie Factory locations in the United States. Smoothie Factory reserves the right at any time to
-          discontinue Mobile Payment or change the location of the restaurants accepting Mobile Payment.
+          purchase Smoothie Factory<Super>®</Super> products (“Mobile Payment”). Mobile payment may be accepted at
+          participating Smoothie Factory<Super>®</Super> locations in the United States. Smoothie Factory
+          <Super>®</Super> reserves the right at any time to discontinue Mobile Payment or change the location of the
+          restaurants accepting Mobile Payment.
         </Text>
         <Title>MOBILE ORDER AND PAY (MOP) AND DELIVERY</Title>
         <Text>
           You may also elect to participate in certain functionality of the Sites which will allow you in certain
-          Smoothie Factory locations in certain markets to use the Sites to order and pay for certain Smoothie Factory
-          products prior to arrival at the restaurant (“MOP”). Smoothie Factory reserves the right at any time to
-          discontinue MOP or change the location of the restaurants or markets offering MOP.
+          Smoothie Factory<Super>®</Super> locations in certain markets to use the Sites to order and pay for certain
+          Smoothie Factory<Super>®</Super>
+          products prior to arrival at the restaurant (“MOP”). Smoothie Factory<Super>®</Super> reserves the right at
+          any time to discontinue MOP or change the location of the restaurants or markets offering MOP.
         </Text>
 
         <Title>GIFT CARDS TERMS AND CONDITIONS (“Gift Card Rules”)</Title>
         <Text>
-          The Gift Card Terms and Conditions (this “Gift Card Rules”) is an agreement between you and Smoothie Factory,
-          and describes the terms and conditions that apply to your gift card [when available]. By buying, loading, or
-          using a Gift Card, you agree to these terms. Please read the following provisions, as well as the complete
-          Terms of Use and Privacy Policy that govern the Sites.These Gift Card Rules include an Arbitration provision
-          that governs any disputes between you and us. This provision will: 1) Eliminate your right to a trial by jury;
-          and 2) Substantially affect your rights, including preventing you from bringing, joining, or participating in
-          class or consolidated proceedings.
+          The Gift Card Terms and Conditions (this “Gift Card Rules”) is an agreement between you and Smoothie Factory
+          <Super>®</Super>, and describes the terms and conditions that apply to your gift card [when available]. By
+          buying, loading, or using a Gift Card, you agree to these terms. Please read the following provisions, as well
+          as the complete Terms of Use and Privacy Policy that govern the Sites.These Gift Card Rules include an
+          Arbitration provision that governs any disputes between you and us. This provision will: 1) Eliminate your
+          right to a trial by jury; and 2) Substantially affect your rights, including preventing you from bringing,
+          joining, or participating in class or consolidated proceedings.
         </Text>
 
         <Title>ABOUT YOUR GIFT CARD</Title>
         <Text>
-          Smoothie Factory gift cards are not subject to any service fees or expiration dates. Your use of a gift card
-          constitutes your acceptance of the complete Gift Card Rules (including the Arbitration provisions). Gift cards
-          are redeemable for food, drink and eligible merchandise at participating locations in the United States.
-          Eligible merchandise or services are determined by Smoothie Factory in its sole discretion and may be changed
-          without notice. Gift cards cannot be used to purchase other gift cards and you will not receive Rewards points
-          for the purchase of any gift card. Gift cards cannot be redeemed for cash or applied as payment to any
-          account, unless required by law. In California, all gift cards are redeemable for cash upon request if the
-          balance on the card is less than $10.00. Gift cards may be redeemable for cash when their balance falls below
-          a certain amount in other states within the United States as well.
+          Smoothie Factory<Super>®</Super> gift cards are not subject to any service fees or expiration dates. Your use
+          of a gift card constitutes your acceptance of the complete Gift Card Rules (including the Arbitration
+          provisions). Gift cards are redeemable for food, drink and eligible merchandise at participating locations in
+          the United States. Eligible merchandise or services are determined by Smoothie Factory<Super>®</Super> in its
+          sole discretion and may be changed without notice. Gift cards cannot be used to purchase other gift cards and
+          you will not receive Rewards points for the purchase of any gift card. Gift cards cannot be redeemed for cash
+          or applied as payment to any account, unless required by law. In California, all gift cards are redeemable for
+          cash upon request if the balance on the card is less than $10.00. Gift cards may be redeemable for cash when
+          their balance falls below a certain amount in other states within the United States as well.
         </Text>
 
         <Title>ELECTRONIC GIFT CARDS</Title>
@@ -360,9 +368,9 @@ const TermsOfUseSection: FC = () => (
         <Text>
           In the United States, you can load a dollar value on a gift card by using a credit card, debit card or cash by
           visiting any participating location. You may not load more than $500 worth of value on each gift card. The
-          minimum amount that must be loaded onto your gift card is $5. Smoothie Factory may change the maximum and
-          minimum amounts at any time by notifying you at the point of sale, by phone when you call or on the Sites, and
-          such change shall not constitute an amendment to these Gift Card Rules.
+          minimum amount that must be loaded onto your gift card is $5. Smoothie Factory<Super>®</Super> may change the
+          maximum and minimum amounts at any time by notifying you at the point of sale, by phone when you call or on
+          the Sites, and such change shall not constitute an amendment to these Gift Card Rules.
         </Text>
         <Title>LOST, STOLEN OR DAMAGED GIFT CARD REPLACEMENT POLICY</Title>
         <Text>
@@ -385,35 +393,37 @@ const TermsOfUseSection: FC = () => (
             deactivate your gift card and issue you a new gift card with the remaining balance.
           </ListItem>
           <ListItem>
-            If you cannot either go online or to a participating SMOOTHIE FACTORY restaurant and if your gift card has
-            been lost, stolen or damaged, please mail: (1) the 16-digit gift card number (or if you registered your gift
-            card with us, you can provide us with the email address or phone number used at the time of registration),
-            (2) an original location receipt indicating the purchase of the gift card, (3) a copy of a valid government
-            issued I.D. (Driver’s License, Military I.D., or Passport), and (4) your complete name and mailing address
-            to: Smoothie Holdings, LLC, Attn: Gift Cards Replacement, 14850 Montfort Drive, Suite 131, Dallas, TX 75254.
-            Upon satisfactory receipt of these required information, Smoothie Factory will cancel your old gift card and
-            issue a new gift card in the amount of any remaining balance on your old gift card on the date of Smoothie
-            Factory’s receipt of the such information. The replacement gift card will be mailed to the address you
-            provide, which must be a valid street address. P.O. Boxes will not be accepted. Please make a copy of all
-            documents you submit to us for your records. All documents submitted become Smoothie Factory’s property and
-            will not be returned. Please allow up to 8 weeks for delivery of the replacement gift card. Smoothie Factory
-            shall not be responsible for any lost, late, illegible, damaged, misdirected, incomplete or postage due
-            mail. Reproduction, purchase, trade or sales of Report Form, gift card numbers, and or cash register
-            receipts are prohibited. Fraudulent submissions may result in prosecution under applicable federal mail
-            fraud statutes.
+            If you cannot either go online or to a participating Smoothie Factory<Super>®</Super> restaurant and if your
+            gift card has been lost, stolen or damaged, please mail: (1) the 16-digit gift card number (or if you
+            registered your gift card with us, you can provide us with the email address or phone number used at the
+            time of registration), (2) an original location receipt indicating the purchase of the gift card, (3) a copy
+            of a valid government issued I.D. (Driver’s License, Military I.D., or Passport), and (4) your complete name
+            and mailing address to: Smoothie Holdings, LLC, Attn: Gift Cards Replacement, 14860 Montfort Drive, Suite
+            150 PMB 34, Dallas, TX 75254. Upon satisfactory receipt of these required information, Smoothie Factory
+            <Super>®</Super> will cancel your old gift card and issue a new gift card in the amount of any remaining
+            balance on your old gift card on the date of Smoothie Factory<Super>®</Super>’s receipt of the such
+            information. The replacement gift card will be mailed to the address you provide, which must be a valid
+            street address. P.O. Boxes will not be accepted. Please make a copy of all documents you submit to us for
+            your records. All documents submitted become Smoothie Factory<Super>®</Super>’s property and will not be
+            returned. Please allow up to 8 weeks for delivery of the replacement gift card. Smoothie Factory shall not
+            be responsible for any lost, late, illegible, damaged, misdirected, incomplete or postage due mail.
+            Reproduction, purchase, trade or sales of Report Form, gift card numbers, and or cash register receipts are
+            prohibited. Fraudulent submissions may result in prosecution under applicable federal mail fraud statutes.
           </ListItem>
         </ul>
         <Title>FRAUD ASSOCIATED WITH YOUR GIFT CARD OR CARD BALANCE</Title>
         <Text>
           We will not accept any gift card, or will limit use of any gift card or gift card balance, if we reasonably
           believe that the use is unauthorized, fraudulent or otherwise unlawful, and we consider such action
-          appropriate to limit our risk. Smoothie Factory does not control who may sell preloaded gift cards, nor can we
-          control the price or preloaded denominations offered by independent sellers. Consequently, Smoothie Factory
+          appropriate to limit our risk. Smoothie Factory<Super>®</Super> does not control who may sell preloaded gift
+          cards, nor can we control the price or preloaded denominations offered by independent sellers. Consequently,
+          Smoothie Factory<Super>®</Super>
           has no liability to you for any third party fraud or unlawful activity associated with any gift card balance.
-          If Smoothie Factory discovers any gift card or gift card balance was sourced or derived from fraud or other
-          unlawful means, in our sole discretion, we may cancel all impacted gift cards and retain all related gift card
-          balances without notice to you. We may use retained gift card balances to help offset our liability to card
-          companies, networks and issuers of lost or stolen credit and debit cards used to purchase or load gift cards.
+          If Smoothie Factory<Super>®</Super> discovers any gift card or gift card balance was sourced or derived from
+          fraud or other unlawful means, in our sole discretion, we may cancel all impacted gift cards and retain all
+          related gift card balances without notice to you. We may use retained gift card balances to help offset our
+          liability to card companies, networks and issuers of lost or stolen credit and debit cards used to purchase or
+          load gift cards.
         </Text>
         <Title>REGISTRATION, LIABILITY FOR UNAUTHORIZED TRANSACTIONS</Title>
         <Text>
@@ -456,9 +466,9 @@ const TermsOfUseSection: FC = () => (
           of this arbitration provision within 30 days from the earliest of the date you purchased, loaded, reloaded or
           used any of your gift cards (the “Opt Out Deadline”) after these Gift Card Rules have gone into effect. You
           may opt out of these arbitration procedures by sending us a written notice that you opt out to the following
-          address: Smoothie Holdings, LLC, Attn: Customer Service, 14850 Montfort Drive, Suite 131, Dallas, TX 75254.
-          Any opt-out received after the Opt Out Deadline (allowing three (3) additional days for mailing) will not be
-          valid and you must pursue your claim in arbitration or small claims court.
+          address: Smoothie Holdings, LLC, Attn: Customer Service, 14860 Montfort Drive, Suite 150 PMB 34, Dallas, TX
+          75254. Any opt-out received after the Opt Out Deadline (allowing three (3) additional days for mailing) will
+          not be valid and you must pursue your claim in arbitration or small claims court.
         </Text>
         <Text>
           For all disputes, whether pursued in court or arbitration, you must first send a written description of your
@@ -504,36 +514,37 @@ const TermsOfUseSection: FC = () => (
         <Text>
           THE SITES, THEIR CONTENTS, AND ANY SOFTWARE, FUNCTIONS AND ALL INFORMATION, PRODUCTS AND SERVICES CONTAINED IN
           OR OFFERED THROUGH THE SITES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT REPRESENTATIONS OR
-          WARRANTIES OF ANY KIND. SMOOTHIE FACTORY AND ITS LICENSORS AND CONTENT PROVIDERS EXPRESSLY DISCLAIM ALL SUCH
-          REPRESENTATIONS AND WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE,
-          MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT (INCLUDING, WITHOUT LIMITATION,
-          NONINFRINGEMENT OF THIRD PARTY RIGHTS, ERROR-FREE OR UNINTERRUPTED SERVICE, ACCURACY AVAILABILITY,
+          WARRANTIES OF ANY KIND. Smoothie Factory<Super>®</Super> AND ITS LICENSORS AND CONTENT PROVIDERS EXPRESSLY
+          DISCLAIM ALL SUCH REPRESENTATIONS AND WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION,
+          WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT (INCLUDING, WITHOUT
+          LIMITATION, NONINFRINGEMENT OF THIRD PARTY RIGHTS, ERROR-FREE OR UNINTERRUPTED SERVICE, ACCURACY AVAILABILITY,
           RELIABILITY, SECURITY, CURRENCY AND COMPLETENESS ARISING FROM OR RELATING TO THE SITES, THEIR CONTENT OR ANY
           LINKS, ANY SOFTWARE, TOOLS, TIPS, PRODUCTS OR SERVICES PROVIDED THROUGH THE SITES) AND ANY IMPLIED WARRANTIES
           ARISING FROM COURSE OF DEALING OR COURSE OF PERFORMANCE WITH RESPECT TO THE SITES, ANY GIFT CARD AND/OR ANY
-          FACTORY REWARDS CARD OR ACCOUNT. SMOOTHIE FACTORY DOES NOT WARRANT THAT THE GIFT CARD AND/OR THE FACTORY
-          REWARDS CARD OR ACCOUNT WILL ALWAYS BE ACCESSIBLE OR ACCEPTED. SMOOTHIE FACTORY DOES NOT WARRANT THAT THE
-          SITES OR THEIR CONTENTS WILL BE COMPLETE, ACCURATE, TIMELY, UNINTERRUPTED, SECURE OR ERROR FREE, OR THAT
-          DEFECTS WILL BE CORRECTED. ALL INFORMATION ON THE SITES IS SUBJECT TO CHANGE WITHOUT NOTICE. SOME
-          JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES SO SOME OF THE ABOVE EXCLUSIONS MAY NOT APPLY
-          TO YOU.
+          FACTORY REWARDS CARD OR ACCOUNT. Smoothie Factory<Super>®</Super> DOES NOT WARRANT THAT THE GIFT CARD AND/OR
+          THE FACTORY REWARDS CARD OR ACCOUNT WILL ALWAYS BE ACCESSIBLE OR ACCEPTED. Smoothie Factory<Super>®</Super>{' '}
+          DOES NOT WARRANT THAT THE SITES OR THEIR CONTENTS WILL BE COMPLETE, ACCURATE, TIMELY, UNINTERRUPTED, SECURE OR
+          ERROR FREE, OR THAT DEFECTS WILL BE CORRECTED. ALL INFORMATION ON THE SITES IS SUBJECT TO CHANGE WITHOUT
+          NOTICE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES SO SOME OF THE ABOVE EXCLUSIONS
+          MAY NOT APPLY TO YOU.
         </Text>
         <Title>LIMITATION OF LIABILITY</Title>
         <Text>
-          IN NO EVENT SHALL SMOOTHIE FACTORY OR ANY OF ITS SUBSIDIARIES, AFFILIATES, FRANCHISEES, LICENSEES AND ANY OF
-          THEIR RESPECTIVE DIRECTORS, OFFICERS, EMPLOYEES, MEMBERS, SHAREHOLDERS, AGENTS, SUCCESSORS, ASSIGNS OR OTHER
-          REPRESENTATIVES BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, CONSEQUENTIAL, SPECIAL, EXEMPLARY, INCIDENTAL OR
-          AGGRAVATED DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF DATA, INCOME OR PROFIT, LOSS OF OR
-          DAMAGE TO PROPERTY AND THIRD PARTY CLAIMS) OR ANY OTHER DAMAGES OF ANY KIND, ARISING OUT OF OR IN CONNECTION
-          WITH: THE SITES; ANY CONTENT OR MATERIALS, INFORMATION, QUALIFICATION AND RECOMMENDATIONS APPEARING ON THE
-          SITES; ANY SOFTWARE, TOOLS, TIPS, PRODUCTS, OR SERVICES OFFERED THROUGH, CONTAINED IN OR ADVERTISED ON THE
-          SITES; ANY LINK PROVIDED ON THE SITES; AND YOUR ACCOUNT AND PASSWORD, WHETHER OR NOT SMOOTHIE FACTORY HAS BEEN
-          ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL SMOOTHIE FACTORY OR ITS AFFILIATES OR
-          SUBSIDIARIES HAVE ANY LIABILITY FOR UNAUTHORIZED ACCESS TO, OR ALTERATION, THEFT OR DESTRUCTION OF A GIFT CARD
-          AND/OR FACTORY REWARDS ACCOUNT OR CARD THROUGH ACCIDENT, MISUSE OR FRAUDULENT MEANS OR DEVICES BY YOU OR ANY
-          THIRD PARTY, OR AS A RESULT OF ANY DELAY OR MISTAKE RESULTING FROM ANY CIRCUMSTANCES BEYOND OUR CONTROL. THIS
-          EXCLUSION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW. THIS PROVISION SHALL SURVIVE THE
-          TERMINATION OF YOUR RIGHT TO USE THE SITES.
+          IN NO EVENT SHALL Smoothie Factory<Super>®</Super> OR ANY OF ITS SUBSIDIARIES, AFFILIATES, FRANCHISEES,
+          LICENSEES AND ANY OF THEIR RESPECTIVE DIRECTORS, OFFICERS, EMPLOYEES, MEMBERS, SHAREHOLDERS, AGENTS,
+          SUCCESSORS, ASSIGNS OR OTHER REPRESENTATIVES BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, CONSEQUENTIAL,
+          SPECIAL, EXEMPLARY, INCIDENTAL OR AGGRAVATED DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF DATA,
+          INCOME OR PROFIT, LOSS OF OR DAMAGE TO PROPERTY AND THIRD PARTY CLAIMS) OR ANY OTHER DAMAGES OF ANY KIND,
+          ARISING OUT OF OR IN CONNECTION WITH: THE SITES; ANY CONTENT OR MATERIALS, INFORMATION, QUALIFICATION AND
+          RECOMMENDATIONS APPEARING ON THE SITES; ANY SOFTWARE, TOOLS, TIPS, PRODUCTS, OR SERVICES OFFERED THROUGH,
+          CONTAINED IN OR ADVERTISED ON THE SITES; ANY LINK PROVIDED ON THE SITES; AND YOUR ACCOUNT AND PASSWORD,
+          WHETHER OR NOT Smoothie Factory<Super>®</Super> HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO
+          EVENT SHALL Smoothie Factory<Super>®</Super> OR ITS AFFILIATES OR SUBSIDIARIES HAVE ANY LIABILITY FOR
+          UNAUTHORIZED ACCESS TO, OR ALTERATION, THEFT OR DESTRUCTION OF A GIFT CARD AND/OR FACTORY REWARDS ACCOUNT OR
+          CARD THROUGH ACCIDENT, MISUSE OR FRAUDULENT MEANS OR DEVICES BY YOU OR ANY THIRD PARTY, OR AS A RESULT OF ANY
+          DELAY OR MISTAKE RESULTING FROM ANY CIRCUMSTANCES BEYOND OUR CONTROL. THIS EXCLUSION OF LIABILITY SHALL APPLY
+          TO THE FULLEST EXTENT PERMITTED BY LAW. THIS PROVISION SHALL SURVIVE THE TERMINATION OF YOUR RIGHT TO USE THE
+          SITES.
         </Text>
         <Text>
           YOU ACKNOWLEDGE THAT YOU WILL BE FULLY LIABLE FOR ALL DAMAGES RESULTING DIRECTLY OR INDIRECTLY FROM YOUR USE
@@ -541,32 +552,35 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Title>INDEMNIFICATION</Title>
         <Text>
-          You agree to defend, indemnify and hold Smoothie Factory and each of its subsidiaries, affiliates,
-          franchisees, licensees and any of their respective directors, officers, employees, shareholders, members,
-          agents, licensees, successors, assigns or other representatives, harmless from and against any and all claims,
-          losses, damages, liabilities, costs and expenses, including reasonable fees and expenses of counsel, incurred
-          or suffered by them and arising from or related to your (i) use of the Sites including, without limitation,
-          transmission or placement of information or material by you on the Sites, (ii) use of a gift card, (iii) use
-          of a FACTORY REWARDS card, account or any earned rewards or points, or (iv) violation of any of these Terms
-          including, without limitation, the Smoothie Factory Loyalty Program Rules and the Gift Card Rules. This
-          provision shall survive the termination of your right to use the Sites.
+          You agree to defend, indemnify and hold Smoothie Factory<Super>®</Super> and each of its subsidiaries,
+          affiliates, franchisees, licensees and any of their respective directors, officers, employees, shareholders,
+          members, agents, licensees, successors, assigns or other representatives, harmless from and against any and
+          all claims, losses, damages, liabilities, costs and expenses, including reasonable fees and expenses of
+          counsel, incurred or suffered by them and arising from or related to your (i) use of the Sites including,
+          without limitation, transmission or placement of information or material by you on the Sites, (ii) use of a
+          gift card, (iii) use of a FACTORY REWARDS card, account or any earned rewards or points, or (iv) violation of
+          any of these Terms including, without limitation, the Smoothie Factory<Super>®</Super> Loyalty Program Rules
+          and the Gift Card Rules. This provision shall survive the termination of your right to use the Sites.
         </Text>
         <Title>DISPUTE RESOLUTION</Title>
         <Text>
-          All disputes between you and Smoothie Factory arising or relating to: (a) these Terms; (b) the Sites; (c) any
-          advertisement or promotion relating to these Terms or the Sites; or (d) transactions effectuated through the
-          Sites; or (e) the relationship which results from these Terms (including relationships with third parties who
-          are not party to these Terms) shall be resolved by binding individual arbitration under the American
-          Arbitration Association’s rules for consumer-related disputes. Neither you nor Smoothie Factory will
-          participate in a class action or class-wide arbitration for any claims covered by these Terms. If this class
-          action waiver is found to be unenforceable in a particular case, then this entire arbitration agreement shall
-          be null and void in that case. These Terms shall be governed by the Federal Arbitration Act and, where
-          consistent, Texas law. Smoothie Factory reserves the right to change this dispute resolution provision, but
-          any such changes will not apply to disputes filed before the effective date of the amendment. This provision
-          will survive the termination of your right to use the Sites.
+          All disputes between you and Smoothie Factory<Super>®</Super> arising or relating to: (a) these Terms; (b) the
+          Sites; (c) any advertisement or promotion relating to these Terms or the Sites; or (d) transactions
+          effectuated through the Sites; or (e) the relationship which results from these Terms (including relationships
+          with third parties who are not party to these Terms) shall be resolved by binding individual arbitration under
+          the American Arbitration Association’s rules for consumer-related disputes. Neither you nor Smoothie Factory
+          <Super>®</Super> will participate in a class action or class-wide arbitration for any claims covered by these
+          Terms. If this class action waiver is found to be unenforceable in a particular case, then this entire
+          arbitration agreement shall be null and void in that case. These Terms shall be governed by the Federal
+          Arbitration Act and, where consistent, Texas law. Smoothie Factory<Super>®</Super> reserves the right to
+          change this dispute resolution provision, but any such changes will not apply to disputes filed before the
+          effective date of the amendment. This provision will survive the termination of your right to use the Sites.
         </Text>
         <Title>TERMINATION</Title>
-        <Text>Smoothie Factory may at any time and at its sole discretion terminate your right to use the Sites.</Text>
+        <Text>
+          Smoothie Factory<Super>®</Super> may at any time and at its sole discretion terminate your right to use the
+          Sites.
+        </Text>
         <Title>GOVERNING LAW</Title>
         <Text>
           You agree that all matters relating to your access to or use of the Sites, including all disputes, will be
@@ -583,27 +597,29 @@ const TermsOfUseSection: FC = () => (
         <Title>GENERAL PROVISIONS</Title>
         <Text>
           Except for the portion of these Terms specifically labeled as the FACTORY REWARDS Terms and Conditions, which
-          govern the FACTORY REWARDS program (i.e., Smoothie Factory Loyalty Program Rules) or the SMOOTHIE FACTORY Gift
-          Card Terms and Conditions, which govern the SMOOTHIE FACTORY Gift Card program (i.e., Gift Card Rules), these
-          Terms constitute a binding agreement between you and Smoothie Factory and supersede all prior agreements,
-          understandings and representations between the parties regarding the subject matter herein. In the event of an
-          inconsistency between these Terms and either the Smoothie Factory Loyalty Program Rules or the Gift Card Rules
-          relating to your use of the Sites, these Terms shall prevail. In the event of an inconsistency between these
-          Terms and the Smoothie Factory Loyalty Program Rules relating to your use of your FACTORY REWARDS loyalty card
-          or FACTORY REWARDS points, the Smoothie Factory Loyalty Program Rules shall prevail. In the event of an
-          inconsistency between these Terms and the Gift Card Rules relating to your use of your SMOOTHIE FACTORY gift
-          card, the Gift Card Rules shall prevail. No failure by Smoothie Factory or you to exercise any rights, powers
-          or remedies hereunder or its delay to do so shall constitute a waiver of these rights, powers or remedies. The
-          single or partial exercise of a right, power or remedy shall not prevent its subsequent exercise or the
-          exercise of any other right, power or remedy. If any provision of these Terms or part thereof is or becomes
-          illegal, invalid or unenforceable in any jurisdiction, the illegality, invalidity or unenforceability of that
-          provision will not affect the legality, validity or enforceability of the remainder of the provision or the
-          remaining provisions of these Terms, as the case may be, or the legality, validity or enforceability of that
-          provision or part thereof in any other jurisdiction. These Terms are effective until terminated by you or
-          Smoothie Factory, which Smoothie Factory may do at any time, without notice, in its sole discretion. If you
-          become dissatisfied with the Sites, your only recourse is to immediately discontinue use of the Sites. All
-          provisions of the Terms regarding representations, warranties, indemnification, disclaimers, and limitations
-          of liability shall survive the termination of the Terms.
+          govern the FACTORY REWARDS program (i.e., Smoothie Factory<Super>®</Super> Loyalty Program Rules) or the
+          Smoothie Factory<Super>®</Super> Gift Card Terms and Conditions, which govern the Smoothie Factory
+          <Super>®</Super> Gift Card program (i.e., Gift Card Rules), these Terms constitute a binding agreement between
+          you and Smoothie Factory<Super>®</Super> and supersede all prior agreements, understandings and
+          representations between the parties regarding the subject matter herein. In the event of an inconsistency
+          between these Terms and either the Smoothie Factory<Super>®</Super> Loyalty Program Rules or the Gift Card
+          Rules relating to your use of the Sites, these Terms shall prevail. In the event of an inconsistency between
+          these Terms and the Smoothie Factory<Super>®</Super> Loyalty Program Rules relating to your use of your
+          FACTORY REWARDS loyalty card or FACTORY REWARDS points, the Smoothie Factory<Super>®</Super> Loyalty Program
+          Rules shall prevail. In the event of an inconsistency between these Terms and the Gift Card Rules relating to
+          your use of your Smoothie Factory<Super>®</Super> gift card, the Gift Card Rules shall prevail. No failure by
+          Smoothie Factory<Super>®</Super> or you to exercise any rights, powers or remedies hereunder or its delay to
+          do so shall constitute a waiver of these rights, powers or remedies. The single or partial exercise of a
+          right, power or remedy shall not prevent its subsequent exercise or the exercise of any other right, power or
+          remedy. If any provision of these Terms or part thereof is or becomes illegal, invalid or unenforceable in any
+          jurisdiction, the illegality, invalidity or unenforceability of that provision will not affect the legality,
+          validity or enforceability of the remainder of the provision or the remaining provisions of these Terms, as
+          the case may be, or the legality, validity or enforceability of that provision or part thereof in any other
+          jurisdiction. These Terms are effective until terminated by you or Smoothie Factory<Super>®</Super>, which
+          Smoothie Factory<Super>®</Super> may do at any time, without notice, in its sole discretion. If you become
+          dissatisfied with the Sites, your only recourse is to immediately discontinue use of the Sites. All provisions
+          of the Terms regarding representations, warranties, indemnification, disclaimers, and limitations of liability
+          shall survive the termination of the Terms.
         </Text>
         <Text>
           If you have any questions or comments about these Terms, please call us at (214) 302-5979 or contact us via
@@ -618,11 +634,12 @@ const TermsOfUseSection: FC = () => (
           information is expressed or implied by any information, material or content of any third party contained in,
           referred to, included on, or linked from or to this Site. Any information, data, opinions, recommendation,
           products or services provided by such third parties through links to other websites or otherwise made
-          available through their websites are solely those of such third parties and not of Smoothie Factory or its
-          affiliates. This could be the case even for those web sites that carry Smoothie Factory’s or its affiliates’
-          trademarks or logos or which are framed by the Sites. Your use of such third party websites is subject to the
-          terms and conditions of use and the privacy policies of such websites. We are not responsible for the
-          information collection practices or the content of the sites to which we link.
+          available through their websites are solely those of such third parties and not of Smoothie Factory
+          <Super>®</Super> or its affiliates. This could be the case even for those web sites that carry Smoothie
+          Factory<Super>®</Super>’s or its affiliates’ trademarks or logos or which are framed by the Sites. Your use of
+          such third party websites is subject to the terms and conditions of use and the privacy policies of such
+          websites. We are not responsible for the information collection practices or the content of the sites to which
+          we link.
         </Text>
         <Title>NOTICE TO CALIFORNIA RESIDENTS</Title>
         <Text>
@@ -634,19 +651,19 @@ const TermsOfUseSection: FC = () => (
         <Text>
           If you are a California resident, you can also request a notice disclosing the categories or personal
           information we have shared with third parties, if any, for the third parties’ direct marketing purposes. To
-          request a notice, please submit your request by mail to: Smoothie Holdings, LLC, Attn: Customer Service, 14850
-          Montfort Drive, Suite 131, Dallas, TX 75254. Please specify that you are requesting a “California Privacy
-          Rights Notice.” We will make every effort to promptly respond to your request.
+          request a notice, please submit your request by mail to: Smoothie Holdings, LLC, Attn: Customer Service, 14860
+          Montfort Drive, Suite 150 PMB 34, Dallas, TX 75254. Please specify that you are requesting a “California
+          Privacy Rights Notice.” We will make every effort to promptly respond to your request.
         </Text>
         <Title>CONTACT US</Title>
         <Text>
           If you have any questions or concerns regarding these Terms (including, without limitation, the Smoothie
           Factory Loyalty Program Rules or the Gift Card Rules) or regarding the privacy or security of any SMOOTHIE
           FACTORY gift card or FACTORY REWARDS card or account, please call us at (214) 302-5979 or contact us via the
-          Contact Us section of the Site, or write to us at Smoothie Holdings, LLC, 14850 Montfort Drive, Suite 131,
-          Dallas, TX 75254.
+          Contact Us section of the Site, or write to us at Smoothie Holdings, LLC, 14860 Montfort Drive, Suite 150 PMB
+          34, Dallas, TX 75254.
         </Text>
-        <Text>© 2021 Smoothie Holdings, LLC. All rights reserved.</Text>
+        <Text>© {new Date().getFullYear()} Smoothie Holdings, LLC. All rights reserved.</Text>
       </Paper>
     </MaxWidthWrapper>
   </RelativeWrapper>

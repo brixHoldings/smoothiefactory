@@ -11,6 +11,7 @@ import {
 } from './HowToSection.styles';
 
 import type { FC } from 'react';
+import { Super } from '@styles/common';
 
 const steps = [
   {
@@ -30,7 +31,7 @@ const steps = [
   },
   {
     description:
-      'Smoothie Factory + Kitchen concept can be formatted to operate in Food Courts, Airports, Universities, Hospitals, Kiosks, and Popular Operations (Mobile Kitchens).',
+      'Smoothie Factory + KitchenTM concept can be formatted to operate in Food Courts, Airports, Universities, Hospitals, Kiosks, and Popular Operations (Mobile Kitchens).',
     title: 'Avant-guard interior design',
   },
 ];
@@ -39,7 +40,9 @@ const HowToSection: FC = () => (
   <BackgroundContainer>
     <Container>
       <TitlePartOne>What is</TitlePartOne>
-      <TitlePartTwo>SMOOTHIE FACTORY</TitlePartTwo>
+      <TitlePartTwo>
+        SMOOTHIE FACTORY<Super>®</Super>
+      </TitlePartTwo>
 
       {steps.map(({ title, description }, index) => (
         <StepContainer key={index}>
