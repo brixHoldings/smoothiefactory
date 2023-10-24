@@ -17,7 +17,6 @@ import type { FC } from 'react';
 import Image from 'next/image';
 
 import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
-import { Super } from '@styles/common';
 
 const Header: FC = () => (
   <RelativeWrapper>
@@ -34,11 +33,11 @@ const Header: FC = () => (
       <Wrapper>
         <Content>
           <Title>
-            Building a <br /> better you<Super>®</Super>
+            Building a <br /> better you<sup>®</sup>
           </Title>
           <Text>
-            Smoothie Factory + Kitchen<Super>TM</Super> isn’t just for athletes. It’s for anyone who wants to pursue a
-            more active lifestyle and is looking for a snack or meal replacement to provide the energy and nutrition of
+            Smoothie Factory + Kitchen<sup>TM</sup> isn’t just for athletes. It’s for anyone who wants to pursue a more
+            active lifestyle and is looking for a snack or meal replacement to provide the energy and nutrition of
             fruits and vegetables with no added sugars or preservatives.
           </Text>
         </Content>

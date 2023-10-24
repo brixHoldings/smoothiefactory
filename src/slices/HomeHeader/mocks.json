@@ -1,0 +1,24 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "down",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "dish",
+				"type": "Text"
+			},
+			"button": {
+				"__TYPE__": "FieldContent",
+				"value": "sky",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,16 @@
+{
+  "id": "navigation_list",
+  "type": "SharedSlice",
+  "name": "NavigationList",
+  "description": "NavigationList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

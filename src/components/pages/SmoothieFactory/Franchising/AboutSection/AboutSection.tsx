@@ -15,7 +15,6 @@ import {
 } from './AboutSection.styles';
 
 import type { FC } from 'react';
-import { Super } from '@styles/common';
 
 const AboutSection: FC = () => {
   const onClickHandle = useCallback(() => {
@@ -47,7 +46,7 @@ const AboutSection: FC = () => {
         <ContentRight>
           <Subtitle>A business within a business...</Subtitle>
           <Description>
-            Within a business; Smoothie Factory<Super>®</Super> is more than 1 business; it has a collection of offers:
+            Within a business; Smoothie Factory<sup>®</sup> is more than 1 business; it has a collection of offers:
             Smoothies, fruit and vegetable juices, comprehensive line of probiotics, bubble tea, wellness bowls, grilled
             paninis, wraps, salads, seasonal soups and much more. Our multi menu categories allow for pricing
             elasticity.

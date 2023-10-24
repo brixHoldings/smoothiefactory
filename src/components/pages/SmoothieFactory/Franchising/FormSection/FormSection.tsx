@@ -24,7 +24,6 @@ import {
 } from './FormSection.styles';
 
 import type { FC, FormEventHandler } from 'react';
-import { Super } from '@styles/common';
 
 const FormSection: FC = () => {
   const {
@@ -62,7 +61,7 @@ const FormSection: FC = () => {
             <ContentText>
               <Title>Let&apos;s talk!</Title>
               <Description>
-                Smoothie Factory<Super>®</Super> is the brand for serious athletes and everyone who is trying to lead a
+                Smoothie Factory<sup>®</sup> is the brand for serious athletes and everyone who is trying to lead a
                 healthier lifestyle, aiming for the cleanest recipes and lowering sugar while giving customers the
                 ability to customize their smoothie to their own preference. Juices are all natural, ice filtered, and
                 pressed fresh to order. Our locations are often in close proximity to gyms to build traffic and volume,
@@ -71,8 +70,7 @@ const FormSection: FC = () => {
 
               {!isSmallScreen && (
                 <CtaText>
-                  Contact us to learn more about available franchise opportunities with Smoothie Factory<Super>®</Super>
-                  !
+                  Contact us to learn more about available franchise opportunities with Smoothie Factory<sup>®</sup>!
                 </CtaText>
               )}
             </ContentText>
@@ -91,7 +89,7 @@ const FormSection: FC = () => {
                     {isSmallScreen && (
                       <CtaText>
                         Contact us to learn more about available franchise opportunities with Smoothie Factory
-                        <Super>®</Super>!
+                        <sup>®</sup>!
                       </CtaText>
                     )}
                     <FormLabel>First name*:</FormLabel>

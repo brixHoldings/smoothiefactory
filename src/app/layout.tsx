@@ -2,6 +2,7 @@
 
 import localFont from 'next/font/local';
 import { useSelectedLayoutSegments } from 'next/navigation';
+import { PrismicPreview } from '@prismicio/next';
 
 import Footer from '@components/pages/SmoothieFactory/OrangeLeaf/common/Footer';
 import Header from '@components/pages/SmoothieFactory/OrangeLeaf/common/Header';
@@ -10,6 +11,7 @@ import StyledComponentsRegistry from '@styles/registry';
 import type { FC, ReactNode } from 'react';
 import GlobalStyle from './GlobalStyle';
 import { StoreProvider } from 'src/context/StoreProvider';
+import { repositoryName } from 'src/prismicio';
 
 const nexa = localFont({
   src: [
@@ -53,6 +55,7 @@ const RootLayout: FC<{ children: ReactNode }> = ({ children }) => {
           <StyledComponentsRegistry>
             <GlobalStyle />
             {content}
+            <PrismicPreview repositoryName={repositoryName} />
           </StyledComponentsRegistry>
         </StoreProvider>
       </body>

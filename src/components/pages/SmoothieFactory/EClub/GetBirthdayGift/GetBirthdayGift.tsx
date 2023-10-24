@@ -21,10 +21,10 @@ const GetBirthdayGift: FC = () => (
       <ContentWrapper>
         <Title>Get the best birthday gift!</Title>
         <Text>
-          Join the Smoothie Factory<Super>®</Super> Fan E-Club and receive a special birthday treat! Celebrate your
-          special day with a treat on us. As an e-club member, you&apos;ll get exclusive access to this birthday promo,
-          as well as year-round discounts and offers. Don&apos;t miss out on this sweet treat! Sign up now and celebrate
-          your birthday the healthy way.
+          Join the Smoothie Factory<sup>®</sup> Fan E-Club and receive a special birthday treat! Celebrate your special
+          day with a treat on us. As an e-club member, you&apos;ll get exclusive access to this birthday promo, as well
+          as year-round discounts and offers. Don&apos;t miss out on this sweet treat! Sign up now and celebrate your
+          birthday the healthy way.
         </Text>
         <a href="#form-bg">
           <CtaButton>Join now</CtaButton>

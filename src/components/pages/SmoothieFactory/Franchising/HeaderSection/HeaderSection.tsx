@@ -22,7 +22,6 @@ import {
 } from './HeaderSection.styles';
 
 import type { FC } from 'react';
-import { Super } from '@styles/common';
 
 const HeaderSection: FC = () => {
   const onClickHandle = useCallback(() => {
@@ -47,7 +46,7 @@ const HeaderSection: FC = () => {
                 <LeafImage alt="main-content-image" src="/images/SmoothieFactoryLeafImage.png" />
               </MainText>
               <Text>
-                James Villasana founded Smoothie Factory<Super>®</Super> in 1996. As a high-level athlete, James needed
+                James Villasana founded Smoothie Factory<sup>®</sup> in 1996. As a high-level athlete, James needed
                 healthy food options made with only the highest quality ingredients to fuel his body. He carefully
                 created smoothies with nutrition, taste, and overall health in mind.
               </Text>

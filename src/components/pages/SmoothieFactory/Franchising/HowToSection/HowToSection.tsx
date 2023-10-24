@@ -11,7 +11,6 @@ import {
 } from './HowToSection.styles';
 
 import type { FC } from 'react';
-import { Super } from '@styles/common';
 
 const steps = [
   {
@@ -41,7 +40,7 @@ const HowToSection: FC = () => (
     <Container>
       <TitlePartOne>What is</TitlePartOne>
       <TitlePartTwo>
-        SMOOTHIE FACTORY<Super>®</Super>
+        SMOOTHIE FACTORY<sup>®</sup>
       </TitlePartTwo>
 
       {steps.map(({ title, description }, index) => (

@@ -1,7 +1,6 @@
 import { Container, ContentContainer, Text, StyledLogo } from './PurposeSection.styles';
 
 import type { FC } from 'react';
-import { Super } from '@styles/common';
 
 const PurposeSection: FC = () => (
   <Container>
@@ -9,9 +8,9 @@ const PurposeSection: FC = () => (
       <StyledLogo alt="logo image" src="/images/sf-logo.png" />
 
       <Text>
-        Smoothie Factory<Super>®</Super> is committed to helping health conscious customers choose more nutritious
-        options. The smoothie menu features more whole fruits and vegetables, more natural options for sweeteners, and
-        more vegan and non-dairy options than ever before!
+        Smoothie Factory<sup>®</sup> is committed to helping health conscious customers choose more nutritious options.
+        The smoothie menu features more whole fruits and vegetables, more natural options for sweeteners, and more vegan
+        and non-dairy options than ever before!
       </Text>
     </ContentContainer>
   </Container>

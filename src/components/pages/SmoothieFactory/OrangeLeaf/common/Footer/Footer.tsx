@@ -27,7 +27,6 @@ import {
 import Image from 'next/image';
 
 import type { FC } from 'react';
-import { Super } from '@styles/common';
 
 const Footer: FC = () => {
   const ref = useRef<HTMLElement>(null);
@@ -102,7 +101,7 @@ const Footer: FC = () => {
             <Disclaimer>
               <Copyright>© {new Date().getFullYear()} Smoothie Holdings, LLC All rights reserved.</Copyright>
               <Trademark>
-                SMOOTHIE FACTORY<Super>®</Super> name, design and related marks are trademarks of Smoothie Factory, LLC
+                SMOOTHIE FACTORY<sup>®</sup> name, design and related marks are trademarks of Smoothie Factory, LLC
               </Trademark>
             </Disclaimer>
           </CopyrightSection>

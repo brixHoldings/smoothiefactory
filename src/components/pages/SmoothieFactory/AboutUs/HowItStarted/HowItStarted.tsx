@@ -52,7 +52,7 @@ const HowItStarted: FC = () => {
               How it started
             </Title>
             <Text>
-              Smoothie Factory<Super>®</Super> was founded by Olympic athlete James Villasana in 1996. As a high-level
+              Smoothie Factory<sup>®</sup> was founded by Olympic athlete James Villasana in 1996. As a high-level
               athlete, James needed healthy food options made with only the highest quality ingredients to fuel his
               body. His carefully crafted smoothies were created with nutrition, taste, and overall health in mind.
             </Text>
@@ -100,7 +100,7 @@ const HowItStarted: FC = () => {
           <CardTitle>OUR MISSION</CardTitle>
         </PersonCard>
         <WoodBgTitle>
-          Smoothie Factory + Kitchen<Super>TM</Super> exists to help health conscious people maintain their active
+          Smoothie Factory + Kitchen<sup>TM</sup> exists to help health conscious people maintain their active
           lifestyle.
         </WoodBgTitle>
         <FloatingImage
@@ -133,7 +133,7 @@ const HowItStarted: FC = () => {
             </InfoCardTitle>
             <InfoCardText>
               Experience our vibrant, modern space design while you enjoy your fresh and healthy Smoothie Factory +
-              Kitchen favorites<Super>TM</Super>!
+              Kitchen favorites<sup>TM</sup>!
             </InfoCardText>
           </Card>
           <Card>
@@ -167,7 +167,7 @@ const HowItStarted: FC = () => {
             </InfoCardTitle>
             <InfoCardText>
               Our friendly team is here to serve you with a smile and make your Smoothie Factory + Kitchen
-              <Super>TM</Super> experience a memorable one!
+              <sup>TM</sup> experience a memorable one!
             </InfoCardText>
           </Card>
         </CardsWrapper>

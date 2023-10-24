@@ -32,7 +32,6 @@ import { validatePhoneNumber } from '@utils/validatePhoneNumber';
 import { Polygon } from '../../Home/BlendTogether/BlendTogether.style';
 
 import letsBlendTogether from '../../../../../../public/lottie/letsBlendTogether.json';
-import { Super } from '@styles/common';
 
 type EClubFormData = {
   birthday: string;
@@ -107,10 +106,9 @@ const FormComponent: FC<{ options: string[] }> = ({ options }) => {
               Join now <br /> and get offers
             </Title2>
             <Paragraph data-should-hide="true">
-              Joining the Smoothie Factory<Super>®</Super> Fan E-Club takes just a minute and unlocks a world of
-              benefits! Don't miss out on exclusive offers, discounts, and a free birthday treat. Fill in your
-              information now and start enjoying the perks of being a part of the Smoothie Factory<Super>®</Super>{' '}
-              community.
+              Joining the Smoothie Factory<sup>®</sup> Fan E-Club takes just a minute and unlocks a world of benefits!
+              Don't miss out on exclusive offers, discounts, and a free birthday treat. Fill in your information now and
+              start enjoying the perks of being a part of the Smoothie Factory<sup>®</sup> community.
             </Paragraph>
           </FormColumn>
           {isSubmitted ? (

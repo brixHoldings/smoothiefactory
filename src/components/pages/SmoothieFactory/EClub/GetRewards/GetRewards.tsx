@@ -11,7 +11,6 @@ import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 
 import type { FC } from 'react';
 import Link from 'next/link';
-import { Super } from '@styles/common';
 
 const GetRewards: FC = () => (
   <Wrapper>
@@ -49,8 +48,8 @@ const GetRewards: FC = () => (
       <GlassText>
         Are you a fan of healthy living and delicious smoothies? Then you don&apos;t want to miss out on our Factory Fan
         E-Club! Join now to receive exclusive offers and discounts on our fresh, nutritious menu items. Plus, stay up to
-        date on all the latest news and promotions from Smoothie Factory + Kitchen<Super>TM</Super>. Sign up today and
-        start enjoying the benefits of a healthy lifestyle!
+        date on all the latest news and promotions from Smoothie Factory + Kitchen<sup>TM</sup>. Sign up today and start
+        enjoying the benefits of a healthy lifestyle!
       </GlassText>
       <a href="#form-bg">
         <CtaButton>Join now</CtaButton>
