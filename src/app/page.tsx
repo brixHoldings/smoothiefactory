@@ -7,7 +7,7 @@ import WhatIsNew from '@components/pages/SmoothieFactory/Home/WhatIsNew/WhatIsNe
 import type { FC } from 'react';
 
 export const metadata = {
-  title: 'Smoothie Factory® | A smoothie bar and nutrition supplement franchise company',
+  title: 'Smoothie Factory + Kitchen | A healthy lifestyle franchise company',
 };
 
 const Home: FC = () => (

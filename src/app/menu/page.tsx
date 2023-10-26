@@ -5,7 +5,7 @@ import OurSpecialOffers from '@components/pages/SmoothieFactory/Menu/OurSpecialO
 import type { FC } from 'react';
 
 export const metadata = {
-  title: 'Menu | Smoothie Factory®',
+  title: 'Menu | Smoothie Factory + Kitchen',
 };
 
 const Menu: FC = () => (
