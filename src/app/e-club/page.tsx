@@ -6,7 +6,7 @@ import HowDoesItWork from '@components/pages/SmoothieFactory/EClub/HowDoesItWork
 import type { FC } from 'react';
 
 export const metadata = {
-  title: 'Smoothie Factory® | A smoothie bar and nutrition supplement franchise company',
+  title: 'Factory Fan E-Club | Smoothie Factory + Kitchen',
 };
 
 type MergeField = {

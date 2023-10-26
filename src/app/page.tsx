@@ -10,7 +10,7 @@ import type { FC } from 'react';
 import { createClient } from 'src/prismicio';
 
 export const metadata = {
-  title: 'Smoothie Factory® | A smoothie bar and nutrition supplement franchise company',
+  title: 'Smoothie Factory + Kitchen | A healthy lifestyle franchise company',
 };
 
 /* @ts-expect-error Server Component */

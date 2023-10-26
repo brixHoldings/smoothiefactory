@@ -4,7 +4,7 @@ import Header from '@components/pages/SmoothieFactory/GiftCards/Header/Header';
 import type { FC } from 'react';
 
 export const metadata = {
-  title: 'E-Club Signup | Smoothie Factory®',
+  title: 'Gift Cards | Smoothie Factory + Kitchen',
 };
 
 const GiftCards: FC = () => (

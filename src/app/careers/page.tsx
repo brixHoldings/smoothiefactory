@@ -5,7 +5,7 @@ import Header from '@components/pages/SmoothieFactory/GiftCards/Header/Header';
 import type { FC } from 'react';
 
 export const metadata = {
-  title: 'Careers | Smoothie Factory®',
+  title: 'Careers | Smoothie Factory + Kitchen',
 };
 
 const Careers: FC = () => <JoinOurTeam />;

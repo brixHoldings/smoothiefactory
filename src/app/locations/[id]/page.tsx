@@ -3,6 +3,10 @@ import LocationInfo from '@components/pages/SmoothieFactory/OrangeLeaf/Locations
 
 import type { FC } from 'react';
 
+export const metadata = {
+  title: 'Location | Smoothie Factory + Kitchen',
+};
+
 type NextOpen = {
   closedNow: boolean;
   neverOpens: boolean;

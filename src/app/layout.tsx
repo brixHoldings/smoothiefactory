@@ -37,25 +37,16 @@ const nexa = localFont({
 const RootLayout: FC<{ children: ReactNode }> = ({ children }) => {
   const segments = useSelectedLayoutSegments();
 
-  const content =
-    segments[segments.length - 1] === 'franchising' ? (
-      children
-    ) : (
-      <>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </>
-    );
-
   return (
     <html className={nexa.variable} lang="en">
       <body>
         <StoreProvider>
           <StyledComponentsRegistry>
             <GlobalStyle />
-            {content}
+            <Header />
+            <main>{children}</main>
             <PrismicPreview repositoryName={repositoryName} />
+            <Footer />
           </StyledComponentsRegistry>
         </StoreProvider>
       </body>

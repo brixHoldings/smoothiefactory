@@ -6,7 +6,7 @@ import JoinUs from '@components/pages/SmoothieFactory/AboutUs/JoinUs/JoinUs';
 import type { FC } from 'react';
 
 export const metadata = {
-  title: 'About | Smoothie Factory®',
+  title: 'About Us | Smoothie Factory + Kitchen',
 };
 
 const AboutUs: FC = () => (

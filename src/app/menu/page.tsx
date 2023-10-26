@@ -7,7 +7,7 @@ import { createClient } from 'src/prismicio';
 import type { FC } from 'react';
 
 export const metadata = {
-  title: 'Menu | Smoothie Factory®',
+  title: 'Menu | Smoothie Factory + Kitchen',
 };
 
 /* @ts-expect-error Server Component */

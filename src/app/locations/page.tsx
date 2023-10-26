@@ -4,6 +4,10 @@ import { initialCoordinates } from '@constants/initialCoordinates';
 
 import type { FC } from 'react';
 
+export const metadata = {
+  title: 'Locations | Smoothie Factory + Kitchen',
+};
+
 /* @ts-expect-error Server Component */
 const Locations: FC = async () => {
   const {
