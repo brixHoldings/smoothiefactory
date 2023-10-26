@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client';
 
 import Image from 'next/image';
@@ -14,13 +13,17 @@ import {
   LottieWrapper,
 } from './Header.style';
 
+// @ts-nocheck
 import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 
 import type { FC } from 'react';
 import Link from 'next/link';
 
-const Header: FC = ({ slice, slices }) => {
-  console.log('slices', slices);
+const Header: FC = ({
+  slice: {
+    primary: { title, text, button },
+  },
+}) => {
   return (
     <>
       <HeaderArea>
@@ -32,10 +35,10 @@ const Header: FC = ({ slice, slices }) => {
           fill
         />
         <CtaArea>
-          <HeaderTitle dangerouslySetInnerHTML={{ __html: `${slice.primary.title}` }}></HeaderTitle>
-          <HeaderText dangerouslySetInnerHTML={{ __html: `${slice.primary.text}` }}></HeaderText>
+          <HeaderTitle dangerouslySetInnerHTML={{ __html: `${title}` }}></HeaderTitle>
+          <HeaderText dangerouslySetInnerHTML={{ __html: `${text}` }}></HeaderText>
           <Link href="/e-club">
-            <HeaderButton dangerouslySetInnerHTML={{ __html: `${slice.primary.button}` }}></HeaderButton>
+            <HeaderButton dangerouslySetInnerHTML={{ __html: `${button}` }}></HeaderButton>
           </Link>
           <FloatingGlassImage
             priority

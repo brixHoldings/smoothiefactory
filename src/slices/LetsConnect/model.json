@@ -1,0 +1,33 @@
+{
+  "id": "lets_connect",
+  "type": "SharedSlice",
+  "name": "LetsConnect",
+  "description": "LetsConnect",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "hashtag": {
+          "type": "Text",
+          "config": {
+            "label": "hashtag",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

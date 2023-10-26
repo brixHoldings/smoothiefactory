@@ -1,0 +1,68 @@
+{
+  "id": "home_e_club",
+  "type": "SharedSlice",
+  "name": "HomeEClub",
+  "description": "HomeEClub",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "joineclubtitle": {
+          "type": "Text",
+          "config": {
+            "label": "joinEClubTitle",
+            "placeholder": ""
+          }
+        },
+        "joineclubtext": {
+          "type": "Text",
+          "config": {
+            "label": "joinEClubText",
+            "placeholder": ""
+          }
+        },
+        "joineclubtitlebutton": {
+          "type": "Text",
+          "config": {
+            "label": "joinEClubTitleButton",
+            "placeholder": ""
+          }
+        },
+        "getgiftcardtitle": {
+          "type": "Text",
+          "config": {
+            "label": "getGiftCardTitle",
+            "placeholder": ""
+          }
+        },
+        "getgiftcardtext": {
+          "type": "Text",
+          "config": {
+            "label": "getGiftCardText",
+            "placeholder": ""
+          }
+        },
+        "getgiftcardbutton": {
+          "type": "Text",
+          "config": {
+            "label": "getGiftCardButton",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

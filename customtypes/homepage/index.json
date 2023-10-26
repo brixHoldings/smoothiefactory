@@ -16,6 +16,15 @@
             },
             "home_header": {
               "type": "SharedSlice"
+            },
+            "home_gallery": {
+              "type": "SharedSlice"
+            },
+            "home_e_club": {
+              "type": "SharedSlice"
+            },
+            "lets_connect": {
+              "type": "SharedSlice"
             }
           }
         }

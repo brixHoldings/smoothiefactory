@@ -3,7 +3,11 @@
 import dynamic from 'next/dynamic';
 
 export const components = {
+  home_e_club: dynamic(() => import('./HomeEClub')),
+  home_gallery: dynamic(() => import('./HomeGallery')),
   home_header: dynamic(() => import('./HomeHeader')),
   home_info_section: dynamic(() => import('./HomeInfoSection')),
+  lets_connect: dynamic(() => import('./LetsConnect')),
   navigation_list: dynamic(() => import('./NavigationList')),
+  text_block: dynamic(() => import('./MenuHeader')),
 };
