@@ -79,6 +79,17 @@ export type HomepageDocument<Lang extends string = string> = prismic.PrismicDocu
 /** Content for Menu documents */
 interface MenuDocumentData {
   /**
+   * mainTitle field in *Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu.maintitle
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  maintitle: prismic.KeyTextField;
+  /**
    * Slice Zone field in *Menu*
    *
    * - **Field Type**: Slice Zone
@@ -127,7 +138,7 @@ interface MenuDocumentData {
  * Slice for *Menu → Slice Zone*
  *
  */
-type MenuDocumentDataSlicesSlice = TextBlockSlice;
+type MenuDocumentDataSlicesSlice = TextBlockSlice | MenuLeftAlignedItemSlice;
 /**
  * Menu document from Prismic
  *
@@ -551,6 +562,109 @@ type LetsConnectSliceVariation = LetsConnectSliceDefault;
  */
 export type LetsConnectSlice = prismic.SharedSlice<'lets_connect', LetsConnectSliceVariation>;
 /**
+ * Primary content in MenuItem → Primary
+ *
+ */
+interface MenuLeftAlignedItemSliceDefaultPrimary {
+  /**
+   * Title field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_left_aligned_item.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Text field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_left_aligned_item.primary.text
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  text: prismic.KeyTextField;
+  /**
+   * Button 1 field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_left_aligned_item.primary.button1
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  button1: prismic.KeyTextField;
+  /**
+   * Button 2 field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_left_aligned_item.primary.button2
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  button2: prismic.KeyTextField;
+  /**
+   * Main Button field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_left_aligned_item.primary.main_button
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  main_button: prismic.KeyTextField;
+  /**
+   * Outlined Button field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_left_aligned_item.primary.outlined_button
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  outlined_button: prismic.KeyTextField;
+  /**
+   * Image field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_left_aligned_item.primary.image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  image: prismic.ImageField<never>;
+}
+/**
+ * Default variation for MenuItem Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MenuLeftAlignedItemSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<MenuLeftAlignedItemSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Slice variation for *MenuItem*
+ *
+ */
+type MenuLeftAlignedItemSliceVariation = MenuLeftAlignedItemSliceDefault;
+/**
+ * MenuItem Shared Slice
+ *
+ * - **API ID**: `menu_left_aligned_item`
+ * - **Description**: `MenuLeftAlignedItem`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MenuLeftAlignedItemSlice = prismic.SharedSlice<'menu_left_aligned_item', MenuLeftAlignedItemSliceVariation>;
+/**
  * Default variation for NavigationList Slice
  *
  * - **API ID**: `default`
@@ -662,6 +776,10 @@ declare module '@prismicio/client' {
       LetsConnectSliceDefault,
       LetsConnectSliceVariation,
       LetsConnectSlice,
+      MenuLeftAlignedItemSliceDefaultPrimary,
+      MenuLeftAlignedItemSliceDefault,
+      MenuLeftAlignedItemSliceVariation,
+      MenuLeftAlignedItemSlice,
       NavigationListSliceDefault,
       NavigationListSliceVariation,
       NavigationListSlice,

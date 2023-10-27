@@ -19,9 +19,9 @@ const Menu: FC = async () => {
 
   return (
     <>
-      <Header slice={headerSlice} />
+      <Header page={page} slice={headerSlice} />
       {/* <OurSpecialOffers /> */}
-      <AthletesFavourites />
+      <AthletesFavourites data={page.data} />
     </>
   );
 };

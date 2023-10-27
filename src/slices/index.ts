@@ -8,6 +8,7 @@ export const components = {
   home_header: dynamic(() => import('./HomeHeader')),
   home_info_section: dynamic(() => import('./HomeInfoSection')),
   lets_connect: dynamic(() => import('./LetsConnect')),
+  menu_left_aligned_item: dynamic(() => import('./MenuItem')),
   navigation_list: dynamic(() => import('./NavigationList')),
   text_block: dynamic(() => import('./MenuHeader')),
 };

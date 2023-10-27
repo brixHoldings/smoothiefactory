@@ -1,0 +1,60 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "particles",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "before",
+				"type": "Text"
+			},
+			"button1": {
+				"__TYPE__": "FieldContent",
+				"value": "social",
+				"type": "Text"
+			},
+			"button2": {
+				"__TYPE__": "FieldContent",
+				"value": "till",
+				"type": "Text"
+			},
+			"main_button": {
+				"__TYPE__": "FieldContent",
+				"value": "nothing",
+				"type": "Text"
+			},
+			"outlined_button": {
+				"__TYPE__": "FieldContent",
+				"value": "slowly",
+				"type": "Text"
+			},
+			"image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+					"width": 4480,
+					"height": 4480
+				},
+				"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+				"width": 4480,
+				"height": 4480,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]

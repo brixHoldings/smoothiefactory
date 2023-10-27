@@ -6,10 +6,13 @@
   "status": true,
   "json": {
     "Main": {
+      "maintitle": { "type": "Text", "config": { "label": "mainTitle", "placeholder": "" } },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
-        "config": { "choices": { "text_block": { "type": "SharedSlice" } } }
+        "config": {
+          "choices": { "text_block": { "type": "SharedSlice" }, "menu_left_aligned_item": { "type": "SharedSlice" } }
+        }
       }
     },
     "SEO & Metadata": {

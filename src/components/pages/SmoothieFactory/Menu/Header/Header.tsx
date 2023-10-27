@@ -8,11 +8,12 @@ import { HeaderArea, CtaArea, HeaderTitle, FloatingGlassImage } from './Header.s
 import type { FC } from 'react';
 
 const Header: FC = ({
+  page,
   slice: {
-    primary: { text, ...rest },
+    primary: { text, image },
   },
 }) => {
-  console.log(rest);
+  console.log(878, page);
   return (
     <HeaderArea>
       <Image alt="bg" src="/images/Apples.png" style={{ objectFit: 'cover', objectPosition: 'bottom center' }} fill />
@@ -21,9 +22,8 @@ const Header: FC = ({
       </CtaArea>
       <FloatingGlassImage
         priority
-        alt="glass of smoothie"
         height="clamp(212px,27.05vw, 409px)"
-        src="/images/SF+K Juice triple 1.png"
+        field={image}
         width="clamp(261px,44.37vw, 671px)"
       />
     </HeaderArea>
