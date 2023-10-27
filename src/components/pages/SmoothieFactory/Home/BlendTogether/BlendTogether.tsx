@@ -63,7 +63,7 @@ const BlendTogether: FC = () => (
               Join our Factory <br /> Fan E-Club
             </JoinOurClubTitle>
             <JoinOurClubText>to get the best offers</JoinOurClubText>
-            <Link href="/e-club">
+            <Link href="/e-club-signup">
               <CtaButton>join e-club</CtaButton>
             </Link>
           </JoinOurWrapper>

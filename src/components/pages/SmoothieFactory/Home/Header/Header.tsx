@@ -38,7 +38,7 @@ const Header: FC = () => (
           lifestyle. Also, for those looking for a snack or light meal to provide energy and nutrition of fruits and
           vegetables without added preservatives or sugar.
         </HeaderText>
-        <Link href="/e-club">
+        <Link href="/e-club-signup">
           <HeaderButton>Become a part of the family</HeaderButton>
         </Link>
         <FloatingGlassImage
