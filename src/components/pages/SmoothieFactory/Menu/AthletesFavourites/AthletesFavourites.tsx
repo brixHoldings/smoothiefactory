@@ -28,7 +28,9 @@ import type { FC } from 'react';
 const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
   const athletesFavouritesSlice = slices.find((slice) => slice.slice_type === 'text_block');
 
-  console.log('slices', slices);
+  const [_, smoothies, bowls] = slices;
+
+  console.log('bowls', bowls);
 
   return (
     <>
@@ -48,7 +50,7 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
           <RelativeWrapper data-reverse-layout="true" mb="clamp(290px,45.37vw, 686px)">
             <GalleryContent data-reverse-layout="true">
               <GalleryContentWrapper>
-                <GalleryItemTitle>Smoothies</GalleryItemTitle>
+                <GalleryItemTitle dangerouslySetInnerHTML={{ __html: smoothies.primary.title }}></GalleryItemTitle>
                 <GalleryItemLabels>
                   <Label>
                     <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
@@ -57,7 +59,7 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText>freshly made</LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: smoothies.primary.button1 }}></LabelText>
                   </Label>
                   <Label>
                     <svg fill="none" height="15" viewBox="0 0 16 15" width="16">
@@ -66,29 +68,27 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText>all natural</LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: smoothies.primary.button2 }}></LabelText>
                   </Label>
                 </GalleryItemLabels>
-                <GalleryText>
-                  100% fruits and vegetables with unique and delicious beneficial ingredients blending nutrition with
-                  great taste.
-                </GalleryText>
+                <GalleryText dangerouslySetInnerHTML={{ __html: smoothies.primary.text }}></GalleryText>
                 <GalleryButtons>
                   <a href="/SFK Menu Board_site.pdf" download>
-                    <CtaButton>see our menu</CtaButton>
+                    <CtaButton dangerouslySetInnerHTML={{ __html: smoothies.primary.main_button }}></CtaButton>
                   </a>
                   <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
-                    <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                    <CtaButtonOutlined
+                      dangerouslySetInnerHTML={{ __html: smoothies.primary.outlined_button }}
+                    ></CtaButtonOutlined>
                   </a>
                 </GalleryButtons>
               </GalleryContentWrapper>
             </GalleryContent>
             <FloatingRightImage
-              alt="smoothies"
               data-reverse-layout="true"
               height="clamp(369px,57.20vw, 865px)"
               right="0"
-              src="/images/Group 116 (1).png"
+              field={smoothies.primary.image}
               style={{ zIndex: -1 }}
               top="0"
               width="clamp(451px,57.07vw, 863px)"
@@ -110,16 +110,15 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
           <RelativeWrapper mb="clamp(170px,43.58vw, 659px)">
             <GalleryContent>
               <FloatingLeftImage
-                alt="bowls"
                 height="clamp(370px,57.24vw, 865.58px)"
                 right="0"
-                src="/images/Group 157 (1).png"
+                field={bowls.primary.image}
                 style={{ zIndex: -1 }}
                 top="0"
                 width="clamp(451px,57.13vw, 863.84px)"
               />
               <GalleryContentWrapper>
-                <GalleryItemTitle>Power Bowls:</GalleryItemTitle>
+                <GalleryItemTitle dangerouslySetInnerHTML={{ __html: bowls.primary.title }}></GalleryItemTitle>
                 <GalleryItemLabels>
                   <Label>
                     <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
@@ -128,7 +127,7 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText>freshly made</LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: bowls.primary.button1 }}></LabelText>
                   </Label>
                   <Label>
                     <svg fill="none" height="15" viewBox="0 0 16 15" width="16">
@@ -137,19 +136,18 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText>all natural</LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: bowls.primary.button2 }}></LabelText>
                   </Label>
                 </GalleryItemLabels>
-                <GalleryText>
-                  Prepared with nutrient-rich whole fruit and an array of your favorite toppings. A delicious
-                  alternative known for their health benefits that increase energy and vitality.
-                </GalleryText>
+                <GalleryText dangerouslySetInnerHTML={{ __html: bowls.primary.text }}></GalleryText>
                 <GalleryButtons>
                   <a href="/SFK Menu Board_site.pdf" download>
-                    <CtaButton>see our menu</CtaButton>
+                    <CtaButton dangerouslySetInnerHTML={{ __html: bowls.primary.main_button }}></CtaButton>
                   </a>
                   <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
-                    <CtaButtonOutlined>Nutrition info</CtaButtonOutlined>
+                    <CtaButtonOutlined
+                      dangerouslySetInnerHTML={{ __html: bowls.primary.outlined_button }}
+                    ></CtaButtonOutlined>
                   </a>
                 </GalleryButtons>
               </GalleryContentWrapper>
