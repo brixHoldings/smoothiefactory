@@ -166,17 +166,11 @@ const Header: FC = () => {
               priority
               alt="smoothie factory logo"
               height="38px"
-              src="/images/logo-mobile-white.svg"
-              width="40px"
+              src="/images/logo-white.svg"
+              width="77px"
             />
           ) : (
-            <FloatingImage
-              priority
-              alt="smoothie factory logo"
-              height="38px"
-              src="/images/logo-mobile.svg"
-              width="40px"
-            />
+            <FloatingImage priority alt="smoothie factory logo" height="38px" src="/images/logo.svg" width="77px" />
           )}
         </HomeLink>
         <HamburgerButton onClick={onHamburgerClick}>
