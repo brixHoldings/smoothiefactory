@@ -5,6 +5,72 @@ import type * as prismic from '@prismicio/client';
 type Simplify<T> = {
   [KeyType in keyof T]: T[KeyType];
 };
+/** Content for E Club Signup documents */
+interface EClubSignupDocumentData {
+  /**
+   * Slice Zone field in *E Club Signup*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_signup.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+   *
+   */
+  slices: prismic.SliceZone<EClubSignupDocumentDataSlicesSlice>;
+  /**
+   * Meta Description field in *E Club Signup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: e_club_signup.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  meta_description: prismic.RichTextField;
+  /**
+   * Meta Image field in *E Club Signup*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_signup.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  meta_image: prismic.ImageField<never>;
+  /**
+   * Meta Title field in *E Club Signup*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: e_club_signup.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  meta_title: prismic.KeyTextField;
+}
+/**
+ * Slice for *E Club Signup → Slice Zone*
+ *
+ */
+type EClubSignupDocumentDataSlicesSlice = EClubHeaderSlice;
+/**
+ * E Club Signup document from Prismic
+ *
+ * - **API ID**: `e_club_signup`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type EClubSignupDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<EClubSignupDocumentData>,
+  'e_club_signup',
+  Lang
+>;
 /** Content for Homepage documents */
 interface HomepageDocumentData {
   /**
@@ -169,7 +235,70 @@ export type NavigationDocument<Lang extends string = string> = prismic.PrismicDo
   'navigation',
   Lang
 >;
-export type AllDocumentTypes = HomepageDocument | MenuDocument | NavigationDocument;
+export type AllDocumentTypes = EClubSignupDocument | HomepageDocument | MenuDocument | NavigationDocument;
+/**
+ * Primary content in EClubHeader → Primary
+ *
+ */
+interface EClubHeaderSliceDefaultPrimary {
+  /**
+   * Title field in *EClubHeader → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_header.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Text field in *EClubHeader → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_header.primary.text
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  text: prismic.KeyTextField;
+  /**
+   * Button field in *EClubHeader → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_header.primary.button
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  button: prismic.KeyTextField;
+}
+/**
+ * Default variation for EClubHeader Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EClubHeaderSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<EClubHeaderSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Slice variation for *EClubHeader*
+ *
+ */
+type EClubHeaderSliceVariation = EClubHeaderSliceDefault;
+/**
+ * EClubHeader Shared Slice
+ *
+ * - **API ID**: `e_club_header`
+ * - **Description**: `EClubHeader`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EClubHeaderSlice = prismic.SharedSlice<'e_club_header', EClubHeaderSliceVariation>;
 /**
  * Primary content in HomeEClub → Primary
  *
@@ -746,6 +875,9 @@ declare module '@prismicio/client' {
   }
   namespace Content {
     export type {
+      EClubSignupDocumentData,
+      EClubSignupDocumentDataSlicesSlice,
+      EClubSignupDocument,
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
       HomepageDocument,
@@ -755,6 +887,10 @@ declare module '@prismicio/client' {
       NavigationDocumentData,
       NavigationDocument,
       AllDocumentTypes,
+      EClubHeaderSliceDefaultPrimary,
+      EClubHeaderSliceDefault,
+      EClubHeaderSliceVariation,
+      EClubHeaderSlice,
       HomeEClubSliceDefaultPrimary,
       HomeEClubSliceDefault,
       HomeEClubSliceVariation,
