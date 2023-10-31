@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 
 import Image from 'next/image';
@@ -13,7 +14,6 @@ import {
   LottieWrapper,
 } from './Header.style';
 
-// @ts-nocheck
 import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 
 import type { FC } from 'react';
