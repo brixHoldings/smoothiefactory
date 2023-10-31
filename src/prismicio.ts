@@ -22,6 +22,10 @@ const routes: prismic.ClientConfig['routes'] = [
     type: 'menu',
     path: '/menu',
   },
+  {
+    type: 'e-club-signup',
+    path: '/e-club-signup',
+  },
 ];
 
 /**
