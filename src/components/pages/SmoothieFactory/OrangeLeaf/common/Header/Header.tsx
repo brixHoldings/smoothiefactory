@@ -132,9 +132,9 @@ const Header: FC = () => {
           Locations
         </NativeLinkMobile>
         <ButtonLink
-          data-is-active={pathname === '/e-club'}
+          data-is-active={pathname === '/e-club-signup'}
           onClick={(): void => {
-            onClose('/e-club');
+            onClose('/e-club-signup');
           }}
         >
           Factory Fan E-Club
@@ -166,17 +166,11 @@ const Header: FC = () => {
               priority
               alt="smoothie factory logo"
               height="38px"
-              src="/images/logo-mobile-white.svg"
-              width="40px"
+              src="/images/logo-white.svg"
+              width="77px"
             />
           ) : (
-            <FloatingImage
-              priority
-              alt="smoothie factory logo"
-              height="38px"
-              src="/images/logo-mobile.svg"
-              width="40px"
-            />
+            <FloatingImage priority alt="smoothie factory logo" height="38px" src="/images/logo.svg" width="77px" />
           )}
         </HomeLink>
         <HamburgerButton onClick={onHamburgerClick}>
@@ -231,10 +225,10 @@ const Header: FC = () => {
                 Menu
               </Link>
             </NextLink>
-            <NextLink href="/e-club">
+            <NextLink href="/e-club-signup">
               <Link
                 animate={isTransparent ? 'transparent' : 'visible'}
-                data-is-active={pathname === '/e-club'}
+                data-is-active={pathname === '/e-club-signup'}
                 variants={linkVariants}
               >
                 Factory Fan E-Club

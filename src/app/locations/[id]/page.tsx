@@ -91,7 +91,7 @@ async function getLocation(id: string): Promise<GetLocationReturnType> {
   const res = await fetch(
     // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
     `https://uberall.com/api/store-finders/${process.env.NEXT_PUBLIC_UBERALL_API_KEY}/locations/${id}?fieldMask=is_kitchen&fieldMask=drive_thru&fieldMask=id&fieldMask=city&fieldMask=province&fieldMask=openNow&fieldMask=zip&fieldMask=streetAndNumber&fieldMask=nextOpen&fieldMask=lat&fieldMask=lng&fieldMask=openingHours&fieldMask=phone&fieldMask=socialProfiles`,
-    { cache: 'no-store' },
+    { next: { revalidate: 3600 } },
   );
 
   if (!res.ok) {
