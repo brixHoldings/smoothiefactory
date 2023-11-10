@@ -5,17 +5,17 @@
 		"primary": {
 			"title": {
 				"__TYPE__": "FieldContent",
-				"value": "receive",
+				"value": "cold",
 				"type": "Text"
 			},
 			"text": {
 				"__TYPE__": "FieldContent",
-				"value": "syllable",
+				"value": "victory",
 				"type": "Text"
 			},
 			"button": {
 				"__TYPE__": "FieldContent",
-				"value": "riding",
+				"value": "announced",
 				"type": "Text"
 			}
 		},

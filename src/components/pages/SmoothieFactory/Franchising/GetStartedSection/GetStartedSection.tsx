@@ -1,3 +1,5 @@
+'use client';
+
 import Card from '@components/ui/Card';
 
 import {
@@ -24,6 +26,7 @@ import {
 } from './GetStartedSection.styles';
 
 import type { FC } from 'react';
+import { FranchisingGetStartedSectionSlice } from 'prismicio-types';
 
 const Point: FC<{ color: string }> = ({ color }) => (
   <svg
@@ -38,10 +41,27 @@ const Point: FC<{ color: string }> = ({ color }) => (
   </svg>
 );
 
-const GetStartedSection: FC = () => (
+const GetStartedSection: FC<{
+  slice: FranchisingGetStartedSectionSlice;
+}> = ({
+  slice: {
+    primary: {
+      main_title,
+      promotion_title,
+      promotion_text,
+      promotion_title_2,
+      promotion_text_2,
+      promotion_title_1,
+      promotion_text_1,
+      military_title,
+      military_text,
+    },
+    items,
+  },
+}) => (
   <>
     <HowToContainer>
-      <Title>How to get started?</Title>
+      <Title dangerouslySetInnerHTML={{ __html: main_title as string }}></Title>
       <OptionsContainer>
         <Column>
           <Card size="m" isBlurred>
@@ -55,36 +75,36 @@ const GetStartedSection: FC = () => (
                 />
               </svg>
               <div>
-                <CardHeaderTitle>Traditional locations</CardHeaderTitle>
-                <CardText>for a Ten-Year Term.</CardText>
+                <CardHeaderTitle dangerouslySetInnerHTML={{ __html: items[0].card_title as string }}></CardHeaderTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[0].card_subtitle as string }}></CardText>
               </div>
             </CardHeader>
             <CardPoint>
               <Point color="#CB333B" />
               <div>
-                <CardPointTitle>$30,000</CardPointTitle>
-                <CardText>Initial franchise fee.</CardText>
+                <CardPointTitle dangerouslySetInnerHTML={{ __html: items[0].title_1 as string }}></CardPointTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[0].text_1 as string }}></CardText>
               </div>
             </CardPoint>
             <CardPoint>
               <Point color="#CB333B" />
               <div>
-                <CardPointTitle>Require $100,000</CardPointTitle>
-                <CardText>Liquid assets to invest.</CardText>
+                <CardPointTitle dangerouslySetInnerHTML={{ __html: items[0].title_2 as string }}></CardPointTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[0].text_2 as string }}></CardText>
               </div>
             </CardPoint>
             <CardPoint>
               <Point color="#CB333B" />
               <div>
-                <CardPointTitle>5% royalty plus 3%</CardPointTitle>
-                <CardText>Brand development fund contribution.</CardText>
+                <CardPointTitle dangerouslySetInnerHTML={{ __html: items[0].title_3 as string }}></CardPointTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[0].text_3 as string }}></CardText>
               </div>
             </CardPoint>
             <CardPoint>
               <Point color="#CB333B" />
               <div>
-                <CardPointTitle>Require $250,000</CardPointTitle>
-                <CardText>Minimum net worth.</CardText>
+                <CardPointTitle dangerouslySetInnerHTML={{ __html: items[0].title_4 as string }}></CardPointTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[0].text_4 as string }}></CardText>
               </div>
             </CardPoint>
           </Card>
@@ -99,36 +119,36 @@ const GetStartedSection: FC = () => (
                 />
               </svg>
               <div>
-                <CardHeaderTitle>Non-traditional locations</CardHeaderTitle>
-                <CardText>for a Five-Year Term.</CardText>
+                <CardHeaderTitle dangerouslySetInnerHTML={{ __html: items[1].card_title as string }}></CardHeaderTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[1].card_subtitle as string }}></CardText>
               </div>
             </CardHeader>
             <CardPoint>
               <Point color="#008C95" />
               <div>
-                <CardPointTitle>$15,000</CardPointTitle>
-                <CardText>Initial franchise fee.</CardText>
+                <CardPointTitle dangerouslySetInnerHTML={{ __html: items[1].title_1 as string }}></CardPointTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[1].text_1 as string }}></CardText>
               </div>
             </CardPoint>
             <CardPoint>
               <Point color="#008C95" />
               <div>
-                <CardPointTitle>Require $100,000</CardPointTitle>
-                <CardText>Liquid assets to invest.</CardText>
+                <CardPointTitle dangerouslySetInnerHTML={{ __html: items[1].title_2 as string }}></CardPointTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[1].title_2 as string }}></CardText>
               </div>
             </CardPoint>
             <CardPoint>
               <Point color="#008C95" />
               <div>
-                <CardPointTitle>5% royalty plus 1%</CardPointTitle>
-                <CardText>Brand development fund contribution.</CardText>
+                <CardPointTitle dangerouslySetInnerHTML={{ __html: items[1].title_3 as string }}></CardPointTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[1].title_3 as string }}></CardText>
               </div>
             </CardPoint>
             <CardPoint>
               <Point color="#008C95" />
               <div>
-                <CardPointTitle>Require $250,000</CardPointTitle>
-                <CardText>Minimum net worth.</CardText>
+                <CardPointTitle dangerouslySetInnerHTML={{ __html: items[1].title_4 as string }}></CardPointTitle>
+                <CardText dangerouslySetInnerHTML={{ __html: items[1].title_4 as string }}></CardText>
               </div>
             </CardPoint>
           </Card>
@@ -136,24 +156,32 @@ const GetStartedSection: FC = () => (
       </OptionsContainer>
     </HowToContainer>
     <PromotionContainer>
-      <PromotionTitle>Promotion 2023</PromotionTitle>
-      <PromotionDescription>Franchise fee reduced by 50% Limited Time Offer – contact us today!</PromotionDescription>
+      <PromotionTitle dangerouslySetInnerHTML={{ __html: promotion_title as string }}></PromotionTitle>
+      <PromotionDescription dangerouslySetInnerHTML={{ __html: promotion_text as string }}></PromotionDescription>
       <PromoOptions>
         <div>
-          <PromotionOptionTitle>Traditional locations</PromotionOptionTitle>
-          <PromotionOptionDescription>From $30,000 to $15,000</PromotionOptionDescription>
+          <PromotionOptionTitle
+            dangerouslySetInnerHTML={{ __html: promotion_title_1 as string }}
+          ></PromotionOptionTitle>
+          <PromotionOptionDescription
+            dangerouslySetInnerHTML={{ __html: promotion_text_1 as string }}
+          ></PromotionOptionDescription>
         </div>
         <LineSeparator />
         <div>
-          <PromotionOptionTitle>Non-traditional locations</PromotionOptionTitle>
-          <PromotionOptionDescription>From $15,000 to $7,500</PromotionOptionDescription>
+          <PromotionOptionTitle
+            dangerouslySetInnerHTML={{ __html: promotion_title_2 as string }}
+          ></PromotionOptionTitle>
+          <PromotionOptionDescription
+            dangerouslySetInnerHTML={{ __html: promotion_text_2 as string }}
+          ></PromotionOptionDescription>
         </div>
       </PromoOptions>
     </PromotionContainer>
     <MilitaryContainer>
       <MilitaryContent>
-        <MilitaryTitle>Military discount for vets</MilitaryTitle>
-        <MilitaryDescription>50% off initial franchise fee for the first store opened</MilitaryDescription>
+        <MilitaryTitle dangerouslySetInnerHTML={{ __html: military_title as string }}></MilitaryTitle>
+        <MilitaryDescription dangerouslySetInnerHTML={{ __html: military_text as string }}></MilitaryDescription>
       </MilitaryContent>
     </MilitaryContainer>
   </>

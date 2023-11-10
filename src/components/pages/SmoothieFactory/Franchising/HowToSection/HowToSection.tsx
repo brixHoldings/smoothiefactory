@@ -1,3 +1,5 @@
+'use client';
+
 import {
   BackgroundContainer,
   Container,
@@ -11,44 +13,24 @@ import {
 } from './HowToSection.styles';
 
 import type { FC } from 'react';
+import { FranchisingHowToSlice } from 'prismicio-types';
 
-const steps = [
-  {
-    description:
-      'Our Smoothies, Super-food Power Bowls, juices, toast, salads, soups and more, are all prepared with nutrient-rich whole fruit and vegetables.',
-    title: '100% real fruit and vegetables',
+const HowToSection: FC<{ slice: FranchisingHowToSlice }> = ({
+  slice: {
+    items,
+    primary: { title_1, title_2 },
   },
-  {
-    description:
-      'Curated menu, that reflects the flavors of the season. Enjoy summer with Cold Avocado Cucumber Soup, embrace fall with Pumpkin & Black Beans Soup, warm up in winter with Curried Squash Soup and welcome Spring with Mint & Pea Soup.',
-    title: 'Follow the seasons',
-  },
-  {
-    description:
-      'Our social content showcases creative and appealing product images, that are relatable to Millennials and Gen Z. Using up to date on trends that boost engagement.',
-    title: 'Social media',
-  },
-  {
-    description:
-      'Smoothie Factory + KitchenTM concept can be formatted to operate in Food Courts, Airports, Universities, Hospitals, Kiosks, and Popular Operations (Mobile Kitchens).',
-    title: 'Avant-guard interior design',
-  },
-];
-
-const HowToSection: FC = () => (
+}) => (
   <BackgroundContainer>
     <Container>
-      <TitlePartOne>What is</TitlePartOne>
-      <TitlePartTwo>
-        SMOOTHIE FACTORY<sup>®</sup>
-      </TitlePartTwo>
-
-      {steps.map(({ title, description }, index) => (
+      <TitlePartOne dangerouslySetInnerHTML={{ __html: title_1 as string }}></TitlePartOne>
+      <TitlePartTwo dangerouslySetInnerHTML={{ __html: title_2 as string }}></TitlePartTwo>
+      {items.map(({ title, text }, index) => (
         <StepContainer key={index}>
           <StepNumber>{index + 1}.</StepNumber>
           <StepContent>
-            <StepTitle>{title}</StepTitle>
-            <StepDescription dangerouslySetInnerHTML={{ __html: description }} />
+            <StepTitle dangerouslySetInnerHTML={{ __html: title as string }}></StepTitle>
+            <StepDescription dangerouslySetInnerHTML={{ __html: text as string }} />
           </StepContent>
         </StepContainer>
       ))}

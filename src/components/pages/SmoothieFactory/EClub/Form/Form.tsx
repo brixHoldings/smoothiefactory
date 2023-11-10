@@ -32,6 +32,7 @@ import { validatePhoneNumber } from '@utils/validatePhoneNumber';
 import { Polygon } from '../../Home/BlendTogether/BlendTogether.style';
 
 import letsBlendTogether from '../../../../../../public/lottie/letsBlendTogether.json';
+import { FormSlice } from 'prismicio-types';
 
 type EClubFormData = {
   birthday: string;
@@ -56,7 +57,12 @@ export const eClubFormSchema = object({
   }),
 }).required();
 
-const FormComponent: FC<{ options: string[] }> = ({ options }) => {
+const FormComponent: FC<{ options: string[]; slice: FormSlice }> = ({
+  options,
+  slice: {
+    primary: { title, text },
+  },
+}) => {
   const {
     formState: { errors },
     handleSubmit,
@@ -65,6 +71,7 @@ const FormComponent: FC<{ options: string[] }> = ({ options }) => {
   } = useForm<EClubFormData>({
     resolver: yupResolver(eClubFormSchema),
   });
+
   const [isDisabled, setIsDisabled] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -102,14 +109,8 @@ const FormComponent: FC<{ options: string[] }> = ({ options }) => {
         <Image alt="background" src="/images/Oranges.png" style={{ objectFit: 'cover' }} fill />
         <Paper>
           <FormColumn>
-            <Title2>
-              Join now <br /> and get offers
-            </Title2>
-            <Paragraph data-should-hide="true">
-              Joining the Smoothie Factory<sup>®</sup> Fan E-Club takes just a minute and unlocks a world of benefits!
-              Don't miss out on exclusive offers, discounts, and a free birthday treat. Fill in your information now and
-              start enjoying the perks of being a part of the Smoothie Factory<sup>®</sup> community.
-            </Paragraph>
+            <Title2 dangerouslySetInnerHTML={{ __html: title as string }}></Title2>
+            <Paragraph data-should-hide="true" dangerouslySetInnerHTML={{ __html: text as string }}></Paragraph>
           </FormColumn>
           {isSubmitted ? (
             <SuccessfulSubmit />

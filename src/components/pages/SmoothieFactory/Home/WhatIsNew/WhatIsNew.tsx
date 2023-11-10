@@ -15,8 +15,9 @@ import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/F
 
 import type { FC } from 'react';
 import Link from 'next/link';
+import { HomeInfoSectionSliceDefault } from 'prismicio-types';
 
-const WhatIsNew: FC = ({
+const WhatIsNew: FC<{ slice: HomeInfoSectionSliceDefault }> = ({
   slice: {
     primary: { title, subtitle, text, button, image },
   },
@@ -45,11 +46,11 @@ const WhatIsNew: FC = ({
             />
           </RelativeWrapper>
           <TextContainer>
-            <WhatsNewTitle dangerouslySetInnerHTML={{ __html: `${title}` }} />
-            <WhatsNewSubtitle dangerouslySetInnerHTML={{ __html: `${subtitle}` }} />
-            <WhatsNewText dangerouslySetInnerHTML={{ __html: `${text}` }} />
+            <WhatsNewTitle dangerouslySetInnerHTML={{ __html: title as string }} />
+            <WhatsNewSubtitle dangerouslySetInnerHTML={{ __html: subtitle as string }} />
+            <WhatsNewText dangerouslySetInnerHTML={{ __html: text as string }} />
             <Link href="/menu">
-              <CtaButton dangerouslySetInnerHTML={{ __html: `${button}` }} />
+              <CtaButton dangerouslySetInnerHTML={{ __html: button as string }} />
             </Link>
           </TextContainer>
         </WhatsNewWrapper>

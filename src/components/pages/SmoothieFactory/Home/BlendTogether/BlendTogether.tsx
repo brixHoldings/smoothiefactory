@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client';
 
 import Lottie from 'lottie-react';
@@ -29,8 +28,9 @@ import letsBlendTogether from '../../../../../../public/lottie/letsBlendTogether
 
 import type { FC } from 'react';
 import Link from 'next/link';
+import { HomeEClubSlice } from 'prismicio-types';
 
-const BlendTogether: FC = ({
+const BlendTogether: FC<{ slice: HomeEClubSlice }> = ({
   slice: {
     primary: {
       title,
@@ -64,7 +64,7 @@ const BlendTogether: FC = ({
             top="56%"
             width="clamp(224px, 19.77vw, 299px)"
           />
-          <BlendTogetherTitle dangerouslySetInnerHTML={{ __html: title }}></BlendTogetherTitle>
+          <BlendTogetherTitle dangerouslySetInnerHTML={{ __html: title as string }}></BlendTogetherTitle>
           <JoinOurClubSection>
             <JoinOurWrapper>
               <svg fill="none" height="83" style={{ marginBottom: '16px' }} viewBox="0 0 79 83" width="79">
@@ -74,10 +74,10 @@ const BlendTogether: FC = ({
                 />
               </svg>
 
-              <JoinOurClubTitle dangerouslySetInnerHTML={{ __html: joineclubtitle }}></JoinOurClubTitle>
-              <JoinOurClubText dangerouslySetInnerHTML={{ __html: joineclubtext }}></JoinOurClubText>
+              <JoinOurClubTitle dangerouslySetInnerHTML={{ __html: joineclubtitle as string }}></JoinOurClubTitle>
+              <JoinOurClubText dangerouslySetInnerHTML={{ __html: joineclubtext as string }}></JoinOurClubText>
               <Link href="/e-club">
-                <CtaButton dangerouslySetInnerHTML={{ __html: joineclubtitlebutton }}></CtaButton>
+                <CtaButton dangerouslySetInnerHTML={{ __html: joineclubtitlebutton as string }}></CtaButton>
               </Link>
             </JoinOurWrapper>
             <FloatingEClubImage
@@ -95,10 +95,10 @@ const BlendTogether: FC = ({
               width="clamp(196px,  16.53vw, 250px)"
             />
             <GetAGiftCardWrapper>
-              <GetAGiftCardTitle dangerouslySetInnerHTML={{ __html: getgiftcardtitle }}></GetAGiftCardTitle>
-              <GetAGiftCardText dangerouslySetInnerHTML={{ __html: getgiftcardtext }}></GetAGiftCardText>
+              <GetAGiftCardTitle dangerouslySetInnerHTML={{ __html: getgiftcardtitle as string }}></GetAGiftCardTitle>
+              <GetAGiftCardText dangerouslySetInnerHTML={{ __html: getgiftcardtext as string }}></GetAGiftCardText>
               <Link href="/gift-cards">
-                <CtaButton dangerouslySetInnerHTML={{ __html: getgiftcardbutton }}></CtaButton>
+                <CtaButton dangerouslySetInnerHTML={{ __html: getgiftcardbutton as string }}></CtaButton>
               </Link>
             </GetAGiftCardWrapper>
           </JoinOurClubSection>

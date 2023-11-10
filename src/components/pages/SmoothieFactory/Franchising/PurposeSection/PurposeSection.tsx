@@ -1,17 +1,21 @@
+'use client';
+
 import { Container, ContentContainer, Text, StyledLogo } from './PurposeSection.styles';
 
 import type { FC } from 'react';
+import { FranchisingPurposeSectionSliceDefault } from 'prismicio-types';
 
-const PurposeSection: FC = () => (
+const PurposeSection: FC<{
+  slice: FranchisingPurposeSectionSliceDefault;
+}> = ({
+  slice: {
+    primary: { text },
+  },
+}) => (
   <Container>
     <ContentContainer>
       <StyledLogo alt="logo image" src="/images/sf-logo.png" />
-
-      <Text>
-        Smoothie Factory<sup>®</sup> is committed to helping health conscious customers choose more nutritious options.
-        The smoothie menu features more whole fruits and vegetables, more natural options for sweeteners, and more vegan
-        and non-dairy options than ever before!
-      </Text>
+      <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
     </ContentContainer>
   </Container>
 );

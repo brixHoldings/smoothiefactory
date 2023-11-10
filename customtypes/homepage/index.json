@@ -11,42 +11,22 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "home_info_section": {
-              "type": "SharedSlice"
-            },
-            "home_header": {
-              "type": "SharedSlice"
-            },
-            "home_gallery": {
-              "type": "SharedSlice"
-            },
-            "home_e_club": {
-              "type": "SharedSlice"
-            },
-            "lets_connect": {
-              "type": "SharedSlice"
-            }
+            "home_info_section": { "type": "SharedSlice" },
+            "home_header": { "type": "SharedSlice" },
+            "home_gallery": { "type": "SharedSlice" },
+            "home_e_club": { "type": "SharedSlice" },
+            "lets_connect": { "type": "SharedSlice" }
           }
         }
       }
     },
     "SEO & Metadata": {
       "meta_description": {
-        "config": {
-          "label": "Meta Description",
-          "placeholder": "A brief summary of the page"
-        },
+        "config": { "label": "Meta Description", "placeholder": "A brief summary of the page" },
         "type": "StructuredText"
       },
       "meta_image": {
-        "config": {
-          "constraint": {
-            "height": 1260,
-            "width": 2400
-          },
-          "label": "Meta Image",
-          "thumbnails": []
-        },
+        "config": { "constraint": { "height": 1260, "width": 2400 }, "label": "Meta Image", "thumbnails": [] },
         "type": "Image"
       },
       "meta_title": {

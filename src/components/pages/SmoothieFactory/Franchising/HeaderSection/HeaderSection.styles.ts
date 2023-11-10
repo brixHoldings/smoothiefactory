@@ -41,7 +41,7 @@ export const SectionContainer = styled.div`
 
 export const FullWidthContentContainer = styled.div`
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   position: relative;
   overflow: hidden;
   overflow-y: visible;
@@ -84,7 +84,8 @@ export const ContentContainer = styled.div`
 `;
 
 export const TextContent = styled.div`
-  padding: 100px 0 0 0;
+  margin-top: 200px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   z-index: 3;

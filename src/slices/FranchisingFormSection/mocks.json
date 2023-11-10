@@ -1,0 +1,29 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "late",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "grew",
+				"type": "Text"
+			},
+			"small_screen_text": {
+				"__TYPE__": "FieldContent",
+				"value": "wash",
+				"type": "Text"
+			},
+			"disclaimer": {
+				"__TYPE__": "FieldContent",
+				"value": "industry",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

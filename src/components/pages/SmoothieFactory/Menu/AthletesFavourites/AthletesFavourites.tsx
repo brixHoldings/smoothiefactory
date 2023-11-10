@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client';
 
 import {
@@ -24,13 +23,17 @@ import { CtaButton } from '../../Home/WhatIsNew/WhatIsNew.style';
 import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
 
 import type { FC } from 'react';
+import { MenuDocumentDataSlicesSlice, MenuLeftAlignedItemSlice } from 'prismicio-types';
 
-const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
-  const athletesFavouritesSlice = slices.find((slice) => slice.slice_type === 'text_block');
+const AthletesFavourites: FC<{ mainTitle: string | null; slices: MenuLeftAlignedItemSlice[] | undefined }> = ({
+  mainTitle,
+  slices,
+}) => {
+  if (!slices) {
+    return null;
+  }
 
-  const [_, smoothies, bowls, fruits, toasts, salads, folds] = slices;
-
-  console.log('slices', slices);
+  const [smoothies, bowls, fruits, toasts, salads, folds] = slices;
 
   return (
     <>
@@ -46,11 +49,13 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
           width="clamp(261px,31.81vw, 481px)"
         />
         <MaxWidthWrapper>
-          <Title dangerouslySetInnerHTML={{ __html: maintitle }}></Title>
+          <Title dangerouslySetInnerHTML={{ __html: mainTitle as string }}></Title>
           <RelativeWrapper data-reverse-layout="true" mb="clamp(290px,45.37vw, 686px)">
             <GalleryContent data-reverse-layout="true">
               <GalleryContentWrapper>
-                <GalleryItemTitle dangerouslySetInnerHTML={{ __html: smoothies.primary.title }}></GalleryItemTitle>
+                <GalleryItemTitle
+                  dangerouslySetInnerHTML={{ __html: smoothies.primary.title as string }}
+                ></GalleryItemTitle>
                 <GalleryItemLabels>
                   <Label>
                     <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
@@ -59,7 +64,7 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: smoothies.primary.button1 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: smoothies.primary.button1 as string }}></LabelText>
                   </Label>
                   <Label>
                     <svg fill="none" height="15" viewBox="0 0 16 15" width="16">
@@ -68,17 +73,19 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: smoothies.primary.button2 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: smoothies.primary.button2 as string }}></LabelText>
                   </Label>
                 </GalleryItemLabels>
-                <GalleryText dangerouslySetInnerHTML={{ __html: smoothies.primary.text }}></GalleryText>
+                <GalleryText dangerouslySetInnerHTML={{ __html: smoothies.primary.text as string }}></GalleryText>
                 <GalleryButtons>
                   <a href="/SFK Menu Board_site.pdf" download>
-                    <CtaButton dangerouslySetInnerHTML={{ __html: smoothies.primary.main_button }}></CtaButton>
+                    <CtaButton
+                      dangerouslySetInnerHTML={{ __html: smoothies.primary.main_button as string }}
+                    ></CtaButton>
                   </a>
                   <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                     <CtaButtonOutlined
-                      dangerouslySetInnerHTML={{ __html: smoothies.primary.outlined_button }}
+                      dangerouslySetInnerHTML={{ __html: smoothies.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
                   </a>
                 </GalleryButtons>
@@ -118,7 +125,9 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                 width="clamp(451px,57.13vw, 863.84px)"
               />
               <GalleryContentWrapper>
-                <GalleryItemTitle dangerouslySetInnerHTML={{ __html: bowls.primary.title }}></GalleryItemTitle>
+                <GalleryItemTitle
+                  dangerouslySetInnerHTML={{ __html: bowls.primary.title as string }}
+                ></GalleryItemTitle>
                 <GalleryItemLabels>
                   <Label>
                     <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
@@ -127,7 +136,7 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: bowls.primary.button1 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: bowls.primary.button1 as string }}></LabelText>
                   </Label>
                   <Label>
                     <svg fill="none" height="15" viewBox="0 0 16 15" width="16">
@@ -136,17 +145,17 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: bowls.primary.button2 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: bowls.primary.button2 as string }}></LabelText>
                   </Label>
                 </GalleryItemLabels>
-                <GalleryText dangerouslySetInnerHTML={{ __html: bowls.primary.text }}></GalleryText>
+                <GalleryText dangerouslySetInnerHTML={{ __html: bowls.primary.text as string }}></GalleryText>
                 <GalleryButtons>
                   <a href="/SFK Menu Board_site.pdf" download>
-                    <CtaButton dangerouslySetInnerHTML={{ __html: bowls.primary.main_button }}></CtaButton>
+                    <CtaButton dangerouslySetInnerHTML={{ __html: bowls.primary.main_button as string }}></CtaButton>
                   </a>
                   <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                     <CtaButtonOutlined
-                      dangerouslySetInnerHTML={{ __html: bowls.primary.outlined_button }}
+                      dangerouslySetInnerHTML={{ __html: bowls.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
                   </a>
                 </GalleryButtons>
@@ -169,7 +178,9 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
           <RelativeWrapper data-reverse-layout="true" mb="clamp(170px,36.97vw, 559px)">
             <GalleryContent data-reverse-layout="true">
               <GalleryContentWrapper>
-                <GalleryItemTitle dangerouslySetInnerHTML={{ __html: fruits.primary.title }}></GalleryItemTitle>
+                <GalleryItemTitle
+                  dangerouslySetInnerHTML={{ __html: fruits.primary.title as string }}
+                ></GalleryItemTitle>
                 <GalleryItemLabels>
                   <Label>
                     <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
@@ -178,7 +189,7 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: fruits.primary.button1 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: fruits.primary.button1 as string }}></LabelText>
                   </Label>
                   <Label>
                     <svg fill="none" height="15" viewBox="0 0 16 15" width="16">
@@ -187,17 +198,17 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: fruits.primary.button2 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: fruits.primary.button2 as string }}></LabelText>
                   </Label>
                 </GalleryItemLabels>
-                <GalleryText dangerouslySetInnerHTML={{ __html: fruits.primary.text }}></GalleryText>
+                <GalleryText dangerouslySetInnerHTML={{ __html: fruits.primary.text as string }}></GalleryText>
                 <GalleryButtons>
                   <a href="/SFK Menu Board_site.pdf" download>
-                    <CtaButton dangerouslySetInnerHTML={{ __html: fruits.primary.main_button }}></CtaButton>
+                    <CtaButton dangerouslySetInnerHTML={{ __html: fruits.primary.main_button as string }}></CtaButton>
                   </a>
                   <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                     <CtaButtonOutlined
-                      dangerouslySetInnerHTML={{ __html: fruits.primary.outlined_button }}
+                      dangerouslySetInnerHTML={{ __html: fruits.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
                   </a>
                 </GalleryButtons>
@@ -248,7 +259,9 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
               />
 
               <GalleryContentWrapper>
-                <GalleryItemTitle dangerouslySetInnerHTML={{ __html: toasts.primary.title }}></GalleryItemTitle>
+                <GalleryItemTitle
+                  dangerouslySetInnerHTML={{ __html: toasts.primary.title as string }}
+                ></GalleryItemTitle>
                 <GalleryItemLabels>
                   <Label>
                     <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
@@ -257,7 +270,7 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: toasts.primary.button1 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: toasts.primary.button1 as string }}></LabelText>
                   </Label>
                   <Label>
                     <svg fill="none" height="15" viewBox="0 0 16 15" width="16">
@@ -266,17 +279,17 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: toasts.primary.button2 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: toasts.primary.button2 as string }}></LabelText>
                   </Label>
                 </GalleryItemLabels>
-                <GalleryText dangerouslySetInnerHTML={{ __html: toasts.primary.text }}></GalleryText>
+                <GalleryText dangerouslySetInnerHTML={{ __html: toasts.primary.text as string }}></GalleryText>
                 <GalleryButtons>
                   <a href="/SFK Menu Board_site.pdf" download>
-                    <CtaButton dangerouslySetInnerHTML={{ __html: toasts.primary.main_button }}></CtaButton>
+                    <CtaButton dangerouslySetInnerHTML={{ __html: toasts.primary.main_button as string }}></CtaButton>
                   </a>
                   <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                     <CtaButtonOutlined
-                      dangerouslySetInnerHTML={{ __html: toasts.primary.outlined_button }}
+                      dangerouslySetInnerHTML={{ __html: toasts.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
                   </a>
                 </GalleryButtons>
@@ -299,7 +312,9 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
           <RelativeWrapper data-reverse-layout="true" mb="clamp(170px, 33.26vw, 503px)">
             <GalleryContent data-reverse-layout="true">
               <GalleryContentWrapper>
-                <GalleryItemTitle dangerouslySetInnerHTML={{ __html: salads.primary.title }}></GalleryItemTitle>
+                <GalleryItemTitle
+                  dangerouslySetInnerHTML={{ __html: salads.primary.title as string }}
+                ></GalleryItemTitle>
                 <GalleryItemLabels>
                   <Label>
                     <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
@@ -308,7 +323,7 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: salads.primary.button1 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: salads.primary.button1 as string }}></LabelText>
                   </Label>
                   <Label>
                     <svg fill="none" height="15" viewBox="0 0 16 15" width="16">
@@ -317,17 +332,17 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: salads.primary.button2 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: salads.primary.button2 as string }}></LabelText>
                   </Label>
                 </GalleryItemLabels>
-                <GalleryText dangerouslySetInnerHTML={{ __html: salads.primary.text }}></GalleryText>
+                <GalleryText dangerouslySetInnerHTML={{ __html: salads.primary.text as string }}></GalleryText>
                 <GalleryButtons>
                   <a href="/SFK Menu Board_site.pdf" download>
-                    <CtaButton dangerouslySetInnerHTML={{ __html: salads.primary.main_button }}></CtaButton>
+                    <CtaButton dangerouslySetInnerHTML={{ __html: salads.primary.main_button as string }}></CtaButton>
                   </a>
                   <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                     <CtaButtonOutlined
-                      dangerouslySetInnerHTML={{ __html: salads.primary.outlined_button }}
+                      dangerouslySetInnerHTML={{ __html: salads.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
                   </a>
                 </GalleryButtons>
@@ -367,7 +382,9 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                 width="clamp(451px, 46.95vw, 710px)"
               />
               <GalleryContentWrapper>
-                <GalleryItemTitle dangerouslySetInnerHTML={{ __html: folds.primary.title }}></GalleryItemTitle>
+                <GalleryItemTitle
+                  dangerouslySetInnerHTML={{ __html: folds.primary.title as string }}
+                ></GalleryItemTitle>
                 <GalleryItemLabels>
                   <Label>
                     <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
@@ -376,7 +393,7 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: folds.primary.button1 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: folds.primary.button1 as string }}></LabelText>
                   </Label>
                   <Label>
                     <svg fill="none" height="15" viewBox="0 0 16 15" width="16">
@@ -385,17 +402,17 @@ const AthletesFavourites: FC = ({ data: { maintitle, slices } }) => {
                         fill="#474747"
                       />
                     </svg>
-                    <LabelText dangerouslySetInnerHTML={{ __html: folds.primary.button2 }}></LabelText>
+                    <LabelText dangerouslySetInnerHTML={{ __html: folds.primary.button2 as string }}></LabelText>
                   </Label>
                 </GalleryItemLabels>
-                <GalleryText dangerouslySetInnerHTML={{ __html: folds.primary.text }}></GalleryText>
+                <GalleryText dangerouslySetInnerHTML={{ __html: folds.primary.text as string }}></GalleryText>
                 <GalleryButtons>
                   <a href="/SFK Menu Board_site.pdf" download>
-                    <CtaButton dangerouslySetInnerHTML={{ __html: folds.primary.main_button }}></CtaButton>
+                    <CtaButton dangerouslySetInnerHTML={{ __html: folds.primary.main_button as string }}></CtaButton>
                   </a>
                   <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
                     <CtaButtonOutlined
-                      dangerouslySetInnerHTML={{ __html: folds.primary.outlined_button }}
+                      dangerouslySetInnerHTML={{ __html: folds.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
                   </a>
                 </GalleryButtons>

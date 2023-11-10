@@ -1,6 +1,6 @@
 {
-  "id": "e_club_signup",
-  "label": "E Club Signup",
+  "id": "gift_cards",
+  "label": "Gift Cards",
   "format": "page",
   "repeatable": false,
   "status": true,
@@ -9,7 +9,9 @@
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
-        "config": { "choices": { "e_club_header": { "type": "SharedSlice" } } }
+        "config": {
+          "choices": { "gift_cards_header": { "type": "SharedSlice" }, "chose_designs": { "type": "SharedSlice" } }
+        }
       }
     },
     "SEO & Metadata": {

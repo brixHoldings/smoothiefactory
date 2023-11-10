@@ -1,10 +1,10 @@
-// @ts-nocheck
 import AthletesFavourites from '@components/pages/SmoothieFactory/Menu/AthletesFavourites/AthletesFavourites';
 import Header from '@components/pages/SmoothieFactory/Menu/Header/Header';
 import OurSpecialOffers from '@components/pages/SmoothieFactory/Menu/OurSpecialOffers/OurSpecialOffers';
 import { createClient } from 'src/prismicio';
 
 import type { FC } from 'react';
+import { MenuLeftAlignedItemSlice, TextBlockSlice } from 'prismicio-types';
 
 export const metadata = {
   title: 'Menu | Smoothie Factory + Kitchen',
@@ -15,13 +15,16 @@ const Menu: FC = async () => {
   const client = createClient();
   const page = await client.getSingle('menu');
 
-  const headerSlice = page.data.slices.find((slice) => slice.slice_type === 'text_block');
+  const headerSlice = page.data.slices.find((slice) => slice.slice_type === 'text_block') as TextBlockSlice | undefined;
+  const athletesFavouritesSlices = page.data.slices.filter((slice) => slice.slice_type === 'menu_left_aligned_item') as
+    | MenuLeftAlignedItemSlice[]
+    | undefined;
 
   return (
     <>
-      <Header page={page} slice={headerSlice} />
+      {headerSlice ? <Header slice={headerSlice} /> : null}
       {/* <OurSpecialOffers /> */}
-      <AthletesFavourites data={page.data} />
+      <AthletesFavourites mainTitle={page.data.maintitle} slices={athletesFavouritesSlices} />
     </>
   );
 };

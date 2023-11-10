@@ -2,8 +2,10 @@ import Form from '@components/pages/SmoothieFactory/EClub/Form/Form';
 import GetBirthdayGift from '@components/pages/SmoothieFactory/EClub/GetBirthdayGift/GetBirthdayGift';
 import GetRewards from '@components/pages/SmoothieFactory/EClub/GetRewards/GetRewards';
 import HowDoesItWork from '@components/pages/SmoothieFactory/EClub/HowDoesItWork/HowDoesItWork';
+import { BirthdayGiftSlice, EClubHeaderSlice, FormSlice, HowDoesItWorkSlice } from 'prismicio-types';
 
 import type { FC } from 'react';
+import { createClient } from 'src/prismicio';
 
 export const metadata = {
   title: 'Factory Fan E-Club | Smoothie Factory + Kitchen',
@@ -41,16 +43,30 @@ const getOptions = async (): Promise<GetOptionsResponse> => {
 const EClub: FC = async () => {
   const data = await getOptions();
 
+  const client = createClient();
+  const page = await client.getSingle('e_club');
+
+  const getRewardsSlice = page.data.slices.find((slice) => slice.slice_type === 'e_club_header') as
+    | EClubHeaderSlice
+    | undefined;
+  const getBirthdayGiftSlice = page.data.slices.find((slice) => slice.slice_type === 'birthday_gift') as
+    | BirthdayGiftSlice
+    | undefined;
+  const howDoesItWorkSlice = page.data.slices.find((slice) => slice.slice_type === 'how_does_it_work') as
+    | HowDoesItWorkSlice
+    | undefined;
+  const formSlice = page.data.slices.find((slice) => slice.slice_type === 'form') as FormSlice | undefined;
+
   const optionMatch = data.merge_fields.find((field) => field.tag === 'MMERGE3');
 
   const choices = optionMatch === undefined ? [] : optionMatch.options.choices;
 
   return (
     <>
-      <GetRewards />
-      <GetBirthdayGift />
-      <HowDoesItWork />
-      <Form options={choices} />
+      {getRewardsSlice ? <GetRewards slice={getRewardsSlice} /> : null}
+      {getBirthdayGiftSlice ? <GetBirthdayGift slice={getBirthdayGiftSlice} /> : null}
+      {howDoesItWorkSlice ? <HowDoesItWork slice={howDoesItWorkSlice} /> : null}
+      {formSlice ? <Form options={choices} slice={formSlice} /> : null}
     </>
   );
 };

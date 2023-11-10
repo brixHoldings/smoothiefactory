@@ -1,0 +1,29 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"maintitle": {
+				"__TYPE__": "FieldContent",
+				"value": "south",
+				"type": "Text"
+			},
+			"first_step": {
+				"__TYPE__": "FieldContent",
+				"value": "discover",
+				"type": "Text"
+			},
+			"second_step": {
+				"__TYPE__": "FieldContent",
+				"value": "require",
+				"type": "Text"
+			},
+			"third_step": {
+				"__TYPE__": "FieldContent",
+				"value": "enough",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

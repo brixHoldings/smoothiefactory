@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client';
 
 import Image from 'next/image';
@@ -28,6 +27,7 @@ import { Title } from '../common';
 
 import type { FC } from 'react';
 import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
+import { LetsConnectSlice } from 'prismicio-types';
 
 const cards = [
   {
@@ -78,7 +78,7 @@ const cards = [
   },
 ];
 
-const LetsConnect: FC = ({
+const LetsConnect: FC<{ slice: LetsConnectSlice }> = ({
   slice: {
     primary: { title, hashtag },
   },
@@ -109,8 +109,8 @@ const LetsConnect: FC = ({
           <MaxWidthWrapper>
             <Row>
               <Column>
-                <Title mb="8px" dangerouslySetInnerHTML={{ __html: title }}></Title>
-                <Hashtag dangerouslySetInnerHTML={{ __html: hashtag }}></Hashtag>
+                <Title mb="8px" dangerouslySetInnerHTML={{ __html: title as string }}></Title>
+                <Hashtag dangerouslySetInnerHTML={{ __html: hashtag as string }}></Hashtag>
               </Column>
               <CarouselWrapper>
                 <Carousel>

@@ -1,0 +1,79 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"left_title": {
+				"__TYPE__": "FieldContent",
+				"value": "aboard",
+				"type": "Text"
+			},
+			"left_text": {
+				"__TYPE__": "FieldContent",
+				"value": "review",
+				"type": "Text"
+			},
+			"right_title": {
+				"__TYPE__": "FieldContent",
+				"value": "rear",
+				"type": "Text"
+			},
+			"right_text": {
+				"__TYPE__": "FieldContent",
+				"value": "kept",
+				"type": "Text"
+			},
+			"person_card_title": {
+				"__TYPE__": "FieldContent",
+				"value": "simplest",
+				"type": "Text"
+			},
+			"person_card_side_text": {
+				"__TYPE__": "FieldContent",
+				"value": "play",
+				"type": "Text"
+			},
+			"info_title": {
+				"__TYPE__": "FieldContent",
+				"value": "customs",
+				"type": "Text"
+			},
+			"first_info_card_title": {
+				"__TYPE__": "FieldContent",
+				"value": "how",
+				"type": "Text"
+			},
+			"first_info_card_text": {
+				"__TYPE__": "FieldContent",
+				"value": "wrong",
+				"type": "Text"
+			},
+			"second_info_card_title": {
+				"__TYPE__": "FieldContent",
+				"value": "attention",
+				"type": "Text"
+			},
+			"second_info_card_text": {
+				"__TYPE__": "FieldContent",
+				"value": "chain",
+				"type": "Text"
+			},
+			"second_info_card_button": {
+				"__TYPE__": "FieldContent",
+				"value": "driver",
+				"type": "Text"
+			},
+			"third_info_card_title": {
+				"__TYPE__": "FieldContent",
+				"value": "kept",
+				"type": "Text"
+			},
+			"third_info_card_text": {
+				"__TYPE__": "FieldContent",
+				"value": "fort",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client';
 
 import Image from 'next/image';
@@ -18,8 +17,9 @@ import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 
 import type { FC } from 'react';
 import Link from 'next/link';
+import { HomeHeaderSlice } from 'prismicio-types';
 
-const Header: FC = ({
+const Header: FC<{ slice: HomeHeaderSlice }> = ({
   slice: {
     primary: { title, text, button },
   },
@@ -35,10 +35,10 @@ const Header: FC = ({
           fill
         />
         <CtaArea>
-          <HeaderTitle dangerouslySetInnerHTML={{ __html: `${title}` }}></HeaderTitle>
-          <HeaderText dangerouslySetInnerHTML={{ __html: `${text}` }}></HeaderText>
+          <HeaderTitle dangerouslySetInnerHTML={{ __html: title as string }}></HeaderTitle>
+          <HeaderText dangerouslySetInnerHTML={{ __html: text as string }}></HeaderText>
           <Link href="/e-club">
-            <HeaderButton dangerouslySetInnerHTML={{ __html: `${button}` }}></HeaderButton>
+            <HeaderButton dangerouslySetInnerHTML={{ __html: button as string }}></HeaderButton>
           </Link>
           <FloatingGlassImage
             priority
