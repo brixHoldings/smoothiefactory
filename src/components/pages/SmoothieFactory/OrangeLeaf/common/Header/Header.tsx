@@ -128,7 +128,13 @@ const Header: FC = () => {
         >
           Menu
         </ButtonLink>
-        <NativeLinkMobile href="/locations" data-is-active={pathname === '/locations'}>
+        <NativeLinkMobile
+          href="https://locations.smoothiefactorykitchen.com/"
+          data-is-active={
+            typeof window !== 'undefined' &&
+            window.location.origin.includes('https://locations.smoothiefactorykitchen.com/')
+          }
+        >
           Locations
         </NativeLinkMobile>
         <ButtonLink
@@ -208,9 +214,12 @@ const Header: FC = () => {
             <Separator animate={isTransparent ? 'transparent' : 'visible'} variants={separatorVariants} />
             <NativeLink
               animate={isTransparent ? 'transparent' : 'visible'}
-              href="/locations"
+              href="https://locations.smoothiefactorykitchen.com/"
               variants={linkVariants}
-              data-is-active={pathname === '/locations'}
+              data-is-active={
+                typeof window !== 'undefined' &&
+                window.location.origin.includes('https://locations.smoothiefactorykitchen.com/')
+              }
             >
               Locations
             </NativeLink>
