@@ -69,10 +69,8 @@ export const POST = async (request: NextRequest): Promise<Response> => {
       method: 'POST',
     });
 
-    console.log(22222, res);
     return new NextResponse('OK', { status: 200 });
   } catch (e: unknown) {
-    console.log(111111, e);
     return new NextResponse('Internal Error', { status: 500 });
   }
 };
