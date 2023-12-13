@@ -167,7 +167,7 @@ const FormComponent: FC<{ options: string[] }> = ({ options }) => {
                 <Label htmlFor="birthday">Birthday:</Label>
                 <Input
                   id="birthday"
-                  placeholder="month/day/year"
+                  placeholder="MM/DD"
                   {...register('birthday', { required: true })}
                   disabled={isDisabled}
                 />
