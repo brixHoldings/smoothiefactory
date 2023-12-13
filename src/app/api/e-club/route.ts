@@ -60,7 +60,7 @@ export const POST = async (request: NextRequest): Promise<Response> => {
   };
 
   try {
-    const res = await fetch('https://us13.api.mailchimp.com/3.0/lists/afce920e8f', {
+    await fetch('https://us13.api.mailchimp.com/3.0/lists/afce920e8f', {
       body: JSON.stringify(data),
       headers: {
         // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
