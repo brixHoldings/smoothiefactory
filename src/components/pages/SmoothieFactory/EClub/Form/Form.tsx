@@ -33,6 +33,7 @@ import { Polygon } from '../../Home/BlendTogether/BlendTogether.style';
 
 import letsBlendTogether from '../../../../../../public/lottie/letsBlendTogether.json';
 import { Super } from '@styles/common';
+import { validateDateFormat } from '@utils/validateDateFormat';
 
 type EClubFormData = {
   birthday: string;
@@ -45,7 +46,11 @@ type EClubFormData = {
 };
 
 export const eClubFormSchema = object({
-  birthday: string().required('This field is obligatory'),
+  birthday: string().required('This field is obligatory').test({
+    message: 'Birthday must be in MM/DD format',
+    name: 'valid',
+    test: validateDateFormat,
+  }),
   email: string().email('Add a valid email').required('This field is obligatory'),
   favoriteLocation: string().required('This field is obligatory'),
   firstName: string().required('This field is obligatory'),
