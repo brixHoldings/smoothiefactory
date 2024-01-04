@@ -2,7 +2,7 @@ import AboutUsForm from '@components/pages/SmoothieFactory/AboutUs/Form/AboutUsF
 import Header from '@components/pages/SmoothieFactory/AboutUs/Header/Header';
 import HowItStarted from '@components/pages/SmoothieFactory/AboutUs/HowItStarted/HowItStarted';
 import JoinUs from '@components/pages/SmoothieFactory/AboutUs/JoinUs/JoinUs';
-import { createClient } from 'src/prismicio';
+import { createClient } from 'prismicio';
 
 import type { FC } from 'react';
 import { AboutUsHeaderAreaSlice, HowItStartedSlice } from 'prismicio-types';

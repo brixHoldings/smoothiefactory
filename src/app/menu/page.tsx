@@ -1,7 +1,7 @@
 import AthletesFavourites from '@components/pages/SmoothieFactory/Menu/AthletesFavourites/AthletesFavourites';
 import Header from '@components/pages/SmoothieFactory/Menu/Header/Header';
 import OurSpecialOffers from '@components/pages/SmoothieFactory/Menu/OurSpecialOffers/OurSpecialOffers';
-import { createClient } from 'src/prismicio';
+import { createClient } from 'prismicio';
 
 import type { FC } from 'react';
 import { MenuLeftAlignedItemSlice, TextBlockSlice } from 'prismicio-types';
