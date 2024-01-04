@@ -6,7 +6,7 @@ import HowToSection from '@components/pages/SmoothieFactory/Franchising/HowToSec
 import MenuSection from '@components/pages/SmoothieFactory/Franchising/MenuSection';
 import PurposeSection from '@components/pages/SmoothieFactory/Franchising/PurposeSection';
 import VideoSection from '@components/pages/SmoothieFactory/Franchising/VideoSection';
-import { createClient } from 'src/prismicio';
+import { createClient } from 'prismicio';
 
 import type { FC } from 'react';
 import {
