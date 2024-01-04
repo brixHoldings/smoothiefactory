@@ -5,7 +5,7 @@ import HowDoesItWork from '@components/pages/SmoothieFactory/EClub/HowDoesItWork
 import { BirthdayGiftSlice, EClubHeaderSlice, FormSlice, HowDoesItWorkSlice } from 'prismicio-types';
 
 import type { FC } from 'react';
-import { createClient } from 'prismicio';
+import { createClient } from 'src/prismicio';
 
 export const metadata = {
   title: 'Factory Fan E-Club | Smoothie Factory + Kitchen',

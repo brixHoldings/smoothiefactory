@@ -11,7 +11,7 @@ import StyledComponentsRegistry from '@styles/registry';
 import type { FC, ReactNode } from 'react';
 import GlobalStyle from './GlobalStyle';
 import { StoreProvider } from 'src/context/StoreProvider';
-import { repositoryName } from 'prismicio';
+import { repositoryName } from 'src/prismicio';
 
 const nexa = localFont({
   src: [

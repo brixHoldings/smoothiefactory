@@ -12,7 +12,7 @@ import {
 } from 'prismicio-types';
 
 import type { FC } from 'react';
-import { createClient } from 'prismicio';
+import { createClient } from 'src/prismicio';
 
 export const metadata = {
   title: 'Smoothie Factory + Kitchen | A healthy lifestyle franchise company',

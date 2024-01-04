@@ -1,6 +1,6 @@
 import ChooseDesigns from '@components/pages/SmoothieFactory/GiftCards/ChooseDesigns/ChooseDesigns';
 import Header from '@components/pages/SmoothieFactory/GiftCards/Header/Header';
-import { createClient } from 'prismicio';
+import { createClient } from 'src/prismicio';
 
 import type { FC } from 'react';
 import { ChoseDesignsSlice, GiftCardsHeaderSlice } from 'prismicio-types';
