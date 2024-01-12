@@ -74,6 +74,7 @@ export const TermsAndConditions = styled.div`
   @media (max-width: calc(${theme.breakpoints.tablet}px)) {
     order: 2;
     margin-bottom: 24px;
+    align-items: center;
   }
 `;
 

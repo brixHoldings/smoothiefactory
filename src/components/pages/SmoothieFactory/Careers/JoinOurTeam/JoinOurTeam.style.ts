@@ -24,7 +24,6 @@ export const Button = styled.button`
   border: none;
   background-color: #23aa5d;
   border-radius: 4px;
-  max-width: 357px;
   width: 100%;
   cursor: pointer;
   margin-bottom: clamp(24px, 2.64vw, 40px);

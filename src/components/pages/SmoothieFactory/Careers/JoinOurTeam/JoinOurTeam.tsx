@@ -34,7 +34,9 @@ const JoinOurTeam: FC = () => {
           food, while providing exceptional customer experiences. Apply and be part of a company that values innovation,
           teamwork, and a love for all things healthy. Your career journey starts here!
         </Text>
-        <Button>APPLY NOW ONLINE</Button>
+        <a target="_blank" href="https://form.jotform.com/240104805966153" style={{ maxWidth: '357px', width: '100%' }}>
+          <Button>APPLY NOW ONLINE</Button>
+        </a>
         <Disclaimer>
           Join our dynamic team at Smoothie Factory + Kitchen<Super>TM</Super>! We're constantly growing and on the
           lookout for passionate individuals who share our commitment to delivering delicious smoothies, juices, and
