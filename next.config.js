@@ -23,16 +23,6 @@ const nextConfig = {
         destination: 'https://locations.smoothiefactorykitchen.com/',
         permanent: true,
       },
-      {
-        source: 'https://smoothiefactory.com',
-        destination: 'https://www.smoothiefactorykitchen.com/',
-        permanent: true,
-      },
-      {
-        source: 'https://www.smoothiefactory.com/',
-        destination: 'https://www.smoothiefactorykitchen.com/',
-        permanent: true,
-      },
     ];
   },
 };
