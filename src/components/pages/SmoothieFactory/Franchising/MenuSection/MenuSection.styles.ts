@@ -6,7 +6,6 @@ import type { CSSProp } from 'styled-components';
 
 type SliderButtonProps = {
   isActive: boolean;
-  onClick: () => void;
 };
 
 type SliderAbsoluteContentWrapperProps = {
@@ -49,33 +48,6 @@ export const SliderContainer = styled.div`
   z-index: 1;
 `;
 
-export const SliderImageContainer = styled.div`
-  width: 100%;
-  position: relative;
-  margin-bottom: 50px;
-  background-color: white;
-`;
-
-export const SliderAbsoluteContentWrapper = styled.div<SliderAbsoluteContentWrapperProps>`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: opacity 1s;
-
-  ${({ isActive }): CSSProp => {
-    if (isActive) {
-      return css`
-        opacity: 1;
-      `;
-    }
-
-    return css`
-      opacity: 0;
-    `;
-  }}
-`;
-
 export const SliderButton = styled.button<SliderButtonProps>`
   height: 20px;
   margin-right: 28px;
@@ -103,53 +75,6 @@ export const SliderButton = styled.button<SliderButtonProps>`
   }}
 `;
 
-export const SliderImageContent = styled.div`
-  z-index: 1;
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  right: 0;
-  width: 28%;
-  background-color: white;
-  padding: 50px 50px;
-  display: flex;
-  flex-direction: column;
-  text-align: end;
-  background-color: white;
-
-  justify-content: center;
-  height: calc(100% - 100px);
-
-  @media only screen and (max-width: ${theme.breakpoints.desktop}px) {
-    position: relative;
-    padding: 30px 25px;
-    width: unset;
-  }
-`;
-
-export const SliderImageContentMainText = styled.p`
-  min-width: 60%;
-  font-size: 18px;
-  line-height: 32px;
-`;
-
-export const SliderImageContentTitleContainer = styled.div`
-  position: relative;
-`;
-
-export const SliderImageContentTitle = styled.h2`
-  font-size: 70px;
-  line-height: 88px;
-  color: white;
-  margin-bottom: 28px;
-  text-shadow: -1px -1px 0 #23aa5d, 1px -1px 0 #23aa5d, -1px 1px 0 #23aa5d, 1px 1px 0 #23aa5d;
-
-  @media only screen and (max-width: ${theme.breakpoints.desktop}px) {
-    font-size: 36px;
-    line-height: 40px;
-  }
-`;
-
 export const SliderButtonsContainer = styled.div`
   display: flex;
   padding-left: 172px;
@@ -172,24 +97,47 @@ export const CircularImage = styled.img`
   }
 `;
 
-export const SliderImageRelativeContainer = styled.div`
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+export const SliderWrapper = styled.div`
+  display: flex;
+  margin-bottom: clamp(34px, 4.1vw, 62px);
+  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
+    flex-direction: column-reverse;
+  }
 `;
 
-export const SliderFirstImageWrapper = styled.div<SliderAbsoluteContentWrapperProps>`
-  transition: opacity 1s;
+export const SliderImage = styled.div`
+  flex: 1;
+  position: relative;
+  min-height: clamp(390px, 43.25vw, 654px);
+`;
 
-  ${({ isActive }): CSSProp => {
-    if (isActive) {
-      return css`
-        opacity: 1;
-      `;
-    }
+export const SliderTitle = styled.h2`
+  font-size: clamp(25px, 3.17vw, 48px);
+  line-height: clamp(30px, 3.63vw 55px);
+  letter-spacing: clamp(2px, 0.25vw, 3.84px);
+  color: transparent;
+  -webkit-text-stroke: 2px #23aa5d;
+  margin-bottom: 24px;
+  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
+    margin-bottom: 30px;
+  }
+`;
 
-    return css`
-      opacity: 0;
-    `;
-  }}
+export const SliderText = styled.p`
+  color: #474747;
+  font-size: clamp(14px, 1.05vw, 16px);
+  line-height: clamp(21px, 1.85vw 28px);
+`;
+
+export const SliderContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 37.1%;
+  background: #fff;
+  padding: clamp(30px, 3.83vw, 58px) clamp(25px, 3.83vw, 58px);
+  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
+    max-width: 100%;
+  }
 `;

@@ -1,3 +1,5 @@
+'use client';
+
 import { useCallback } from 'react';
 
 import Button from '@components/pages/SmoothieFactory/Button';
@@ -22,19 +24,20 @@ import {
 } from './HeaderSection.styles';
 
 import type { FC } from 'react';
-import { Super } from '@styles/common';
+import { FranchisingHeaderSlice } from 'prismicio-types';
 
-const HeaderSection: FC = () => {
+const HeaderSection: FC<{
+  slice: FranchisingHeaderSlice;
+}> = ({
+  slice: {
+    items,
+    primary: { title, text, button },
+  },
+}) => {
   const onClickHandle = useCallback(() => {
     const contactElement = document.getElementById('contact');
     contactElement?.scrollIntoView();
   }, []);
-
-  const cardContentMap = [
-    { id: 1, text: 'since 1996' },
-    { id: 2, text: '20+ locations' },
-    { id: 3, text: 'new concept + kitchen' },
-  ];
 
   return (
     <SectionContainer>
@@ -43,33 +46,27 @@ const HeaderSection: FC = () => {
           <ContentContainer>
             <TextContent>
               <MainText>
-                Founded by olympic athlete!
+                {title}
                 <LeafImage alt="main-content-image" src="/images/SmoothieFactoryLeafImage.png" />
               </MainText>
-              <Text>
-                James Villasana founded Smoothie Factory<Super>®</Super> in 1996. As a high-level athlete, James needed
-                healthy food options made with only the highest quality ingredients to fuel his body. He carefully
-                created smoothies with nutrition, taste, and overall health in mind.
-              </Text>
+              <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
 
-              <Button label="Become a part of the family" onClick={onClickHandle} />
+              <Button label={button as string} onClick={onClickHandle} />
             </TextContent>
 
             <MainContentImage alt="main-content-image" src="/images/smoothieFactoryHeaderMainImage.png" />
             <MainContentCircularImage alt="main-content-image" src="/images/SmoothieFactoryHeaderCircular.png" />
           </ContentContainer>
-
           <FullWidthCircularDiv />
         </MobileContainer>
       </FullWidthContentContainer>
-
       <BottomContentContainer>
         <MobileContainer>
           <CardsContainer>
-            {cardContentMap.map(({ id, text }) => (
-              <CardContentContainer key={id}>
+            {items.map(({ badge_text }) => (
+              <CardContentContainer key={badge_text}>
                 <StyledSVG />
-                <CardText>{text}</CardText>
+                <CardText>{badge_text}</CardText>
               </CardContentContainer>
             ))}
           </CardsContainer>

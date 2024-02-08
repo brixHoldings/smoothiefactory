@@ -17,48 +17,48 @@ import type { FC } from 'react';
 import Image from 'next/image';
 
 import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
-import { Super } from '@styles/common';
+import { AboutUsHeaderAreaSlice } from 'prismicio-types';
 
-const Header: FC = () => (
-  <RelativeWrapper>
-    <FloatingShapeImage
-      priority
-      alt="about us bg"
-      height="clamp(392px, 46.09vw, 697px)"
-      left="0%"
-      src="/images/cyan-shape.svg"
-      top="0%"
-      width="clamp(381px,44.84vw, 678px)"
-    />
-    <HeaderMaxWidthWrapper>
-      <Wrapper>
-        <Content>
-          <Title>
-            Building a <br /> better you<Super>®</Super>
-          </Title>
-          <Text>
-            Smoothie Factory + Kitchen<Super>TM</Super> isn’t just for athletes. It’s for anyone who wants to pursue a
-            more active lifestyle and is looking for a snack or meal replacement to provide the energy and nutrition of
-            fruits and vegetables with no added sugars or preservatives.
-          </Text>
-        </Content>
-        <SideImage>
-          <Image
-            priority
-            alt="about us side image"
-            src="/images/side-img-1.jpg"
-            style={{
-              objectFit: 'cover',
-            }}
-            fill
-          />
-        </SideImage>
-      </Wrapper>
-    </HeaderMaxWidthWrapper>
-    <LottieWrapper>
-      <Lottie animationData={oneAtATime} />
-    </LottieWrapper>
-  </RelativeWrapper>
-);
+const Header: FC<{ slice: AboutUsHeaderAreaSlice }> = ({
+  slice: {
+    primary: { title, text },
+  },
+}) => {
+  return (
+    <RelativeWrapper>
+      <FloatingShapeImage
+        priority
+        alt="about us bg"
+        height="clamp(392px, 46.09vw, 697px)"
+        left="0%"
+        src="/images/cyan-shape.svg"
+        top="0%"
+        width="clamp(381px,44.84vw, 678px)"
+      />
+      <HeaderMaxWidthWrapper>
+        <Wrapper>
+          <Content>
+            <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
+            <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
+          </Content>
+          <SideImage>
+            <Image
+              priority
+              alt="about us side image"
+              src="/images/side-img-1.jpg"
+              style={{
+                objectFit: 'cover',
+              }}
+              fill
+            />
+          </SideImage>
+        </Wrapper>
+      </HeaderMaxWidthWrapper>
+      <LottieWrapper>
+        <Lottie animationData={oneAtATime} />
+      </LottieWrapper>
+    </RelativeWrapper>
+  );
+};
 
 export default Header;

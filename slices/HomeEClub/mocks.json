@@ -1,0 +1,44 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "break",
+				"type": "Text"
+			},
+			"joineclubtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "several",
+				"type": "Text"
+			},
+			"joineclubtext": {
+				"__TYPE__": "FieldContent",
+				"value": "fun",
+				"type": "Text"
+			},
+			"joineclubtitlebutton": {
+				"__TYPE__": "FieldContent",
+				"value": "hit",
+				"type": "Text"
+			},
+			"getgiftcardtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "each",
+				"type": "Text"
+			},
+			"getgiftcardtext": {
+				"__TYPE__": "FieldContent",
+				"value": "degree",
+				"type": "Text"
+			},
+			"getgiftcardbutton": {
+				"__TYPE__": "FieldContent",
+				"value": "daughter",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

@@ -15,8 +15,8 @@ const JoinUs: FC = () => (
         Want to join us?
       </Title>
       <Text>
-        Join our dynamic team at Smoothie Factory + Kitchen<Super>TM</Super>! We're constantly growing and on the
-        lookout for passionate individuals who share our commitment to delivering delicious smoothies, juices, food and
+        Join our dynamic team at Smoothie Factory + Kitchen<sup>TM</sup>! We're constantly growing and on the lookout
+        for passionate individuals who share our commitment to delivering delicious smoothies, juices, food and
         exceptional customer experiences.
       </Text>
       <Link href="/careers" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>

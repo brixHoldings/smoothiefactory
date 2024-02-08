@@ -1,0 +1,39 @@
+{
+  "id": "how_it_started",
+  "type": "SharedSlice",
+  "name": "HowItStarted",
+  "description": "HowItStarted",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "left_title": { "type": "Text", "config": { "label": "Left Title", "placeholder": "" } },
+        "left_text": { "type": "Text", "config": { "label": "Left Text", "placeholder": "" } },
+        "right_title": { "type": "Text", "config": { "label": "Right Title", "placeholder": "" } },
+        "right_text": { "type": "Text", "config": { "label": "Right Text", "placeholder": "" } },
+        "person_card_title": { "type": "Text", "config": { "label": "Person Card Title", "placeholder": "" } },
+        "person_card_side_text": { "type": "Text", "config": { "label": "Person Card Side Text", "placeholder": "" } },
+        "info_title": { "type": "Text", "config": { "label": "Info Title", "placeholder": "" } },
+        "first_info_card_title": { "type": "Text", "config": { "label": "First Info Card Title", "placeholder": "" } },
+        "first_info_card_text": { "type": "Text", "config": { "label": "First Info Card Text", "placeholder": "" } },
+        "second_info_card_title": {
+          "type": "Text",
+          "config": { "label": "Second Info Card Title", "placeholder": "" }
+        },
+        "second_info_card_text": { "type": "Text", "config": { "label": "Second Info Card Text", "placeholder": "" } },
+        "second_info_card_button": {
+          "type": "Text",
+          "config": { "label": "Second Info Card Button", "placeholder": "" }
+        },
+        "third_info_card_title": { "type": "Text", "config": { "label": "Third Info Card Title", "placeholder": "" } },
+        "third_info_card_text": { "type": "Text", "config": { "label": "Third Info Card Text", "placeholder": "" } }
+      },
+      "items": {}
+    }
+  ]
+}

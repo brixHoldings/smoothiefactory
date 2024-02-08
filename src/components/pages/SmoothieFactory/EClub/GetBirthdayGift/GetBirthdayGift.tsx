@@ -8,8 +8,13 @@ import { CtaButton } from '../../Home/WhatIsNew/WhatIsNew.style';
 
 import type { FC } from 'react';
 import { MaxWidthWrapper, Super } from '@styles/common';
+import { BirthdayGiftSlice } from 'prismicio-types';
 
-const GetBirthdayGift: FC = () => (
+const GetBirthdayGift: FC<{ slice: BirthdayGiftSlice }> = ({
+  slice: {
+    primary: { title, text, button },
+  },
+}) => (
   <MaxWidthWrapper>
     <Wrapper>
       <FloatingImage
@@ -19,15 +24,10 @@ const GetBirthdayGift: FC = () => (
         width="clamp(285px,37.76vw, 571px)"
       />
       <ContentWrapper>
-        <Title>Get the best birthday gift!</Title>
-        <Text>
-          Join the Smoothie Factory<Super>®</Super> Fan E-Club and receive a special birthday treat! Celebrate your
-          special day with a treat on us. As an e-club member, you&apos;ll get exclusive access to this birthday promo,
-          as well as year-round discounts and offers. Don&apos;t miss out on this sweet treat! Sign up now and celebrate
-          your birthday the healthy way.
-        </Text>
+        <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
+        <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
         <a href="#form-bg">
-          <CtaButton>Join now</CtaButton>
+          <CtaButton dangerouslySetInnerHTML={{ __html: button as string }}></CtaButton>
         </a>
       </ContentWrapper>
     </Wrapper>

@@ -30,7 +30,28 @@ import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/F
 import theme from '@styles/theme';
 import useWindowSize from '@hooks/useWindowSize';
 import Link from 'next/link';
-const HowItStarted: FC = () => {
+import { HowItStartedSlice } from 'prismicio-types';
+
+const HowItStarted: FC<{ slice: HowItStartedSlice }> = ({
+  slice: {
+    primary: {
+      left_title,
+      left_text,
+      right_title,
+      right_text,
+      person_card_title,
+      person_card_side_text,
+      info_title,
+      first_info_card_title,
+      first_info_card_text,
+      second_info_card_title,
+      second_info_card_text,
+      second_info_card_button,
+      third_info_card_title,
+      third_info_card_text,
+    },
+  },
+}) => {
   const { width } = useWindowSize();
 
   const isMobile = width <= theme.breakpoints.tablet;
@@ -48,14 +69,13 @@ const HowItStarted: FC = () => {
               width="clamp(262px, 30.88vw, 467px)"
             />
 
-            <Title color="#ED6C32" mb="clamp(16px,2.11vw, 24px)" style={{ textAlign: 'center' }}>
-              How it started
-            </Title>
-            <Text>
-              Smoothie Factory<Super>®</Super> was founded by Olympic athlete James Villasana in 1996. As a high-level
-              athlete, James needed healthy food options made with only the highest quality ingredients to fuel his
-              body. His carefully crafted smoothies were created with nutrition, taste, and overall health in mind.
-            </Text>
+            <Title
+              color="#ED6C32"
+              mb="clamp(16px,2.11vw, 24px)"
+              style={{ textAlign: 'center' }}
+              dangerouslySetInnerHTML={{ __html: left_title as string }}
+            ></Title>
+            <Text dangerouslySetInnerHTML={{ __html: left_text as string }}></Text>
           </ContentWrapper>
           <ContentWrapper>
             <FloatingGreenShapeImage
@@ -66,13 +86,13 @@ const HowItStarted: FC = () => {
               width="clamp(262px, 30.88vw, 456.37px)"
             />
 
-            <Title color="#23AA5D" mb="clamp(16px,2.11vw, 24px)" style={{ textAlign: 'center' }}>
-              How it’s going
-            </Title>
-            <Text>
-              With our Founder’s goal in mind, we have enhanced our menu to help guests continue to “build a better
-              you”. In turn, our menu has expanded to include freshly made toasts, grilled folds, and salads.
-            </Text>
+            <Title
+              color="#23AA5D"
+              mb="clamp(16px,2.11vw, 24px)"
+              style={{ textAlign: 'center' }}
+              dangerouslySetInnerHTML={{ __html: right_title as string }}
+            ></Title>
+            <Text dangerouslySetInnerHTML={{ __html: right_text as string }}></Text>
             <FloatingCucumber
               alt="green shape"
               height="clamp(112px, 19.37vw, 293px)"
@@ -97,12 +117,9 @@ const HowItStarted: FC = () => {
             style={{ marginBottom: 'clamp(23px,2.91vw, 44px)' }}
             width="clamp(229px,27.97vw, 423px)"
           />
-          <CardTitle>OUR MISSION</CardTitle>
+          <CardTitle dangerouslySetInnerHTML={{ __html: person_card_title as string }}></CardTitle>
         </PersonCard>
-        <WoodBgTitle>
-          Smoothie Factory + Kitchen<Super>TM</Super> exists to help health conscious people maintain their active
-          lifestyle.
-        </WoodBgTitle>
+        <WoodBgTitle dangerouslySetInnerHTML={{ __html: person_card_side_text as string }}></WoodBgTitle>
         <FloatingImage
           alt="apple"
           bottom="-10%"
@@ -116,9 +133,12 @@ const HowItStarted: FC = () => {
         <Image alt="store bg" src="/images/DSC00808 (1).jpg" style={{ objectFit: 'cover' }} fill />
       </StoreBg>
       <MaxWidthWrapper>
-        <Title color="#23AA5D" mb="clamp(32px, 6.81vw, 103px)" style={{ textAlign: 'center' }}>
-          We are here for you
-        </Title>
+        <Title
+          color="#23AA5D"
+          mb="clamp(32px, 6.81vw, 103px)"
+          style={{ textAlign: 'center' }}
+          dangerouslySetInnerHTML={{ __html: info_title as string }}
+        ></Title>
         <CardsWrapper>
           <Card>
             <FloatingIconImage
@@ -127,14 +147,8 @@ const HowItStarted: FC = () => {
               src="/images/stars.svg"
               width="clamp(90px, 7.93vw, 120px)"
             />
-            <InfoCardTitle>
-              Modern <br />
-              environment
-            </InfoCardTitle>
-            <InfoCardText>
-              Experience our vibrant, modern space design while you enjoy your fresh and healthy Smoothie Factory +
-              Kitchen favorites<Super>TM</Super>!
-            </InfoCardText>
+            <InfoCardTitle dangerouslySetInnerHTML={{ __html: first_info_card_title as string }}></InfoCardTitle>
+            <InfoCardText dangerouslySetInnerHTML={{ __html: first_info_card_text as string }}></InfoCardText>
           </Card>
           <Card>
             <FloatingIconImage
@@ -143,15 +157,10 @@ const HowItStarted: FC = () => {
               src="/images/avocado-icon.svg"
               width="clamp(90px, 7.93vw, 120px)"
             />
-            <InfoCardTitle>
-              Only the highest <br /> quality for you
-            </InfoCardTitle>
-            <InfoCardText>
-              Our food and beverages are always made with the freshest ingredients, ensuring you get the best quality
-              and taste every time!
-            </InfoCardText>
+            <InfoCardTitle dangerouslySetInnerHTML={{ __html: second_info_card_title as string }}></InfoCardTitle>
+            <InfoCardText dangerouslySetInnerHTML={{ __html: second_info_card_text as string }}></InfoCardText>
             <Link href="/franchising">
-              <CtaButton>go to franchising</CtaButton>
+              <CtaButton dangerouslySetInnerHTML={{ __html: second_info_card_button as string }}></CtaButton>
             </Link>
           </Card>
           <Card>
@@ -161,14 +170,8 @@ const HowItStarted: FC = () => {
               src="/images/orange-icon.svg"
               width="clamp(90px, 7.93vw, 120px)"
             />
-            <InfoCardTitle>
-              The team that <br />
-              always smiles!
-            </InfoCardTitle>
-            <InfoCardText>
-              Our friendly team is here to serve you with a smile and make your Smoothie Factory + Kitchen
-              <Super>TM</Super> experience a memorable one!
-            </InfoCardText>
+            <InfoCardTitle dangerouslySetInnerHTML={{ __html: third_info_card_title as string }}></InfoCardTitle>
+            <InfoCardText dangerouslySetInnerHTML={{ __html: third_info_card_text as string }}></InfoCardText>
           </Card>
         </CardsWrapper>
       </MaxWidthWrapper>

@@ -1,0 +1,59 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"main_title": {
+				"__TYPE__": "FieldContent",
+				"value": "die",
+				"type": "Text"
+			},
+			"first_title": {
+				"__TYPE__": "FieldContent",
+				"value": "mouse",
+				"type": "Text"
+			},
+			"first_text": {
+				"__TYPE__": "FieldContent",
+				"value": "easy",
+				"type": "Text"
+			},
+			"first_button": {
+				"__TYPE__": "FieldContent",
+				"value": "took",
+				"type": "Text"
+			},
+			"second_title": {
+				"__TYPE__": "FieldContent",
+				"value": "can",
+				"type": "Text"
+			},
+			"second_text": {
+				"__TYPE__": "FieldContent",
+				"value": "route",
+				"type": "Text"
+			},
+			"second_button": {
+				"__TYPE__": "FieldContent",
+				"value": "whistle",
+				"type": "Text"
+			},
+			"third_title": {
+				"__TYPE__": "FieldContent",
+				"value": "leaving",
+				"type": "Text"
+			},
+			"third_text": {
+				"__TYPE__": "FieldContent",
+				"value": "log",
+				"type": "Text"
+			},
+			"third_button": {
+				"__TYPE__": "FieldContent",
+				"value": "author",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

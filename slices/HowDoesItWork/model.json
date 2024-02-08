@@ -1,0 +1,23 @@
+{
+  "id": "how_does_it_work",
+  "type": "SharedSlice",
+  "name": "HowDoesItWork",
+  "description": "HowDoesItWork",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "maintitle": { "type": "Text", "config": { "label": "MainTitle ", "placeholder": "" } },
+        "first_step": { "type": "Text", "config": { "label": "First Step", "placeholder": "" } },
+        "second_step": { "type": "Text", "config": { "label": "Second Step", "placeholder": "" } },
+        "third_step": { "type": "Text", "config": { "label": "Third Step", "placeholder": "" } }
+      },
+      "items": {}
+    }
+  ]
+}

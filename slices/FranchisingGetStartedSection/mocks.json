@@ -1,0 +1,140 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"main_title": {
+				"__TYPE__": "FieldContent",
+				"value": "vast",
+				"type": "Text"
+			},
+			"promotion_title": {
+				"__TYPE__": "FieldContent",
+				"value": "pony",
+				"type": "Text"
+			},
+			"promotion_text": {
+				"__TYPE__": "FieldContent",
+				"value": "feathers",
+				"type": "Text"
+			},
+			"promotion_title_1": {
+				"__TYPE__": "FieldContent",
+				"value": "service",
+				"type": "Text"
+			},
+			"promotion_text_1": {
+				"__TYPE__": "FieldContent",
+				"value": "color",
+				"type": "Text"
+			},
+			"promotion_title_2": {
+				"__TYPE__": "FieldContent",
+				"value": "its",
+				"type": "Text"
+			},
+			"promotion_text_2": {
+				"__TYPE__": "FieldContent",
+				"value": "mirror",
+				"type": "Text"
+			},
+			"military_title": {
+				"__TYPE__": "FieldContent",
+				"value": "sat",
+				"type": "Text"
+			},
+			"military_text": {
+				"__TYPE__": "FieldContent",
+				"value": "noon",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"card_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "member",
+							"type": "Text"
+						}
+					],
+					[
+						"card_subtitle",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "dear",
+							"type": "Text"
+						}
+					],
+					[
+						"title_1",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "order",
+							"type": "Text"
+						}
+					],
+					[
+						"text_1",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "wonder",
+							"type": "Text"
+						}
+					],
+					[
+						"title_2",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "my",
+							"type": "Text"
+						}
+					],
+					[
+						"text_2",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "model",
+							"type": "Text"
+						}
+					],
+					[
+						"title_3",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "forgotten",
+							"type": "Text"
+						}
+					],
+					[
+						"text_3",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "whom",
+							"type": "Text"
+						}
+					],
+					[
+						"text_4",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "machinery",
+							"type": "Text"
+						}
+					],
+					[
+						"title_4",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "according",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

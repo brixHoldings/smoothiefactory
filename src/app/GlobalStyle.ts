@@ -35,6 +35,12 @@ const GlobalStyle = createGlobalStyle`
     white-space: nowrap;
   }
 
+  sup{
+    vertical-align: super;
+    font-size: 0.5em;
+    font-weight: inherit;
+  }
+
   h1, h2, h3, h4, h5, h6, button {
     font-weight: 900;
     font-family: var(--nexa);

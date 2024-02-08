@@ -28,6 +28,7 @@ import { Title } from '../common';
 
 import type { FC } from 'react';
 import Link from 'next/link';
+import { HomeGallerySlice } from 'prismicio-types';
 
 type Slider = {
   img: {
@@ -152,7 +153,12 @@ const sliders = [
 
 const sliderDefaultInterval = 10000;
 
-const Gallery: FC = () => {
+const Gallery: FC<{ slice: HomeGallerySlice }> = ({
+  slice: {
+    items,
+    primary: { gallerytitle },
+  },
+}) => {
   const [activeSliderIndex, setActiveSliderIndex] = useState(0);
   const [isBackward, setIsBackward] = useState<boolean>(false);
   const intervalReference = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -207,7 +213,7 @@ const Gallery: FC = () => {
     <RelativeWrapper>
       <MaxWidthWrapper>
         <InnerWrapper>
-          <Title mb="clamp(131px, 9.72vw, 147px)">Our best classics</Title>
+          <Title mb="clamp(131px, 9.72vw, 147px)" dangerouslySetInnerHTML={{ __html: gallerytitle as string }}></Title>
           <ArrowsWrapper>
             <FloatingImage
               alt="gallery bg"
@@ -251,7 +257,9 @@ const Gallery: FC = () => {
               initial={{ opacity: 0, x: isBackward ? 300 : -300 }}
             >
               <GalleryContentWrapper>
-                <GalleryItemTitle>{sliders[activeSliderIndex].title}</GalleryItemTitle>
+                <GalleryItemTitle
+                  dangerouslySetInnerHTML={{ __html: items[activeSliderIndex].title as string }}
+                ></GalleryItemTitle>
                 <GalleryItemLabels>
                   <Label>
                     <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
@@ -272,17 +280,21 @@ const Gallery: FC = () => {
                     <LabelText>all natural</LabelText>
                   </Label>
                 </GalleryItemLabels>
-                <GalleryText>{sliders[activeSliderIndex].text}</GalleryText>
+                <GalleryText
+                  dangerouslySetInnerHTML={{ __html: items[activeSliderIndex].text as string }}
+                ></GalleryText>
                 <Link href="/menu">
-                  <CtaButton>see our menu</CtaButton>
+                  <CtaButton
+                    dangerouslySetInnerHTML={{ __html: items[activeSliderIndex].button as string }}
+                  ></CtaButton>
                 </Link>
               </GalleryContentWrapper>
 
               <FloatingItemImage
-                alt="item image"
+                priority
+                field={items[activeSliderIndex].image}
                 height={sliders[activeSliderIndex].img.height}
                 right={sliders[activeSliderIndex].img.right}
-                src={sliders[activeSliderIndex].img.src}
                 style={{ zIndex: -1 }}
                 top={sliders[activeSliderIndex].img.top}
                 width={sliders[activeSliderIndex].img.width}

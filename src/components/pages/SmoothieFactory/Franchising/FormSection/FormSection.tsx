@@ -1,3 +1,5 @@
+'use client';
+
 import { useCallback, useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -24,9 +26,13 @@ import {
 } from './FormSection.styles';
 
 import type { FC, FormEventHandler } from 'react';
-import { Super } from '@styles/common';
+import { FranchisingFormSectionSlice } from 'prismicio-types';
 
-const FormSection: FC = () => {
+const FormSection: FC<{ slice: FranchisingFormSectionSlice }> = ({
+  slice: {
+    primary: { title, text, small_screen_text, disclaimer },
+  },
+}) => {
   const {
     formState: { errors },
     handleSubmit,
@@ -60,21 +66,9 @@ const FormSection: FC = () => {
         <Container>
           <Content>
             <ContentText>
-              <Title>Let&apos;s talk!</Title>
-              <Description>
-                Smoothie Factory<Super>®</Super> is the brand for serious athletes and everyone who is trying to lead a
-                healthier lifestyle, aiming for the cleanest recipes and lowering sugar while giving customers the
-                ability to customize their smoothie to their own preference. Juices are all natural, ice filtered, and
-                pressed fresh to order. Our locations are often in close proximity to gyms to build traffic and volume,
-                and nutritional supplements are best-selling items sold at competitive prices.
-              </Description>
-
-              {!isSmallScreen && (
-                <CtaText>
-                  Contact us to learn more about available franchise opportunities with Smoothie Factory<Super>®</Super>
-                  !
-                </CtaText>
-              )}
+              <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
+              <Description dangerouslySetInnerHTML={{ __html: text as string }}></Description>
+              {!isSmallScreen && <CtaText dangerouslySetInnerHTML={{ __html: small_screen_text as string }}></CtaText>}
             </ContentText>
             <CardContainer id="contact">
               <Card size="s" isBlurred>
@@ -89,10 +83,7 @@ const FormSection: FC = () => {
                 ) : (
                   <Form onSubmit={handleSubmit(onSubmit) as FormEventHandler}>
                     {isSmallScreen && (
-                      <CtaText>
-                        Contact us to learn more about available franchise opportunities with Smoothie Factory
-                        <Super>®</Super>!
-                      </CtaText>
+                      <CtaText dangerouslySetInnerHTML={{ __html: small_screen_text as string }}></CtaText>
                     )}
                     <FormLabel>First name*:</FormLabel>
                     <InputField
@@ -160,15 +151,7 @@ const FormSection: FC = () => {
           </Content>
         </Container>
       </BackgroundContainer>
-      <Disclaimer>
-        This information is not intended as an offer to sell a franchise. We will not offer you a franchise until we
-        have complied with disclosure and registration requirements in your jurisdiction. Contact Smoothie Holdings FC,
-        LLC, located at 14860 Montfort Drive, Suite 150, Dallas, TX 75254, to request a copy of their FDD. RESIDENTS OF
-        NEW YORK: This advertisement is not an offering. An offering can only be made by a prospectus filed first with
-        the Department of Law of the State of New York. Such filing does not constitute approval by the New York
-        Department of Law. RESIDENTS OF MINNESOTA: MN Franchise Registration Number: 10211. RESIDENTS OF FLORIDA: FL
-        Advertising Number: BF50077.
-      </Disclaimer>
+      <Disclaimer dangerouslySetInnerHTML={{ __html: disclaimer as string }}></Disclaimer>
     </>
   );
 };

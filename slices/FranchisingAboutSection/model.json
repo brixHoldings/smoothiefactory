@@ -1,0 +1,29 @@
+{
+  "id": "franchising_about_section",
+  "type": "SharedSlice",
+  "name": "FranchisingAboutSection",
+  "description": "FranchisingAboutSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "main_title": { "type": "Text", "config": { "label": "Main Title", "placeholder": "" } },
+        "first_title": { "type": "Text", "config": { "label": "First Title", "placeholder": "" } },
+        "first_text": { "type": "Text", "config": { "label": "First Text", "placeholder": "" } },
+        "first_button": { "type": "Text", "config": { "label": "First Button", "placeholder": "" } },
+        "second_title": { "type": "Text", "config": { "label": "Second Title", "placeholder": "" } },
+        "second_text": { "type": "Text", "config": { "label": "Second Text", "placeholder": "" } },
+        "second_button": { "type": "Text", "config": { "label": "Second Button", "placeholder": "" } },
+        "third_title": { "type": "Text", "config": { "label": "Third Title", "placeholder": "" } },
+        "third_text": { "type": "Text", "config": { "label": "Third Text", "placeholder": "" } },
+        "third_button": { "type": "Text", "config": { "label": "Third Button", "placeholder": "" } }
+      },
+      "items": {}
+    }
+  ]
+}

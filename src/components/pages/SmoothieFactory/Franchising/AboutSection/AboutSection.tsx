@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { useCallback } from 'react';
 
@@ -15,9 +17,26 @@ import {
 } from './AboutSection.styles';
 
 import type { FC } from 'react';
-import { Super } from '@styles/common';
+import { FranchisingAboutSectionSlice } from 'prismicio-types';
 
-const AboutSection: FC = () => {
+const AboutSection: FC<{
+  slice: FranchisingAboutSectionSlice;
+}> = ({
+  slice: {
+    primary: {
+      main_title,
+      first_title,
+      first_text,
+      first_button,
+      second_title,
+      second_text,
+      second_button,
+      third_title,
+      third_button,
+      third_text,
+    },
+  },
+}) => {
   const onClickHandle = useCallback(() => {
     const contactElement = document.getElementById('contact');
     contactElement?.scrollIntoView();
@@ -25,16 +44,12 @@ const AboutSection: FC = () => {
 
   return (
     <Container>
-      <Title>Why us?</Title>
+      <Title dangerouslySetInnerHTML={{ __html: main_title as string }}></Title>
       <Row>
         <ContentLeft>
-          <Subtitle>In business for yourself, not by yourself</Subtitle>
-          <Description>
-            You start by on location training and after we offer ongoing operation support, quality assurance visits and
-            professional marketing support. We do ongoing product and menu development and system and technology
-            support.
-          </Description>
-          <Button label="Learn more" onClick={onClickHandle} />
+          <Subtitle dangerouslySetInnerHTML={{ __html: first_title as string }}></Subtitle>
+          <Description dangerouslySetInnerHTML={{ __html: first_text as string }}></Description>
+          <Button label={first_button as string} onClick={onClickHandle} />
         </ContentLeft>
         <ImageContainer>
           <Image alt="first-row-image" height={659} src="/images/sf-about-1.png" width={640} />
@@ -45,25 +60,16 @@ const AboutSection: FC = () => {
           <Image alt="first-row-image" height={659} src="/images/sf-about-2.png" width={640} />
         </ImageContainer>
         <ContentRight>
-          <Subtitle>A business within a business...</Subtitle>
-          <Description>
-            Within a business; Smoothie Factory<Super>®</Super> is more than 1 business; it has a collection of offers:
-            Smoothies, fruit and vegetable juices, comprehensive line of probiotics, bubble tea, wellness bowls, grilled
-            paninis, wraps, salads, seasonal soups and much more. Our multi menu categories allow for pricing
-            elasticity.
-          </Description>
-          <Button label="Learn more" onClick={onClickHandle} />
+          <Subtitle dangerouslySetInnerHTML={{ __html: second_title as string }}></Subtitle>
+          <Description dangerouslySetInnerHTML={{ __html: second_text as string }}></Description>
+          <Button label={second_button as string} onClick={onClickHandle} />
         </ContentRight>
       </Row>
       <Row>
         <ContentLeft>
-          <Subtitle>Simplicity</Subtitle>
-          <Description>
-            No need for kitchen hood, exhaust system, fryers, fire suppression system and other expensive equipment. Our
-            gourmet style recipes easily executed by unskilled labor, as it requires minimal amount of food and beverage
-            preparation.
-          </Description>
-          <Button label="Learn more" onClick={onClickHandle} />
+          <Subtitle dangerouslySetInnerHTML={{ __html: third_title as string }}></Subtitle>
+          <Description dangerouslySetInnerHTML={{ __html: third_text as string }}></Description>
+          <Button label={third_button as string} onClick={onClickHandle} />
         </ContentLeft>
         <ImageContainer>
           <Image alt="first-row-image" height={653} src="/images/sf-about-3.png" width={640} />
