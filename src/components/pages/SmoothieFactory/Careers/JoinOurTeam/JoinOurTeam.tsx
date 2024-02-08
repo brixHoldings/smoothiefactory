@@ -5,7 +5,7 @@ import { Wrapper, Text, Button, Disclaimer } from './JoinOurTeam.style';
 import type { FC } from 'react';
 
 import { useStore } from '@context/StoreProvider';
-import { MaxWidthWrapper, Super } from '@styles/common';
+import { MaxWidthWrapper } from '@styles/common';
 import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
 import { Title } from '../../Home/common';
 

@@ -4,7 +4,7 @@ import { Wrapper, Text, Button } from './JoinUs.style';
 
 import type { FC } from 'react';
 
-import { MaxWidthWrapper, Super } from '@styles/common';
+import { MaxWidthWrapper } from '@styles/common';
 import { Title } from '../../Home/common';
 import Link from 'next/link';
 

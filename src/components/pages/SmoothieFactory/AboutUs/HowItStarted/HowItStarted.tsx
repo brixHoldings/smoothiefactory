@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { MaxWidthWrapper, Super } from '@styles/common';
+import { MaxWidthWrapper } from '@styles/common';
 
 import type { FC } from 'react';
 import { Title } from '../../Home/common';

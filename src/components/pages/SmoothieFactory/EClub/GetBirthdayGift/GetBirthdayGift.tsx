@@ -7,7 +7,7 @@ import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/F
 import { CtaButton } from '../../Home/WhatIsNew/WhatIsNew.style';
 
 import type { FC } from 'react';
-import { MaxWidthWrapper, Super } from '@styles/common';
+import { MaxWidthWrapper } from '@styles/common';
 import { BirthdayGiftSlice } from 'prismicio-types';
 
 const GetBirthdayGift: FC<{ slice: BirthdayGiftSlice }> = ({

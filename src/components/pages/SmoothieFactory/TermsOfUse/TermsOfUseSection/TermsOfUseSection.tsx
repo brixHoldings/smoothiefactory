@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import { MaxWidthWrapper, Super } from '@styles/common';
+import { MaxWidthWrapper } from '@styles/common';
 
 import { Container, Paper, Title, Text, RelativeWrapper, PageTitle, ListItem } from './TermsOfUseSection.style';
 
