@@ -28,7 +28,7 @@ const AboutUs: FC = async () => {
       {headerSlice ? <Header slice={headerSlice} /> : null}
       {howItStartedSlice ? <HowItStarted slice={howItStartedSlice} /> : null}
       <AboutUsForm />
-      {/* <JoinUs /> */}
+      <JoinUs />
     </>
   );
 };

@@ -68,7 +68,6 @@ const FormSection: FC<{ slice: FranchisingFormSectionSlice }> = ({
             <ContentText>
               <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
               <Description dangerouslySetInnerHTML={{ __html: text as string }}></Description>
-
               {!isSmallScreen && <CtaText dangerouslySetInnerHTML={{ __html: small_screen_text as string }}></CtaText>}
             </ContentText>
             <CardContainer id="contact">

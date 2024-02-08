@@ -23,7 +23,7 @@ import { CtaButton } from '../../Home/WhatIsNew/WhatIsNew.style';
 import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
 
 import type { FC } from 'react';
-import { MenuDocumentDataSlicesSlice, MenuLeftAlignedItemSlice } from 'prismicio-types';
+import { MenuLeftAlignedItemSlice } from 'prismicio-types';
 
 const AthletesFavourites: FC<{ mainTitle: string | null; slices: MenuLeftAlignedItemSlice[] | undefined }> = ({
   mainTitle,

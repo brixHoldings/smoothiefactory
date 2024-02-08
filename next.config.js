@@ -15,21 +15,6 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-
-  async rewrites() {
-    return [
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'orangeleaffranchises.com',
-          },
-        ],
-        destination: '/orange-leaf/franchising',
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
