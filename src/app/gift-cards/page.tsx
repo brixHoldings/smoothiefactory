@@ -4,10 +4,18 @@ import { createClient } from 'prismicio';
 
 import type { FC } from 'react';
 import { ChoseDesignsSlice, GiftCardsHeaderSlice } from 'prismicio-types';
+import { Metadata } from 'next';
+import { asText } from '@prismicio/client';
 
-export const metadata = {
-  title: 'Gift Cards | Smoothie Factory + Kitchen',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle('gift_cards');
+
+  return {
+    title: page.data.meta_title,
+    description: asText(page.data.meta_description),
+  };
+}
 
 /* @ts-expect-error Server Component */
 const GiftCards: FC = async () => {

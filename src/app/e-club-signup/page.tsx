@@ -6,10 +6,18 @@ import { BirthdayGiftSlice, EClubHeaderSlice, FormSlice, HowDoesItWorkSlice } fr
 
 import type { FC } from 'react';
 import { createClient } from 'prismicio';
+import { Metadata } from 'next';
+import { asText } from '@prismicio/client';
 
-export const metadata = {
-  title: 'Factory Fan E-Club | Smoothie Factory + Kitchen',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle('e_club');
+
+  return {
+    title: page.data.meta_title,
+    description: asText(page.data.meta_description),
+  };
+}
 
 type MergeField = {
   tag: string;

@@ -13,10 +13,26 @@ import {
 
 import type { FC } from 'react';
 import { createClient } from 'prismicio';
+import { Metadata } from 'next';
+import { asText } from '@prismicio/client';
 
-export const metadata = {
-  title: 'Smoothie Factory + Kitchen | A healthy lifestyle franchise company',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle('homepage');
+
+  return {
+    title: page.data.meta_title,
+    description: asText(page.data.meta_description),
+    openGraph: {
+      title: page.data.meta_title || undefined,
+      images: [
+        {
+          url: page.data.meta_image.url || '',
+        },
+      ],
+    },
+  };
+}
 
 /* @ts-expect-error Server Component */
 const Home: FC = async () => {

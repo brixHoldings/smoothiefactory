@@ -18,10 +18,18 @@ import {
   FranchisingMenuSectionSlice,
   FranchisingPurposeSectionSlice,
 } from 'prismicio-types';
+import { Metadata } from 'next';
+import { asText } from '@prismicio/client';
 
-export const metadata = {
-  title: 'Franchising | Smoothie Factory + Kitchen',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle('franchising');
+
+  return {
+    title: page.data.meta_title,
+    description: asText(page.data.meta_description),
+  };
+}
 
 /* @ts-expect-error Server Component */
 const Franchising: FC = async () => {
