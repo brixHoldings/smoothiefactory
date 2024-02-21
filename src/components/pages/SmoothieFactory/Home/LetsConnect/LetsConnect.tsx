@@ -137,7 +137,7 @@ const LetsConnect: FC<{ slice: LetsConnectSlice }> = ({
         <FollowUs>
           <FollowUsTitle>.... follow us on:</FollowUsTitle>
           <SocialLinksWrapper>
-            <SocialLink href="https://www.facebook.com/smoothiefactorykitchen" target="_blank">
+            <SocialLink href="https://www.facebook.com/smoothiefactorypluskitchen" target="_blank">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="20" cy="20" r="20" fill="#98C44A" />
                 <path
