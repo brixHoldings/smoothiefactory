@@ -14,15 +14,9 @@
 				"type": "Text"
 			},
 			"small_screen_text": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Sit pariatur id eiusmod cupidatat aute voluptate laboris non enim sit et dolore duis ex. Sunt reprehenderit amet mollit exercitation consequat labore."
-						}
-					}
-				]
+				"__TYPE__": "FieldContent",
+				"value": "milk",
+				"type": "Text"
 			}
 		},
 		"items": [

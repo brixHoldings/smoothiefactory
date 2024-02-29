@@ -1137,13 +1137,13 @@ interface FranchisingHeaderSliceDefaultPrimary {
   /**
    * Small Screen Text field in *FranchisingHeader → Primary*
    *
-   * - **Field Type**: Rich Text
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: franchising_header.primary.small_screen_text
-   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
    *
    */
-  small_screen_text: prismic.RichTextField;
+  small_screen_text: prismic.KeyTextField;
 }
 /**
  * Item in FranchisingHeader → Items

@@ -49,7 +49,7 @@ const HeaderSection: FC<{
             </MainText>
             <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
           </TextContent>
-          <FormSection smallScreenText="Contact us to learn more about available franchise opportunities with Smoothie Factory <sup>®</sup>!" />
+          <FormSection smallScreenText={small_screen_text as string} />
         </StyledMaxWidthWrapper>
       </ContentContainer>
       <CardsContainer>
