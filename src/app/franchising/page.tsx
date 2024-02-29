@@ -11,7 +11,6 @@ import { createClient } from 'prismicio';
 import type { FC } from 'react';
 import {
   FranchisingAboutSectionSlice,
-  FranchisingFormSectionSlice,
   FranchisingGetStartedSectionSlice,
   FranchisingHeaderSlice,
   FranchisingHowToSlice,
@@ -54,9 +53,6 @@ const Franchising: FC = async () => {
   const getStartedSection = page.data.slices.find((slice) => slice.slice_type === 'franchising_get_started_section') as
     | FranchisingGetStartedSectionSlice
     | undefined;
-  const formSection = page.data.slices.find((slice) => slice.slice_type === 'franchising_form_section') as
-    | FranchisingFormSectionSlice
-    | undefined;
 
   return (
     <>
@@ -67,7 +63,6 @@ const Franchising: FC = async () => {
       {purposeSection ? <PurposeSection slice={purposeSection} /> : null}
       {aboutSection ? <AboutSection slice={aboutSection} /> : null}
       {getStartedSection ? <GetStartedSection slice={getStartedSection} /> : null}
-      {formSection ? <FormSection slice={formSection} /> : null}
     </>
   );
 };
