@@ -21,57 +21,45 @@ import {
   TextContent,
   StyledSVG,
   LeafImage,
+  StyledMaxWidthWrapper,
 } from './HeaderSection.styles';
 
 import type { FC } from 'react';
 import { FranchisingHeaderSlice } from 'prismicio-types';
+import FormSection from '../FormSection';
+import Image from 'next/image';
 
 const HeaderSection: FC<{
   slice: FranchisingHeaderSlice;
 }> = ({
   slice: {
     items,
-    primary: { title, text, button },
+    primary: { title, text, small_screen_text },
   },
 }) => {
-  const onClickHandle = useCallback(() => {
-    const contactElement = document.getElementById('contact');
-    contactElement?.scrollIntoView();
-  }, []);
-
   return (
-    <SectionContainer>
-      <FullWidthContentContainer>
-        <MobileContainer>
-          <ContentContainer>
-            <TextContent>
-              <MainText>
-                {title}
-                <LeafImage alt="main-content-image" src="/images/SmoothieFactoryLeafImage.png" />
-              </MainText>
-              <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
-
-              <Button label={button as string} onClick={onClickHandle} />
-            </TextContent>
-
-            <MainContentImage alt="main-content-image" src="/images/smoothieFactoryHeaderMainImage.png" />
-            <MainContentCircularImage alt="main-content-image" src="/images/SmoothieFactoryHeaderCircular.png" />
-          </ContentContainer>
-          <FullWidthCircularDiv />
-        </MobileContainer>
-      </FullWidthContentContainer>
-      <BottomContentContainer>
-        <MobileContainer>
-          <CardsContainer>
-            {items.map(({ badge_text }) => (
-              <CardContentContainer key={badge_text}>
-                <StyledSVG />
-                <CardText>{badge_text}</CardText>
-              </CardContentContainer>
-            ))}
-          </CardsContainer>
-        </MobileContainer>
-      </BottomContentContainer>
+    <SectionContainer id="contact">
+      <Image src="/images/slice18.jpg" alt="bg" fill style={{ zIndex: -1, objectFit: 'cover' }} />
+      <ContentContainer>
+        <StyledMaxWidthWrapper>
+          <TextContent>
+            <MainText>
+              {title}
+              <LeafImage alt="main-content-image" src="/images/SmoothieFactoryLeafImage.png" />
+            </MainText>
+            <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
+          </TextContent>
+          <FormSection smallScreenText="Contact us to learn more about available franchise opportunities with Smoothie Factory <sup>®</sup>!" />
+        </StyledMaxWidthWrapper>
+      </ContentContainer>
+      <CardsContainer>
+        {items.map(({ badge_text }) => (
+          <CardContentContainer key={badge_text}>
+            <StyledSVG />
+            <CardText>{badge_text}</CardText>
+          </CardContentContainer>
+        ))}
+      </CardsContainer>
     </SectionContainer>
   );
 };

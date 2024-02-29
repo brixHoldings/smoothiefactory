@@ -16,8 +16,7 @@
             "franchising_menu_section": { "type": "SharedSlice" },
             "franchising_purpose_section": { "type": "SharedSlice" },
             "franchising_about_section": { "type": "SharedSlice" },
-            "franchising_get_started_section": { "type": "SharedSlice" },
-            "franchising_form_section": { "type": "SharedSlice" }
+            "franchising_get_started_section": { "type": "SharedSlice" }
           }
         }
       }

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { ButtonContainer } from '@components/pages/SmoothieFactory/Button/Button.styles';
 import MobileContainer from '@components/ui/MobileContainer';
 import theme from '@styles/theme';
+import { MaxWidthWrapper } from '@styles/common';
 
 export const BottomContentContainer = styled.div`
   width: 100%;
@@ -28,15 +29,7 @@ export const BottomContentContainer = styled.div`
 `;
 
 export const SectionContainer = styled.div`
-  width: 100%;
-  background-image: url('/images/sf-header-bg.png');
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: contain;
-
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    background-size: cover;
-  }
+  position: relative;
 `;
 
 export const FullWidthContentContainer = styled.div`
@@ -63,49 +56,25 @@ export const FullWidthCircularDiv = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  padding-left: 172px;
-  display: flex;
+  background: white;
+  border-bottom-right-radius: 300px;
+`;
 
-  @media only screen and (max-width: ${theme.breakpoints.desktop}px) {
-    padding-left: 20px;
-  }
+export const StyledMaxWidthWrapper = styled(MaxWidthWrapper)`
+  display: flex;
+  gap: 35px;
+  padding-block: clamp(48px, 13.22vw, 200px);
 
   @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    align-items: center;
-    padding-left: 0px;
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     flex-direction: column;
-    align-items: center;
+    padding-inline: 32px;
   }
 `;
 
 export const TextContent = styled.div`
-  margin-top: 200px;
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   z-index: 3;
-  max-width: 599px;
-  min-width: 360px;
-
-  ${ButtonContainer} {
-    @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-      width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    padding: 100px 0 0;
-    max-width: none;
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    min-width: auto;
-  }
 `;
 
 export const MainContentImage = styled.img`
@@ -192,28 +161,17 @@ export const Text = styled.p`
 `;
 
 export const CardsContainer = styled.div`
-  position: absolute;
   z-index: 2;
-  left: 50%;
-  top: -25%;
-  transform: translateX(-50%);
+  transform: translateY(-65px);
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-
-  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    top: -20%;
-  }
-
+  padding-bottom: clamp(69px, 12.36vw, 187px);
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: -50px;
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.mobile}px) {
-    width: 100%;
+    transform: initial;
+    padding-block: clamp(69px, 12.36vw, 187px);
   }
 `;
 

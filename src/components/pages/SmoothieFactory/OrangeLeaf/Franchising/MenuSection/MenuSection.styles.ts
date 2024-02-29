@@ -129,7 +129,6 @@ export const SliderImageContent = styled.div`
     padding: 30px 25px;
     flex-direction: column-reverse;
     width: unset;
-    border: 1px solid red;
   }
 `;
 

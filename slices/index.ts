@@ -9,7 +9,6 @@ export const components = {
   e_club_header: dynamic(() => import('./EClubHeader')),
   form: dynamic(() => import('./Form')),
   franchising_about_section: dynamic(() => import('./FranchisingAboutSection')),
-  franchising_form_section: dynamic(() => import('./FranchisingFormSection')),
   franchising_get_started_section: dynamic(() => import('./FranchisingGetStartedSection')),
   franchising_header: dynamic(() => import('./FranchisingHeader')),
   franchising_how_to: dynamic(() => import('./FranchisingHowTo')),

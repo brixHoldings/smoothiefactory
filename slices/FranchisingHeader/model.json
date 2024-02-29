@@ -14,7 +14,15 @@
       "primary": {
         "title": { "type": "Text", "config": { "label": "Title", "placeholder": "" } },
         "text": { "type": "Text", "config": { "label": "Text", "placeholder": "" } },
-        "button": { "type": "Text", "config": { "label": "Button", "placeholder": "" } }
+        "small_screen_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Small Screen Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
       },
       "items": { "badge_text": { "type": "Text", "config": { "label": "Badge Text", "placeholder": "" } } }
     }
