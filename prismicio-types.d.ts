@@ -972,6 +972,27 @@ interface FranchisingGetStartedSectionSliceDefaultPrimary {
    *
    */
   military_text: prismic.KeyTextField;
+  /**
+   * Show Promotion field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: franchising_get_started_section.primary.show_promotion
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  show_promotion: prismic.BooleanField;
+  /**
+   * Military Image field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.military_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  military_image: prismic.ImageField<never>;
 }
 /**
  * Item in FranchisingGetStartedSection → Items

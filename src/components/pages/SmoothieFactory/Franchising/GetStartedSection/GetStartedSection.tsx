@@ -23,10 +23,12 @@ import {
   PromotionOptionTitle,
   PromotionTitle,
   Title,
+  Flag,
 } from './GetStartedSection.styles';
 
 import type { FC } from 'react';
 import { FranchisingGetStartedSectionSlice } from 'prismicio-types';
+import { PrismicImage } from '@prismicio/react';
 
 const Point: FC<{ color: string }> = ({ color }) => (
   <svg
@@ -55,6 +57,8 @@ const GetStartedSection: FC<{
       promotion_text_1,
       military_title,
       military_text,
+      show_promotion,
+      military_image,
     },
     items,
   },
@@ -155,34 +159,39 @@ const GetStartedSection: FC<{
         </Column>
       </OptionsContainer>
     </HowToContainer>
-    <PromotionContainer>
-      <PromotionTitle dangerouslySetInnerHTML={{ __html: promotion_title as string }}></PromotionTitle>
-      <PromotionDescription dangerouslySetInnerHTML={{ __html: promotion_text as string }}></PromotionDescription>
-      <PromoOptions>
-        <div>
-          <PromotionOptionTitle
-            dangerouslySetInnerHTML={{ __html: promotion_title_1 as string }}
-          ></PromotionOptionTitle>
-          <PromotionOptionDescription
-            dangerouslySetInnerHTML={{ __html: promotion_text_1 as string }}
-          ></PromotionOptionDescription>
-        </div>
-        <LineSeparator />
-        <div>
-          <PromotionOptionTitle
-            dangerouslySetInnerHTML={{ __html: promotion_title_2 as string }}
-          ></PromotionOptionTitle>
-          <PromotionOptionDescription
-            dangerouslySetInnerHTML={{ __html: promotion_text_2 as string }}
-          ></PromotionOptionDescription>
-        </div>
-      </PromoOptions>
-    </PromotionContainer>
+    {show_promotion ? (
+      <PromotionContainer>
+        <PromotionTitle dangerouslySetInnerHTML={{ __html: promotion_title as string }}></PromotionTitle>
+        <PromotionDescription dangerouslySetInnerHTML={{ __html: promotion_text as string }}></PromotionDescription>
+        <PromoOptions>
+          <div>
+            <PromotionOptionTitle
+              dangerouslySetInnerHTML={{ __html: promotion_title_1 as string }}
+            ></PromotionOptionTitle>
+            <PromotionOptionDescription
+              dangerouslySetInnerHTML={{ __html: promotion_text_1 as string }}
+            ></PromotionOptionDescription>
+          </div>
+          <LineSeparator />
+          <div>
+            <PromotionOptionTitle
+              dangerouslySetInnerHTML={{ __html: promotion_title_2 as string }}
+            ></PromotionOptionTitle>
+            <PromotionOptionDescription
+              dangerouslySetInnerHTML={{ __html: promotion_text_2 as string }}
+            ></PromotionOptionDescription>
+          </div>
+        </PromoOptions>
+      </PromotionContainer>
+    ) : null}
     <MilitaryContainer>
       <MilitaryContent>
         <MilitaryTitle dangerouslySetInnerHTML={{ __html: military_title as string }}></MilitaryTitle>
         <MilitaryDescription dangerouslySetInnerHTML={{ __html: military_text as string }}></MilitaryDescription>
       </MilitaryContent>
+      <Flag>
+        <PrismicImage field={military_image} style={{ objectFit: 'cover', height: '100%' }} />
+      </Flag>
     </MilitaryContainer>
   </>
 );

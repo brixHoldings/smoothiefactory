@@ -194,44 +194,36 @@ export const LineSeparator = styled.div`
 `;
 
 export const MilitaryContainer = styled.div`
-  position: relative;
-  background-color: #98c44a;
+  display: flex;
 `;
 
 export const MilitaryContent = styled.div`
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 92px;
   padding-left: 256px;
-  padding-right: 256px;
   background-color: #ffffff;
   border-bottom-left-radius: 140px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-
+  flex: 1;
+  padding-bottom: 122px;
+  padding-right: 25px;
   @media only screen and (max-width: ${theme.breakpoints.desktop}px) {
-    flex-direction: column;
     padding-left: 172px;
-    padding-right: 172px;
   }
-
   @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
     padding-left: 25px;
-    padding-right: 25px;
+    flex-direction: column;
+    gap: 25px;
   }
 `;
 
 export const MilitaryTitle = styled.h2`
   font-size: 60px;
   line-height: 52px;
-  width: 370px;
   color: #f69f24;
-  margin-right: 220px;
 
   @media only screen and (max-width: ${theme.breakpoints.desktop}px) {
-    margin-bottom: 40px;
-    margin-right: 0;
-    width: 100%;
     text-align: center;
   }
 `;
@@ -242,5 +234,14 @@ export const MilitaryDescription = styled.p`
 
   @media only screen and (max-width: ${theme.breakpoints.desktop}px) {
     text-align: center;
+  }
+`;
+
+export const Flag = styled.div`
+  position: relative;
+  width: 402px;
+  aspect-ratio: 402/372;
+  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
+    display: none;
   }
 `;
