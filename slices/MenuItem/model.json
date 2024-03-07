@@ -18,7 +18,12 @@
         "button2": { "type": "Text", "config": { "label": "Button 2", "placeholder": "" } },
         "main_button": { "type": "Text", "config": { "label": "Main Button", "placeholder": "" } },
         "outlined_button": { "type": "Text", "config": { "label": "Outlined Button", "placeholder": "" } },
-        "image": { "type": "Image", "config": { "label": "Image", "constraint": {}, "thumbnails": [] } }
+        "image": { "type": "Image", "config": { "label": "Image", "constraint": {}, "thumbnails": [] } },
+        "nutrition_info": {
+          "type": "Link",
+          "config": { "label": "Nutrition Info", "placeholder": "", "select": "media" }
+        },
+        "menu": { "type": "Link", "config": { "label": "Menu", "placeholder": "", "select": "media" } }
       },
       "items": {}
     }

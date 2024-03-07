@@ -2191,6 +2191,26 @@ interface MenuLeftAlignedItemSliceDefaultPrimary {
    *
    */
   image: prismic.ImageField<never>;
+  /**
+   * Nutrition Info field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Link to Media
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_left_aligned_item.primary.nutrition_info
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  nutrition_info: prismic.LinkToMediaField;
+  /**
+   * Menu field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Link to Media
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_left_aligned_item.primary.menu
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  menu: prismic.LinkToMediaField;
 }
 /**
  * Default variation for MenuItem Slice

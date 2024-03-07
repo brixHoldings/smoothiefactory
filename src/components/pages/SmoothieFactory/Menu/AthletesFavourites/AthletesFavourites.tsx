@@ -24,6 +24,7 @@ import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
 
 import type { FC } from 'react';
 import { MenuLeftAlignedItemSlice } from 'prismicio-types';
+import { asLink } from '@prismicio/client';
 
 const AthletesFavourites: FC<{ mainTitle: string | null; slices: MenuLeftAlignedItemSlice[] | undefined }> = ({
   mainTitle,
@@ -78,12 +79,12 @@ const AthletesFavourites: FC<{ mainTitle: string | null; slices: MenuLeftAligned
                 </GalleryItemLabels>
                 <GalleryText dangerouslySetInnerHTML={{ __html: smoothies.primary.text as string }}></GalleryText>
                 <GalleryButtons>
-                  <a href="/SFK Menu Board_site.pdf" download>
+                  <a href={asLink(smoothies.primary.menu) as string} target="_blank">
                     <CtaButton
                       dangerouslySetInnerHTML={{ __html: smoothies.primary.main_button as string }}
                     ></CtaButton>
                   </a>
-                  <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
+                  <a href={asLink(smoothies.primary.nutrition_info) as string} target="_blank">
                     <CtaButtonOutlined
                       dangerouslySetInnerHTML={{ __html: smoothies.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
@@ -150,10 +151,10 @@ const AthletesFavourites: FC<{ mainTitle: string | null; slices: MenuLeftAligned
                 </GalleryItemLabels>
                 <GalleryText dangerouslySetInnerHTML={{ __html: bowls.primary.text as string }}></GalleryText>
                 <GalleryButtons>
-                  <a href="/SFK Menu Board_site.pdf" download>
+                  <a href={asLink(bowls.primary.menu) as string} target="_blank">
                     <CtaButton dangerouslySetInnerHTML={{ __html: bowls.primary.main_button as string }}></CtaButton>
                   </a>
-                  <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
+                  <a href={asLink(bowls.primary.nutrition_info) as string} target="_blank">
                     <CtaButtonOutlined
                       dangerouslySetInnerHTML={{ __html: bowls.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
@@ -203,10 +204,10 @@ const AthletesFavourites: FC<{ mainTitle: string | null; slices: MenuLeftAligned
                 </GalleryItemLabels>
                 <GalleryText dangerouslySetInnerHTML={{ __html: fruits.primary.text as string }}></GalleryText>
                 <GalleryButtons>
-                  <a href="/SFK Menu Board_site.pdf" download>
+                  <a href={asLink(fruits.primary.menu) as string} target="_blank">
                     <CtaButton dangerouslySetInnerHTML={{ __html: fruits.primary.main_button as string }}></CtaButton>
                   </a>
-                  <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
+                  <a href={asLink(fruits.primary.nutrition_info) as string} target="_blank">
                     <CtaButtonOutlined
                       dangerouslySetInnerHTML={{ __html: fruits.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
@@ -284,10 +285,10 @@ const AthletesFavourites: FC<{ mainTitle: string | null; slices: MenuLeftAligned
                 </GalleryItemLabels>
                 <GalleryText dangerouslySetInnerHTML={{ __html: toasts.primary.text as string }}></GalleryText>
                 <GalleryButtons>
-                  <a href="/SFK Menu Board_site.pdf" download>
+                  <a href={asLink(toasts.primary.menu) as string} target="_blank">
                     <CtaButton dangerouslySetInnerHTML={{ __html: toasts.primary.main_button as string }}></CtaButton>
                   </a>
-                  <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
+                  <a href={asLink(toasts.primary.nutrition_info) as string} target="_blank">
                     <CtaButtonOutlined
                       dangerouslySetInnerHTML={{ __html: toasts.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
@@ -337,10 +338,10 @@ const AthletesFavourites: FC<{ mainTitle: string | null; slices: MenuLeftAligned
                 </GalleryItemLabels>
                 <GalleryText dangerouslySetInnerHTML={{ __html: salads.primary.text as string }}></GalleryText>
                 <GalleryButtons>
-                  <a href="/SFK Menu Board_site.pdf" download>
+                  <a href={asLink(salads.primary.menu) as string} target="_blank">
                     <CtaButton dangerouslySetInnerHTML={{ __html: salads.primary.main_button as string }}></CtaButton>
                   </a>
-                  <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
+                  <a href={asLink(salads.primary.nutrition_info) as string} target="_blank">
                     <CtaButtonOutlined
                       dangerouslySetInnerHTML={{ __html: salads.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
@@ -407,10 +408,10 @@ const AthletesFavourites: FC<{ mainTitle: string | null; slices: MenuLeftAligned
                 </GalleryItemLabels>
                 <GalleryText dangerouslySetInnerHTML={{ __html: folds.primary.text as string }}></GalleryText>
                 <GalleryButtons>
-                  <a href="/SFK Menu Board_site.pdf" download>
+                  <a href={asLink(folds.primary.menu) as string} target="_blank">
                     <CtaButton dangerouslySetInnerHTML={{ __html: folds.primary.main_button as string }}></CtaButton>
                   </a>
-                  <a href="/SF+K_Smoothie_Nutrition_Facts.pdf" download>
+                  <a href={asLink(folds.primary.nutrition_info) as string} target="_blank">
                     <CtaButtonOutlined
                       dangerouslySetInnerHTML={{ __html: folds.primary.outlined_button as string }}
                     ></CtaButtonOutlined>
