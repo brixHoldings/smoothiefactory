@@ -15,6 +15,7 @@ import {
 import { CtaButton } from '../../Home/WhatIsNew/WhatIsNew.style';
 
 import type { FC } from 'react';
+
 import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
 
 const OurSpecialOffers: FC = () => (
