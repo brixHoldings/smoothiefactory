@@ -25,4 +25,5 @@ export const components = {
   menu_left_aligned_item: dynamic(() => import('./MenuItem')),
   navigation_list: dynamic(() => import('./NavigationList')),
   text_block: dynamic(() => import('./MenuHeader')),
+  thank_you: dynamic(() => import('./ThankYou')),
 };

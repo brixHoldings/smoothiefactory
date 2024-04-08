@@ -423,13 +423,80 @@ export type MenuDocument<Lang extends string = string> = prismic.PrismicDocument
   'menu',
   Lang
 >;
+/** Content for Thank You documents */
+interface ThankYouDocumentData {
+  /**
+   * Slice Zone field in *Thank You*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: thank_you.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+   *
+   */
+  slices: prismic.SliceZone<ThankYouDocumentDataSlicesSlice>;
+  /**
+   * Meta Description field in *Thank You*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: thank_you.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  meta_description: prismic.RichTextField;
+  /**
+   * Meta Image field in *Thank You*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: thank_you.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  meta_image: prismic.ImageField<never>;
+  /**
+   * Meta Title field in *Thank You*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: thank_you.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  meta_title: prismic.KeyTextField;
+}
+/**
+ * Slice for *Thank You → Slice Zone*
+ *
+ */
+type ThankYouDocumentDataSlicesSlice = ThankYouSlice;
+/**
+ * Thank You document from Prismic
+ *
+ * - **API ID**: `thank_you`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ThankYouDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<ThankYouDocumentData>,
+  'thank_you',
+  Lang
+>;
 export type AllDocumentTypes =
   | AboutUsDocument
   | EClubDocument
   | FranchisingDocument
   | GiftCardsDocument
   | HomepageDocument
-  | MenuDocument;
+  | MenuDocument
+  | ThankYouDocument;
 /**
  * Primary content in AboutUsHeaderArea → Primary
  *
@@ -2315,6 +2382,59 @@ type TextBlockSliceVariation = TextBlockSliceDefault;
  *
  */
 export type TextBlockSlice = prismic.SharedSlice<'text_block', TextBlockSliceVariation>;
+/**
+ * Primary content in ThankYou → Primary
+ *
+ */
+interface ThankYouSliceDefaultPrimary {
+  /**
+   * Title field in *ThankYou → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: thank_you.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Text field in *ThankYou → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: thank_you.primary.text
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  text: prismic.KeyTextField;
+}
+/**
+ * Default variation for ThankYou Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ThankYouSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<ThankYouSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Slice variation for *ThankYou*
+ *
+ */
+type ThankYouSliceVariation = ThankYouSliceDefault;
+/**
+ * ThankYou Shared Slice
+ *
+ * - **API ID**: `thank_you`
+ * - **Description**: `ThankYou`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ThankYouSlice = prismic.SharedSlice<'thank_you', ThankYouSliceVariation>;
 declare module '@prismicio/client' {
   interface CreateClient {
     (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
@@ -2339,6 +2459,9 @@ declare module '@prismicio/client' {
       MenuDocumentData,
       MenuDocumentDataSlicesSlice,
       MenuDocument,
+      ThankYouDocumentData,
+      ThankYouDocumentDataSlicesSlice,
+      ThankYouDocument,
       AllDocumentTypes,
       AboutUsHeaderAreaSliceDefaultPrimary,
       AboutUsHeaderAreaSliceDefault,
@@ -2432,6 +2555,10 @@ declare module '@prismicio/client' {
       TextBlockSliceDefault,
       TextBlockSliceVariation,
       TextBlockSlice,
+      ThankYouSliceDefaultPrimary,
+      ThankYouSliceDefault,
+      ThankYouSliceVariation,
+      ThankYouSlice,
     };
   }
 }

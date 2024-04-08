@@ -31,20 +31,20 @@ type GetOptionsResponse = {
 };
 
 const getOptions = async (): Promise<GetOptionsResponse> => {
-  const res = await fetch(`https://us13.api.mailchimp.com/3.0/lists/afce920e8f/merge-fields`, {
-    next: { revalidate: 3600 },
-    headers: {
-      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      Authorization: `auth ${process.env.NEXT_PUBLIC_MAIL_CHIMP_KEY}`,
-    },
-    method: 'GET',
-  });
+  try {
+    const res = await fetch(`https://us13.api.mailchimp.com/3.0/lists/afce920e8f/merge-fields`, {
+      next: { revalidate: 3600 },
+      headers: {
+        // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+        Authorization: `auth ${process.env.NEXT_PUBLIC_MAIL_CHIMP_KEY}`,
+      },
+      method: 'GET',
+    });
 
-  if (!res.ok) {
+    return res.json() as Promise<GetOptionsResponse>;
+  } catch (e) {
     throw new Error('Failed to fetch data');
   }
-
-  return res.json() as Promise<GetOptionsResponse>;
 };
 
 /* @ts-expect-error Server Component */
