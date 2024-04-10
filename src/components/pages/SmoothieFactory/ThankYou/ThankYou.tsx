@@ -3,7 +3,6 @@
 import { Container, FlexWrapper, Title, Text } from './ThankYou.style';
 
 import type { FC } from 'react';
-import Link from 'next/link';
 
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
 import { ThankYouSlice } from 'prismicio-types';
