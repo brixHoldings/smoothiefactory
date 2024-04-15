@@ -1,19 +1,9 @@
 'use client';
 
-import { useCallback } from 'react';
-
-import Button from '@components/pages/SmoothieFactory/Button';
-import MobileContainer from '@components/ui/MobileContainer';
-
 import {
-  BottomContentContainer,
   CardsContainer,
   CardText,
   ContentContainer,
-  FullWidthCircularDiv,
-  FullWidthContentContainer,
-  MainContentImage,
-  MainContentCircularImage,
   CardContentContainer,
   MainText,
   SectionContainer,

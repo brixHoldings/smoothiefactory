@@ -12,6 +12,7 @@ import type { FieldValues } from 'react-hook-form';
 import { CtaText, Form, FormLabel, InputField, Card, Row, Field } from './FormSection.styles';
 
 import type { FC, FormEventHandler } from 'react';
+import { useRouter } from 'next/navigation';
 
 const FormSection: FC<{ smallScreenText: string }> = ({ smallScreenText }) => {
   const {
@@ -24,6 +25,7 @@ const FormSection: FC<{ smallScreenText: string }> = ({ smallScreenText }) => {
   const [isSent, setIsSent] = useState(false);
   const { width } = useWindowSize();
   const isSmallScreen = useMemo(() => (width ? width < theme.breakpoints.smallScreen : false), [width]);
+  const router = useRouter();
 
   const onSubmit = useCallback(
     (formData: FieldValues) => {
@@ -33,10 +35,14 @@ const FormSection: FC<{ smallScreenText: string }> = ({ smallScreenText }) => {
       void fetch('/api/form?brand=sf', {
         body: JSON.stringify(formData),
         method: 'post',
-      }).finally(() => {
-        reset();
-        setIsDisabled(false);
-      });
+      })
+        .then(() => {
+          router.push('/thank-you');
+        })
+        .finally(() => {
+          reset();
+          setIsDisabled(false);
+        });
     },
     [reset],
   );
