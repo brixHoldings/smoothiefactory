@@ -4,15 +4,15 @@ import { Wrapper, Title, Text, ContentWrapper } from './GetBirthdayGift.style';
 
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
 
-import { CtaButton } from '../../Home/WhatIsNew/WhatIsNew.style';
-
+import Image from 'next/image';
 import type { FC } from 'react';
 import { MaxWidthWrapper } from '@styles/common';
 import { BirthdayGiftSlice } from 'prismicio-types';
+import { AppButtonsContainer } from '../common';
 
 const GetBirthdayGift: FC<{ slice: BirthdayGiftSlice }> = ({
   slice: {
-    primary: { title, text, button },
+    primary: { title, text },
   },
 }) => (
   <MaxWidthWrapper>
@@ -26,9 +26,14 @@ const GetBirthdayGift: FC<{ slice: BirthdayGiftSlice }> = ({
       <ContentWrapper>
         <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
         <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
-        <a href="#form-bg">
-          <CtaButton dangerouslySetInnerHTML={{ __html: button as string }}></CtaButton>
-        </a>
+        <AppButtonsContainer>
+          <a href="#">
+            <Image src={'/images/AppStoreButton.png'} alt={'appStoreButton'} width={195} height={60} />
+          </a>
+          <a href="#">
+            <Image src={'/images/GooglePlayButton.png'} alt={'googlePlayButton'} width={195} height={60} />
+          </a>
+        </AppButtonsContainer>
       </ContentWrapper>
     </Wrapper>
   </MaxWidthWrapper>

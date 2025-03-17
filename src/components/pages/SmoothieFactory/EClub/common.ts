@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from '@styles/theme';
 
 export const Title = styled.h1<{ color?: string; mb?: string }>`
   color: ${({ color }): string => color ?? '#23AA5D'};
@@ -6,4 +7,13 @@ export const Title = styled.h1<{ color?: string; mb?: string }>`
   font-size: clamp(35px, 3.96vw, 60px);
   line-height: clamp(40px, 4.49vw, 68px);
   text-transform: initial;
+`;
+
+export const AppButtonsContainer = styled.div`
+  display: flex;
+  gap: 30px;
+  @media (max-width: ${theme.breakpoints.mobile}px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
