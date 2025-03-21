@@ -161,7 +161,7 @@ const Header: FC = () => {
         >
           About us
         </ButtonLink>
-        <Button href="https://order.smoothiefactory.com/" style={{ marginTop: '4px' }} target="_blank">
+        <Button href="https://order.smoothiefactorykitchen.com/" style={{ marginTop: '4px' }} target="_blank">
           Order now
         </Button>
       </HamburgerMenu>
