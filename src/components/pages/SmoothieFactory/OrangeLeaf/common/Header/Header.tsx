@@ -161,7 +161,7 @@ const Header: FC = () => {
         >
           About us
         </ButtonLink>
-        <Button href="https://order.smoothiefactory.com/" style={{ marginTop: '4px' }} target="_blank">
+        <Button href="https://order.smoothiefactorykitchen.com/" style={{ marginTop: '4px' }} target="_blank">
           Order now
         </Button>
       </HamburgerMenu>
@@ -275,7 +275,7 @@ const Header: FC = () => {
             <Separator animate={isTransparent ? 'transparent' : 'visible'} variants={separatorVariants} />
             <Button
               animate={isTransparent ? 'transparent' : 'visible'}
-              href="https://order.smoothiefactory.com/"
+              href="https://order.smoothiefactorykitchen.com/"
               target="_blank"
               variants={buttonVariants}
             >

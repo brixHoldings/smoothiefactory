@@ -8,12 +8,3 @@ export const Title = styled.h1<{ color?: string; mb?: string }>`
   line-height: clamp(40px, 4.49vw, 68px);
   text-transform: initial;
 `;
-
-export const AppButtonsContainer = styled.div`
-  display: flex;
-  gap: 30px;
-  @media (max-width: ${theme.breakpoints.mobile}px) {
-    flex-direction: column;
-    gap: 30px;
-  }
-`;

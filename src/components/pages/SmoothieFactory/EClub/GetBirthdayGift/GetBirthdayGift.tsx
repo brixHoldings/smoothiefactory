@@ -8,7 +8,7 @@ import Image from 'next/image';
 import type { FC } from 'react';
 import { MaxWidthWrapper } from '@styles/common';
 import { BirthdayGiftSlice } from 'prismicio-types';
-import { AppButtonsContainer } from '../common';
+import MobileAppButtons from '@components/ui/MobileAppButtons/MobileAppButtons';
 
 const GetBirthdayGift: FC<{ slice: BirthdayGiftSlice }> = ({
   slice: {
@@ -26,14 +26,7 @@ const GetBirthdayGift: FC<{ slice: BirthdayGiftSlice }> = ({
       <ContentWrapper>
         <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
         <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
-        <AppButtonsContainer>
-          <a href="#">
-            <Image src={'/images/AppStoreButton.png'} alt={'appStoreButton'} width={195} height={60} />
-          </a>
-          <a href="#">
-            <Image src={'/images/GooglePlayButton.png'} alt={'googlePlayButton'} width={195} height={60} />
-          </a>
-        </AppButtonsContainer>
+        <MobileAppButtons />
       </ContentWrapper>
     </Wrapper>
   </MaxWidthWrapper>

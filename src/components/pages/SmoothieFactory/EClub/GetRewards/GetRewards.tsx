@@ -11,7 +11,7 @@ import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 import Image from 'next/image';
 import type { FC } from 'react';
 import { EClubHeaderSlice } from 'prismicio-types';
-import { AppButtonsContainer } from '../common';
+import MobileAppButtons from '@components/ui/MobileAppButtons/MobileAppButtons';
 
 const GetRewards: FC<{ slice: EClubHeaderSlice }> = ({
   slice: {
@@ -52,14 +52,7 @@ const GetRewards: FC<{ slice: EClubHeaderSlice }> = ({
         />
         <GlassTitle dangerouslySetInnerHTML={{ __html: title as string }}></GlassTitle>
         <GlassText dangerouslySetInnerHTML={{ __html: text as string }}></GlassText>
-        <AppButtonsContainer>
-          <a href="#">
-            <Image src={'/images/AppStoreButton.png'} alt={'appStoreButton'} width={195} height={60} />
-          </a>
-          <a href="#">
-            <Image src={'/images/GooglePlayButton.png'} alt={'googlePlayButton'} width={195} height={60} />
-          </a>
-        </AppButtonsContainer>
+        <MobileAppButtons />
       </Glass>
       <LottieWrapper>
         <Lottie animationData={oneAtATime} />
