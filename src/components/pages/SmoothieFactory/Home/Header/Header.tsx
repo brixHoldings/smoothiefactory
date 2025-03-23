@@ -37,7 +37,7 @@ const Header: FC<{ slice: HomeHeaderSlice }> = ({
         <CtaArea>
           <HeaderTitle dangerouslySetInnerHTML={{ __html: title as string }}></HeaderTitle>
           <HeaderText dangerouslySetInnerHTML={{ __html: text as string }}></HeaderText>
-          <Link href="/e-club">
+          <Link href="/factory-rewards">
             <HeaderButton dangerouslySetInnerHTML={{ __html: button as string }}></HeaderButton>
           </Link>
           <FloatingGlassImage

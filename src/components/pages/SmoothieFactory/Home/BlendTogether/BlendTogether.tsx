@@ -76,7 +76,7 @@ const BlendTogether: FC<{ slice: HomeEClubSlice }> = ({
 
               <JoinOurClubTitle dangerouslySetInnerHTML={{ __html: joineclubtitle as string }}></JoinOurClubTitle>
               <JoinOurClubText dangerouslySetInnerHTML={{ __html: joineclubtext as string }}></JoinOurClubText>
-              <Link href="/e-club">
+              <Link href="/factory-rewards">
                 <CtaButton dangerouslySetInnerHTML={{ __html: joineclubtitlebutton as string }}></CtaButton>
               </Link>
             </JoinOurWrapper>
