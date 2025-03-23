@@ -17,7 +17,7 @@ import {
 import type { FC } from 'react';
 import Link from 'next/link';
 
-import FloatingImage from '../OrangeLeaf/common/FloatingImage/FloatingImage';
+import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
 
 const AccessibilityStatementSection: FC = () => (
   <RelativeWrapper>

@@ -1,4 +1,4 @@
-import AccessibilityStatementSection from '@components/pages/SmoothieFactory/AccessibilityStatementSection/AccessibilityStatementSection';
+import AccessibilityStatementSection from '@components/pages/SmoothieFactory/AccessibilityStatement/AccessibilityStatementSection/AccessibilityStatementSection';
 
 import type { FC } from 'react';
 
