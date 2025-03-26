@@ -2,7 +2,7 @@ import Form from '@components/pages/SmoothieFactory/EClub/Form/Form';
 import GetBirthdayGift from '@components/pages/SmoothieFactory/EClub/GetBirthdayGift/GetBirthdayGift';
 import GetRewards from '@components/pages/SmoothieFactory/EClub/GetRewards/GetRewards';
 import HowDoesItWork from '@components/pages/SmoothieFactory/EClub/HowDoesItWork/HowDoesItWork';
-import { BirthdayGiftSlice, EClubHeaderSlice, FormSlice, HowDoesItWorkSlice } from 'prismicio-types';
+import { BirthdayGiftSlice, EClubHeaderSlice, FormSlice } from 'prismicio-types';
 
 import type { FC } from 'react';
 import { createClient } from 'prismicio';
@@ -60,9 +60,7 @@ const EClub: FC = async () => {
   const getBirthdayGiftSlice = page.data.slices.find((slice) => slice.slice_type === 'birthday_gift') as
     | BirthdayGiftSlice
     | undefined;
-  const howDoesItWorkSlice = page.data.slices.find((slice) => slice.slice_type === 'how_does_it_work') as
-    | HowDoesItWorkSlice
-    | undefined;
+  const howDoesItWorkSlice = undefined;
   const formSlice = page.data.slices.find((slice) => slice.slice_type === 'form') as FormSlice | undefined;
 
   const optionMatch = data.merge_fields.find((field) => field.tag === 'MMERGE3');

@@ -24,7 +24,7 @@ const routes: prismic.ClientConfig['routes'] = [
   },
   {
     type: 'e_club',
-    path: '/e-club-signup',
+    path: '/factory-rewards',
   },
   {
     type: 'gift_cards',

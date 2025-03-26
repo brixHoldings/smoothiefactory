@@ -6,16 +6,16 @@ import { FloatingBgImage, Glass, GlassTitle, GlassText, Wrapper, LottieWrapper }
 
 import FloatingImage from '@components/pages/SmoothieFactory/OrangeLeaf/common/FloatingImage/FloatingImage';
 
-import { CtaButton } from '../../Home/WhatIsNew/WhatIsNew.style';
 import oneAtATime from '../../../../../../public/lottie/oneAtATime.json';
 
+import Image from 'next/image';
 import type { FC } from 'react';
-import Link from 'next/link';
 import { EClubHeaderSlice } from 'prismicio-types';
+import MobileAppButtons from '@components/ui/MobileAppButtons/MobileAppButtons';
 
 const GetRewards: FC<{ slice: EClubHeaderSlice }> = ({
   slice: {
-    primary: { title, text, button },
+    primary: { title, text },
   },
 }) => {
   return (
@@ -52,9 +52,7 @@ const GetRewards: FC<{ slice: EClubHeaderSlice }> = ({
         />
         <GlassTitle dangerouslySetInnerHTML={{ __html: title as string }}></GlassTitle>
         <GlassText dangerouslySetInnerHTML={{ __html: text as string }}></GlassText>
-        <a href="#form-bg">
-          <CtaButton dangerouslySetInnerHTML={{ __html: button as string }}></CtaButton>
-        </a>
+        <MobileAppButtons />
       </Glass>
       <LottieWrapper>
         <Lottie animationData={oneAtATime} />

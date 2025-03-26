@@ -115,6 +115,8 @@ const Footer: FC = () => {
               <Link href="/privacy">Privacy</Link>
               <Separator />
               <Link href="/terms-of-use">Terms & Conditions</Link>
+              <Separator />
+              <Link href="/accessibility-statement">Accessibility Statement</Link>
             </TermsAndConditionsInnerWrapper>
           </TermsAndConditions>
         </Container>

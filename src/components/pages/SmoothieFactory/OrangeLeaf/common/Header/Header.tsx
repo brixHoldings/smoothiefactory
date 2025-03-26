@@ -138,12 +138,12 @@ const Header: FC = () => {
           Locations
         </NativeLinkMobile>
         <ButtonLink
-          data-is-active={pathname === '/e-club-signup'}
+          data-is-active={pathname === '/factory-rewards'}
           onClick={(): void => {
-            onClose('/e-club-signup');
+            onClose('/factory-rewards');
           }}
         >
-          Factory Fan E-Club
+          Factory Rewards
         </ButtonLink>
         <ButtonLink
           data-is-active={pathname === '/gift-cards'}
@@ -234,13 +234,13 @@ const Header: FC = () => {
                 Menu
               </Link>
             </NextLink>
-            <NextLink href="/e-club-signup">
+            <NextLink href="/factory-rewards">
               <Link
                 animate={isTransparent ? 'transparent' : 'visible'}
-                data-is-active={pathname === '/e-club-signup'}
+                data-is-active={pathname === '/factory-rewards'}
                 variants={linkVariants}
               >
-                Factory Fan E-Club
+                Factory Rewards
               </Link>
             </NextLink>
             <NextLink href="/gift-cards">
@@ -275,7 +275,7 @@ const Header: FC = () => {
             <Separator animate={isTransparent ? 'transparent' : 'visible'} variants={separatorVariants} />
             <Button
               animate={isTransparent ? 'transparent' : 'visible'}
-              href="https://order.smoothiefactory.com/"
+              href="https://order.smoothiefactorykitchen.com/"
               target="_blank"
               variants={buttonVariants}
             >
