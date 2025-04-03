@@ -7,7 +7,6 @@ import { MaxWidthWrapper } from '@styles/common';
 import { Container, Paper, Title, Text, RelativeWrapper, PageTitle, ListItem } from './TermsOfUseSection.style';
 
 import type { FC } from 'react';
-import Link from 'next/link';
 
 import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
 
@@ -52,115 +51,138 @@ const TermsOfUseSection: FC = () => (
           width="clamp(165px / 1.3 , 10.91vw, 165px)"
         />
         <PageTitle>Terms of use</PageTitle>
-        <Title>SMOOTHIE HOLDINGS, LLC TERMS AND CONDITIONS OF USE</Title>
+        <Title>TERMS AND CONDITIONS OF USE</Title>
         <Text>
-          Welcome to the Smoothie Holdings, LLC website, <Link href="/">smoothiefactory.com.</Link> These Terms and
-          Conditions of Use (“Terms”) apply to your access to, and use of, all or part of any website or mobile
-          application of Smoothie Holdings, LLC or its subsidiaries and affiliated companies (collectively, “Smoothie
-          Factory,” “we,” or “us”), including <Link href="/">smoothiefactory.com</Link> and any other site, mobile
-          application (“Application”), or online service where these Terms are posted (collectively, the “Sites”). By
-          accessing the Sites, you (“you”) agree to be bound by these Terms regardless of whether or not you have read
+          Welcome to the Smoothie Factory + Kitchen website,{' '}
+          <a href="https://smoothiefactorykitchen.com">https://smoothiefactorykitchen.com</a>. These Terms and
+          Conditions of Use ("Terms") apply to your access to, and use of, all or part of any website or mobile
+          application of Smoothie Holdings, LLC or its subsidiaries and affiliated companies (collectively, "Smoothie
+          Factory + Kitchen," "SF+K," "we," or "us"), including{' '}
+          <a href="https://smoothiefactorykitchen.com">https://smoothiefactorykitchen.com</a> and any other site, mobile
+          application ("Application"), or online service where these Terms are posted (collectively, the "Sites"). By
+          accessing the Sites, you ("you") agree to be bound by these Terms regardless of whether or not you have read
           them. If you do not agree to these Terms, do not access the Sites. The Sites are not targeted towards, nor
           intended for use by, anyone under the age of 13. YOU MUST BE AT LEAST 13 YEARS OLD TO ACCESS AND USE THE
           SITES. If you are between the ages of 13 and 18, you may only use the Sites under the supervision of a parent
           or legal guardian who agrees to be bound by these Terms.
         </Text>
         <Text>
-          This website is undergoing construction and corrective action to address accessibility issues experienced by
-          some of our customers. Smoothie Factory<sup>®</sup> has adopted the W3C WAI Web Content Accessibility
-          Guidelines (WCAG) as its accessibility standard for all online products and services that we design, develop
-          and/or procure, on or after the effective date of this accessibility policy. We are working to ensure, to the
-          extent practicable, the new online products and services satisfy the standard Success Criteria set forth in
-          the WCAG 2.0. Smoothie Factory<sup>®</sup> is committed to making its Sites accessible to customers with
-          disabilities and welcomes suggestions for improvement. While we strive to make the Sites as accessible as
-          possible, we ask for your patience during this time of transitions.
+          This Application utilizes Google Maps and Google Earth. By using this Application, you are also are bound by
+          the{' '}
+          <a href="https://maps.google.com/help/terms_maps.html">
+            Google Maps/Google Earth Additional Terms of Service
+          </a>{' '}
+          and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
         </Text>
+
+        <Title>COMPLIANCE STATUS</Title>
+        <Text>
+          We firmly believe that the internet should be available and accessible to anyone and are committed to
+          providing a website that is accessible to the broadest possible audience, regardless of ability. To fulfill
+          this, we aim to adhere as strictly as possible to the World Wide Web Consortium's (W3C) Web Content
+          Accessibility Guidelines 2.1 (WCAG 2.1) at the AA level. These guidelines explain how to make web content
+          accessible to people with a wide array of disabilities. Complying with those guidelines helps us ensure that
+          the website is accessible to all people: blind people, people with motor impairments, visual impairment,
+          cognitive disabilities, and more. This website utilizes various technologies that are meant to make it as
+          accessible as possible at all times. We utilize an accessibility interface that allows persons with specific
+          disabilities to adjust the website's UI (user interface) and design it to their personal needs. Additionally,
+          the website utilizes an AI-based application that runs in the background and optimizes its accessibility level
+          constantly. This application remediates the website's HTML, adapts its functionality and behavior for
+          screen-readers used by blind users, and for keyboard functions used by individuals with motor impairments.
+          Click here{' '}
+          <a href="https://smoothiefactorykitchen.com/accessibility-statement/">
+            for Smoothie Factory + Kitchen's Accessibility Statement
+          </a>
+          . If you wish to contact the website's owner, please use the following email{' '}
+          <a href="mailto:info@smoothiefactorykitchen.com">info@smoothiefactorykitchen.com</a> or call us at{' '}
+          <a href="tel:214-302-5910">214-302-5910</a> and one of our team members will personally assist you.
+        </Text>
+
         <Title>CHANGES TO TERMS AND CONDITIONS</Title>
         <Text>
-          Smoothie Factory<sup>®</sup> may at any time, and at its sole discretion, modify these Terms or any policy or
-          guideline of the Sites, including without limitation, the Privacy Policy, with or without notice. Such
-          modifications will be effective immediately upon posting, and you waive any right you may have to receive
-          specific notice of such changes or modifications. You agree to review these Terms periodically and your
-          continued use of the Sites following such modifications will indicate your acceptance of these modified Terms.
-          If you do not agree to any modification of these Terms, you must immediately stop using the Sites.
+          SF+K may at any time, and at its sole discretion, modify these Terms or any policy or guideline of the Sites,
+          including without limitation, the Privacy Policy, with or without notice. Such modifications will be effective
+          immediately upon posting, and you waive any right you may have to receive specific notice of such changes or
+          modifications. You agree to review these Terms periodically and your continued use of the Sites following such
+          modifications will indicate your acceptance of these modified Terms. If you do not agree to any modification
+          of these Terms, you must immediately stop using the Sites.
         </Text>
+
         <Title>INTELLECTUAL PROPERTY, COPYRIGHT AND TRADEMARK NOTICE</Title>
         <Text>
           The Sites and its contents, including but not limited to, all Site software, design, text, editorial
           materials, information, data, photographs, visual interfaces, user interfaces, images, graphics,
-          illustrations, video, sound, games, clips, artwork, hyperlinks, displays, and other materials, (all such
-          content collectively referred to as “Content”), and the design, structure, selection, coordination,
-          expression, look and feel and arrangement of such Content, are protected under United States and international
-          copyright laws and are the property of Smoothie Factory<sup>®</sup> or its third party licensors. All rights
-          are reserved by Smoothie Factory<sup>®</sup>. The Smoothie Factory<sup>®</sup> name, design and related marks
-          are registered trademarks of Smoothie Holdings, LLC. All other names, logos, splash screens, page headers,
-          custom graphics and button icons, or other indicia of origin displayed on the Sites are either service marks,
-          names, logos, trademarks, service marks, trade dress, or are otherwise the property (collectively, “Marks”) of
-          Smoothie Factory<sup>®</sup> or its third party licensors.
-        </Text>
-        <Title>INTELLECTUAL PROPERTY, COPYRIGHT AND TRADEMARK NOTICE</Title>
-        <Text>
-          The Sites and its contents, including but not limited to, all Site software, design, text, editorial
-          materials, information, data, photographs, visual interfaces, user interfaces, images, graphics,
-          illustrations, video, sound, games, clips, artwork, hyperlinks, displays, and other materials, (all such
-          content collectively referred to as “Content”), and the design, structure, selection, coordination,
-          expression, look and feel and arrangement of such Content, are protected under United States and international
-          copyright laws and are the property of Smoothie Factory<sup>®</sup> or its third party licensors. All rights
-          are reserved by Smoothie Factory<sup>®</sup>. The Smoothie Factory<sup>®</sup> name, design and related marks
-          are registered trademarks of Smoothie Holdings, LLC. All other names, logos, splash screens, page headers,
-          custom graphics and button icons, or other indicia of origin displayed on the Sites are either service marks,
-          names, logos, trademarks, service marks, trade dress, or are otherwise the property (collectively, “Marks”) of
-          Smoothie Factory<sup>®</sup> or its third party licensors.
+          illustrations, video, sound, games, clips, artwork, hyperas, displays, and other materials, (all such content
+          collectively referred to as "Content"), and the design, structure, selection, coordination, expression, look
+          and feel and arrangement of such Content, are protected under United States and international copyright laws
+          and are the property of SF+K or its third party licensors. All rights are reserved by SF+K. The SMOOTHIE
+          FACTORY + KITCHEN and SMOOTHIE FACTORY name, design and related marks are registered trademarks of Smoothie
+          Holdings, LLC. All other names, logos, splash screens, page headers, custom graphics and button icons, or
+          other indicia of origin displayed on the Sites are either service marks, names, logos, trademarks, service
+          marks, trade dress, or are otherwise the property (collectively, "Marks") of SF+K or its third party
+          licensors.
         </Text>
         <Text>
           Except as specifically permitted herein, copying, distributing, transmitting, displaying, modifying, selling
           or participating in the sale of, or otherwise exploiting or using any Content or any Marks in any form or by
-          any means without the express written permission of Smoothie Factory<sup>®</sup> is prohibited and may violate
-          the copyright, trademark or unfair competition laws of the United States and/or other countries. All rights
-          not expressly granted are reserved.
+          any means without the express written permission of SF+K is prohibited and may violate the copyright,
+          trademark or unfair competition laws of the United States and/or other countries. All rights not expressly
+          granted are reserved.
         </Text>
         <Text>
-          Smoothie Factory<sup>®</sup> hereby grants you a personal, non-exclusive, non-assignable, non-transferable,
-          limited, and revocable license to use and display the Content and to use the Application for noncommercial and
-          personal use only; provided that you maintain all copyright and other notices contained in such Content and
-          only use the Application on a device owned or controlled by you as permitted by the rules contained in the
-          terms contained in the Apple, Inc. Terms and Conditions (“Apple Terms”) or the Google Inc. Google Play Terms
-          of Service (“Google Terms”), whichever is applicable to your device. Smoothie Factory
-          <sup>®</sup>, content providers and content providers’ licensors do not transfer any title, right or interest
-          to or in any Content to you. If any of the provisions of the Apple Terms or the Google Terms conflict with our
-          Terms, our Terms will control, solely to the extent that such terms apply to the Application. You agree not to
-          reproduce, modify, create derivative works from, display, perform, distribute, sell, rent, lease, transfer,
-          sublicense, disseminate, broadcast or circulate any Content to any third party (including, without limitation,
-          the display and distribution of Content via a third party website) without express prior written consent of
-          Smoothie Factory<sup>®</sup>. Use of Content is only permitted with the express written permission of Smoothie
-          Factory<sup>®</sup> and/or its licensors. You further agree that you will not disassemble, decompile, reverse
-          engineer, modify or otherwise reduce the computer file in which the Content is stored to a human-readable
-          form. In addition, you may not attempt to circumvent, avoid, bypass, remove, deactivate, impair or otherwise
-          defeat any encryption, rights signaling or copy protection technology in which the Content is wrapped or
-          otherwise associated with, and you may not edit, modify, translate, or create adaptations of the Content.
+          SF+K hereby grants you a personal, non-exclusive, non-assignable, non-transferable, limited, and revocable
+          license to use and display the Content and to use the Application for noncommercial and personal use only;
+          provided that you maintain all copyright and other notices contained in such Content and only use the
+          Application on a device owned or controlled by you as permitted by the rules contained in the terms contained
+          in the Apple, Inc. Terms and Conditions ("Apple Terms") or the Google Inc. Google Play Terms of Service
+          ("Google Terms"), whichever is applicable to your device. SF+K, content providers and content providers'
+          licensors do not transfer any title, right or interest to or in any Content to you. If any of the provisions
+          of the Apple Terms or the Google Terms conflict with our Terms, our Terms will control, solely to the extent
+          that such terms apply to the Application. You agree not to reproduce, modify, create derivative works from,
+          display, perform, distribute, sell, rent, lease, transfer, sublicense, disseminate, broadcast or circulate any
+          Content to any third party (including, without limitation, the display and distribution of Content via a
+          third-party website) without express prior written consent of SF+K. Use of Content is only permitted with the
+          express written permission of SF+K and/or its licensors. You further agree that you will not disassemble,
+          decompile, reverse engineer, modify or otherwise reduce the computer file in which the Content is stored to a
+          human-readable form. In addition, you may not attempt to circumvent, avoid, bypass, remove, deactivate, impair
+          or otherwise defeat any encryption, rights signaling or copy protection technology in which the Content is
+          wrapped or otherwise associated with, and you may not edit, modify, translate, or create adaptations of the
+          Content.
         </Text>
         <Text>This Section will survive the termination of your right to use the Sites.</Text>
-        <Title>DIGITAL MILLENIUM COPYRIGHT ACT (“DMCA”) NOTICE</Title>
+
+        <Title>DIGITAL MILLENIUM COPYRIGHT ACT ("DMCA") NOTICE</Title>
         <Text>
           Pursuant to the Digital Millennium Copyright Act, 17 U.S.C. Sec. 512(c), if you believe any material available
           on the Sites infringes upon a copyright that you own or control, you may file a notification of such
-          infringement with our Designated Agent as set forth below or you can contact us via the{' '}
-          <Link href="/about-us">Contact Us</Link> section of the Site.
+          infringement with our Designated Agent as set forth below or you can contact us via the Contact Us section of
+          the Site.
         </Text>
         <Text>
-          Smoothie Holdings, LLC <br />
+          Smoothie Holdings, LLC
+          <br />
           Customer Care
           <br />
-          14860 Montfort Drive, Suite 150 PMB 34
+          14860 Montfort Drive, Suite 150 PMB34
           <br />
           Dallas, TX 75254
           <br />
+          <a href="mailto:info@smoothiefactory.com">info@smoothiefactory.com</a>
+          <br />
+          <a href="tel:214-302-5910">214-302-5910</a>
         </Text>
         <Text>
-          If you knowingly misrepresent in your notification that the material or activity is infringing, you will be
-          liable for any damages, including costs and attorneys’ fees, incurred by us or the alleged infringer as the
-          result of our relying upon such misrepresentation in removing or disabling access to the material or activity
-          claimed to be infringing.
+          Please see 17 U.S.C. Sec. 512(c)(3) for the requirements of a proper notification. If you knowingly
+          misrepresent in your notification that the material or activity is infringing, you will be liable for any
+          damages, including costs and attorneys' fees, incurred by us or the alleged infringer as the result of our
+          relying upon such misrepresentation in removing or disabling access to the material or activity claimed to be
+          infringing.
+        </Text>
+        <Text>
+          If a notice of copyright infringement has been filed against material posted by you on the Sites, you may make
+          a counter-notification with our Designated Agent listed above, provided that such counter- notification
+          complies with the requirements of 17 U.S.C. Sec. 512(g)(3). If we receive a valid counter- notification, we
+          may reinstate the removed or disabled material in accordance with the DMCA.
         </Text>
         <Text>
           In accordance with the DMCA and other applicable law, we have adopted a policy of terminating, in appropriate
@@ -168,52 +190,51 @@ const TermsOfUseSection: FC = () => (
           sole discretion, limit access to the Sites and/or terminate the accounts of any users who infringe any
           intellectual property rights of others, whether or not there is any repeat infringement.
         </Text>
-        <Title>YOUR COMMENTS AND TRANSMISSIONS</Title>
+
+        <Title>SUBMISSIONS: YOUR COMMENTS AND TRANSMISSIONS</Title>
         <Text>
           We appreciate your comments, reviews, photos, content, remarks, feedback, suggestions, ideas, inventions,
           artwork, developments, concepts, and other types of communications, materials and submissions you disclose or
           transmit to us or to publicly-accessible social networks such as Facebook®, Twitter®, Instagram®, Path®,
           TwitPic®, Lockerz®, our Application, and similar information and image gathering and sharing services
-          (collectively, “Submissions”). You represent and warrant that your Submissions are not subject to any
+          (collectively, "Submissions"). You represent and warrant that your Submissions are not subject to any
           confidentiality obligations and that you own and control all of the rights to the Submissions, have the lawful
-          right to distribute and produce such Submissions, or otherwise have the right to grant the rights to Smoothie
-          Factory that you grant under these Terms. Smoothie Factory<sup>®</sup> is free to use the Submissions for any
-          purpose whatsoever. By making a Submission, you grant Smoothie Factory<sup>®</sup> and its affiliates a
-          perpetual, irrevocable, worldwide, royalty-free, non-exclusive and fully sublicensable right and license to
-          make, use, reproduce, modify, adapt, publish, translate, create derivative works of, distribute, publicly
-          perform, publicly display, develop, manufacture, advertise, and market your Submissions, and any related
-          copyrights, moral rights or other intellectual property rights therein throughout the world, in any medium or
-          technology of any kind now existing or developed in the future. If you elect to forward to us or to transmit
-          via publicly-accessible social networks any such Submission, then by doing so, you acknowledge that (1) we are
-          not liable for any use, disclosure, or return to you of your Submission, (2) no confidential relationship is
-          established or is to be implied in any way from our receipt of the Submission and any statement to the
-          contrary with your Submission shall not alter this condition, (3) you understand that you will not be entitled
-          to any compensation from us based upon your Submission or our use thereof, (4) the receipt of your Submission
-          shall not constitute a waiver by us of our rights to contest the validity of any copyright, or other
-          intellectual property rights that you may now or hereafter claim for the Submission, (5) you release Smoothie
-          Factory<sup>®</sup> and its agents and employees from any claims that such use, as authorized above, violates
-          your rights, and (6) any previously, concurrently or subsequently submitted materials relating to this
-          Submission shall be considered to have been submitted in accordance with these conditions. By making a
+          right to distribute and produce such Submissions, or otherwise have the right to grant the rights to SF+K that
+          you grant under these Terms. SF+K is free to use the Submissions for any purpose whatsoever. By making a
+          Submission, you grant SF+K and its affiliates a perpetual, irrevocable, worldwide, royalty-free, non-exclusive
+          and fully sublicensable right and license to make, use, reproduce, modify, adapt, publish, translate, create
+          derivative works of, distribute, publicly perform, publicly display, develop, manufacture, advertise, and
+          market your Submissions, and any related copyrights, moral rights or other intellectual property rights
+          therein throughout the world, in any medium or technology of any kind now existing or developed in the future.
+          If you elect to forward to us or to transmit via publicly-accessible social networks any such Submission, then
+          by doing so, you acknowledge that (1) we are not liable for any use, disclosure, or return to you of your
+          Submission, (2) no confidential relationship is established or is to be implied in any way from our receipt of
+          the Submission and any statement to the contrary with your Submission shall not alter this condition, (3) you
+          understand that you will not be entitled to any compensation from us based upon your Submission or our use
+          thereof, (4) the receipt of your Submission shall not constitute a waiver by us of our rights to contest the
+          validity of any copyright, or other intellectual property rights that you may now or hereafter claim for the
+          Submission, (5) you release SF+K and its agents and employees from any claims that such use, as authorized
+          above, violates your rights, and (6) any previously, concurrently or subsequently submitted materials relating
+          to this Submission shall be considered to have been submitted in accordance with these conditions. By making a
           Submission, you also warrant that you own the material/content submitted, that it is original, that it is not
-          defamatory, and that Smoothie Factory<sup>®</sup>’s use of the Submission will not violate any third party’s
-          rights. Smoothie Factory<sup>®</sup> is under no obligation to use any Submission or any part thereof.
+          defamatory, and that SF+K use of the Submission will not violate any third party's rights. SF+K is under no
+          obligation to use any Submission or any part thereof.
         </Text>
         <Text>
-          Further, you grant Smoothie Factory<sup>®</sup> and its sublicensees the right to use your name and likeness
-          that you submit in connection with such materials and content, if they choose. You represent and warrant that
-          you own or otherwise control all of the rights to any Submission and in the materials and content that you
-          post, and that you have the lawful right to distribute and produce such Submissions, or otherwise have the
-          right to grant the rights to Smoothie Factory<sup>®</sup> that you grant under these Terms; that the content
-          is accurate; that use of any Submission, materials or content you supply does not and will not cause injury to
-          any person or entity; and that you will indemnify Smoothie Factory<sup>®</sup> and its sublicensees for all
-          claims resulting from any Submission, materials and content you supply. Smoothie Factory
-          <sup>®</sup> has the right but not the obligation to monitor and edit or remove any activity or content on the
-          Sites. Smoothie Factory<sup>®</sup> takes no responsibility and assumes no liability for Submissions and/or
-          any materials or content posted by you or any third party.
+          Further, you grant SF+K and its sublicensees the right to use your name and likeness that you submit in
+          connection with such materials and content, if they choose. You represent and warrant that you own or
+          otherwise control all of the rights to any Submission and in the materials and content that you post, and that
+          you have the lawful right to distribute and produce such Submissions, or otherwise have the right to grant the
+          rights to SF+K that you grant under these Terms; that the content is accurate; that use of any Submission,
+          materials or content you supply does not and will not cause injury to any person or entity; and that you will
+          indemnify SF+K and its sublicensees for all claims resulting from any Submission, materials and content you
+          supply. SF+K has the right but not the obligation to monitor and edit or remove any activity or content on the
+          Sites. SF+K takes no responsibility and assumes no liability for Submissions and/or any materials or content
+          posted by you or any third party.
         </Text>
         <Text>
           We ask that you do not submit confidential information or materials to us. We will not keep the Submission
-          confidential and we may use it as we see fit. By submitting anything to us, you acknowledge that the
+          confidential, and we may use it as we see fit. By submitting anything to us, you acknowledge that the
           Submission is not confidential, or that even if you think that it is, you are waiving any rights you may have
           to the Submission being confidential or any ownership interest you think that you have in the Submission.
           Also, please do not submit anything to us that you have done for your employer during the course of your
@@ -223,15 +244,14 @@ const TermsOfUseSection: FC = () => (
         <Title>YOUR OBLIGATIONS</Title>
         <Text>
           In order to participate in certain areas of our Sites, you will need to register for an account. In providing
-          registration and other information to Smoothie Factory<sup>®</sup>, you agree to provide true, accurate,
-          current and correct information about yourself, and to maintain and update registration information to keep it
-          true, accurate, current and complete. If Smoothie Factory<sup>®</sup> has reasonable grounds to suspect that
-          such information is untrue, inaccurate, not current or incomplete, Smoothie Factory<sup>®</sup> has the right
-          to suspend or terminate your account and refuse any and all current or future use of the account. You agree to
-          maintain the security of your account by not sharing your password and will promptly notify Smoothie Factory
-          <sup>®</sup> if you discover or otherwise suspect any security breaches related to your account. You agree to
-          take responsibility for all activities that occur under your account and accept all risks of unauthorized
-          access.
+          registration and other information to SF+K, you agree to provide true, accurate, current and correct
+          information about yourself, and to maintain and update registration information to keep it true, accurate,
+          current and complete. If SF+K has reasonable grounds to suspect that such information is untrue, inaccurate,
+          not current or incomplete, SF+K has the right to suspend or terminate your account and refuse any and all
+          current or future use of the account. You agree to maintain the security of your account by not sharing your
+          password and will promptly notify SF+K if you discover or otherwise suspect any security breaches related to
+          your account. You agree to take responsibility for all activities that occur under your account and accept all
+          risks of unauthorized access.
         </Text>
         <Text>
           In using the Sites you agree that you will not: (a) post, disseminate or transmit unauthorized advertising,
@@ -241,15 +261,15 @@ const TermsOfUseSection: FC = () => (
           identifiers to disguise the origin of any content; (c) impersonate any person or entity, or falsely state or
           otherwise misrepresent an affiliation with any person or entity; (d) engage in any activities intended to
           withhold or cloak identity or contact information; (e) send harassing and/or threatening messages to others;
-          (f) post excessive responses to interactive features or functions of the Sites; or (g) engage in “flooding,”
+          (f) post excessive responses to interactive features or functions of the Sites; or (g) engage in "flooding,"
           i.e., ICMP flooding and mail bombing (sending large amounts of email repeatedly to the same email address).
         </Text>
         <Text>
           You agree that you are responsible for your own communications and that you will not post, disseminate or
           transmit any content that: (a) is unlawful, harassing, defamatory, abusive, threatening, obscene, harmful,
-          tortious, libelous, invasive of another’s privacy, obscene, pornographic, indecent, lewd, suggestive,
+          tortious, libelous, invasive of another's privacy, obscene, pornographic, indecent, lewd, suggestive,
           threatening, inflammatory, fraudulent, otherwise objectionable or which threatens our relationship with our
-          employees, partners, customers, or suppliers; (b) infringes or violates any party’s copyright, trademark,
+          employees, partners, customers, or suppliers; (b) infringes or violates any party's copyright, trademark,
           trade secret, patent or other proprietary right including, but not limited to, using third-party copyrighted
           materials without appropriate permission, using third-party trademarks without appropriate permission or
           attribution, and using or distributing third-party information protected as a trade secret in violation of a
@@ -257,192 +277,209 @@ const TermsOfUseSection: FC = () => (
           contractual or fiduciary relationships; (d) contains personally identifiable information belonging to minors;
           (e) impersonates any person or entity or otherwise misrepresents your identity or affiliation with another
           person or entity; (f) is spam, direct marketing or any unsolicited advertising, promotional materials or other
-          forms of solicitation or commercial content; or (g) violates these Terms, or in Smoothie Factory
-          <sup>®</sup>’s sole discretion, is objectionable, restricts or inhibits any other person from using or
-          enjoying the Sites, or which damage the image or rights of Smoothie Factory<sup>®</sup>, other users, or third
-          parties.
+          forms of solicitation or commercial content; or (g) violates these Terms, or in SF+K sole discretion, is
+          objectionable, restricts or inhibits any other person from using or enjoying the Sites, or which damage the
+          image or rights of SF+K, other users, or third parties.
         </Text>
         <Text>
           To the extent that the following activities are prohibited by applicable law, in using the Sites you will not:
           (a) use the Sites for any illegal purpose, in violation of any applicable laws or regulations; (b) publish web
-          pages that contain links that initiate downloads or streaming of copyright-infringing or other illegal
-          material; (c) electronically stalk or otherwise electronically harass another; or (d) engage in any Internet
-          activities that would violate the personal privacy rights of others, including but not limited to, collecting
-          and distributing information about Internet users without their permission, except as permitted by applicable
-          law.
+          pages that contain as that initiate downloads or streaming of copyright-infringing or other illegal material;
+          (c) electronically stalk or otherwise electronically harass another; or (d) engage in any Internet activities
+          that would violate the personal privacy rights of others, including but not limited to, collecting and
+          distributing information about Internet users without their permission, except as permitted by applicable law.
         </Text>
         <Text>
           To the extent that any of the following activities materially interfere with the Sites or the network and
-          systems of a Smoothie Factory<sup>®</sup> service provider (“Service”), you will not: (a) post, disseminate or
-          transmit any worm, viruses or other harmful, disruptive or destructive files, code or programs on the Sites;
-          (b) use Internet Relay Chat (IRC) bots, i.e., programs that utilize excessive resources by connecting to an
-          IRC network and running 24 hours per day; (c) hinder the ability of others to use IRC; (d) disrupt the normal
-          flow on the Sites or otherwise act in a manner that negatively affects other users’ ability to engage in real
-          time exchanges; (e) interfere with, disrupt, or harm in any way the servers or networks connected to the Sites
-          or Service; (f) use the Sites or Service to access the accounts of others without permission; (g) attempt to
-          penetrate security measures of the Sites, Service, or another entity, or obtain or bypass others’ passwords;
+          systems of a SF+K service provider ("Service"), you will not: (a) post, disseminate or transmit any worm,
+          viruses or other harmful, disruptive or destructive files, code or programs on the Sites; (b) use Internet
+          Relay Chat (IRC) bots, i.e., programs that utilize excessive resources by connecting to an IRC network and
+          running 24 hours per day; (c) hinder the ability of others to use IRC; (d) disrupt the normal flow on the
+          Sites or otherwise act in a manner that negatively affects other users' ability to engage in real time
+          exchanges; (e) interfere with, disrupt, or harm in any way the servers or networks connected to the Sites or
+          Service; (f) use the Sites or Service to access the accounts of others without permission; (g) attempt to
+          penetrate security measures of the Sites, Service, or another entity, or obtain or bypass others' passwords;
           or (h) engage in denial of service attacks, i.e., actions designed to impair network access by flooding a site
           or the Internet with useless traffic.
         </Text>
+
         <Title>MODIFICATIONS TO THE SITES</Title>
         <Text>
           Changes may be made at any time to the information, names, text, software, images, pictures, logos,
           trademarks, products and services and any other material displayed on, offered through or contained on the
           Sites. The Sites may include inaccuracies or typographical errors that may be corrected as they are discovered
-          at Smoothie Factory<sup>®</sup>’s sole discretion. Further, Smoothie Factory<sup>®</sup> reserves the right,
-          for any reason, in its sole discretion, to terminate, change or suspend any aspect of the Sites including but
-          not limited to content, features or hours of availability. Smoothie Factory<sup>®</sup> may impose limits on
-          certain features of the Sites or restrict your access to part or all of the Sites without notice or penalty.
+          at SF+K sole discretion. Further, SF+K reserves the right, for any reason, in its sole discretion, to
+          terminate, change or suspend any aspect of the Sites including but not limited to content, features or hours
+          of availability. SF+K may impose limits on certain features of the Sites or restrict your access to part or
+          all of the Sites without notice or penalty.
         </Text>
+
         <Title>PRIVACY</Title>
         <Text>
           Our Privacy Policy applies to use of the Sites, and its terms are made a part of these Terms by this
-          reference. Click here to <Link href="/privacy">view our Privacy Policy.</Link> Please review this privacy
-          statement and print a copy for your records. Additionally, by using the Sites, you acknowledge and agree that
-          Internet transmissions are never completely private or secure. You understand that any message or information
-          you send to the Sites may be read or intercepted by others, even if there is a special notice that a
-          particular transmission is encrypted. The Sites do not intend to target or collect personal information from
-          individuals under the age of 13.
+          reference. Please review this privacy statement and print a copy for your records. Additionally, by using the
+          Sites, you acknowledge and agree that Internet transmissions are never completely private or secure. You
+          understand that any message or information you send to the Sites may be read or intercepted by others, even if
+          there is a special notice that a particular transmission is encrypted. The Sites do not intend to target or
+          collect personal information from individuals under the age of 13.
         </Text>
+
+        <Title>HEALTH REQUIREMENTS AND DISCLAIMER</Title>
+        <Text>
+          The information and statements we make about our products have not been evaluated by the FDA. Our products are
+          not intended to diagnose, treat, cure or prevent any disease. Further, information on our Sites is in no way
+          intended to recommend the self-management of health problems or wellness, as medical advice or as a substitute
+          for professional medical advice, diagnosis or treatment. SF+K is not claiming that its products will
+          alleviate, treat, heal or cure any health problem, condition, disease or symptom. We advise customers to
+          always consult with their doctor or other qualified healthcare provider or other professional regarding any
+          questions that they may have about a medical condition or before making any changes to their diet,
+          exercise/sports regime or lifestyle.
+        </Text>
+        <Text>
+          We want our customers to enjoy our products while being safe. To ensure your safety, you are advised to speak
+          with your doctor prior to undertaking a juice cleanse to make sure you do not have any conditions that may
+          restrict you. If you choose to continue, you do so at your own risk. Although common side effects include
+          diarrheas, fatigue and headaches, if you begin to feel ill or unwell, consult with your doctor immediately.
+          NOT SUITABLE FOR THOSE WHO SUFFER ANY NUT ALLERGIES.
+        </Text>
+        <Text>
+          Our products may include allergens. Please check the ingredients list before purchase and before consumption.
+          SF+K is not liable for any allergic reactions and refunds will not be given to those how have an allergy to an
+          ingredient.
+        </Text>
+        <Text>
+          Our Sites and all contents of our Sites are provided on an "as is" basis without warranties of any kind,
+          either expressed or implied. You acknowledge, by your use of our Sites and the purchase of our products, that
+          you do so at your own risk. Nothing contained on our Sites is intended for medical diagnosis or treatment. The
+          advice given is not intended to replace the advice of your medical practitioner and is intended for
+          educational purposes only. IT IS NOT INTENDED AS MEDICAL ADVICE FOR INDIVIDUAL CONDITIONS OR TREATMENT, IT IS
+          NOT A SUBSTITUTE FOR A MEDICAL EXAM, AND IT DOES NOT REPLACE THE NEED FOR SERVICES PROVIDED BY MEDICAL
+          PROFESSIONALS. If you are currently under the care of a physician, or are currently being treated for any
+          health condition, you should consult with your health care provider prior to using our products. If there is a
+          change in your medical condition, you should immediately notify your doctor. ONLY YOU DOCTOR OR PHARMACIST CAN
+          PROVIDE YOU WITH ADVICE ON WHAT IS SAFE AND EFFECTIVE FOR YOU.
+        </Text>
+        <Text>
+          Neither we nor our experts, partners, shareholders or any of the affiliates will be liable for any direct,
+          indirect, consequential or other damages that may result including but not limited to economic loss injury,
+          illness or death. We make no representations or warranties, concerning the effectiveness of our products. We
+          shall be in no way responsible for the improper use or storage of our products.
+        </Text>
+        <Text>
+          WARNING: Our fresh made in store beverage products have not been pasteurized and therefore may contain harmful
+          bacteria that can cause serious illness in children, the elderly and persons with weakened immune systems.
+          Keep refrigerated.
+        </Text>
+
         <Title>MOBILE PAYMENT</Title>
         <Text>
           You may elect to participate in certain functionality of the Sites which will allow you to use the Sites to
-          purchase Smoothie Factory<sup>®</sup> products (“Mobile Payment”). Mobile payment may be accepted at
-          participating Smoothie Factory<sup>®</sup> locations in the United States. Smoothie Factory
-          <sup>®</sup> reserves the right at any time to discontinue Mobile Payment or change the location of the
-          restaurants accepting Mobile Payment.
-        </Text>
-        <Title>MOBILE ORDER AND PAY (MOP) AND DELIVERY</Title>
-        <Text>
-          You may also elect to participate in certain functionality of the Sites which will allow you in certain
-          Smoothie Factory<sup>®</sup> locations in certain markets to use the Sites to order and pay for certain
-          Smoothie Factory<sup>®</sup>
-          products prior to arrival at the restaurant (“MOP”). Smoothie Factory<sup>®</sup> reserves the right at any
-          time to discontinue MOP or change the location of the restaurants or markets offering MOP.
+          purchase SF+K products ("Mobile Payment"). Mobile payment may be accepted at participating SF+K locations in
+          the United States. SF+K reserves the right at any time to discontinue Mobile Payment or change the location of
+          the stores accepting Mobile Payment.
         </Text>
 
-        <Title>GIFT CARDS TERMS AND CONDITIONS (“Gift Card Rules”)</Title>
+        <Title>MOBILE ORDER AND PAY (MOP) AND DELIVERY</Title>
         <Text>
-          The Gift Card Terms and Conditions (this “Gift Card Rules”) is an agreement between you and Smoothie Factory
-          <sup>®</sup>, and describes the terms and conditions that apply to your gift card [when available]. By buying,
-          loading, or using a Gift Card, you agree to these terms. Please read the following provisions, as well as the
-          complete Terms of Use and Privacy Policy that govern the Sites.These Gift Card Rules include an Arbitration
-          provision that governs any disputes between you and us. This provision will: 1) Eliminate your right to a
-          trial by jury; and 2) Substantially affect your rights, including preventing you from bringing, joining, or
-          participating in class or consolidated proceedings.
+          You may also elect to participate in certain functionality of the Sites which will allow you in certain SF+K
+          locations in certain markets to use the Sites to order and pay for certain SF+K products prior to arrival at
+          the store ("MOP"). SF+K reserves the right at any time to discontinue MOP or change the location of the stores
+          or markets offering MOP.
+        </Text>
+
+        <Title>GIFT CARDS TERMS AND CONDITIONS ("Gift Card Rules")</Title>
+        <Text>
+          The Gift Card Terms and Conditions (this "Gift Card Rules") is an agreement between you and SF+K and describes
+          the terms and conditions that apply to your gift card. By buying, loading, or using a Gift Card, you agree to
+          these terms. Please read the following provisions, as well as the complete Terms of Use and Privacy Policy
+          that govern the Sites. These Gift Card Rules include an Arbitration provision that governs any disputes
+          between you and us. This provision will: 1) Eliminate your right to a trial by jury; and 2) Substantially
+          affect your rights, including preventing you from bringing, joining, or participating in class or consolidated
+          proceedings.
         </Text>
 
         <Title>ABOUT YOUR GIFT CARD</Title>
         <Text>
-          Smoothie Factory<sup>®</sup> gift cards are not subject to any service fees or expiration dates. Your use of a
-          gift card constitutes your acceptance of the complete Gift Card Rules (including the Arbitration provisions).
-          Gift cards are redeemable for food, drink and eligible merchandise at participating locations in the United
-          States. Eligible merchandise or services are determined by Smoothie Factory<sup>®</sup> in its sole discretion
-          and may be changed without notice. Gift cards cannot be used to purchase other gift cards and you will not
-          receive Rewards points for the purchase of any gift card. Gift cards cannot be redeemed for cash or applied as
-          payment to any account, unless required by law. In California, all gift cards are redeemable for cash upon
+          SF+K gift cards are not subject to any service fees or expiration dates. Your use of a gift card constitutes
+          your acceptance of the complete Gift Card Rules (including the Arbitration provisions). Gift cards are
+          redeemable for food, drink and eligible merchandise at participating SF+K locations in the United States.
+          Eligible merchandise or services are determined by SF+K in its sole discretion. You will not receive loyalty
+          points for the purchase of any gift card. Gift cards cannot be redeemed for cash or applied as payment to any
+          account, unless required by law. For instance, in California, all gift cards are redeemable for cash upon
           request if the balance on the card is less than $10.00. Gift cards may be redeemable for cash when their
           balance falls below a certain amount in other states within the United States as well.
         </Text>
 
         <Title>ELECTRONIC GIFT CARDS</Title>
         <Text>
-          The Electronic Gift Card program allows you to purchase and send a virtual Card via email. You may choose the
-          design and dollar value (within certain limits) and complete your purchase using a credit card, or debit card.
-          You will need the email address for the recipient of your Card eGift (also known as an “eGift” or “eGift
-          Card”). You authorize us to charge your credit card or debit card at the time you purchase your eGift.
+          The Electronic Gift Card program allows you to purchase and send a virtual gift card via email. You may choose
+          the design and dollar value (within certain limits) and complete your purchase using a credit card, or debit
+          card. You will need the email address for the recipient of your eGift card (also known as an "eGift" or "eGift
+          Card"). You authorize us to charge your credit card or debit card at the time you purchase your eGift.
         </Text>
         <Text>
-          We will send the recipient of your eGift an email notifying them that they have received an eGift from you. He
-          or she will then be able to print out the eGift and bring it into a location to make a purchase. An eGift is
+          We will send the recipient of your eGift an email notifying them that they have received an eGift from you.
+          They will then be able to print out the eGift and bring it into a location to make a purchase. An eGift is
           like a gift card and should be treated like cash by the recipient.
         </Text>
         <Text>
           Each eGift has a unique gift card account number associated with it no matter how many times the email is
           printed out. We will only give refunds for unused eGifts with the original receipt.
         </Text>
+
         <Title>ADDING VALUE TO YOUR GIFT CARD</Title>
         <Text>
-          In the United States, you can load a dollar value on a gift card by using a credit card, debit card or cash by
-          visiting any participating location. You may not load more than $500 worth of value on each gift card. The
-          minimum amount that must be loaded onto your gift card is $5. Smoothie Factory<sup>®</sup> may change the
-          maximum and minimum amounts at any time by notifying you at the point of sale, by phone when you call or on
-          the Sites, and such change shall not constitute an amendment to these Gift Card Rules.
+          When this function is made available, you will be able to load a dollar value on a physical gift card in the
+          United States by using a credit card, debit card or cash by visiting any participating SF+K location. You may
+          not load more than $500 worth of value on each gift card. The minimum amount that must be loaded onto your
+          gift card is $5. SF+K may change the maximum and minimum amounts at any time by notifying you at the point of
+          sale, by phone when you call or on the Sites, and such change shall not constitute an amendment to these Gift
+          Card Rules.
         </Text>
+
         <Title>LOST, STOLEN OR DAMAGED GIFT CARD REPLACEMENT POLICY</Title>
         <Text>
-          Unless you have an original sales receipt for your gift card and your 16-digit gift card number, or unless it
-          has been registered by you on <Link href="/about-us">smoothiefactory.com</Link> and you can provide us your
-          email address or phone number that you used to register your gift card, the remaining gift card value will not
-          be replaced if lost, stolen or damaged.
+          Unless you have an original sales receipt for your gift card and your 16 or 19-digit gift card number, the
+          remaining gift card value will not be replaced if lost, stolen or damaged. If you have your original sales
+          receipt for your gift card and your 16 or 19-digit gift card number, then you can send an email to
+          <a href="mailto:info@smoothiefactorykitchen.com">info@smoothiefactorykitchen.com</a> and include the following
+          information: (1) the 16 or 19-digit gift card number, (2) a photo copy of the original location receipt
+          indicating the purchase of the gift card, (3) a copy of a valid government issued I.D. (Driver's License,
+          Military I.D., State Issued I.D. or Passport); and (4) your name, email, phone number and mailing address.
+          Upon satisfactory receipt of this required information, SF+K will cancel your old gift card and issue a new
+          eGift Card in the amount of any remaining balance on your old gift card on the date of SF+K receipt of such
+          information; the eGift Card will be emailed to the email address you provide. Reproduction, purchase, trade or
+          sales of Report Form, gift card numbers, and or cash register receipts are prohibited. Fraudulent submissions
+          may result in prosecution under applicable federal mail fraud statutes.
         </Text>
-        <ul>
-          <ListItem>
-            If you registered your gift card with us, you can contact us via the Contact Us section of the Site or via
-            your account balance page (go to disable my gift card) and we can deactivate your lost, stolen or damaged
-            gift card and load the balance remaining at the time of notification onto a new gift card or FACTORY REWARDS
-            <sup>®</sup>
-            account.
-          </ListItem>
-          <ListItem>
-            You can also go into a participating location, with your original receipt for the gift card purchase and
-            your 16-digit gift card number or, again, if you registered the gift card with us and you can provide your
-            email address or phone number that you used to register the gift card. The restaurant personnel can
-            deactivate your gift card and issue you a new gift card with the remaining balance.
-          </ListItem>
-          <ListItem>
-            If you cannot either go online or to a participating Smoothie Factory<sup>®</sup> restaurant and if your
-            gift card has been lost, stolen or damaged, please mail: (1) the 16-digit gift card number (or if you
-            registered your gift card with us, you can provide us with the email address or phone number used at the
-            time of registration), (2) an original location receipt indicating the purchase of the gift card, (3) a copy
-            of a valid government issued I.D. (Driver’s License, Military I.D., or Passport), and (4) your complete name
-            and mailing address to: Smoothie Holdings, LLC, Attn: Gift Cards Replacement, 14860 Montfort Drive, Suite
-            150 PMB 34, Dallas, TX 75254. Upon satisfactory receipt of these required information, Smoothie Factory
-            <sup>®</sup> will cancel your old gift card and issue a new gift card in the amount of any remaining balance
-            on your old gift card on the date of Smoothie Factory<sup>®</sup>’s receipt of the such information. The
-            replacement gift card will be mailed to the address you provide, which must be a valid street address. P.O.
-            Boxes will not be accepted. Please make a copy of all documents you submit to us for your records. All
-            documents submitted become Smoothie Factory<sup>®</sup>’s property and will not be returned. Please allow up
-            to 8 weeks for delivery of the replacement gift card. Smoothie Factory shall not be responsible for any
-            lost, late, illegible, damaged, misdirected, incomplete or postage due mail. Reproduction, purchase, trade
-            or sales of Report Form, gift card numbers, and or cash register receipts are prohibited. Fraudulent
-            submissions may result in prosecution under applicable federal mail fraud statutes.
-          </ListItem>
-        </ul>
+
         <Title>FRAUD ASSOCIATED WITH YOUR GIFT CARD OR CARD BALANCE</Title>
         <Text>
-          We will not accept any gift card, or will limit use of any gift card or gift card balance, if we reasonably
+          We will not accept any gift card or will limit use of any gift card or gift card balance, if we reasonably
           believe that the use is unauthorized, fraudulent or otherwise unlawful, and we consider such action
-          appropriate to limit our risk. Smoothie Factory<sup>®</sup> does not control who may sell preloaded gift
-          cards, nor can we control the price or preloaded denominations offered by independent sellers. Consequently,
-          Smoothie Factory<sup>®</sup>
-          has no liability to you for any third party fraud or unlawful activity associated with any gift card balance.
-          If Smoothie Factory<sup>®</sup> discovers any gift card or gift card balance was sourced or derived from fraud
-          or other unlawful means, in our sole discretion, we may cancel all impacted gift cards and retain all related
-          gift card balances without notice to you. We may use retained gift card balances to help offset our liability
-          to card companies, networks and issuers of lost or stolen credit and debit cards used to purchase or load gift
-          cards.
+          appropriate to limit our risk. SF+K does not control who may sell preloaded gift cards, nor can we control the
+          price or preloaded denominations offered by independent sellers. Consequently, SF+K has no liability to you
+          for any third-party fraud or unlawful activity associated with any gift card balance. If SF+K discovers any
+          gift card or gift card balance was sourced or derived from fraud or other unlawful means, in our sole
+          discretion, we may cancel all impacted gift cards and retain all related gift card balances without notice to
+          you. We may use retained gift card balances to help offset our liability to card companies, networks and
+          issuers of lost or stolen credit and debit cards used to purchase or load gift cards.
         </Text>
-        <Title>REGISTRATION, LIABILITY FOR UNAUTHORIZED TRANSACTIONS</Title>
+
+        <Title>LIABILITY FOR UNAUTHORIZED TRANSACTIONS</Title>
         <Text>
-          To register your gift card, please visit <Link href="/">smoothiefactory.com</Link>. When registering a gift
-          card, you agree that you will: (i) provide complete and accurate information about yourself; and (ii) update
-          such information if it changes. If you do not provide or update such information, or if we have reasonable
-          grounds to suspect that you have not provided or updated such information, we shall have the right, in our
-          sole and absolute discretion, to disable your gift card. If you believe your gift card has been disabled in
-          error, please call (214) 302-5979. You are responsible for: (a) the accuracy of all information that you
-          provide to us; and (b) maintaining the confidentiality and security of your gift card information.
+          You are responsible for: (a) the accuracy of all information that you provide to us; and (b) maintaining the
+          confidentiality and security of your gift card information. Because your gift card is used like cash for
+          purchases from participating restaurant locations, you are responsible for all transactions associated with
+          your gift card, including unauthorized transactions. However, if your gift card is lost, stolen or destroyed,
+          the card can be replaced with the balance remaining on it at the time of your call, but only if you have the
+          16-digit number and the original purchase receipt for the gift card. If your gift card becomes lost, stolen or
+          damaged, you should contact us via the Contact Us section of the Site. Your gift card balance is only
+          protected from the point in time you notify us that your gift card is missing. We will freeze the remaining
+          balance on your gift card at the time you notify us and will load that remaining balance on a replacement gift
+          card which will be an eGift Card.
         </Text>
-        <Text>
-          Because your gift card is used like cash for purchases from participating locations, you are responsible for
-          all transactions associated with your gift card, including unauthorized transactions. However, if your gift
-          card is lost, stolen or destroyed, the card can be replaced with the balance remaining on it at the time of
-          your call, but only if you have registered it with us. Please notify us immediately if you change any of your
-          registration information. If your gift card becomes lost, stolen or damaged, you should contact us via the
-          Contact Us section of the Site. Your gift card balance is only protected from the point in time you notify us
-          that your gift card is missing. We will freeze the remaining balance on your gift card at the time you notify
-          us and will load that remaining balance on a replacement gift card.
-        </Text>
+
         <Title>ARBITRATION</Title>
         <Text>
           Please read this section carefully. It affects rights that you may otherwise have. It provides for resolution
@@ -454,31 +491,30 @@ const TermsOfUseSection: FC = () => (
         <Text>
           This provision is intended to be interpreted broadly to encompass all disputes or claims arising out of or
           relating to these Gift Card Rules, your gift card and your relationship with us. Any dispute or claim arising
-          out of or relating to these Gift Card Rules or use of the gift card and your relationship with Smoothie
-          Factory or any subsidiary, parent or affiliate company or companies (whether based in contract, tort, statute,
-          fraud, misrepresentation or any other legal theory) will be resolved by binding arbitration, except that
-          either of us may take claims to small claims court if they qualify for hearing by such a court.
+          out of or relating to these Gift Card Rules or use of the gift card and your relationship with SF+K or any
+          subsidiary, parent or affiliate company or companies (whether based in contract, tort, statute, fraud,
+          misrepresentation or any other legal theory) will be resolved by binding arbitration, except that either of us
+          may take claims to small claims court if they qualify for hearing by such a court.
         </Text>
         <Text>
           Notwithstanding the above, you may choose to pursue your claim in court and not by arbitration if you opt out
           of this arbitration provision within 30 days from the earliest of the date you purchased, loaded, reloaded or
-          used any of your gift cards (the “Opt Out Deadline”) after these Gift Card Rules have gone into effect. You
+          used any of your gift cards (the "Opt Out Deadline") after these Gift Card Rules have gone into effect. You
           may opt out of these arbitration procedures by sending us a written notice that you opt out to the following
-          address: Smoothie Holdings, LLC, Attn: Customer Service, 14860 Montfort Drive, Suite 150 PMB 34, Dallas, TX
+          address: Smoothie Factory + Kitchen, Attn: Customer Service, 14860 Montfort Drive, Suite 150 PMB34, Dallas, TX
           75254. Any opt-out received after the Opt Out Deadline (allowing three (3) additional days for mailing) will
           not be valid and you must pursue your claim in arbitration or small claims court.
         </Text>
         <Text>
           For all disputes, whether pursued in court or arbitration, you must first send a written description of your
-          For all disputes, whether pursued in court or arbitration, you must first send a written description of your
           claim to our Customer Service department to allow us an opportunity to resolve the dispute. You and we each
           agree to negotiate your claim in good faith. You may request arbitration if your claim or dispute cannot be
           resolved within sixty (60) days. The arbitration of any dispute or claim shall be conducted in accordance with
-          the rules of the American Arbitration Association (“AAA”), including the AAA’s Consumer Arbitration Rules (as
+          the rules of the American Arbitration Association ("AAA"), including the AAA's Consumer Arbitration Rules (as
           applicable), as modified by this Agreement. The AAA Rules and information about arbitration and fees are
           available online at www.adr.org. You and we agree that these Gift Card Rules evidences a transaction in
           interstate commerce and this arbitration provision will be interpreted and enforced in accordance with the
-          U.S. Federal Arbitration Act and federal arbitration law, and not governed by state law. Any arbitration will
+          U.S. Federal Arbitration Act and federal arbitration law and not governed by state law. Any arbitration will
           be held in a reasonably convenient location in the state in which you reside or at another mutually agreed
           location. The arbitration will be conducted in the English language. An arbitrator may award on an individual
           basis any relief that would be available in a court, including injunctive or declaratory relief to the extent
@@ -508,76 +544,243 @@ const TermsOfUseSection: FC = () => (
           These Gift Card Rules and this agreement to arbitrate shall be governed by and construed in accordance with
           the laws of the State of Texas not withstanding any conflict-of-laws rules.
         </Text>
+
+        <Title>FACTORY REWARDS® - LOYALTY TERMS AND CONDITIONS ("Loyalty Program Rules")</Title>
+        <Text>
+          The SF+K loyalty program, also known as FACTORY REWARDS®, is powered by Lunchbox and allows you to earn
+          rewards for every qualified purchase you make in any participating SMOOTHIE FACTORY® and SMOOTHIE FACTORY +
+          KITCHEN® location. All customers can join FACTORY REWARDS. There is no fee to join. In order to join FACTORY
+          REWARDS, you must first obtain and activate a loyalty account by either (1) downloading the SF+K mobile app;
+          or (2) signing up online on the SF+K website.
+        </Text>
+        <Text>
+          As a loyalty member, you may receive special promotions, coupons and invitations to exclusive events at
+          SMOOTHIE FACTORY® and SMOOTHIE FACTORY + KITCHEN® locations. You must present your loyalty account number
+          (which is your 10 digit phone number) at the time of check out to earn loyalty points; however, if you forget
+          to do so, you may contact us via the Contact Us section of the Site and have a copy of your receipt and
+          loyalty account number. Make sure that you keep a copy of your receipt for the previous qualified purchases as
+          we will need the information from the receipt in order to update your account accordingly with the loyalty
+          points earned for any qualified purchases you make in participating SMOOTHIE FACTORY® and SMOOTHIE FACTORY +
+          KITCHEN® location(s). If you cannot contact us via the Contact Us section of the Site, then you can mail a
+          copy of your receipt and your loyalty account number to SF+K, Attn: Smoothie Factory + Kitchen Loyalty, 14860
+          Montfort Drive, Suite 150 PMB34, Dallas, TX 75254. Click here for answers to{' '}
+          <a href="/files/SF+K-LoyaltyFAQs - 3-27-2025.pdf" target="_blank">
+            frequently asked questions
+          </a>{' '}
+          regarding FACTORY REWARDS.
+        </Text>
+        <Text>
+          Your use of a loyalty account constitutes your acceptance of the complete Loyalty Program Rules. SF+K may at
+          any time, and at its sole discretion, modify the terms and conditions of FACTORY REWARDS, with or without
+          notice. Such modifications will be effective immediately upon posting. You agree to review these Loyalty
+          Program Rules periodically and your continued use of or participation in FACTORY REWARDS following such
+          modifications will indicate your acceptance of any modified terms and conditions. If you do not agree to any
+          modification of the terms and conditions of use, you must immediately stop using your loyalty account.
+        </Text>
+        <Text>
+          SF+K may make changes to FACTORY REWARDS, including, without limitation, the benefits and rewards of the
+          program, at any time, and from time to time, without prior notice. Further, SF+K reserves the right to suspend
+          or end FACTORY REWARDS without prior notice, in SF+K's sole discretion. SF+K also reserves the right to
+          suspend or end FACTORY REWARDS or certain aspects, rewards and/or benefits thereof in certain geographic areas
+          without prior notice. Void where prohibited.
+        </Text>
+
+        <Title>FACTORY REWARDS LOYALTY POINTS AND REWARDS</Title>
+        <Text>
+          You will earn 1 point for every dollar spent on qualified purchases in a participating SMOOTHIE FACTORY® or
+          SMOOTHIE FACTORY + KITCHEN® location as long as you present your loyalty account number at the time of
+          purchase. If you forget to give your loyalty account number at the time of purchase, you can contact us at{' '}
+          <a href="mailto:info@smoothiefactorykitchen.com">info@smoothiefactorykitchen.com</a> and provide your loyalty
+          account number (which is the 10 digit phone number that is aed to your account) and a copy of your receipt and
+          we will be able to add the points to your account. Points are issued on the net subtotal of the qualified
+          transaction (meaning net of any discounts that have been applied to a qualified transaction) and are not
+          earned on taxes, gratuities, service or delivery fees.
+        </Text>
+        <Text>
+          You will receive specific rewards based on the number of loyalty points you earn ("Earned Rewards"). Your
+          rewards are automatically saved on your loyalty account. To redeem them, you must present your loyalty account
+          number at the time of purchase and order the menu item that is associated with the particular reward.
+        </Text>
+        <Text>
+          Qualified purchases are determined by SF+K in its sole discretion and may be changed without notice. The
+          purchase of a SMOOTHIE FACTORY + KITCHEN gift card and/or redemption of loyalty rewards are not qualified
+          purchases; however, purchases (other than purchases of gift cards) made at a participating SMOOTHIE FACTORY®
+          and SMOOTHIE FACTORY + KITCHEN® location using a SMOOTHIE FACTORY + KITCHEN gift card are considered qualified
+          purchases. Note, you cannot use a SMOOTHIE FACTORY + KITCHEN gift card to purchase a SMOOTHIE FACTORY +
+          KITCHEN gift card. You also cannot use rewards, even Earned Rewards, to purchase SMOOTHIE FACTORY + KITCHEN
+          gift cards. Offers and rewards do expire:
+        </Text>
+        <ul>
+          <ListItem>
+            Earned Rewards expire 12 months after you receive your Earned Reward. Points converted into Earned Rewards
+            will be deducted from your point balance upon issuance of the Earned Reward, regardless of whether or not
+            redeemed. Earned Rewards that are dollars off of menu items at participating stores must be used in a single
+            transaction; any remainder or balance will be forfeited. In addition, dollars off Earned Rewards may not be
+            used to purchase gift cards or to pay gratuities, delivery or service fees or applicable taxes.
+          </ListItem>
+          <ListItem>
+            Coupons and other rewards, such as birthday, anniversary or sign-up rewards, that we may send you on a
+            periodic basis (other than your Earned Rewards) typically expire 30 days after you receive the coupon or
+            reward.
+          </ListItem>
+          <ListItem>
+            The expiration date of coupons and rewards will be listed on the offer and/or on your account balance.
+          </ListItem>
+        </ul>
+        <Text>
+          The only way to redeem your rewards earned is by presenting your loyalty account number (i.e., your 10-digit
+          phone number aed to your loyalty account) at the time of check out. You must provide us with your name, phone
+          number and email address in order to join the loyalty program. You may not redeem multiple rewards in the same
+          menu transaction. You may elect to opt out of receiving marketing and promotional messages from SF+K and from
+          receiving order updates and promotions via text, SMS or push notifications however, if you do so, you will
+          also be opting out of us sending to you special promotions, coupons and/or invitations to exclusive events
+          from SF+K.
+        </Text>
+        <Text>
+          You can view your loyalty account via the mobile app or through
+          <a href="https://order.smoothiefactorykitchen.com">https://order.smoothiefactorykitchen.com</a>; your rewards
+          will be listed under your Profile. You will need to have your loyalty account number available in order to
+          access your account.
+        </Text>
+
+        <Title>BILLINGS AND ERROR CORRECTIONS</Title>
+        <Text>
+          We reserve the right to correct the balance of your loyalty account if we believe that a clerical, billing or
+          accounting error occurred. If you have questions regarding your transaction history or any correction, or if
+          you dispute any transaction or correction that has been assessed against your loyalty account, please contact
+          us via our Contact Us page on the Site. We will conduct an investigation and communicate the results and
+          correct any error that we verify as soon as we finish the investigation. If no error was found, we will
+          communicate an explanation. We shall have no liability for any billing error unless you provide us notice
+          within 60 days of the date of the transaction in question. You should monitor your transactions and account
+          balances closely.
+        </Text>
+
+        <Title>FRAUD ASSOCIATED WITH YOUR FACTORY REWARDS LOYALTY ACCOUNT OR BALANCE</Title>
+        <Text>
+          We will not accept any loyalty account or will limit use of any loyalty account, if we reasonably believe that
+          the use is unauthorized, fraudulent or otherwise unlawful, and we consider such action appropriate to limit
+          our risk. Consequently, SF+K has no liability to you for any third-party fraud or unlawful activity associated
+          with any loyalty accounts. If SF+K discovers any loyalty account was sourced or derived from fraud or other
+          unlawful means, in our sole discretion, we may cancel all impacted loyalty accounts and void all related
+          loyalty rewards on such account without notice to you.
+        </Text>
+
+        <Title>USERNAME, PASSWORD AND ACCESS TO YOUR FACTORY REWARDS LOYALTY ACCOUNT</Title>
+        <Text>
+          You are solely responsible for managing your password and for keeping your password confidential. No one from
+          SF+K will be authorized to provide you your password. If you forget your username or password, click on the
+          "Forgot Your Password" a, or contact us via the Contact Us section of the Site to request your user name or
+          password. For your privacy, we do not have access to your password information. However, we can reset it for
+          you so that you can update your account with a new password. You are also solely responsible for restricting
+          access to any computer or mobile device you use to access your loyalty membership. You agree that you are
+          responsible for all activities that occur on your account or through use of your password by yourself or by
+          other persons. If we provide you with, and you opt for a "Remember me" feature for your loyalty account, or if
+          you login with your personal Facebook account, a cookie helps SF+K recall certain items of your specific
+          information on subsequent visits, including your username and password. When you return to loyalty account,
+          the information you previously provided can be retrieved, so that it is not necessary to enter your username
+          and password to access certain functionality. While cookies are a convenience, please remember that if you
+          elect the "Remember Me" option, anyone who can access the computer or mobile device you are using will have
+          the ability to access your account for certain functions and view certain information about your account.
+        </Text>
+
+        <Title>CONSENT TO ELECTRONIC COMMUNICATIONS</Title>
+        <Text>
+          Through your joining FACTORY REWARDS and provided that you do not opt out of receiving such communication from
+          SF+K, you consent to receive communications from SF+K about SF+K and/or your loyalty membership
+          electronically, either by e-mail, text, SMS, push notifications or by notices posted on the Sites, as
+          determined by SF+K in its sole discretion. You agree that a notice, disclosure, agreement, or other
+          communication be sent to you by SF+K in writing is satisfied by such electronic communication. You agree that
+          SF+K may send you e-mails, texts, SMS, or push notifications which include notices about your account as well
+          as information pertaining to our products and/or services, such as featured products or new offerings. You
+          agree that this information is part of your loyalty membership and your relationship with SF+K.
+        </Text>
+
+        <Title>SMOOTHIE FACTORY + KITCHEN INITIATED SMOOTHIE FACTORY + KITCHEN LOYALTY CANCELLATIONS</Title>
+        <Text>
+          SF+K may suspend or cancel your loyalty account or otherwise restrict your use of any of SF+K services, in
+          SF+K sole discretion, with or without cause.
+        </Text>
+
+        <Title>SECURITY</Title>
+        <Text>
+          In connection with any SF+K gift card or loyalty account, your personally identifiable and financial
+          information are encrypted using SSL (Secure Socket Layer) encryption technology before being sent over the
+          Internet. This is industry standard technology designed to protect the security of your information. To help
+          prevent unauthorized access to your data, maintain data accuracy, and ensure the correct use of information,
+          we have also established physical, electronic, and managerial procedures designed to safeguard and secure the
+          information we collect online.
+        </Text>
+
         <Title>DISCLAIMER</Title>
         <Text>
           THE SITES, THEIR CONTENTS, AND ANY SOFTWARE, FUNCTIONS AND ALL INFORMATION, PRODUCTS AND SERVICES CONTAINED IN
-          OR OFFERED THROUGH THE SITES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT REPRESENTATIONS OR
-          WARRANTIES OF ANY KIND. Smoothie Factory<sup>®</sup> AND ITS LICENSORS AND CONTENT PROVIDERS EXPRESSLY
-          DISCLAIM ALL SUCH REPRESENTATIONS AND WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION,
-          WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT (INCLUDING, WITHOUT
-          LIMITATION, NONINFRINGEMENT OF THIRD PARTY RIGHTS, ERROR-FREE OR UNINTERRUPTED SERVICE, ACCURACY AVAILABILITY,
+          OR OFFERED THROUGH THE SITES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT REPRESENTATIONS OR
+          WARRANTIES OF ANY KIND. SF+K AND ITS LICENSORS AND CONTENT PROVIDERS EXPRESSLY DISCLAIM ALL SUCH
+          REPRESENTATIONS AND WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE,
+          MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT (INCLUDING, WITHOUT LIMITATION,
+          NONINFRINGEMENT OF THIRD PARTY RIGHTS, ERROR-FREE OR UNINTERRUPTED SERVICE, ACCURACY AVAILABILITY,
           RELIABILITY, SECURITY, CURRENCY AND COMPLETENESS ARISING FROM OR RELATING TO THE SITES, THEIR CONTENT OR ANY
-          LINKS, ANY SOFTWARE, TOOLS, TIPS, PRODUCTS OR SERVICES PROVIDED THROUGH THE SITES) AND ANY IMPLIED WARRANTIES
+          aS, ANY SOFTWARE, TOOLS, TIPS, PRODUCTS OR SERVICES PROVIDED THROUGH THE SITES) AND ANY IMPLIED WARRANTIES
           ARISING FROM COURSE OF DEALING OR COURSE OF PERFORMANCE WITH RESPECT TO THE SITES, ANY GIFT CARD AND/OR ANY
-          FACTORY REWARDS<sup>®</sup> CARD OR ACCOUNT. Smoothie Factory<sup>®</sup> DOES NOT WARRANT THAT THE GIFT CARD
-          AND/OR THE FACTORY REWARDS<sup>®</sup> CARD OR ACCOUNT WILL ALWAYS BE ACCESSIBLE OR ACCEPTED. Smoothie Factory
-          <sup>®</sup> DOES NOT WARRANT THAT THE SITES OR THEIR CONTENTS WILL BE COMPLETE, ACCURATE, TIMELY,
+          LOYALTY ACCOUNT. SF+K DOES NOT WARRANT THAT THE GIFT CARD AND/OR THE LOYALTY ACCOUNT WILL ALWAYS BE ACCESSIBLE
+          OR ACCEPTED. SF+K DOES NOT WARRANT THAT THE SITES OR THEIR CONTENTS WILL BE COMPLETE, ACCURATE, TIMELY,
           UNINTERRUPTED, SECURE OR ERROR FREE, OR THAT DEFECTS WILL BE CORRECTED. ALL INFORMATION ON THE SITES IS
           SUBJECT TO CHANGE WITHOUT NOTICE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES SO SOME
           OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.
         </Text>
+
         <Title>LIMITATION OF LIABILITY</Title>
         <Text>
-          IN NO EVENT SHALL Smoothie Factory<sup>®</sup> OR ANY OF ITS SUBSIDIARIES, AFFILIATES, FRANCHISEES, LICENSEES
-          AND ANY OF THEIR RESPECTIVE DIRECTORS, OFFICERS, EMPLOYEES, MEMBERS, SHAREHOLDERS, AGENTS, SUCCESSORS, ASSIGNS
-          OR OTHER REPRESENTATIVES BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, CONSEQUENTIAL, SPECIAL, EXEMPLARY,
-          INCIDENTAL OR AGGRAVATED DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF DATA, INCOME OR PROFIT,
-          LOSS OF OR DAMAGE TO PROPERTY AND THIRD PARTY CLAIMS) OR ANY OTHER DAMAGES OF ANY KIND, ARISING OUT OF OR IN
-          CONNECTION WITH: THE SITES; ANY CONTENT OR MATERIALS, INFORMATION, QUALIFICATION AND RECOMMENDATIONS APPEARING
-          ON THE SITES; ANY SOFTWARE, TOOLS, TIPS, PRODUCTS, OR SERVICES OFFERED THROUGH, CONTAINED IN OR ADVERTISED ON
-          THE SITES; ANY LINK PROVIDED ON THE SITES; AND YOUR ACCOUNT AND PASSWORD, WHETHER OR NOT Smoothie Factory
-          <sup>®</sup> HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL Smoothie Factory
-          <sup>®</sup> OR ITS AFFILIATES OR SUBSIDIARIES HAVE ANY LIABILITY FOR UNAUTHORIZED ACCESS TO, OR ALTERATION,
-          THEFT OR DESTRUCTION OF A GIFT CARD AND/OR FACTORY REWARDS
-          <sup>®</sup> ACCOUNT OR CARD THROUGH ACCIDENT, MISUSE OR FRAUDULENT MEANS OR DEVICES BY YOU OR ANY THIRD
-          PARTY, OR AS A RESULT OF ANY DELAY OR MISTAKE RESULTING FROM ANY CIRCUMSTANCES BEYOND OUR CONTROL. THIS
-          EXCLUSION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW. THIS PROVISION SHALL SURVIVE THE
-          TERMINATION OF YOUR RIGHT TO USE THE SITES.
+          IN NO EVENT SHALL SF+K OR ANY OF ITS SUBSIDIARIES, AFFILIATES, FRANCHISEES, LICENSEES AND ANY OF THEIR
+          RESPECTIVE DIRECTORS, OFFICERS, EMPLOYEES, MEMBERS, SHAREHOLDERS, AGENTS, SUCCESSORS, ASSIGNS OR OTHER
+          REPRESENTATIVES BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, CONSEQUENTIAL, SPECIAL, EXEMPLARY, INCIDENTAL OR
+          AGGRAVATED DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF DATA, INCOME OR PROFIT, LOSS OF OR
+          DAMAGE TO PROPERTY AND THIRD PARTY CLAIMS) OR ANY OTHER DAMAGES OF ANY KIND, ARISING OUT OF OR IN CONNECTION
+          WITH: THE SITES; ANY CONTENT OR MATERIALS, INFORMATION, QUALIFICATION AND RECOMMENDATIONS APPEARING ON THE
+          SITES; ANY SOFTWARE, TOOLS, TIPS, PRODUCTS, OR SERVICES OFFERED THROUGH, CONTAINED IN OR ADVERTISED ON THE
+          SITES; ANY a PROVIDED ON THE SITES; AND YOUR ACCOUNT AND PASSWORD, WHETHER OR NOT SF+K HAS BEEN ADVISED OF THE
+          POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL SF+K OR ITS AFFILIATES OR SUBSIDIARIES HAVE ANY LIABILITY FOR
+          UNAUTHORIZED ACCESS TO, OR ALTERATION, THEFT OR DESTRUCTION OF A GIFT CARD AND/OR SF+K LOYALTY ACCOUNT THROUGH
+          ACCIDENT, MISUSE OR FRAUDULENT MEANS OR DEVICES BY YOU OR ANY THIRD PARTY, OR AS A RESULT OF ANY DELAY OR
+          MISTAKE RESULTING FROM ANY CIRCUMSTANCES BEYOND OUR CONTROL. THIS EXCLUSION OF LIABILITY SHALL APPLY TO THE
+          FULLEST EXTENT PERMITTED BY LAW. THIS PROVISION SHALL SURVIVE THE TERMINATION OF YOUR RIGHT TO USE THE SITES.
         </Text>
         <Text>
           YOU ACKNOWLEDGE THAT YOU WILL BE FULLY LIABLE FOR ALL DAMAGES RESULTING DIRECTLY OR INDIRECTLY FROM YOUR USE
           OF THE SITES.
         </Text>
+
         <Title>INDEMNIFICATION</Title>
         <Text>
-          You agree to defend, indemnify and hold Smoothie Factory<sup>®</sup> and each of its subsidiaries, affiliates,
-          franchisees, licensees and any of their respective directors, officers, employees, shareholders, members,
-          agents, licensees, successors, assigns or other representatives, harmless from and against any and all claims,
-          losses, damages, liabilities, costs and expenses, including reasonable fees and expenses of counsel, incurred
-          or suffered by them and arising from or related to your (i) use of the Sites including, without limitation,
-          transmission or placement of information or material by you on the Sites, (ii) use of a gift card, (iii) use
-          of a FACTORY REWARDS<sup>®</sup> card, account or any earned rewards or points, or (iv) violation of any of
-          these Terms including, without limitation, the Smoothie Factory<sup>®</sup> Loyalty Program Rules and the Gift
-          Card Rules. This provision shall survive the termination of your right to use the Sites.
+          You agree to defend, indemnify and hold SF+K and each of its subsidiaries, affiliates, franchisees, licensees
+          and any of their respective directors, officers, employees, shareholders, members, agents, licensees,
+          successors, assigns or other representatives, harmless from and against any and all claims, losses, damages,
+          liabilities, costs and expenses, including reasonable fees and expenses of counsel, incurred or suffered by
+          them and arising from or related to your (i) use of the Sites including, without limitation, transmission or
+          placement of information or material by you on the Sites, (ii) use of a gift card, (iii) use of a loyalty
+          account or any earned rewards or points, or (iv) violation of any of these Terms including, without
+          limitation, the Loyalty Program Rules and the Gift Card Rules. This provision shall survive the termination of
+          your right to use the Sites.
         </Text>
+
         <Title>DISPUTE RESOLUTION</Title>
         <Text>
-          All disputes between you and Smoothie Factory<sup>®</sup> arising or relating to: (a) these Terms; (b) the
-          Sites; (c) any advertisement or promotion relating to these Terms or the Sites; or (d) transactions
-          effectuated through the Sites; or (e) the relationship which results from these Terms (including relationships
-          with third parties who are not party to these Terms) shall be resolved by binding individual arbitration under
-          the American Arbitration Association’s rules for consumer-related disputes. Neither you nor Smoothie Factory
-          <sup>®</sup> will participate in a class action or class-wide arbitration for any claims covered by these
-          Terms. If this class action waiver is found to be unenforceable in a particular case, then this entire
-          arbitration agreement shall be null and void in that case. These Terms shall be governed by the Federal
-          Arbitration Act and, where consistent, Texas law. Smoothie Factory<sup>®</sup> reserves the right to change
-          this dispute resolution provision, but any such changes will not apply to disputes filed before the effective
-          date of the amendment. This provision will survive the termination of your right to use the Sites.
+          All disputes between you and SF+K arising or relating to: (a) these Terms; (b) the Sites; (c) any
+          advertisement or promotion relating to these Terms or the Sites; or (d) transactions effectuated through the
+          Sites; or (e) the relationship which results from these Terms (including relationships with third parties who
+          are not party to these Terms) shall be resolved by binding individual arbitration under the American
+          Arbitration Association's rules for consumer-related disputes. Neither you nor SF+K will participate in a
+          class action or class-wide arbitration for any claims covered by these Terms. If this class action waiver is
+          found to be unenforceable in a particular case, then this entire arbitration agreement shall be null and void
+          in that case. These Terms shall be governed by the Federal Arbitration Act and, where consistent, Texas law.
+          SF+K reserves the right to change this dispute resolution provision, but any such changes will not apply to
+          disputes filed before the effective date of the amendment. This provision will survive the termination of your
+          right to use the Sites.
         </Text>
+
         <Title>TERMINATION</Title>
-        <Text>
-          Smoothie Factory<sup>®</sup> may at any time and at its sole discretion terminate your right to use the Sites.
-        </Text>
+        <Text>SF+K may at any time and at its sole discretion terminate your right to use the Sites.</Text>
+
         <Title>GOVERNING LAW</Title>
         <Text>
           You agree that all matters relating to your access to or use of the Sites, including all disputes, will be
@@ -585,6 +788,7 @@ const TermsOfUseSection: FC = () => (
           conflicts of laws provisions. You agree to the personal jurisdiction by and venue in the state and federal
           courts in Dallas County, Texas, and waive any objection to such jurisdiction or venue.
         </Text>
+
         <Title>ASSIGNMENT</Title>
         <Text>
           We may assign all or part of these Terms without notice to you. We are then released from all liability. You
@@ -593,51 +797,48 @@ const TermsOfUseSection: FC = () => (
 
         <Title>GENERAL PROVISIONS</Title>
         <Text>
-          Except for the portion of these Terms specifically labeled as the FACTORY REWARDS<sup>®</sup> Terms and
-          Conditions, which govern the FACTORY REWARDS<sup>®</sup> program (i.e., Smoothie Factory<sup>®</sup> Loyalty
-          Program Rules) or the Smoothie Factory<sup>®</sup> Gift Card Terms and Conditions, which govern the Smoothie
-          Factory
-          <sup>®</sup> Gift Card program (i.e., Gift Card Rules), these Terms constitute a binding agreement between you
-          and Smoothie Factory<sup>®</sup> and supersede all prior agreements, understandings and representations
-          between the parties regarding the subject matter herein. In the event of an inconsistency between these Terms
-          and either the Smoothie Factory<sup>®</sup> Loyalty Program Rules or the Gift Card Rules relating to your use
-          of the Sites, these Terms shall prevail. In the event of an inconsistency between these Terms and the Smoothie
-          Factory<sup>®</sup> Loyalty Program Rules relating to your use of your FACTORY REWARDS<sup>®</sup> loyalty
-          card or FACTORY REWARDS<sup>®</sup> points, the Smoothie Factory
-          <sup>®</sup> Loyalty Program Rules shall prevail. In the event of an inconsistency between these Terms and the
-          Gift Card Rules relating to your use of your Smoothie Factory<sup>®</sup> gift card, the Gift Card Rules shall
-          prevail. No failure by Smoothie Factory<sup>®</sup> or you to exercise any rights, powers or remedies
-          hereunder or its delay to do so shall constitute a waiver of these rights, powers or remedies. The single or
-          partial exercise of a right, power or remedy shall not prevent its subsequent exercise or the exercise of any
-          other right, power or remedy. If any provision of these Terms or part thereof is or becomes illegal, invalid
-          or unenforceable in any jurisdiction, the illegality, invalidity or unenforceability of that provision will
-          not affect the legality, validity or enforceability of the remainder of the provision or the remaining
-          provisions of these Terms, as the case may be, or the legality, validity or enforceability of that provision
-          or part thereof in any other jurisdiction. These Terms are effective until terminated by you or Smoothie
-          Factory<sup>®</sup>, which Smoothie Factory<sup>®</sup> may do at any time, without notice, in its sole
-          discretion. If you become dissatisfied with the Sites, your only recourse is to immediately discontinue use of
-          the Sites. All provisions of the Terms regarding representations, warranties, indemnification, disclaimers,
-          and limitations of liability shall survive the termination of the Terms.
+          Except for the portion of these Terms specifically labeled as the FACTORY REWARDS Loyalty Terms and
+          Conditions, which govern the SF+K loyalty program, also known as FACTORY REWARDS® (i.e., Loyalty Program
+          Rules) or the SF+K Gift Card Terms and Conditions, which govern the SF+K Gift Card program (i.e., Gift Card
+          Rules), these Terms constitute a binding agreement between you and SF+K and supersede all prior agreements,
+          understandings and representations between the parties regarding the subject matter herein. In the event of an
+          inconsistency between these Terms and either the Loyalty Program Rules or the Gift Card Rules relating to your
+          use of the Sites, these Terms shall prevail. In the event of an inconsistency between these Terms and the
+          Loyalty Program Rules relating to your use of your loyalty account or loyalty points, the Loyalty Program
+          Rules shall prevail. In the event of an inconsistency between these Terms and the Gift Card Rules relating to
+          your use of your SF+K gift card, the Gift Card Rules shall prevail. No failure by SF+K or you to exercise any
+          rights, powers or remedies hereunder or its delay to do so shall constitute a waiver of these rights, powers
+          or remedies. The single or partial exercise of a right, power or remedy shall not prevent its subsequent
+          exercise or the exercise of any other right, power or remedy. If any provision of these Terms or part thereof
+          is or becomes illegal, invalid or unenforceable in any jurisdiction, the illegality, invalidity or
+          unenforceability of that provision will not affect the legality, validity or enforceability of the remainder
+          of the provision or the remaining provisions of these Terms, as the case may be, or the legality, validity or
+          enforceability of that provision or part thereof in any other jurisdiction. These Terms are effective until
+          terminated by you or SF+K, which SF+K may do at any time, without notice, in its sole discretion. If you
+          become dissatisfied with the Sites, your only recourse is to immediately discontinue use of the Sites. All
+          provisions of the Terms regarding representations, warranties, indemnification, disclaimers, and limitations
+          of liability shall survive the termination of the Terms.
         </Text>
         <Text>
-          If you have any questions or comments about these Terms, please call us at (214) 302-5979 or contact us via
-          the Contact Us section of the Site.
+          If you have any questions or comments about these Terms, please call us at{' '}
+          <a href="tel:214-302-5910">214-302-5910</a> or contact us via the Contact Us section of the Site.
         </Text>
 
-        <Title>LINKS</Title>
+        <Title>aS</Title>
         <Text>
-          The Sites contains links to or references to other web sites owned and operated by third party, including
-          among others those of advertisers and other third parties and companies whose trademarks appear on the Sites.
-          These links are provided for your convenience only. No endorsement of any third party products, services or
-          information is expressed or implied by any information, material or content of any third party contained in,
-          referred to, included on, or linked from or to this Site. Any information, data, opinions, recommendation,
-          products or services provided by such third parties through links to other websites or otherwise made
-          available through their websites are solely those of such third parties and not of Smoothie Factory
-          <sup>®</sup> or its affiliates. This could be the case even for those web sites that carry Smoothie Factory
-          <sup>®</sup>’s or its affiliates’ trademarks or logos or which are framed by the Sites. Your use of such third
-          party websites is subject to the terms and conditions of use and the privacy policies of such websites. We are
-          not responsible for the information collection practices or the content of the sites to which we link.
+          The Sites contains as to or references to other web sites owned and operated by third party, including among
+          others those of advertisers and other third parties and companies whose trademarks appear on the Sites. These
+          as are provided for your convenience only. No endorsement of any third-party products, services or information
+          is expressed or implied by any information, material or content of any third party contained in, referred to,
+          included on, or aed from or to this Site. Any information, data, opinions, recommendation, products or
+          services provided by such third parties through as to other websites or otherwise made available through their
+          websites are solely those of such third parties and not of SF+K or its affiliates. This could be the case even
+          for those web sites that carry SF+K or its affiliates' trademarks or logos or which are framed by the Sites.
+          Your use of such third-party websites is subject to the terms and conditions of use and the privacy policies
+          of such websites. We are not responsible for the information collection practices or the content of the sites
+          to which we a.
         </Text>
+
         <Title>NOTICE TO CALIFORNIA RESIDENTS</Title>
         <Text>
           Under California Civil Code Section 1789.3, California website users are entitled to the following specific
@@ -647,18 +848,19 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Text>
           If you are a California resident, you can also request a notice disclosing the categories or personal
-          information we have shared with third parties, if any, for the third parties’ direct marketing purposes. To
-          request a notice, please submit your request by mail to: Smoothie Holdings, LLC, Attn: Customer Service, 14860
-          Montfort Drive, Suite 150 PMB 34, Dallas, TX 75254. Please specify that you are requesting a “California
-          Privacy Rights Notice.” We will make every effort to promptly respond to your request.
+          information we have shared with third parties, if any, for the third parties' direct marketing purposes. To
+          request a notice, please submit your request by mail to: Smoothie Factory + Kitchen, Attn: Customer Service,
+          14860 Montfort Drive, Suite 150 PMB34, Dallas, TX 75254. Please specify that you are requesting a "California
+          Privacy Rights Notice." We will make every effort to promptly respond to your request.
         </Text>
+
         <Title>CONTACT US</Title>
         <Text>
-          If you have any questions or concerns regarding these Terms (including, without limitation, the Smoothie
-          Factory Loyalty Program Rules or the Gift Card Rules) or regarding the privacy or security of any SMOOTHIE
-          FACTORY gift card or FACTORY REWARDS<sup>®</sup> card or account, please call us at (214) 302-5979 or contact
-          us via the Contact Us section of the Site, or write to us at Smoothie Holdings, LLC, 14860 Montfort Drive,
-          Suite 150 PMB 34, Dallas, TX 75254.
+          If you have any questions or concerns regarding these Terms (including, without limitation, the Loyalty
+          Program Rules or the Gift Card Rules) or regarding the privacy or security of any SF+K gift card or loyalty
+          account, please call us at <a href="tel:214-302-5910">214-302-5910</a> or contact us via the Contact Us
+          section of the Site, or write to us at Smoothie Factory + Kitchen, 14860 Montfort Drive, Suite 150 PMB34,
+          Dallas, TX 75254.
         </Text>
         <Text>© {new Date().getFullYear()} Smoothie Holdings, LLC. All rights reserved.</Text>
       </Paper>
