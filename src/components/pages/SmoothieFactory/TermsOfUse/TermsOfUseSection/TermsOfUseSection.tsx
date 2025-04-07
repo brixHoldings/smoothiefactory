@@ -9,6 +9,7 @@ import { Container, Paper, Title, Text, RelativeWrapper, PageTitle, ListItem } f
 import type { FC } from 'react';
 
 import FloatingImage from '../../OrangeLeaf/common/FloatingImage/FloatingImage';
+import Link from 'next/link';
 
 const TermsOfUseSection: FC = () => (
   <RelativeWrapper>
@@ -89,11 +90,8 @@ const TermsOfUseSection: FC = () => (
           the website utilizes an AI-based application that runs in the background and optimizes its accessibility level
           constantly. This application remediates the website's HTML, adapts its functionality and behavior for
           screen-readers used by blind users, and for keyboard functions used by individuals with motor impairments.
-          Click here{' '}
-          <a href="https://smoothiefactorykitchen.com/accessibility-statement/">
-            for Smoothie Factory + Kitchen's Accessibility Statement
-          </a>
-          . If you wish to contact the website's owner, please use the following email{' '}
+          Click <a href="https://smoothiefactorykitchen.com/accessibility-statement/">here</a> for Smoothie Factory +
+          Kitchen's Accessibility Statement . If you wish to contact the website's owner, please use the following email{' '}
           <a href="mailto:info@smoothiefactorykitchen.com">info@smoothiefactorykitchen.com</a> or call us at{' '}
           <a href="tel:214-302-5910">214-302-5910</a> and one of our team members will personally assist you.
         </Text>
@@ -441,7 +439,7 @@ const TermsOfUseSection: FC = () => (
         <Text>
           Unless you have an original sales receipt for your gift card and your 16 or 19-digit gift card number, the
           remaining gift card value will not be replaced if lost, stolen or damaged. If you have your original sales
-          receipt for your gift card and your 16 or 19-digit gift card number, then you can send an email to
+          receipt for your gift card and your 16 or 19-digit gift card number, then you can send an email to{' '}
           <a href="mailto:info@smoothiefactorykitchen.com">info@smoothiefactorykitchen.com</a> and include the following
           information: (1) the 16 or 19-digit gift card number, (2) a photo copy of the original location receipt
           indicating the purchase of the gift card, (3) a copy of a valid government issued I.D. (Driver's License,
@@ -563,11 +561,11 @@ const TermsOfUseSection: FC = () => (
           points earned for any qualified purchases you make in participating SMOOTHIE FACTORY® and SMOOTHIE FACTORY +
           KITCHEN® location(s). If you cannot contact us via the Contact Us section of the Site, then you can mail a
           copy of your receipt and your loyalty account number to SF+K, Attn: Smoothie Factory + Kitchen Loyalty, 14860
-          Montfort Drive, Suite 150 PMB34, Dallas, TX 75254. Click here for answers to{' '}
-          <a href="/files/SF+K-LoyaltyFAQs - 3-27-2025.pdf" target="_blank">
-            frequently asked questions
-          </a>{' '}
-          regarding FACTORY REWARDS.
+          Montfort Drive, Suite 150 PMB34, Dallas, TX 75254. Click{' '}
+          <Link href="/files/SF+K-LoyaltyFAQs - 3-27-2025.pdf" target="_blank" download>
+            here
+          </Link>{' '}
+          for answers to frequently asked questions regarding FACTORY REWARDS.
         </Text>
         <Text>
           Your use of a loyalty account constitutes your acceptance of the complete Loyalty Program Rules. SF+K may at
@@ -637,7 +635,7 @@ const TermsOfUseSection: FC = () => (
           from SF+K.
         </Text>
         <Text>
-          You can view your loyalty account via the mobile app or through
+          You can view your loyalty account via the mobile app or through{' '}
           <a href="https://order.smoothiefactorykitchen.com">https://order.smoothiefactorykitchen.com</a>; your rewards
           will be listed under your Profile. You will need to have your loyalty account number available in order to
           access your account.
@@ -824,7 +822,7 @@ const TermsOfUseSection: FC = () => (
           <a href="tel:214-302-5910">214-302-5910</a> or contact us via the Contact Us section of the Site.
         </Text>
 
-        <Title>aS</Title>
+        <Title>LINKS</Title>
         <Text>
           The Sites contains as to or references to other web sites owned and operated by third party, including among
           others those of advertisers and other third parties and companies whose trademarks appear on the Sites. These
