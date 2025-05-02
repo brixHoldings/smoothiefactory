@@ -851,6 +851,15 @@ const TermsOfUseSection: FC = () => (
           14860 Montfort Drive, Suite 150 PMB34, Dallas, TX 75254. Please specify that you are requesting a "California
           Privacy Rights Notice." We will make every effort to promptly respond to your request.
         </Text>
+        
+        <Title>The Official Rules for the $25 gift card giveaway</Title>
+        <Text>
+          Click{' '}
+          <a href="/files/Prosper_SFK_25GiftCardGiveaway.pdf" target="_blank" rel="noopener noreferrer">
+            here
+          </a>{' '}
+          for the official rules for Smoothie Factory + Kitchen Prosper.
+        </Text>
 
         <Title>CONTACT US</Title>
         <Text>
