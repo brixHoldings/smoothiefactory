@@ -860,6 +860,13 @@ const TermsOfUseSection: FC = () => (
           </a>{' '}
           for the official rules for Smoothie Factory + Kitchen Prosper.
         </Text>
+        <Text>
+          Click{' '}
+          <a href="/files/SFK_Mesquite_25-Rules.pdf" target="_blank" rel="noopener noreferrer">
+            here
+          </a>{' '}
+          for the official rules for Smoothie Factory + Kitchen Mesquite.
+        </Text>
 
         <Title>CONTACT US</Title>
         <Text>
