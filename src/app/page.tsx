@@ -1,16 +1,8 @@
-import BlendTogether from '@components/pages/SmoothieFactory/Home/BlendTogether/BlendTogether';
-import Gallery from '@components/pages/SmoothieFactory/Home/Gallery/Gallery';
-import Header from '@components/pages/SmoothieFactory/Home/Header/Header';
-import LetsConnect from '@components/pages/SmoothieFactory/Home/LetsConnect/LetsConnect';
-import WhatIsNew from '@components/pages/SmoothieFactory/Home/WhatIsNew/WhatIsNew';
-import {
-  HomeEClubSlice,
-  HomeGallerySlice,
-  HomeHeaderSlice,
-  HomeInfoSectionSliceDefault,
-  LetsConnectSlice,
-} from 'prismicio-types';
-
+import Form from '@components/pages/SmoothieFactory/EClub/Form/Form';
+import GetBirthdayGift from '@components/pages/SmoothieFactory/EClub/GetBirthdayGift/GetBirthdayGift';
+import GetRewards from '@components/pages/SmoothieFactory/EClub/GetRewards/GetRewards';
+import HowDoesItWork from '@components/pages/SmoothieFactory/EClub/HowDoesItWork/HowDoesItWork';
+import { BirthdayGiftSlice, EClubHeaderSlice, FormSlice } from 'prismicio-types';
 import type { FC } from 'react';
 import { createClient } from 'prismicio';
 import { Metadata } from 'next';
@@ -18,52 +10,67 @@ import { asText } from '@prismicio/client';
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
-  const page = await client.getSingle('homepage');
-
+  const page = await client.getSingle('e_club');
   return {
     title: page.data.meta_title,
     description: asText(page.data.meta_description),
-    openGraph: {
-      title: page.data.meta_title || undefined,
-      images: [
-        {
-          url: page.data.meta_image.url || '',
-        },
-      ],
-    },
   };
 }
 
-/* @ts-expect-error Server Component */
-const Home: FC = async () => {
-  const client = createClient();
-  const page = await client.getSingle('homepage');
+type MergeField = {
+  tag: string;
+  options: {
+    choices: string[];
+  };
+};
 
-  const headerSlice = page.data.slices.find((slice) => slice.slice_type === 'home_header') as
-    | HomeHeaderSlice
+type GetOptionsResponse = {
+  merge_fields: MergeField[];
+};
+
+const getOptions = async (): Promise<GetOptionsResponse> => {
+  try {
+    const res = await fetch(`https://us13.api.mailchimp.com/3.0/lists/afce920e8f/merge-fields`, {
+      next: { revalidate: 3600 },
+      headers: {
+        Authorization: `auth ${process.env.NEXT_PUBLIC_MAIL_CHIMP_KEY}`,
+      },
+      method: 'GET',
+    });
+    return res.json() as Promise<GetOptionsResponse>;
+  } catch (e) {
+    // Return safe fallback instead of throwing so build doesn't fail
+    return { merge_fields: [] };
+  }
+};
+
+/* @ts-expect-error Server Component */
+const EClub: FC = async () => {
+  const data = await getOptions();
+  const client = createClient();
+  const page = await client.getSingle('e_club');
+
+  const getRewardsSlice = page.data.slices.find((slice) => slice.slice_type === 'e_club_header') as
+    | EClubHeaderSlice
     | undefined;
-  const whatIsNewSlice = page.data.slices.find((slice) => slice.slice_type === 'home_info_section') as
-    | HomeInfoSectionSliceDefault
+  const getBirthdayGiftSlice = page.data.slices.find((slice) => slice.slice_type === 'birthday_gift') as
+    | BirthdayGiftSlice
     | undefined;
-  const gallerySlice = page.data.slices.find((slice) => slice.slice_type === 'home_gallery') as
-    | HomeGallerySlice
-    | undefined;
-  const blendTogetherSlice = page.data.slices.find((slice) => slice.slice_type === 'home_e_club') as
-    | HomeEClubSlice
-    | undefined;
-  const letsConnectSlice = page.data.slices.find((slice) => slice.slice_type === 'lets_connect') as
-    | LetsConnectSlice
-    | undefined;
+  const howDoesItWorkSlice = undefined;
+  const formSlice = page.data.slices.find((slice) => slice.slice_type === 'form') as FormSlice | undefined;
+
+  // Safe optional chaining in case merge_fields is undefined
+  const optionMatch = data.merge_fields?.find((field) => field.tag === 'MMERGE3');
+  const choices = optionMatch === undefined ? [] : optionMatch.options.choices;
 
   return (
     <>
-      {headerSlice ? <Header slice={headerSlice} /> : null}
-      {whatIsNewSlice ? <WhatIsNew slice={whatIsNewSlice} /> : null}
-      {gallerySlice ? <Gallery slice={gallerySlice} /> : null}
-      {blendTogetherSlice ? <BlendTogether slice={blendTogetherSlice} /> : null}
-      {letsConnectSlice ? <LetsConnect slice={letsConnectSlice} /> : undefined}
+      {getRewardsSlice ? <GetRewards slice={getRewardsSlice} /> : null}
+      {getBirthdayGiftSlice ? <GetBirthdayGift slice={getBirthdayGiftSlice} /> : null}
+      {howDoesItWorkSlice ? <HowDoesItWork slice={howDoesItWorkSlice} /> : null}
+      {formSlice ? <Form options={choices} slice={formSlice} /> : null}
     </>
   );
 };
 
-export default Home;
+export default EClub;
