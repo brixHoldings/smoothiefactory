@@ -46,22 +46,32 @@ const getOptions = async (): Promise<GetOptionsResponse> => {
 
 /* @ts-expect-error Server Component */
 const EClub: FC = async () => {
-  const data = await getOptions();
+  let data: GetOptionsResponse = { merge_fields: [] };
+  let page: Awaited<ReturnType<typeof client.getSingle>> | null = null;
+
   const client = createClient();
-  const page = await client.getSingle('e_club');
 
-  const getRewardsSlice = page.data.slices?.find((slice) => slice.slice_type === 'e_club_header') as
-    | EClubHeaderSlice
-    | undefined;
-  const getBirthdayGiftSlice = page.data.slices?.find((slice) => slice.slice_type === 'birthday_gift') as
-    | BirthdayGiftSlice
-    | undefined;
+  try {
+    data = await getOptions();
+  } catch (e) {
+    console.error('Failed to fetch Mailchimp options:', e);
+  }
+
+  try {
+    page = await client.getSingle('e_club');
+  } catch (e) {
+    console.error('Failed to fetch Prismic e_club page:', e);
+  }
+
+  const slices = page?.data?.slices ?? [];
+
+  const getRewardsSlice = slices.find((slice) => slice.slice_type === 'e_club_header') as EClubHeaderSlice | undefined;
+  const getBirthdayGiftSlice = slices.find((slice) => slice.slice_type === 'birthday_gift') as BirthdayGiftSlice | undefined;
   const howDoesItWorkSlice = undefined;
-  const formSlice = page.data.slices?.find((slice) => slice.slice_type === 'form') as FormSlice | undefined;
+  const formSlice = slices.find((slice) => slice.slice_type === 'form') as FormSlice | undefined;
 
-  // Safe optional chaining in case merge_fields is undefined
   const optionMatch = data.merge_fields?.find((field) => field.tag === 'MMERGE3');
-  const choices = optionMatch === undefined ? [] : optionMatch.options.choices;
+  const choices = optionMatch?.options?.choices ?? [];
 
   return (
     <>
@@ -72,5 +82,7 @@ const EClub: FC = async () => {
     </>
   );
 };
+
+export default EClub;
 
 export default EClub;
