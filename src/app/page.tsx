@@ -84,5 +84,3 @@ const EClub: FC = async () => {
 };
 
 export default EClub;
-
-export default EClub;
