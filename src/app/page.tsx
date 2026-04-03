@@ -50,14 +50,14 @@ const EClub: FC = async () => {
   const client = createClient();
   const page = await client.getSingle('e_club');
 
-  const getRewardsSlice = page.data.slices.find((slice) => slice.slice_type === 'e_club_header') as
+  const getRewardsSlice = page.data.slices?.find((slice) => slice.slice_type === 'e_club_header') as
     | EClubHeaderSlice
     | undefined;
-  const getBirthdayGiftSlice = page.data.slices.find((slice) => slice.slice_type === 'birthday_gift') as
+  const getBirthdayGiftSlice = page.data.slices?.find((slice) => slice.slice_type === 'birthday_gift') as
     | BirthdayGiftSlice
     | undefined;
   const howDoesItWorkSlice = undefined;
-  const formSlice = page.data.slices.find((slice) => slice.slice_type === 'form') as FormSlice | undefined;
+  const formSlice = page.data.slices?.find((slice) => slice.slice_type === 'form') as FormSlice | undefined;
 
   // Safe optional chaining in case merge_fields is undefined
   const optionMatch = data.merge_fields?.find((field) => field.tag === 'MMERGE3');
